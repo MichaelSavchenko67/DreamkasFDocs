@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс PaidFeaturesService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classPaidFeaturesService-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс PaidFeaturesService</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="paidFeaturesService_8h_source.html">paidFeaturesService.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса PaidFeaturesService:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPaidFeaturesService__coll__graph.png" border="0" usemap="#PaidFeaturesService_coll__map" alt="Collaboration graph"/></div>
+<map name="PaidFeaturesService_coll__map" id="PaidFeaturesService_coll__map">
+<area shape="rect"  title=" " alt="" coords="5,5,208,215"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a5e905c74a9933870391adf12998ed100"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100">ACTIVATION</a> { <br />
+&#160;&#160;<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100ae144190048820a62116b1ca31795dd38">ACTIVATION_KEY_BYTE_SIZE</a> = 256, 
+<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100ab94b92925c082d22220e6a0a15f742d9">ACTIVATION_MASK_BYTE_SIZE</a> = 64, 
+<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100a9912f9dea26fe7d5c4ad2f8f2527cbab">ACTIVATION_CODE_BASE64_MAX_SIZE</a> = 427, 
+<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100acd3eac3587e22efdb50abc930d6bf348">ACTIVATION_SHA512_HASH_SIZE</a> = 64, 
+<br />
+&#160;&#160;<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100a24803a2b05432e080e71db0eb07969cc">ACTIVATION_SUPPORTED_SERVICES_VERSION</a> = 0x01, 
+<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100acf19f109ffaf27ebfc09ba2121465464">ACTIVATION_PAID_SERVICES_NUM</a> = 64, 
+<a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100a5ea0e600650fc7ebbd1041672590e52e">ACTIVATION_PAID_SERVICES_BUF_SIZE</a> = 770
+<br />
+ }</td></tr>
+<tr class="separator:a5e905c74a9933870391adf12998ed100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a194fe9370aba7afcd5c96b7001715ed6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a194fe9370aba7afcd5c96b7001715ed6">PaidFeaturesService</a> ()</td></tr>
+<tr class="separator:a194fe9370aba7afcd5c96b7001715ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8551b04d340f6f347a3d7fd0e52330"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#abe8551b04d340f6f347a3d7fd0e52330">~PaidFeaturesService</a> ()</td></tr>
+<tr class="separator:abe8551b04d340f6f347a3d7fd0e52330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5caa7ab36e46a5218cb09abec638d6f1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a5caa7ab36e46a5218cb09abec638d6f1">activationCodeIsValid</a> (string &amp;code64, const string &amp;serial)</td></tr>
+<tr class="memdesc:a5caa7ab36e46a5218cb09abec638d6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка активационного кода.  <a href="#a5caa7ab36e46a5218cb09abec638d6f1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5caa7ab36e46a5218cb09abec638d6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b0e541534fa257e9d534cd3ac60cfa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a49b0e541534fa257e9d534cd3ac60cfa">checkActivationKey</a> (const string &amp;serial, uint8_t *payload, uint32_t payloadSize, uint8_t *actKey)</td></tr>
+<tr class="memdesc:a49b0e541534fa257e9d534cd3ac60cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ключа  <a href="#a49b0e541534fa257e9d534cd3ac60cfa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a49b0e541534fa257e9d534cd3ac60cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad903ef66a51eb5df9f1d44fc0cd89e44"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#ad903ef66a51eb5df9f1d44fc0cd89e44">createKey</a> (const string &amp;serial, uint8_t *payload, uint32_t payloadSize, uint8_t *outKey)</td></tr>
+<tr class="memdesc:ad903ef66a51eb5df9f1d44fc0cd89e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание ключа  <a href="#ad903ef66a51eb5df9f1d44fc0cd89e44">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad903ef66a51eb5df9f1d44fc0cd89e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0148929c363947150b6c08f68790fb18"><td class="memItemLeft" align="right" valign="top">virtual RSA *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18">loadPUBLICKeyFromString</a> (const string &amp;publicKeyStr)</td></tr>
+<tr class="memdesc:a0148929c363947150b6c08f68790fb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание RSA* из строки  <a href="#a0148929c363947150b6c08f68790fb18">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0148929c363947150b6c08f68790fb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bcca2a33e64c739f8845a01400933b"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a40bcca2a33e64c739f8845a01400933b">calcDecodeLength</a> (const string &amp;input)</td></tr>
+<tr class="memdesc:a40bcca2a33e64c739f8845a01400933b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление длины декодируемой из base64 строки  <a href="#a40bcca2a33e64c739f8845a01400933b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a40bcca2a33e64c739f8845a01400933b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6055003fb734f3b3cd191fa2136c3d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a2f6055003fb734f3b3cd191fa2136c3d">base64Decode</a> (const string &amp;message, unsigned char *buffer)</td></tr>
+<tr class="memdesc:a2f6055003fb734f3b3cd191fa2136c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Декодирование из base64 строки  <a href="#a2f6055003fb734f3b3cd191fa2136c3d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2f6055003fb734f3b3cd191fa2136c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85fc7341f2fd14aa304fc1e6e308103"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#ab85fc7341f2fd14aa304fc1e6e308103">getActivationString</a> (string &amp;code64, const string &amp;serial)</td></tr>
+<tr class="memdesc:ab85fc7341f2fd14aa304fc1e6e308103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение из ключа строки информации о фичах  <a href="#ab85fc7341f2fd14aa304fc1e6e308103">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab85fc7341f2fd14aa304fc1e6e308103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a9cf5b2698fe21f70c988e6ef0db48b4a"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classConvert.html">Convert</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#a9cf5b2698fe21f70c988e6ef0db48b4a">convert</a></td></tr>
+<tr class="separator:a9cf5b2698fe21f70c988e6ef0db48b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa822aae63810371d201f466e61229a82"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPaidFeaturesService.html#aa822aae63810371d201f466e61229a82">PUBLIC_KEY</a></td></tr>
+<tr class="separator:aa822aae63810371d201f466e61229a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a5e905c74a9933870391adf12998ed100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e905c74a9933870391adf12998ed100">&#9670;&nbsp;</a></span>ACTIVATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100">PaidFeaturesService::ACTIVATION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100ae144190048820a62116b1ca31795dd38"></a>ACTIVATION_KEY_BYTE_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100ab94b92925c082d22220e6a0a15f742d9"></a>ACTIVATION_MASK_BYTE_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100a9912f9dea26fe7d5c4ad2f8f2527cbab"></a>ACTIVATION_CODE_BASE64_MAX_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100acd3eac3587e22efdb50abc930d6bf348"></a>ACTIVATION_SHA512_HASH_SIZE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100a24803a2b05432e080e71db0eb07969cc"></a>ACTIVATION_SUPPORTED_SERVICES_VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100acf19f109ffaf27ebfc09ba2121465464"></a>ACTIVATION_PAID_SERVICES_NUM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5e905c74a9933870391adf12998ed100a5ea0e600650fc7ebbd1041672590e52e"></a>ACTIVATION_PAID_SERVICES_BUF_SIZE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a194fe9370aba7afcd5c96b7001715ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194fe9370aba7afcd5c96b7001715ed6">&#9670;&nbsp;</a></span>PaidFeaturesService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PaidFeaturesService::PaidFeaturesService </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe8551b04d340f6f347a3d7fd0e52330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8551b04d340f6f347a3d7fd0e52330">&#9670;&nbsp;</a></span>~PaidFeaturesService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual PaidFeaturesService::~PaidFeaturesService </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a5caa7ab36e46a5218cb09abec638d6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5caa7ab36e46a5218cb09abec638d6f1">&#9670;&nbsp;</a></span>activationCodeIsValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PaidFeaturesService::activationCodeIsValid </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>code64</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>serial</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка активационного кода. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">code64</td><td>код активации, строка в формате base64 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">serial</td><td>заводской номер ККТ</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - код валиден </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPaidFeaturesService_a5caa7ab36e46a5218cb09abec638d6f1_cgraph.png" border="0" usemap="#classPaidFeaturesService_a5caa7ab36e46a5218cb09abec638d6f1_cgraph" alt=""/></div>
+<map name="classPaidFeaturesService_a5caa7ab36e46a5218cb09abec638d6f1_cgraph" id="classPaidFeaturesService_a5caa7ab36e46a5218cb09abec638d6f1_cgraph">
+<area shape="rect"  title="ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°." alt="" coords="5,39,163,80"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a2f6055003fb734f3b3cd191fa2136c3d" title="ÐÐµÐºÐ¾Ð´Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð· base64 ÑÑÑÐ¾ÐºÐ¸" alt="" coords="213,5,355,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a49b0e541534fa257e9d534cd3ac60cfa" title="ÐÑÐ¾Ð²ÐµÑÐºÐ° ÐºÐ»ÑÑÐ°" alt="" coords="211,71,357,112"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a40bcca2a33e64c739f8845a01400933b" title="ÐÑÑÐ¸ÑÐ»ÐµÐ½Ð¸Ðµ Ð´Ð»Ð¸Ð½Ñ Ð´ÐµÐºÐ¾Ð´Ð¸ÑÑÐµÐ¼Ð¾Ð¹ Ð¸Ð· base64 ÑÑÑÐ¾ÐºÐ¸" alt="" coords="405,5,548,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#ad903ef66a51eb5df9f1d44fc0cd89e44" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÐºÐ»ÑÑÐ°" alt="" coords="405,71,548,112"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ RSA* Ð¸Ð· ÑÑÑÐ¾ÐºÐ¸" alt="" coords="596,100,787,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f6055003fb734f3b3cd191fa2136c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6055003fb734f3b3cd191fa2136c3d">&#9670;&nbsp;</a></span>base64Decode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PaidFeaturesService::base64Decode </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Декодирование из base64 строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>строка для декодирования </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>декодированный буффер </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>size размер </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPaidFeaturesService_a2f6055003fb734f3b3cd191fa2136c3d_cgraph.png" border="0" usemap="#classPaidFeaturesService_a2f6055003fb734f3b3cd191fa2136c3d_cgraph" alt=""/></div>
+<map name="classPaidFeaturesService_a2f6055003fb734f3b3cd191fa2136c3d_cgraph" id="classPaidFeaturesService_a2f6055003fb734f3b3cd191fa2136c3d_cgraph">
+<area shape="rect"  title="ÐÐµÐºÐ¾Ð´Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð· base64 ÑÑÑÐ¾ÐºÐ¸" alt="" coords="5,5,148,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a40bcca2a33e64c739f8845a01400933b" title="ÐÑÑÐ¸ÑÐ»ÐµÐ½Ð¸Ðµ Ð´Ð»Ð¸Ð½Ñ Ð´ÐµÐºÐ¾Ð´Ð¸ÑÑÐµÐ¼Ð¾Ð¹ Ð¸Ð· base64 ÑÑÑÐ¾ÐºÐ¸" alt="" coords="196,5,339,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40bcca2a33e64c739f8845a01400933b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bcca2a33e64c739f8845a01400933b">&#9670;&nbsp;</a></span>calcDecodeLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PaidFeaturesService::calcDecodeLength </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление длины декодируемой из base64 строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>строка для декодирования </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>size размер </dd></dl>
+
+</div>
+</div>
+<a id="a49b0e541534fa257e9d534cd3ac60cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b0e541534fa257e9d534cd3ac60cfa">&#9670;&nbsp;</a></span>checkActivationKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PaidFeaturesService::checkActivationKey </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payloadSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>actKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка ключа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serial</td><td>строка с заводским номером ККТ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td>данные для подписи </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payloadSize</td><td>размер данных для подписи </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">actKey</td><td>ключ для проверки</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true ключ прошел проверку </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPaidFeaturesService_a49b0e541534fa257e9d534cd3ac60cfa_cgraph.png" border="0" usemap="#classPaidFeaturesService_a49b0e541534fa257e9d534cd3ac60cfa_cgraph" alt=""/></div>
+<map name="classPaidFeaturesService_a49b0e541534fa257e9d534cd3ac60cfa_cgraph" id="classPaidFeaturesService_a49b0e541534fa257e9d534cd3ac60cfa_cgraph">
+<area shape="rect"  title="ÐÑÐ¾Ð²ÐµÑÐºÐ° ÐºÐ»ÑÑÐ°" alt="" coords="5,35,152,76"/>
+<area shape="rect"  href="classPaidFeaturesService.html#ad903ef66a51eb5df9f1d44fc0cd89e44" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÐºÐ»ÑÑÐ°" alt="" coords="200,5,343,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ RSA* Ð¸Ð· ÑÑÑÐ¾ÐºÐ¸" alt="" coords="391,35,581,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad903ef66a51eb5df9f1d44fc0cd89e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad903ef66a51eb5df9f1d44fc0cd89e44">&#9670;&nbsp;</a></span>createKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PaidFeaturesService::createKey </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>payloadSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>outKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создание ключа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serial</td><td>строка с заводским номером ККТ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload</td><td>данные для подписи </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payloadSize</td><td>размер данных для подписи </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outKey</td><td>сгенерированный ключ </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPaidFeaturesService_ad903ef66a51eb5df9f1d44fc0cd89e44_cgraph.png" border="0" usemap="#classPaidFeaturesService_ad903ef66a51eb5df9f1d44fc0cd89e44_cgraph" alt=""/></div>
+<map name="classPaidFeaturesService_ad903ef66a51eb5df9f1d44fc0cd89e44_cgraph" id="classPaidFeaturesService_ad903ef66a51eb5df9f1d44fc0cd89e44_cgraph">
+<area shape="rect"  title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÐºÐ»ÑÑÐ°" alt="" coords="5,5,148,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ RSA* Ð¸Ð· ÑÑÑÐ¾ÐºÐ¸" alt="" coords="196,5,387,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab85fc7341f2fd14aa304fc1e6e308103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85fc7341f2fd14aa304fc1e6e308103">&#9670;&nbsp;</a></span>getActivationString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PaidFeaturesService::getActivationString </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>code64</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>serial</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получение из ключа строки информации о фичах </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">code64</td><td>код активации, строка в формате base64 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">serialNumber</td><td>заводской номер ККТ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>string информация о фичах </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPaidFeaturesService_ab85fc7341f2fd14aa304fc1e6e308103_cgraph.png" border="0" usemap="#classPaidFeaturesService_ab85fc7341f2fd14aa304fc1e6e308103_cgraph" alt=""/></div>
+<map name="classPaidFeaturesService_ab85fc7341f2fd14aa304fc1e6e308103_cgraph" id="classPaidFeaturesService_ab85fc7341f2fd14aa304fc1e6e308103_cgraph">
+<area shape="rect"  title="ÐÐ¾Ð»ÑÑÐµÐ½Ð¸Ðµ Ð¸Ð· ÐºÐ»ÑÑÐ° ÑÑÑÐ¾ÐºÐ¸ Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ð¸ Ð¾ ÑÐ¸ÑÐ°Ñ" alt="" coords="5,35,148,76"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a5caa7ab36e46a5218cb09abec638d6f1" title="ÐÑÐ¾Ð²ÐµÑÐºÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°." alt="" coords="196,64,353,105"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a2f6055003fb734f3b3cd191fa2136c3d" title="ÐÐµÐºÐ¾Ð´Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð· base64 ÑÑÑÐ¾ÐºÐ¸" alt="" coords="403,5,546,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a49b0e541534fa257e9d534cd3ac60cfa" title="ÐÑÐ¾Ð²ÐµÑÐºÐ° ÐºÐ»ÑÑÐ°" alt="" coords="401,71,548,112"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a40bcca2a33e64c739f8845a01400933b" title="ÐÑÑÐ¸ÑÐ»ÐµÐ½Ð¸Ðµ Ð´Ð»Ð¸Ð½Ñ Ð´ÐµÐºÐ¾Ð´Ð¸ÑÑÐµÐ¼Ð¾Ð¹ Ð¸Ð· base64 ÑÑÑÐ¾ÐºÐ¸" alt="" coords="596,5,739,47"/>
+<area shape="rect"  href="classPaidFeaturesService.html#ad903ef66a51eb5df9f1d44fc0cd89e44" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÐºÐ»ÑÑÐ°" alt="" coords="596,71,739,112"/>
+<area shape="rect"  href="classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18" title="Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ RSA* Ð¸Ð· ÑÑÑÐ¾ÐºÐ¸" alt="" coords="787,100,977,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0148929c363947150b6c08f68790fb18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0148929c363947150b6c08f68790fb18">&#9670;&nbsp;</a></span>loadPUBLICKeyFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RSA * PaidFeaturesService::loadPUBLICKeyFromString </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>publicKeyStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создание RSA* из строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">publicKeyStr</td><td>публичный ключ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>RSA* ключ </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a9cf5b2698fe21f70c988e6ef0db48b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf5b2698fe21f70c988e6ef0db48b4a">&#9670;&nbsp;</a></span>convert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;<a class="el" href="classConvert.html">Convert</a>&gt; PaidFeaturesService::convert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa822aae63810371d201f466e61229a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa822aae63810371d201f466e61229a82">&#9670;&nbsp;</a></span>PUBLIC_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string PaidFeaturesService::PUBLIC_KEY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">=         <span class="stringliteral">&quot;-----BEGIN PUBLIC KEY-----\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtJLqDqBkIcGBw47pa/4K\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;+3WDrd0ueGmE8IKGrTALSYeJq0QObI7oExAp6IHAzdDaAiLeDb1QibO9wykgWTeZ\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;nlAoNI16khoDkZZN/B56xdEA8XmGATPuddIxyAw6d+ouCALdHjh7svMOd2ZWUyRS\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;tsvi+U4mUfgFWOIzSsRrdIUe7MrgGiAyBwehRW4A8h8Ozn2oEeNhH6goL0fPBjTs\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;MN8Xhi6+VQLTB0NDtk7NtozzlQEWs/AWdP6kEeEhSMdYv34CL22WcXkKydN2nqSq\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;IALfeko+HXUYsynW/JGFpuvSD9Vfli9A+nWM6wp9oj2KrRiKznxEhWR8mflchGmf\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;PwIDAQAB\n&quot;</span></div><div class="line">                                      <span class="stringliteral">&quot;-----END PUBLIC KEY-----\n&quot;</span></div></div><!-- fragment -->
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="paidFeaturesService_8h_source.html">paidFeaturesService.h</a></li>
+<li>src/appl/<a class="el" href="paidFeaturesService_8cpp.html">paidFeaturesService.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

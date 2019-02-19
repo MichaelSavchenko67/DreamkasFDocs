@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/tests/include/testTax.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testTax.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;gmock/gmock.h&quot;</code><br />
+<code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;gmock/gmock-global.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="tax_8h_source.html">tax.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для testTax.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTax_8h__incl.png" border="0" usemap="#src_2tests_2include_2testTax_8h" alt=""/></div>
+<map name="src_2tests_2include_2testTax_8h" id="src_2tests_2include_2testTax_8h">
+<area shape="rect"  title=" " alt="" coords="687,5,865,32"/>
+<area shape="rect"  title=" " alt="" coords="516,80,631,107"/>
+<area shape="rect"  title=" " alt="" coords="655,80,750,107"/>
+<area shape="rect"  title=" " alt="" coords="774,80,927,107"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="952,80,1003,107"/>
+<area shape="rect"  title=" " alt="" coords="5,311,67,338"/>
+<area shape="rect"  title=" " alt="" coords="91,311,163,338"/>
+<area shape="rect"  title=" " alt="" coords="1076,155,1135,181"/>
+<area shape="rect"  title=" " alt="" coords="1159,155,1228,181"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="902,229,978,256"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="977,155,1052,181"/>
+<area shape="rect"  title=" " alt="" coords="804,311,887,338"/>
+<area shape="rect"  title=" " alt="" coords="911,311,969,338"/>
+<area shape="rect"  title=" " alt="" coords="993,311,1063,338"/>
+<area shape="rect"  title=" " alt="" coords="1087,311,1153,338"/>
+<area shape="rect"  title=" " alt="" coords="1177,311,1252,338"/>
+<area shape="rect"  title=" " alt="" coords="1277,311,1334,338"/>
+<area shape="rect"  title=" " alt="" coords="1359,311,1420,338"/>
+<area shape="rect"  title=" " alt="" coords="1445,311,1483,338"/>
+<area shape="rect"  title=" " alt="" coords="1647,311,1705,338"/>
+<area shape="rect"  title=" " alt="" coords="1508,311,1623,338"/>
+<area shape="rect"  title=" " alt="" coords="187,311,343,338"/>
+<area shape="rect"  title=" " alt="" coords="367,304,518,345"/>
+<area shape="rect"  title=" " alt="" coords="543,304,705,345"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="729,311,780,338"/>
+<area shape="rect"  title=" " alt="" coords="494,393,557,420"/>
+<area shape="rect"  title=" " alt="" coords="581,393,651,420"/>
+<area shape="rect"  title=" " alt="" coords="675,393,744,420"/>
+<area shape="rect"  title=" " alt="" coords="769,393,834,420"/>
+<area shape="rect"  title=" " alt="" coords="858,393,929,420"/>
+<area shape="rect"  title=" " alt="" coords="953,393,1060,420"/>
+<area shape="rect"  title=" " alt="" coords="1054,229,1101,256"/>
+<area shape="rect"  title=" " alt="" coords="1125,229,1179,256"/>
+</map>
+</div>
+</div>
+<p><a href="testTax_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaxTest.html">TaxTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaxTest_1_1MockLicense.html">TaxTest::MockLicense</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaxTest_1_1MockTaxes.html">TaxTest::MockTaxes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a174086f5baff66061905ed60967c3fd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#a174086f5baff66061905ed60967c3fd6">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNds18Success)</td></tr>
+<tr class="separator:a174086f5baff66061905ed60967c3fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a850704b994d2109bcdd290351ab4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#ae9a850704b994d2109bcdd290351ab4b">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNds18_118Success)</td></tr>
+<tr class="separator:ae9a850704b994d2109bcdd290351ab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5ea13f1dcb112bd0d01a5b5dddbf04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#a4c5ea13f1dcb112bd0d01a5b5dddbf04">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNds20_120Success)</td></tr>
+<tr class="separator:a4c5ea13f1dcb112bd0d01a5b5dddbf04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f3ce42ddc40b97c926e127ee9ad8eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#af0f3ce42ddc40b97c926e127ee9ad8eb">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNds10Success)</td></tr>
+<tr class="separator:af0f3ce42ddc40b97c926e127ee9ad8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3493c6d251e4af5699664244b20a94f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#ad3493c6d251e4af5699664244b20a94f">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNds10_110Success)</td></tr>
+<tr class="separator:ad3493c6d251e4af5699664244b20a94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e14fdba06f6ecafc1630d001ad4172b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#a1e14fdba06f6ecafc1630d001ad4172b">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNds0Success)</td></tr>
+<tr class="separator:a1e14fdba06f6ecafc1630d001ad4172b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fab761df82564eb6c28ce0a22ade57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#a04fab761df82564eb6c28ce0a22ade57">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNdsNoSuccess)</td></tr>
+<tr class="separator:a04fab761df82564eb6c28ce0a22ade57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa483b11eb07214228a5be8ed841e5e7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#aa483b11eb07214228a5be8ed841e5e7f">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumUnknownTaxNumFailed)</td></tr>
+<tr class="separator:aa483b11eb07214228a5be8ed841e5e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4441c9050b8ec00784f65abc067fed44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTax_8h.html#a4441c9050b8ec00784f65abc067fed44">TEST_F</a> (<a class="el" href="classTaxTest.html">TaxTest</a>, calcTaxSumNullLicensePtrFailed)</td></tr>
+<tr class="separator:a4441c9050b8ec00784f65abc067fed44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a174086f5baff66061905ed60967c3fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174086f5baff66061905ed60967c3fd6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNds18Success&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9a850704b994d2109bcdd290351ab4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a850704b994d2109bcdd290351ab4b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNds18_118Success&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c5ea13f1dcb112bd0d01a5b5dddbf04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5ea13f1dcb112bd0d01a5b5dddbf04">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNds20_120Success&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0f3ce42ddc40b97c926e127ee9ad8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f3ce42ddc40b97c926e127ee9ad8eb">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNds10Success&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3493c6d251e4af5699664244b20a94f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3493c6d251e4af5699664244b20a94f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNds10_110Success&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e14fdba06f6ecafc1630d001ad4172b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e14fdba06f6ecafc1630d001ad4172b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNds0Success&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04fab761df82564eb6c28ce0a22ade57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fab761df82564eb6c28ce0a22ade57">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNdsNoSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa483b11eb07214228a5be8ed841e5e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa483b11eb07214228a5be8ed841e5e7f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumUnknownTaxNumFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4441c9050b8ec00784f65abc067fed44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4441c9050b8ec00784f65abc067fed44">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTaxTest.html">TaxTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calcTaxSumNullLicensePtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

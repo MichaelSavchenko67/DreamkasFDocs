@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/CabinetBase.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл CabinetBase.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="CabinetBase_8h_source.html">CabinetBase.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для CabinetBase.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="CabinetBase_8cpp__incl.png" border="0" usemap="#src_2appl_2CabinetBase_8cpp" alt=""/></div>
+<map name="src_2appl_2CabinetBase_8cpp" id="src_2appl_2CabinetBase_8cpp">
+<area shape="rect"  title=" " alt="" coords="231,5,403,32"/>
+<area shape="rect"  href="CabinetBase_8h.html" title=" " alt="" coords="104,80,212,107"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="568,535,618,562"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1214,453,1290,480"/>
+<area shape="rect"  title=" " alt="" coords="486,535,543,562"/>
+<area shape="rect"  title=" " alt="" coords="400,535,461,562"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="570,80,627,107"/>
+<area shape="rect"  title=" " alt="" coords="1208,229,1276,256"/>
+<area shape="rect"  title=" " alt="" coords="107,155,178,181"/>
+<area shape="rect"  title=" " alt="" coords="628,453,683,480"/>
+<area shape="rect"  title=" " alt="" coords="24,155,82,181"/>
+<area shape="rect"  title=" " alt="" coords="334,617,396,644"/>
+<area shape="rect"  title=" " alt="" coords="554,617,624,644"/>
+<area shape="rect"  title=" " alt="" coords="648,617,717,644"/>
+<area shape="rect"  title=" " alt="" coords="2155,617,2220,644"/>
+<area shape="rect"  title=" " alt="" coords="742,617,812,644"/>
+<area shape="rect"  title=" " alt="" coords="424,617,530,644"/>
+<area shape="rect"  title=" " alt="" coords="1210,535,1293,562"/>
+<area shape="rect"  title=" " alt="" coords="1317,535,1376,562"/>
+<area shape="rect"  title=" " alt="" coords="1400,535,1469,562"/>
+<area shape="rect"  title=" " alt="" coords="874,535,936,562"/>
+<area shape="rect"  title=" " alt="" coords="1493,535,1560,562"/>
+<area shape="rect"  title=" " alt="" coords="2078,535,2150,562"/>
+<area shape="rect"  title=" " alt="" coords="642,535,717,562"/>
+<area shape="rect"  title=" " alt="" coords="960,535,999,562"/>
+<area shape="rect"  title=" " alt="" coords="792,535,850,562"/>
+<area shape="rect"  title=" " alt="" coords="1584,535,1698,562"/>
+<area shape="rect"  title=" " alt="" coords="1723,535,1879,562"/>
+<area shape="rect"  title=" " alt="" coords="1903,528,2054,569"/>
+<area shape="rect"  title=" " alt="" coords="1024,528,1186,569"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1064,229,1132,256"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1016,379,1090,405"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="1486,155,1537,181"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="866,155,934,181"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="331,379,426,405"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="552,379,687,405"/>
+<area shape="rect"  title=" " alt="" coords="1216,379,1277,405"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="1013,304,1085,331"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1352,304,1402,331"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="1890,304,2011,331"/>
+<area shape="rect"  title=" " alt="" coords="1720,229,1802,256"/>
+<area shape="rect"  title=" " alt="" coords="1827,229,1924,256"/>
+<area shape="rect"  title=" " alt="" coords="1948,229,2014,256"/>
+<area shape="rect"  title=" " alt="" coords="1352,229,1416,256"/>
+<area shape="rect"  title=" " alt="" coords="1440,229,1512,256"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="1066,453,1138,480"/>
+<area shape="rect"  title=" " alt="" coords="1587,229,1695,256"/>
+<area shape="rect"  title=" " alt="" coords="866,229,933,256"/>
+<area shape="rect"  title=" " alt="" coords="712,229,792,256"/>
+<area shape="rect"  title=" " alt="" coords="436,453,502,480"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a15ef99ffddb4f590cea3ad23d5440f9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a15ef99ffddb4f590cea3ad23d5440f9e">USLEEP_WHILE_1</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a15ef99ffddb4f590cea3ad23d5440f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a01f05c78e5dd1dee9c88e506eeeb9907"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a01f05c78e5dd1dee9c88e506eeeb9907">queryCabinetRdy</a> = true</td></tr>
+<tr class="separator:a01f05c78e5dd1dee9c88e506eeeb9907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21521422a63a92f5480ebd7d3e0c3714"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a21521422a63a92f5480ebd7d3e0c3714">opGetBaseTablesNames</a> = false</td></tr>
+<tr class="separator:a21521422a63a92f5480ebd7d3e0c3714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb31affdc162e326859ff74760122bfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#abb31affdc162e326859ff74760122bfa">opGetLastDocument</a> = false</td></tr>
+<tr class="separator:abb31affdc162e326859ff74760122bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76256f586db75fa2a9181b2bd2af5693"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a76256f586db75fa2a9181b2bd2af5693">opCabinetGetLastReceiptId</a> = false</td></tr>
+<tr class="separator:a76256f586db75fa2a9181b2bd2af5693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f57908aeebf38258a0d3030013486d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a57f57908aeebf38258a0d3030013486d">opCabinetGetLastShiftId</a> = false</td></tr>
+<tr class="separator:a57f57908aeebf38258a0d3030013486d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa793609f051127de4b3e6a99cea6e1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#aaa793609f051127de4b3e6a99cea6e1b">opCabinetGetLastCountersId</a> = false</td></tr>
+<tr class="separator:aaa793609f051127de4b3e6a99cea6e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad549dd6d8f731a00b4b790876682dafc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#ad549dd6d8f731a00b4b790876682dafc">lastAddedReceiptIdCabinet</a> = -1</td></tr>
+<tr class="separator:ad549dd6d8f731a00b4b790876682dafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad7a56af1ce9d867a36133a45dc7ce7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a0ad7a56af1ce9d867a36133a45dc7ce7">lastAddedShiftIdCabinet</a> = -1</td></tr>
+<tr class="separator:a0ad7a56af1ce9d867a36133a45dc7ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d524c45e608b66b8cb4224130df8ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#ae7d524c45e608b66b8cb4224130df8ab">lastAddedCountersIdCabinet</a> = -1</td></tr>
+<tr class="separator:ae7d524c45e608b66b8cb4224130df8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d266635c574c60d34f4010876e2b725"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a></td></tr>
+<tr class="separator:a5d266635c574c60d34f4010876e2b725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc331feaaf3de22ed4585ba246fa967"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#abbc331feaaf3de22ed4585ba246fa967">lastDocuments</a></td></tr>
+<tr class="separator:abbc331feaaf3de22ed4585ba246fa967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a15ef99ffddb4f590cea3ad23d5440f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ef99ffddb4f590cea3ad23d5440f9e">&#9670;&nbsp;</a></span>USLEEP_WHILE_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USLEEP_WHILE_1&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ae7d524c45e608b66b8cb4224130df8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d524c45e608b66b8cb4224130df8ab">&#9670;&nbsp;</a></span>lastAddedCountersIdCabinet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lastAddedCountersIdCabinet = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad549dd6d8f731a00b4b790876682dafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad549dd6d8f731a00b4b790876682dafc">&#9670;&nbsp;</a></span>lastAddedReceiptIdCabinet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lastAddedReceiptIdCabinet = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ad7a56af1ce9d867a36133a45dc7ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad7a56af1ce9d867a36133a45dc7ce7">&#9670;&nbsp;</a></span>lastAddedShiftIdCabinet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lastAddedShiftIdCabinet = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbc331feaaf3de22ed4585ba246fa967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc331feaaf3de22ed4585ba246fa967">&#9670;&nbsp;</a></span>lastDocuments</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;vector&lt;string&gt; &gt; lastDocuments</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa793609f051127de4b3e6a99cea6e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa793609f051127de4b3e6a99cea6e1b">&#9670;&nbsp;</a></span>opCabinetGetLastCountersId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool opCabinetGetLastCountersId = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76256f586db75fa2a9181b2bd2af5693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76256f586db75fa2a9181b2bd2af5693">&#9670;&nbsp;</a></span>opCabinetGetLastReceiptId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool opCabinetGetLastReceiptId = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57f57908aeebf38258a0d3030013486d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f57908aeebf38258a0d3030013486d">&#9670;&nbsp;</a></span>opCabinetGetLastShiftId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool opCabinetGetLastShiftId = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21521422a63a92f5480ebd7d3e0c3714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21521422a63a92f5480ebd7d3e0c3714">&#9670;&nbsp;</a></span>opGetBaseTablesNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool opGetBaseTablesNames = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb31affdc162e326859ff74760122bfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb31affdc162e326859ff74760122bfa">&#9670;&nbsp;</a></span>opGetLastDocument</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool opGetLastDocument = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01f05c78e5dd1dee9c88e506eeeb9907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f05c78e5dd1dee9c88e506eeeb9907">&#9670;&nbsp;</a></span>queryCabinetRdy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queryCabinetRdy = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d266635c574c60d34f4010876e2b725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d266635c574c60d34f4010876e2b725">&#9670;&nbsp;</a></span>tableNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; tableNames</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

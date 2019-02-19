@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/json.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл json.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;boost/property_tree/ptree.hpp&gt;</code><br />
+<code>#include &lt;boost/property_tree/json_parser.hpp&gt;</code><br />
+<code>#include &lt;boost/foreach.hpp&gt;</code><br />
+<code>#include &lt;boost/optional/optional.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EncodeConvertor_8h_source.html">EncodeConvertor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sqlWrapper_8h_source.html">sqlWrapper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="goods__new_8h_source.html">goods_new.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для json.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="json_8cpp__incl.png" border="0" usemap="#src_2appl_2json_8cpp" alt=""/></div>
+<map name="src_2appl_2json_8cpp" id="src_2appl_2json_8cpp">
+<area shape="rect"  title=" " alt="" coords="694,5,815,32"/>
+<area shape="rect"  title=" " alt="" coords="46,80,181,121"/>
+<area shape="rect"  title=" " alt="" coords="205,80,339,121"/>
+<area shape="rect"  title=" " alt="" coords="363,87,490,114"/>
+<area shape="rect"  title=" " alt="" coords="514,87,691,114"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1043,87,1101,114"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2139,415,2189,442"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="815,333,891,360"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="359,251,494,278"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="1741,169,1840,196"/>
+<area shape="rect"  href="goods__new_8h.html" title=" " alt="" coords="2255,169,2353,196"/>
+<area shape="rect"  title=" " alt="" coords="1661,333,1715,360"/>
+<area shape="rect"  title=" " alt="" coords="1619,415,1680,442"/>
+<area shape="rect"  title=" " alt="" coords="1841,415,1913,442"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1018,251,1086,278"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="1079,169,1129,196"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="1287,169,1355,196"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="1213,251,1307,278"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="868,251,943,278"/>
+<area shape="rect"  title=" " alt="" coords="1303,497,1369,524"/>
+<area shape="rect"  title=" " alt="" coords="1220,333,1281,360"/>
+<area shape="rect"  title=" " alt="" coords="682,497,745,524"/>
+<area shape="rect"  title=" " alt="" coords="2185,497,2255,524"/>
+<area shape="rect"  title=" " alt="" coords="2279,497,2348,524"/>
+<area shape="rect"  title=" " alt="" coords="1959,497,2030,524"/>
+<area shape="rect"  title=" " alt="" coords="2055,497,2161,524"/>
+<area shape="rect"  title=" " alt="" coords="629,415,712,442"/>
+<area shape="rect"  title=" " alt="" coords="736,415,795,442"/>
+<area shape="rect"  title=" " alt="" coords="819,415,888,442"/>
+<area shape="rect"  title=" " alt="" coords="2053,415,2115,442"/>
+<area shape="rect"  title=" " alt="" coords="912,415,979,442"/>
+<area shape="rect"  title=" " alt="" coords="1373,415,1448,442"/>
+<area shape="rect"  title=" " alt="" coords="1971,415,2029,442"/>
+<area shape="rect"  title=" " alt="" coords="1473,415,1511,442"/>
+<area shape="rect"  title=" " alt="" coords="1536,415,1595,442"/>
+<area shape="rect"  title=" " alt="" coords="1003,415,1117,442"/>
+<area shape="rect"  title=" " alt="" coords="1142,415,1298,442"/>
+<area shape="rect"  title=" " alt="" coords="267,408,418,449"/>
+<area shape="rect"  title=" " alt="" coords="443,408,605,449"/>
+<area shape="rect"  title=" " alt="" coords="5,333,69,360"/>
+<area shape="rect"  title=" " alt="" coords="93,333,141,360"/>
+<area shape="rect"  title=" " alt="" coords="1975,251,2033,278"/>
+<area shape="rect"  title=" " alt="" coords="1636,251,1697,278"/>
+<area shape="rect"  title=" " alt="" coords="2058,251,2129,278"/>
+<area shape="rect"  title=" " alt="" coords="1721,244,1860,285"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="2306,251,2374,278"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="1885,251,1950,278"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="2069,333,2185,360"/>
+<area shape="rect"  title=" " alt="" coords="2399,251,2460,278"/>
+<area shape="rect"  title=" " alt="" coords="2485,251,2531,278"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab07969225d898805b009f4a619f2450d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#ab07969225d898805b009f4a619f2450d">BOOST_SPIRIT_THREADSAFE</a></td></tr>
+<tr class="separator:ab07969225d898805b009f4a619f2450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a6623824abe4253cc7dac4cfba236a93b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#a6623824abe4253cc7dac4cfba236a93b">as_json_string</a> (boost::property_tree::ptree const &amp;pt)</td></tr>
+<tr class="separator:a6623824abe4253cc7dac4cfba236a93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="ab07969225d898805b009f4a619f2450d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07969225d898805b009f4a619f2450d">&#9670;&nbsp;</a></span>BOOST_SPIRIT_THREADSAFE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_SPIRIT_THREADSAFE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a6623824abe4253cc7dac4cfba236a93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6623824abe4253cc7dac4cfba236a93b">&#9670;&nbsp;</a></span>as_json_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string as_json_string </td>
+          <td>(</td>
+          <td class="paramtype">boost::property_tree::ptree const &amp;&#160;</td>
+          <td class="paramname"><em>pt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

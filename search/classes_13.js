@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['tag_5fvalue',['TAG_VALUE',['../structJSON_1_1TAG__VALUE.html',1,'JSON']]],
+  ['task',['TASK',['../structFISGO__TEST__API_1_1TASK.html',1,'FISGO_TEST_API']]],
+  ['task_5fdata',['TASK_DATA',['../structJSON_1_1TASK__DATA.html',1,'JSON']]],
+  ['taskvectst',['TaskVectSt',['../structMenu_1_1TaskVectSt.html',1,'Menu']]],
+  ['taxes',['Taxes',['../classTaxes.html',1,'']]],
+  ['taxtest',['TaxTest',['../classTaxTest.html',1,'']]],
+  ['technical_5freport',['technical_report',['../structPrinter_1_1technical__report.html',1,'Printer']]],
+  ['testconvert',['TestConvert',['../classTestConvert.html',1,'']]],
+  ['testfilesfg',['TestFilesFG',['../classTestFilesFG.html',1,'']]],
+  ['testfiscalmem',['TestFiscalMem',['../classTestFiscalMem.html',1,'']]],
+  ['testjson',['TestJSON',['../classTestJSON.html',1,'']]],
+  ['testlcd',['TestLcd',['../classTestLcd.html',1,'']]],
+  ['testlicense',['TestLicense',['../classTestLicense.html',1,'']]],
+  ['testpositionsnew',['TestPositionsNew',['../classTestPositionsNew.html',1,'']]],
+  ['testprinter',['TestPrinter',['../classTestPrinter.html',1,'']]],
+  ['testreceiptsdb',['TestReceiptsDb',['../classTestReceiptsDb.html',1,'']]],
+  ['testtimesync',['TestTimeSync',['../classTestTimeSync.html',1,'']]],
+  ['timesync',['TimeSync',['../classTimeSync.html',1,'']]],
+  ['timezone',['TimeZone',['../structTimeZone.html',1,'']]],
+  ['to_5fjson_5ffn',['to_json_fn',['../structnlohmann_1_1detail_1_1to__json__fn.html',1,'nlohmann::detail']]],
+  ['type_5ferror',['type_error',['../classnlohmann_1_1detail_1_1type__error.html',1,'nlohmann::detail']]]
+];

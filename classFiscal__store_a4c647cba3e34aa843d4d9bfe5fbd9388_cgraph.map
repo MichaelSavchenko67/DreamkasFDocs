@@ -1,0 +1,9 @@
+<map id="Fiscal_store::fs_reciept_req_list_create" name="Fiscal_store::fs_reciept_req_list_create">
+<area shape="rect" id="node1" title=" " alt="" coords="5,141,164,182"/>
+<area shape="rect" id="node2" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="212,5,397,32"/>
+<area shape="rect" id="node3" href="$classPositions.html#adfff658d857bffca0ce89611d053129b" title=" " alt="" coords="237,57,372,98"/>
+<area shape="rect" id="node4" href="$classPositions.html#a2b058570d0342c485bcebc6d3fe02e3c" title=" " alt="" coords="235,123,375,149"/>
+<area shape="rect" id="node5" href="$classPositions.html#a10704faec15658eecdae997370ce9917" title=" " alt="" coords="237,173,372,200"/>
+<area shape="rect" id="node6" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="239,225,370,266"/>
+<area shape="rect" id="node7" href="$classPositions.html#a104d403cfdd03ff3181994544ecbefd1" title=" " alt="" coords="237,290,372,331"/>
+</map>

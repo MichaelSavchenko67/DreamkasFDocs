@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/counters.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл counters.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="counters_8h_source.html">counters.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для counters.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="counters_8cpp__incl.png" border="0" usemap="#src_2appl_2counters_8cpp" alt=""/></div>
+<map name="src_2appl_2counters_8cpp" id="src_2appl_2counters_8cpp">
+<area shape="rect"  title=" " alt="" coords="1349,5,1495,32"/>
+<area shape="rect"  href="counters_8h.html" title=" " alt="" coords="1747,80,1830,107"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1017,80,1093,107"/>
+<area shape="rect"  title=" " alt="" coords="1389,162,1461,189"/>
+<area shape="rect"  title=" " alt="" coords="1873,162,1928,189"/>
+<area shape="rect"  title=" " alt="" coords="1485,162,1546,189"/>
+<area shape="rect"  title=" " alt="" coords="1570,162,1629,189"/>
+<area shape="rect"  title=" " alt="" coords="1953,162,2011,189"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="1653,162,1703,189"/>
+<area shape="rect"  title=" " alt="" coords="2036,162,2107,189"/>
+<area shape="rect"  title=" " alt="" coords="2131,162,2190,189"/>
+<area shape="rect"  title=" " alt="" coords="2215,162,2283,189"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="1728,162,1849,189"/>
+<area shape="rect"  title=" " alt="" coords="1556,244,1619,271"/>
+<area shape="rect"  title=" " alt="" coords="1643,244,1713,271"/>
+<area shape="rect"  title=" " alt="" coords="1737,244,1806,271"/>
+<area shape="rect"  title=" " alt="" coords="1831,244,1896,271"/>
+<area shape="rect"  title=" " alt="" coords="1329,244,1400,271"/>
+<area shape="rect"  title=" " alt="" coords="1425,244,1531,271"/>
+<area shape="rect"  title=" " alt="" coords="831,162,914,189"/>
+<area shape="rect"  title=" " alt="" coords="938,162,997,189"/>
+<area shape="rect"  title=" " alt="" coords="1021,162,1090,189"/>
+<area shape="rect"  title=" " alt="" coords="1114,162,1175,189"/>
+<area shape="rect"  title=" " alt="" coords="1199,162,1266,189"/>
+<area shape="rect"  title=" " alt="" coords="1290,162,1365,189"/>
+<area shape="rect"  title=" " alt="" coords="5,162,63,189"/>
+<area shape="rect"  title=" " alt="" coords="87,162,125,189"/>
+<area shape="rect"  title=" " alt="" coords="150,162,265,189"/>
+<area shape="rect"  title=" " alt="" coords="289,162,445,189"/>
+<area shape="rect"  title=" " alt="" coords="469,155,620,196"/>
+<area shape="rect"  title=" " alt="" coords="645,155,807,196"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ad2651f2ac6ae2fd49a8701b3a8e2ad04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#ad2651f2ac6ae2fd49a8701b3a8e2ad04">queryCountersRdy</a> = false</td></tr>
+<tr class="separator:ad2651f2ac6ae2fd49a8701b3a8e2ad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86450523210cf941f8a4c8f16ba9842"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#aa86450523210cf941f8a4c8f16ba9842">flagCountersBaseSize</a> = false</td></tr>
+<tr class="separator:aa86450523210cf941f8a4c8f16ba9842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f4cebf7396c72e283bed49e0cf7ca9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#ad7f4cebf7396c72e283bed49e0cf7ca9">opCountersUnload</a> = false</td></tr>
+<tr class="separator:ad7f4cebf7396c72e283bed49e0cf7ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd972fb4a99dff19d7138baf8eb8487"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#aedd972fb4a99dff19d7138baf8eb8487">countersBaseSizeInt</a> = 0</td></tr>
+<tr class="separator:aedd972fb4a99dff19d7138baf8eb8487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4cef806c55b438f47832456bdec4f3"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#a3d4cef806c55b438f47832456bdec4f3">unloadedFields</a></td></tr>
+<tr class="separator:a3d4cef806c55b438f47832456bdec4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Переменные</h2>
+<a id="aedd972fb4a99dff19d7138baf8eb8487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd972fb4a99dff19d7138baf8eb8487">&#9670;&nbsp;</a></span>countersBaseSizeInt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int countersBaseSizeInt = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa86450523210cf941f8a4c8f16ba9842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86450523210cf941f8a4c8f16ba9842">&#9670;&nbsp;</a></span>flagCountersBaseSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool flagCountersBaseSize = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7f4cebf7396c72e283bed49e0cf7ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f4cebf7396c72e283bed49e0cf7ca9">&#9670;&nbsp;</a></span>opCountersUnload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool opCountersUnload = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2651f2ac6ae2fd49a8701b3a8e2ad04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2651f2ac6ae2fd49a8701b3a8e2ad04">&#9670;&nbsp;</a></span>queryCountersRdy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queryCountersRdy = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d4cef806c55b438f47832456bdec4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4cef806c55b438f47832456bdec4f3">&#9670;&nbsp;</a></span>unloadedFields</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; unloadedFields</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

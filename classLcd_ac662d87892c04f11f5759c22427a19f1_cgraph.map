@@ -1,0 +1,6 @@
+<map id="Lcd::lcd_draw_card_pay_msg" name="Lcd::lcd_draw_card_pay_msg">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node2" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="188,13,307,39"/>
+<area shape="rect" id="node3" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="355,13,483,39"/>
+<area shape="rect" id="node4" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="531,13,692,39"/>
+</map>

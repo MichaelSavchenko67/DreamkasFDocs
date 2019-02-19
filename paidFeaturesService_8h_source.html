@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Исходный файл src/appl/include/paidFeaturesService.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">paidFeaturesService.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="paidFeaturesService_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PAID_FEATURES_SERVICE_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PAID_FEATURES_SERVICE_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;openssl/rsa.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;openssl/pem.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;openssl/sha.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="convert_8h.html">convert.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPaidFeaturesService.html">PaidFeaturesService</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classPaidFeaturesService.html">PaidFeaturesService</a>();</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#abe8551b04d340f6f347a3d7fd0e52330">   21</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPaidFeaturesService.html#abe8551b04d340f6f347a3d7fd0e52330">~PaidFeaturesService</a>() {}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a9cf5b2698fe21f70c988e6ef0db48b4a">   23</a></span>&#160;    unique_ptr&lt;Convert&gt; <a class="code" href="classPaidFeaturesService.html#a9cf5b2698fe21f70c988e6ef0db48b4a">convert</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100">   25</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100">ACTIVATION</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100ae144190048820a62116b1ca31795dd38">   27</a></span>&#160;        ACTIVATION_KEY_BYTE_SIZE  = 256,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100ab94b92925c082d22220e6a0a15f742d9">   28</a></span>&#160;        ACTIVATION_MASK_BYTE_SIZE = 64,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100a9912f9dea26fe7d5c4ad2f8f2527cbab">   29</a></span>&#160;        ACTIVATION_CODE_BASE64_MAX_SIZE = 427,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100acd3eac3587e22efdb50abc930d6bf348">   30</a></span>&#160;        ACTIVATION_SHA512_HASH_SIZE = 64,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100a24803a2b05432e080e71db0eb07969cc">   31</a></span>&#160;        ACTIVATION_SUPPORTED_SERVICES_VERSION = 0x01,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100acf19f109ffaf27ebfc09ba2121465464">   32</a></span>&#160;        ACTIVATION_PAID_SERVICES_NUM = 64,</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100a5ea0e600650fc7ebbd1041672590e52e">   33</a></span>&#160;        ACTIVATION_PAID_SERVICES_BUF_SIZE = 770</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classPaidFeaturesService.html#aa822aae63810371d201f466e61229a82">   37</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> PUBLIC_KEY =         <span class="stringliteral">&quot;-----BEGIN PUBLIC KEY-----\n&quot;</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                      <span class="stringliteral">&quot;MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtJLqDqBkIcGBw47pa/4K\n&quot;</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                      <span class="stringliteral">&quot;+3WDrd0ueGmE8IKGrTALSYeJq0QObI7oExAp6IHAzdDaAiLeDb1QibO9wykgWTeZ\n&quot;</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                      <span class="stringliteral">&quot;nlAoNI16khoDkZZN/B56xdEA8XmGATPuddIxyAw6d+ouCALdHjh7svMOd2ZWUyRS\n&quot;</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                      <span class="stringliteral">&quot;tsvi+U4mUfgFWOIzSsRrdIUe7MrgGiAyBwehRW4A8h8Ozn2oEeNhH6goL0fPBjTs\n&quot;</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                      <span class="stringliteral">&quot;MN8Xhi6+VQLTB0NDtk7NtozzlQEWs/AWdP6kEeEhSMdYv34CL22WcXkKydN2nqSq\n&quot;</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      <span class="stringliteral">&quot;IALfeko+HXUYsynW/JGFpuvSD9Vfli9A+nWM6wp9oj2KrRiKznxEhWR8mflchGmf\n&quot;</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                      <span class="stringliteral">&quot;PwIDAQAB\n&quot;</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                      <span class="stringliteral">&quot;-----END PUBLIC KEY-----\n&quot;</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> activationCodeIsValid(<span class="keywordtype">string</span> &amp;code64, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;serial);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> checkActivationKey(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;serial, uint8_t *payload, uint32_t payloadSize, uint8_t *actKey);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> createKey(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;serial, uint8_t *payload, uint32_t payloadSize, uint8_t *outKey);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> RSA *loadPUBLICKeyFromString(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;publicKeyStr);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> calcDecodeLength(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;input);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> base64Decode(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;message, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buffer);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> getActivationString(<span class="keywordtype">string</span> &amp;code64, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;serial);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classPaidFeaturesService_html"><div class="ttname"><a href="classPaidFeaturesService.html">PaidFeaturesService</a></div><div class="ttdef"><b>Definition:</b> paidFeaturesService.h:17</div></div>
+<div class="ttc" id="classPaidFeaturesService_html_a5e905c74a9933870391adf12998ed100"><div class="ttname"><a href="classPaidFeaturesService.html#a5e905c74a9933870391adf12998ed100">PaidFeaturesService::ACTIVATION</a></div><div class="ttdeci">ACTIVATION</div><div class="ttdef"><b>Definition:</b> paidFeaturesService.h:25</div></div>
+<div class="ttc" id="classPaidFeaturesService_html_a9cf5b2698fe21f70c988e6ef0db48b4a"><div class="ttname"><a href="classPaidFeaturesService.html#a9cf5b2698fe21f70c988e6ef0db48b4a">PaidFeaturesService::convert</a></div><div class="ttdeci">unique_ptr&lt; Convert &gt; convert</div><div class="ttdef"><b>Definition:</b> paidFeaturesService.h:23</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> fiscal_mem_test.cpp:10</div></div>
+<div class="ttc" id="classPaidFeaturesService_html_abe8551b04d340f6f347a3d7fd0e52330"><div class="ttname"><a href="classPaidFeaturesService.html#abe8551b04d340f6f347a3d7fd0e52330">PaidFeaturesService::~PaidFeaturesService</a></div><div class="ttdeci">virtual ~PaidFeaturesService()</div><div class="ttdef"><b>Definition:</b> paidFeaturesService.h:21</div></div>
+<div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
+<div class="ttc" id="convert_8h_html"><div class="ttname"><a href="convert_8h.html">convert.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

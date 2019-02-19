@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Исходный файл src/tests/include/testPaidService.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">testPaidService.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="testPaidService_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef TEST_PAID_SERVICE_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define TEST_PAID_SERVICE_H_</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;gmock/gmock.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;gmock/gmock-global.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="paidFeaturesService_8h.html">paidFeaturesService.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>::<a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;using ::testing::_;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;using ::testing::Return;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;using ::testing::AtLeast;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;using ::testing::InSequence;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPaidServiceTest.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPaidServiceTest.html">PaidServiceTest</a> : <span class="keyword">public</span> ::testing::Test</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">//---------------------------------------------</span></div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classPaidServiceTest.html#a5533ec6b98628c2019c3c7a3c2018153">   21</a></span>&#160;        <a class="code" href="classPaidServiceTest.html#a5533ec6b98628c2019c3c7a3c2018153">PaidServiceTest</a>()</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="classPaidServiceTest.html#ab50606cbc7141338efed1bebcf86d8e9">paidService</a>.reset(<span class="keyword">new</span> <a class="code" href="classPaidFeaturesService.html">PaidFeaturesService</a>());</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">//---------------------------------------------</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classPaidServiceTest.html#abd60ad3fc148d160dfd4956012eaf07a">   26</a></span>&#160;        <a class="code" href="classPaidServiceTest.html#abd60ad3fc148d160dfd4956012eaf07a">~PaidServiceTest</a>() {}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">//---------------------------------------------</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPaidServiceTest.html#ab50606cbc7141338efed1bebcf86d8e9">   30</a></span>&#160;        unique_ptr&lt;PaidFeaturesService&gt; <a class="code" href="classPaidServiceTest.html#ab50606cbc7141338efed1bebcf86d8e9">paidService</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="testPaidService_8h.html#a998e65dea779f8391027f2aede8e2e75">   34</a></span>&#160;<a class="code" href="testPaidService_8h.html#a998e65dea779f8391027f2aede8e2e75">TEST_F</a> (<a class="code" href="classPaidServiceTest.html">PaidServiceTest</a>, activationCodeIsValidSuccess)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::string act_code = <span class="stringliteral">&quot;MSwxOzRfMDUxMTE5OzMsPE4XkBUs8Q5N2ynYSeS6UgtMw+yQmgML/OqqtOa13hipKt3iBXm8tf8FdR0QQlltG/CJzZlPPb0eewsN4QlRuQF313xrdxphbekZQO9DEtLPTGh2+qU9fDRMXktDgpcC1wBD0ZFZHoDzW5GwL5ckeTLER9Sr4HgAB2KtqrO/s6mXlxiiBy+YRgbouZTso4u/PBNvb+qjf/P3fyRWjfSOYqRGa+gI5qZPkfbaFtiaC/niXTXPY3mQuiS1ClJQ9NHIq3T3JrRAW41ajqnD15MRvSdSvoPsfqeOYuFI756stHOq7Pj/BVROy9qJLwmot6YbLOrjIHna1yOfuqxn12os5Q==&quot;</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string serial = <span class="stringliteral">&quot;0496040822&quot;</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    EXPECT_TRUE(paidService-&gt;activationCodeIsValid(act_code, serial));</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="testPaidService_8h.html#a3a7b18f2048b09603b8b62d56313d642">   42</a></span>&#160;<a class="code" href="testPaidService_8h.html#a998e65dea779f8391027f2aede8e2e75">TEST_F</a> (<a class="code" href="classPaidServiceTest.html">PaidServiceTest</a>, activationCodeIsValidSFailed)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string act_code = <span class="stringliteral">&quot;MSwwLFgA+SdY84sE5UGH4KYECZfMe5e5FMI/VbiCpkk51cETaHN7RHyIwDfHJnMjZ+iL7ja7vyeJT0OEuqPyuAS+utMlSDwr9G7uSIbX16dScx+QtK1LVv1Nin9WIrSS4qimsFviry4frP9/ixZX3Wh7yQXGPXUV5Et5rzb3bXVVRAAQcsN4kAErLTbz4C8/vI+8E+WB3JX6arViwBybUML2y8Sw0Y7r5PHHsg4QrbWYSZ0rxCleCEuKGpRgYE4oxxVNaTK2Smt51yoJotcnTfTpVXAOpSjnODpLoxuMH5oEZ+COWBk7DmCWrkxckEB86XiR69U8PXmFBzThPLki7NNLlTs=&quot;</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string serial = <span class="stringliteral">&quot;0496040822&quot;</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    EXPECT_FALSE(paidService-&gt;activationCodeIsValid(act_code, serial));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classPaidFeaturesService_html"><div class="ttname"><a href="classPaidFeaturesService.html">PaidFeaturesService</a></div><div class="ttdef"><b>Definition:</b> paidFeaturesService.h:17</div></div>
+<div class="ttc" id="classPaidServiceTest_html_abd60ad3fc148d160dfd4956012eaf07a"><div class="ttname"><a href="classPaidServiceTest.html#abd60ad3fc148d160dfd4956012eaf07a">PaidServiceTest::~PaidServiceTest</a></div><div class="ttdeci">~PaidServiceTest()</div><div class="ttdef"><b>Definition:</b> testPaidService.h:26</div></div>
+<div class="ttc" id="testPaidService_8h_html_a998e65dea779f8391027f2aede8e2e75"><div class="ttname"><a href="testPaidService_8h.html#a998e65dea779f8391027f2aede8e2e75">TEST_F</a></div><div class="ttdeci">TEST_F(PaidServiceTest, activationCodeIsValidSuccess)</div><div class="ttdef"><b>Definition:</b> testPaidService.h:34</div></div>
+<div class="ttc" id="classPaidServiceTest_html_a5533ec6b98628c2019c3c7a3c2018153"><div class="ttname"><a href="classPaidServiceTest.html#a5533ec6b98628c2019c3c7a3c2018153">PaidServiceTest::PaidServiceTest</a></div><div class="ttdeci">PaidServiceTest()</div><div class="ttdef"><b>Definition:</b> testPaidService.h:21</div></div>
+<div class="ttc" id="classPaidServiceTest_html"><div class="ttname"><a href="classPaidServiceTest.html">PaidServiceTest</a></div><div class="ttdef"><b>Definition:</b> testPaidService.h:17</div></div>
+<div class="ttc" id="paidFeaturesService_8h_html"><div class="ttname"><a href="paidFeaturesService_8h.html">paidFeaturesService.h</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> fiscal_mem_test.cpp:10</div></div>
+<div class="ttc" id="classPaidServiceTest_html_ab50606cbc7141338efed1bebcf86d8e9"><div class="ttname"><a href="classPaidServiceTest.html#ab50606cbc7141338efed1bebcf86d8e9">PaidServiceTest::paidService</a></div><div class="ttdeci">unique_ptr&lt; PaidFeaturesService &gt; paidService</div><div class="ttdef"><b>Definition:</b> testPaidService.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

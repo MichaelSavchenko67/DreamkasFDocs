@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['last_5ffd_5fnum_5fget',['LAST_FD_NUM_GET',['../classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada9f15761b5aa245b8046a29e8ad3b31fb',1,'FISGO_TEST_API']]],
+  ['lcd_5fscreen',['LCD_SCREEN',['../classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adac4875b61ca112e7824cd873cb4b4b68a',1,'FISGO_TEST_API']]],
+  ['leaf_5f',['LEAF_',['../MenuTree_8h.html#a025279585f93967b0c7184f5b8597490a9d3db59c0639b0e74c4fdc9249ecf45d',1,'MenuTree.h']]],
+  ['license_5ftag_5fffd_5f1_5f05',['LICENSE_TAG_FFD_1_05',['../classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601',1,'License']]],
+  ['license_5ftag_5fnds_5f20_5f120',['LICENSE_TAG_NDS_20_120',['../classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597a59fad907668c722be937545c94f8035d',1,'License']]],
+  ['license_5ftag_5fstatus_5fdisable',['LICENSE_TAG_STATUS_DISABLE',['../classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a11fb87483980de6bf6ffed51bf148a5c',1,'License']]],
+  ['license_5ftag_5fstatus_5fenable',['LICENSE_TAG_STATUS_ENABLE',['../classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a9dd7bc04134ec13e4224707174fb0d70',1,'License']]],
+  ['license_5ftag_5fstatus_5ferror',['LICENSE_TAG_STATUS_ERROR',['../classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a7bb85eb7465d112ac456f1925cb6c5b8',1,'License']]],
+  ['license_5ftag_5fstatus_5fexpired',['LICENSE_TAG_STATUS_EXPIRED',['../classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a798bf75a1abef629477c7b6be899b7a6',1,'License']]],
+  ['license_5ftag_5ftabak',['LICENSE_TAG_TABAK',['../classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597a3fe675d9373f7f4b47317a5d3c938ea4',1,'License']]],
+  ['listen_5ferror',['LISTEN_ERROR',['../classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deac03a296cef2d91eb8af565d4d5d0db15',1,'FISGO_TEST_API']]],
+  ['literal_5ffalse',['literal_false',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098afab1694b1b3937a079f4625fe0b6108b',1,'nlohmann::detail::lexer']]],
+  ['literal_5fnull',['literal_null',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098ab7ae4c0e46d86f884677768160b26e9e',1,'nlohmann::detail::lexer']]],
+  ['literal_5for_5fvalue',['literal_or_value',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098ad2a8e6f6721cccec0b466301dd9495a5',1,'nlohmann::detail::lexer']]],
+  ['literal_5ftrue',['literal_true',['../classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a85cc1a37b0aaa52de40e72f0ed4e0c0d',1,'nlohmann::detail::lexer']]],
+  ['loader_5fstatus_5fget',['LOADER_STATUS_GET',['../classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adae5c7a7758b3c2d6f4a4f4aeb99024dde',1,'FISGO_TEST_API']]],
+  ['lottery_5fticket',['LOTTERY_TICKET',['../classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ae6253f37a81851bc53ba617131c19f2b',1,'GoodsData']]],
+  ['lottery_5fwinnings',['LOTTERY_WINNINGS',['../classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a84c878f58b0445f22db2a59e17965fd1',1,'GoodsData']]]
+];

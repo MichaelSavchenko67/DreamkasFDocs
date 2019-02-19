@@ -1,0 +1,1999 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/tests/include/testHttpsExchange.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testHttpsExchange.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;gmock/gmock.h&gt;</code><br />
+<code>#include &quot;gmock/gmock-global.h&quot;</code><br />
+<code>#include &lt;boost/property_tree/ptree.hpp&gt;</code><br />
+<code>#include &lt;boost/property_tree/json_parser.hpp&gt;</code><br />
+<code>#include &lt;boost/foreach.hpp&gt;</code><br />
+<code>#include &lt;boost/optional/optional.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="https__exchange_8h_source.html">https_exchange.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fiscal__mem_8h_source.html">fiscal_mem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EncodeConvertor_8h_source.html">EncodeConvertor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для testHttpsExchange.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h__incl.png" border="0" usemap="#src_2tests_2include_2testHttpsExchange_8h" alt=""/></div>
+<map name="src_2tests_2include_2testHttpsExchange_8h" id="src_2tests_2include_2testHttpsExchange_8h">
+<area shape="rect"  title=" " alt="" coords="1192,5,1368,47"/>
+<area shape="rect"  title=" " alt="" coords="463,102,558,129"/>
+<area shape="rect"  title=" " alt="" coords="583,102,697,129"/>
+<area shape="rect"  title=" " alt="" coords="722,102,875,129"/>
+<area shape="rect"  title=" " alt="" coords="899,95,1034,136"/>
+<area shape="rect"  title=" " alt="" coords="1058,95,1193,136"/>
+<area shape="rect"  title=" " alt="" coords="1217,102,1343,129"/>
+<area shape="rect"  title=" " alt="" coords="1367,102,1545,129"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="1569,102,1663,129"/>
+<area shape="rect"  href="https__exchange_8h.html" title=" " alt="" coords="2995,102,3120,129"/>
+<area shape="rect"  href="fiscal__mem_8h.html" title=" " alt="" coords="2575,102,2675,129"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="2729,102,2863,129"/>
+<area shape="rect"  title=" " alt="" coords="2372,184,2447,211"/>
+<area shape="rect"  title=" " alt="" coords="2471,184,2537,211"/>
+<area shape="rect"  title=" " alt="" coords="5,184,72,211"/>
+<area shape="rect"  title=" " alt="" coords="97,184,162,211"/>
+<area shape="rect"  title=" " alt="" coords="186,184,265,211"/>
+<area shape="rect"  title=" " alt="" coords="289,184,386,211"/>
+<area shape="rect"  title=" " alt="" coords="410,184,470,211"/>
+<area shape="rect"  title=" " alt="" coords="494,184,557,211"/>
+<area shape="rect"  title=" " alt="" coords="581,184,649,211"/>
+<area shape="rect"  title=" " alt="" coords="2826,184,2881,211"/>
+<area shape="rect"  title=" " alt="" coords="673,184,727,211"/>
+<area shape="rect"  title=" " alt="" coords="2740,184,2801,211"/>
+<area shape="rect"  title=" " alt="" coords="751,184,798,211"/>
+<area shape="rect"  title=" " alt="" coords="2561,184,2631,211"/>
+<area shape="rect"  title=" " alt="" coords="823,184,881,211"/>
+<area shape="rect"  title=" " alt="" coords="905,184,988,211"/>
+<area shape="rect"  title=" " alt="" coords="1012,184,1065,211"/>
+<area shape="rect"  title=" " alt="" coords="1090,184,1169,211"/>
+<area shape="rect"  title=" " alt="" coords="1193,184,1271,211"/>
+<area shape="rect"  title=" " alt="" coords="1296,184,1347,211"/>
+<area shape="rect"  title=" " alt="" coords="1371,184,1461,211"/>
+<area shape="rect"  title=" " alt="" coords="1485,184,1536,211"/>
+<area shape="rect"  title=" " alt="" coords="1561,184,1671,211"/>
+<area shape="rect"  title=" " alt="" coords="1695,184,1763,211"/>
+<area shape="rect"  title=" " alt="" coords="1788,184,1849,211"/>
+<area shape="rect"  title=" " alt="" coords="1874,184,1939,211"/>
+<area shape="rect"  title=" " alt="" coords="1963,184,2026,211"/>
+<area shape="rect"  title=" " alt="" coords="2655,184,2715,211"/>
+<area shape="rect"  title=" " alt="" coords="2050,184,2107,211"/>
+<area shape="rect"  title=" " alt="" coords="2132,184,2191,211"/>
+<area shape="rect"  title=" " alt="" coords="2215,184,2254,211"/>
+<area shape="rect"  title=" " alt="" coords="2279,184,2348,211"/>
+<area shape="rect"  title=" " alt="" coords="2905,184,2991,211"/>
+<area shape="rect"  title=" " alt="" coords="3016,184,3099,211"/>
+<area shape="rect"  title=" " alt="" coords="3123,184,3221,211"/>
+<area shape="rect"  title=" " alt="" coords="3245,184,3310,211"/>
+<area shape="rect"  title=" " alt="" coords="3335,184,3396,211"/>
+<area shape="rect"  title=" " alt="" coords="3420,184,3479,211"/>
+</map>
+</div>
+</div>
+<p><a href="testHttpsExchange_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHttpsExchangeTest.html" title="The HttpsExchangeTest class - тесты для HttpsExchange.">HttpsExchangeTest</a> class - тесты для <a class="el" href="classHttpsExchange.html">HttpsExchange</a>.  <a href="classHttpsExchangeTest.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHttpsExchangeTest_1_1MockHttpsExchange.html">HttpsExchangeTest::MockHttpsExchange</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHttpsExchangeTest_1_1MockHttpsExchange.html" title="The MockHttpsExchange class - mock HttpsExchange.">MockHttpsExchange</a> class - mock <a class="el" href="classHttpsExchange.html">HttpsExchange</a>.  <a href="classHttpsExchangeTest_1_1MockHttpsExchange.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHttpsExchangeTest_1_1MockJson.html">HttpsExchangeTest::MockJson</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classHttpsExchangeTest_1_1MockJson.html" title="The MockJson class - mock класса JSON.">MockJson</a> class - mock класса <a class="el" href="classJSON.html">JSON</a>.  <a href="classHttpsExchangeTest_1_1MockJson.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHttpsExchangeTest_1_1MockConvert.html">HttpsExchangeTest::MockConvert</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab07969225d898805b009f4a619f2450d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ab07969225d898805b009f4a619f2450d">BOOST_SPIRIT_THREADSAFE</a></td></tr>
+<tr class="separator:ab07969225d898805b009f4a619f2450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ac32291afdcc641a0aa9c527044ffa6d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ac32291afdcc641a0aa9c527044ffa6d3">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestAddToCabinetSuccess)</td></tr>
+<tr class="separator:ac32291afdcc641a0aa9c527044ffa6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595e0d68745b9414472a772675a7a7d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a595e0d68745b9414472a772675a7a7d2">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestAddToCabinetAnswerFailed)</td></tr>
+<tr class="separator:a595e0d68745b9414472a772675a7a7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c510cfa8c599fd2890c0b6d977351c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a41c510cfa8c599fd2890c0b6d977351c">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestDelFromCabinetSuccess)</td></tr>
+<tr class="separator:a41c510cfa8c599fd2890c0b6d977351c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae566758df7907907504c112e3d2032eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ae566758df7907907504c112e3d2032eb">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestDelFromCabinetFailed)</td></tr>
+<tr class="separator:ae566758df7907907504c112e3d2032eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12738827848a3483600e76b68aee314a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a12738827848a3483600e76b68aee314a">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendCountersReportSuccess)</td></tr>
+<tr class="separator:a12738827848a3483600e76b68aee314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41072b9c513bd8a943e972fcb80b9226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a41072b9c513bd8a943e972fcb80b9226">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendCountersReportCfgNullPtrFailed)</td></tr>
+<tr class="separator:a41072b9c513bd8a943e972fcb80b9226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6129abe389cf46afed79d272c74bc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a2d6129abe389cf46afed79d272c74bc8">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendCountersReportCountersNullPtrFailed)</td></tr>
+<tr class="separator:a2d6129abe389cf46afed79d272c74bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79434f28d871ec52307c47fcbd10fe4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a79434f28d871ec52307c47fcbd10fe4e">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendCountersReportBiosSendDataFailed)</td></tr>
+<tr class="separator:a79434f28d871ec52307c47fcbd10fe4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab9e57d3e2fc261d53571465e96d9f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a4ab9e57d3e2fc261d53571465e96d9f4">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestNullPtrFailed)</td></tr>
+<tr class="separator:a4ab9e57d3e2fc261d53571465e96d9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93eeb90be4afcc517e5fc1102cebbea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ae93eeb90be4afcc517e5fc1102cebbea">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestWrongShiftNum)</td></tr>
+<tr class="separator:ae93eeb90be4afcc517e5fc1102cebbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196657bc970a64fa651fe6ae32dff5c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a196657bc970a64fa651fe6ae32dff5c8">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestWrongReceiptNum)</td></tr>
+<tr class="separator:a196657bc970a64fa651fe6ae32dff5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a0d36394879105538846967177e940"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a64a0d36394879105538846967177e940">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestWrongFiscalData)</td></tr>
+<tr class="separator:a64a0d36394879105538846967177e940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a76a32dce7fa9c908083a1426ff81fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a2a76a32dce7fa9c908083a1426ff81fe">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestUnknownDocType)</td></tr>
+<tr class="separator:a2a76a32dce7fa9c908083a1426ff81fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb72a7d62afdc5c97e764392dd7eaec2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#adb72a7d62afdc5c97e764392dd7eaec2">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestEmptyPositionsListStudy)</td></tr>
+<tr class="separator:adb72a7d62afdc5c97e764392dd7eaec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24921585109725eafd05439b99f51569"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a24921585109725eafd05439b99f51569">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestEmptyPositionsListFiscal)</td></tr>
+<tr class="separator:a24921585109725eafd05439b99f51569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9d97ae051c7f6663238b66bdea9cd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#aae9d97ae051c7f6663238b66bdea9cd9">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestWrongPosQuantity)</td></tr>
+<tr class="separator:aae9d97ae051c7f6663238b66bdea9cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d0b800a43b41f130407a2c8a2a9391"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#af5d0b800a43b41f130407a2c8a2a9391">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestUnknownPositionMode)</td></tr>
+<tr class="separator:af5d0b800a43b41f130407a2c8a2a9391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22dcb5c122055cbe0ac61a2884ed0fb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a22dcb5c122055cbe0ac61a2884ed0fb5">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestEmptyGoodsName)</td></tr>
+<tr class="separator:a22dcb5c122055cbe0ac61a2884ed0fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88f93715c113fdb9aae265f6dea0c7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#af88f93715c113fdb9aae265f6dea0c7a">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestUnknownPaymentType)</td></tr>
+<tr class="separator:af88f93715c113fdb9aae265f6dea0c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bc238230cd8a8991f8e2ce0bc494f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a20bc238230cd8a8991f8e2ce0bc494f5">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestUnavailablePaymentType)</td></tr>
+<tr class="separator:a20bc238230cd8a8991f8e2ce0bc494f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45f66a203c0105926391e6202fae834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#af45f66a203c0105926391e6202fae834">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestSendDataFailed)</td></tr>
+<tr class="separator:af45f66a203c0105926391e6202fae834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2970784dda07b0094a608a1e080f2cfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a2970784dda07b0094a608a1e080f2cfd">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendReceiptRequestSuccess)</td></tr>
+<tr class="separator:a2970784dda07b0094a608a1e080f2cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb619845112af653f235855207ad6897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#acb619845112af653f235855207ad6897">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendStatisticsSuccess)</td></tr>
+<tr class="separator:acb619845112af653f235855207ad6897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c32c222b23be39fa2a712a0d9852bfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a2c32c222b23be39fa2a712a0d9852bfc">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendStatisticsNullCfgPtrFailed)</td></tr>
+<tr class="separator:a2c32c222b23be39fa2a712a0d9852bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6a31bd1a0aa2def027c31f64032a40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#aef6a31bd1a0aa2def027c31f64032a40">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendStatisticsNullJsonPtrFailed)</td></tr>
+<tr class="separator:aef6a31bd1a0aa2def027c31f64032a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c81ca0c454d77a25cf0d4ab466224d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a3c81ca0c454d77a25cf0d4ab466224d1">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendStatisticsJsonCfgCreateFailed)</td></tr>
+<tr class="separator:a3c81ca0c454d77a25cf0d4ab466224d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81681c0bc1f2ee7d4211eaabe3517cba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a81681c0bc1f2ee7d4211eaabe3517cba">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendStatisticsJsonStatisticsEmpty)</td></tr>
+<tr class="separator:a81681c0bc1f2ee7d4211eaabe3517cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70517536d0e7ba1ab963f1b915276f66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a70517536d0e7ba1ab963f1b915276f66">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendStatisticsJsonSendFailed)</td></tr>
+<tr class="separator:a70517536d0e7ba1ab963f1b915276f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad819209c86fc71bdcafa03389918fcd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ad819209c86fc71bdcafa03389918fcd4">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, hubModeAddRealUrlSuccess)</td></tr>
+<tr class="separator:ad819209c86fc71bdcafa03389918fcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2a833841656d92a008edc4598cc1ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a2d2a833841656d92a008edc4598cc1ca">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, hubModeAddRealUrlEmptyDataFailed)</td></tr>
+<tr class="separator:a2d2a833841656d92a008edc4598cc1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7ef12b9bbb4afa1848813d0c9d6005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a9d7ef12b9bbb4afa1848813d0c9d6005">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, hubModeAddRealUrlEmptyUrlSuccess)</td></tr>
+<tr class="separator:a9d7ef12b9bbb4afa1848813d0c9d6005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a332146511d34db8f7b98665147ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a26a332146511d34db8f7b98665147ef1">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendKKTRegistrInfoSuccess)</td></tr>
+<tr class="separator:a26a332146511d34db8f7b98665147ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a4649c333cf9901c9ebf1ba159509d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a10a4649c333cf9901c9ebf1ba159509d">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendKKTRegistrInfoNullPtrFailed)</td></tr>
+<tr class="separator:a10a4649c333cf9901c9ebf1ba159509d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb2802191485621bc8ae0e015909dbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a0eb2802191485621bc8ae0e015909dbf">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendKKTRegistrInfoSendDataFailed)</td></tr>
+<tr class="separator:a0eb2802191485621bc8ae0e015909dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba7586a84b9821c6dff1df3a0046410"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#aeba7586a84b9821c6dff1df3a0046410">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendKKTRegistrInfoEmptyAnswerFailed)</td></tr>
+<tr class="separator:aeba7586a84b9821c6dff1df3a0046410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8d7a0e30421a8006bbe381715a1f71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a1d8d7a0e30421a8006bbe381715a1f71">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendKKTRegistrInfoJsonParserFailed)</td></tr>
+<tr class="separator:a1d8d7a0e30421a8006bbe381715a1f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cd71212c09ef82a80674305782972d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a36cd71212c09ef82a80674305782972d">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, RegistrationReportJsonCreateSuccess)</td></tr>
+<tr class="separator:a36cd71212c09ef82a80674305782972d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807cec5964decb7e3c720216776ede00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a807cec5964decb7e3c720216776ede00">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, RegistrationReportJsonCreateSuccess_1)</td></tr>
+<tr class="separator:a807cec5964decb7e3c720216776ede00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa737fc68599e3695af6ed18cd256fa89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#aa737fc68599e3695af6ed18cd256fa89">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, RegistrationReportJsonCreateSuccess_3)</td></tr>
+<tr class="separator:aa737fc68599e3695af6ed18cd256fa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2be55abcc600e9c40cb45d6408b7b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a7c2be55abcc600e9c40cb45d6408b7b5">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRegistrationReportEmptyRegResultFailed)</td></tr>
+<tr class="separator:a7c2be55abcc600e9c40cb45d6408b7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa359af61bfec7e34bea4190f490328af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#aa359af61bfec7e34bea4190f490328af">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRegistrationReportSendRequestFailed)</td></tr>
+<tr class="separator:aa359af61bfec7e34bea4190f490328af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae778764d8d486bfdd60d1eac39075af0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ae778764d8d486bfdd60d1eac39075af0">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRegistrationReportSuccess)</td></tr>
+<tr class="separator:ae778764d8d486bfdd60d1eac39075af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af429a72ec01f648dc0bb639b3925fd51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#af429a72ec01f648dc0bb639b3925fd51">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, fillCashInfoReportFailed)</td></tr>
+<tr class="separator:af429a72ec01f648dc0bb639b3925fd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef811c9d42a4e65a17062934ddc1f1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a7ef811c9d42a4e65a17062934ddc1f1f">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, fillCashInfoReportSuccess)</td></tr>
+<tr class="separator:a7ef811c9d42a4e65a17062934ddc1f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b2eb7a41f24036b4caffaaaefafd99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#af6b2eb7a41f24036b4caffaaaefafd99">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestCashInfoReportSuccess)</td></tr>
+<tr class="separator:af6b2eb7a41f24036b4caffaaaefafd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff403cd799bb36546da72c2cbcd6778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#abff403cd799bb36546da72c2cbcd6778">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestCashInfoReportNotRegistered)</td></tr>
+<tr class="separator:abff403cd799bb36546da72c2cbcd6778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ce673839f0b7af037c678fe1bf45e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#ae2ce673839f0b7af037c678fe1bf45e7">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestCashInfoReportInvalidFnNum)</td></tr>
+<tr class="separator:ae2ce673839f0b7af037c678fe1bf45e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f5d4e77e1f41ddfaf1adb420ff7a9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testHttpsExchange_8h.html#a50f5d4e77e1f41ddfaf1adb420ff7a9f">TEST_F</a> (<a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>, sendRequestCashInfoReportStageNotFiscal)</td></tr>
+<tr class="separator:a50f5d4e77e1f41ddfaf1adb420ff7a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="ab07969225d898805b009f4a619f2450d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07969225d898805b009f4a619f2450d">&#9670;&nbsp;</a></span>BOOST_SPIRIT_THREADSAFE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_SPIRIT_THREADSAFE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ac32291afdcc641a0aa9c527044ffa6d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32291afdcc641a0aa9c527044ffa6d3">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestAddToCabinetSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_ac32291afdcc641a0aa9c527044ffa6d3_cgraph.png" border="0" usemap="#testHttpsExchange_8h_ac32291afdcc641a0aa9c527044ffa6d3_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_ac32291afdcc641a0aa9c527044ffa6d3_cgraph" id="testHttpsExchange_8h_ac32291afdcc641a0aa9c527044ffa6d3_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,192,76,219"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,151,272,193"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,151,497,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="328,217,489,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="555,5,735,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="568,86,721,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="568,151,721,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="566,217,723,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="555,283,735,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="545,363,744,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="549,429,740,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="792,217,973,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a595e0d68745b9414472a772675a7a7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595e0d68745b9414472a772675a7a7d2">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestAddToCabinetAnswerFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a595e0d68745b9414472a772675a7a7d2_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a595e0d68745b9414472a772675a7a7d2_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a595e0d68745b9414472a772675a7a7d2_cgraph" id="testHttpsExchange_8h_a595e0d68745b9414472a772675a7a7d2_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,192,76,219"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,151,272,193"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,151,497,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="328,217,489,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="555,5,735,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="568,86,721,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="568,151,721,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="566,217,723,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="555,283,735,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="545,363,744,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="549,429,740,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="792,217,973,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41c510cfa8c599fd2890c0b6d977351c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c510cfa8c599fd2890c0b6d977351c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestDelFromCabinetSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a41c510cfa8c599fd2890c0b6d977351c_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a41c510cfa8c599fd2890c0b6d977351c_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a41c510cfa8c599fd2890c0b6d977351c_cgraph" id="testHttpsExchange_8h_a41c510cfa8c599fd2890c0b6d977351c_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,192,76,219"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,151,272,193"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,151,497,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="328,217,489,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="555,5,735,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="568,86,721,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="568,151,721,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="566,217,723,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="555,283,735,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="545,363,744,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="549,429,740,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="792,217,973,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae566758df7907907504c112e3d2032eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae566758df7907907504c112e3d2032eb">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestDelFromCabinetFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_ae566758df7907907504c112e3d2032eb_cgraph.png" border="0" usemap="#testHttpsExchange_8h_ae566758df7907907504c112e3d2032eb_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_ae566758df7907907504c112e3d2032eb_cgraph" id="testHttpsExchange_8h_ae566758df7907907504c112e3d2032eb_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,192,76,219"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,151,272,193"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,151,497,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="328,217,489,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="555,5,735,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="568,86,721,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="568,151,721,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="566,217,723,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="555,283,735,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="545,363,744,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="549,429,740,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="792,217,973,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a12738827848a3483600e76b68aee314a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12738827848a3483600e76b68aee314a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendCountersReportSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a12738827848a3483600e76b68aee314a_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a12738827848a3483600e76b68aee314a_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a12738827848a3483600e76b68aee314a_cgraph" id="testHttpsExchange_8h_a12738827848a3483600e76b68aee314a_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,140,76,167"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a95819ffeff28e00c1286edc4059fd005" title=" " alt="" coords="168,64,228,91"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d" title=" " alt="" coords="167,115,229,141"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a9567fea5abb160e26a8335df90b12c46" title=" " alt="" coords="135,165,261,192"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41072b9c513bd8a943e972fcb80b9226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41072b9c513bd8a943e972fcb80b9226">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendCountersReportCfgNullPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d6129abe389cf46afed79d272c74bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6129abe389cf46afed79d272c74bc8">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendCountersReportCountersNullPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79434f28d871ec52307c47fcbd10fe4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79434f28d871ec52307c47fcbd10fe4e">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendCountersReportBiosSendDataFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ab9e57d3e2fc261d53571465e96d9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab9e57d3e2fc261d53571465e96d9f4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestNullPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93eeb90be4afcc517e5fc1102cebbea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93eeb90be4afcc517e5fc1102cebbea">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[10/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestWrongShiftNum&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a196657bc970a64fa651fe6ae32dff5c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196657bc970a64fa651fe6ae32dff5c8">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[11/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestWrongReceiptNum&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64a0d36394879105538846967177e940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a0d36394879105538846967177e940">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[12/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestWrongFiscalData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a76a32dce7fa9c908083a1426ff81fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a76a32dce7fa9c908083a1426ff81fe">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[13/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestUnknownDocType&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb72a7d62afdc5c97e764392dd7eaec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb72a7d62afdc5c97e764392dd7eaec2">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[14/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestEmptyPositionsListStudy&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24921585109725eafd05439b99f51569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24921585109725eafd05439b99f51569">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[15/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestEmptyPositionsListFiscal&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae9d97ae051c7f6663238b66bdea9cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9d97ae051c7f6663238b66bdea9cd9">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[16/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestWrongPosQuantity&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_aae9d97ae051c7f6663238b66bdea9cd9_cgraph.png" border="0" usemap="#testHttpsExchange_8h_aae9d97ae051c7f6663238b66bdea9cd9_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_aae9d97ae051c7f6663238b66bdea9cd9_cgraph" id="testHttpsExchange_8h_aae9d97ae051c7f6663238b66bdea9cd9_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5d0b800a43b41f130407a2c8a2a9391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d0b800a43b41f130407a2c8a2a9391">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[17/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestUnknownPositionMode&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_af5d0b800a43b41f130407a2c8a2a9391_cgraph.png" border="0" usemap="#testHttpsExchange_8h_af5d0b800a43b41f130407a2c8a2a9391_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_af5d0b800a43b41f130407a2c8a2a9391_cgraph" id="testHttpsExchange_8h_af5d0b800a43b41f130407a2c8a2a9391_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a22dcb5c122055cbe0ac61a2884ed0fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22dcb5c122055cbe0ac61a2884ed0fb5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[18/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestEmptyGoodsName&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a22dcb5c122055cbe0ac61a2884ed0fb5_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a22dcb5c122055cbe0ac61a2884ed0fb5_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a22dcb5c122055cbe0ac61a2884ed0fb5_cgraph" id="testHttpsExchange_8h_a22dcb5c122055cbe0ac61a2884ed0fb5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af88f93715c113fdb9aae265f6dea0c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88f93715c113fdb9aae265f6dea0c7a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[19/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestUnknownPaymentType&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_af88f93715c113fdb9aae265f6dea0c7a_cgraph.png" border="0" usemap="#testHttpsExchange_8h_af88f93715c113fdb9aae265f6dea0c7a_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_af88f93715c113fdb9aae265f6dea0c7a_cgraph" id="testHttpsExchange_8h_af88f93715c113fdb9aae265f6dea0c7a_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20bc238230cd8a8991f8e2ce0bc494f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bc238230cd8a8991f8e2ce0bc494f5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[20/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestUnavailablePaymentType&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a20bc238230cd8a8991f8e2ce0bc494f5_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a20bc238230cd8a8991f8e2ce0bc494f5_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a20bc238230cd8a8991f8e2ce0bc494f5_cgraph" id="testHttpsExchange_8h_a20bc238230cd8a8991f8e2ce0bc494f5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af45f66a203c0105926391e6202fae834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45f66a203c0105926391e6202fae834">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[21/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestSendDataFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_af45f66a203c0105926391e6202fae834_cgraph.png" border="0" usemap="#testHttpsExchange_8h_af45f66a203c0105926391e6202fae834_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_af45f66a203c0105926391e6202fae834_cgraph" id="testHttpsExchange_8h_af45f66a203c0105926391e6202fae834_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2970784dda07b0094a608a1e080f2cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2970784dda07b0094a608a1e080f2cfd">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[22/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendReceiptRequestSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a2970784dda07b0094a608a1e080f2cfd_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a2970784dda07b0094a608a1e080f2cfd_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a2970784dda07b0094a608a1e080f2cfd_cgraph" id="testHttpsExchange_8h_a2970784dda07b0094a608a1e080f2cfd_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,195,76,221"/>
+<area shape="rect"  href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="148,99,279,141"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="124,165,303,192"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="139,217,287,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="139,282,287,323"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="351,217,512,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="569,5,749,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="583,86,736,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="583,151,736,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="581,217,738,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="569,283,749,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="560,363,759,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="564,429,755,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="807,217,988,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb619845112af653f235855207ad6897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb619845112af653f235855207ad6897">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[23/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendStatisticsSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c32c222b23be39fa2a712a0d9852bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c32c222b23be39fa2a712a0d9852bfc">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[24/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendStatisticsNullCfgPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef6a31bd1a0aa2def027c31f64032a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6a31bd1a0aa2def027c31f64032a40">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[25/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendStatisticsNullJsonPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c81ca0c454d77a25cf0d4ab466224d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c81ca0c454d77a25cf0d4ab466224d1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[26/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendStatisticsJsonCfgCreateFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81681c0bc1f2ee7d4211eaabe3517cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81681c0bc1f2ee7d4211eaabe3517cba">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[27/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendStatisticsJsonStatisticsEmpty&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70517536d0e7ba1ab963f1b915276f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70517536d0e7ba1ab963f1b915276f66">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[28/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendStatisticsJsonSendFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad819209c86fc71bdcafa03389918fcd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad819209c86fc71bdcafa03389918fcd4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[29/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hubModeAddRealUrlSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_ad819209c86fc71bdcafa03389918fcd4_cgraph.png" border="0" usemap="#testHttpsExchange_8h_ad819209c86fc71bdcafa03389918fcd4_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_ad819209c86fc71bdcafa03389918fcd4_cgraph" id="testHttpsExchange_8h_ad819209c86fc71bdcafa03389918fcd4_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,192,76,219"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,151,272,193"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,151,497,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="328,217,489,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="555,5,735,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="568,86,721,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="568,151,721,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="566,217,723,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="555,283,735,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="545,363,744,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="549,429,740,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="792,217,973,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d2a833841656d92a008edc4598cc1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2a833841656d92a008edc4598cc1ca">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[30/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hubModeAddRealUrlEmptyDataFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d7ef12b9bbb4afa1848813d0c9d6005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7ef12b9bbb4afa1848813d0c9d6005">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[31/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hubModeAddRealUrlEmptyUrlSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a9d7ef12b9bbb4afa1848813d0c9d6005_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a9d7ef12b9bbb4afa1848813d0c9d6005_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a9d7ef12b9bbb4afa1848813d0c9d6005_cgraph" id="testHttpsExchange_8h_a9d7ef12b9bbb4afa1848813d0c9d6005_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,76,39"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,5,272,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,5,497,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26a332146511d34db8f7b98665147ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a332146511d34db8f7b98665147ef1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[32/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendKKTRegistrInfoSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a26a332146511d34db8f7b98665147ef1_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a26a332146511d34db8f7b98665147ef1_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a26a332146511d34db8f7b98665147ef1_cgraph" id="testHttpsExchange_8h_a26a332146511d34db8f7b98665147ef1_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10a4649c333cf9901c9ebf1ba159509d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a4649c333cf9901c9ebf1ba159509d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[33/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendKKTRegistrInfoNullPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0eb2802191485621bc8ae0e015909dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb2802191485621bc8ae0e015909dbf">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[34/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendKKTRegistrInfoSendDataFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeba7586a84b9821c6dff1df3a0046410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba7586a84b9821c6dff1df3a0046410">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[35/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendKKTRegistrInfoEmptyAnswerFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d8d7a0e30421a8006bbe381715a1f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d8d7a0e30421a8006bbe381715a1f71">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[36/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendKKTRegistrInfoJsonParserFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36cd71212c09ef82a80674305782972d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cd71212c09ef82a80674305782972d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[37/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RegistrationReportJsonCreateSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a807cec5964decb7e3c720216776ede00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807cec5964decb7e3c720216776ede00">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[38/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RegistrationReportJsonCreateSuccess_1&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a807cec5964decb7e3c720216776ede00_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a807cec5964decb7e3c720216776ede00_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a807cec5964decb7e3c720216776ede00_cgraph" id="testHttpsExchange_8h_a807cec5964decb7e3c720216776ede00_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,289,76,316"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="157,217,305,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="157,282,305,323"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="124,348,339,375"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="387,217,548,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="605,5,785,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="619,86,772,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="619,151,772,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="617,217,774,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="605,283,785,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="596,363,795,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="600,429,791,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="843,217,1024,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa737fc68599e3695af6ed18cd256fa89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa737fc68599e3695af6ed18cd256fa89">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[39/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RegistrationReportJsonCreateSuccess_3&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_aa737fc68599e3695af6ed18cd256fa89_cgraph.png" border="0" usemap="#testHttpsExchange_8h_aa737fc68599e3695af6ed18cd256fa89_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_aa737fc68599e3695af6ed18cd256fa89_cgraph" id="testHttpsExchange_8h_aa737fc68599e3695af6ed18cd256fa89_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,289,76,316"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="157,217,305,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="157,282,305,323"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="124,348,339,375"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="387,217,548,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="605,5,785,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="619,86,772,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="619,151,772,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="617,217,774,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="605,283,785,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="596,363,795,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="600,429,791,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="843,217,1024,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c2be55abcc600e9c40cb45d6408b7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2be55abcc600e9c40cb45d6408b7b5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[40/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRegistrationReportEmptyRegResultFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa359af61bfec7e34bea4190f490328af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa359af61bfec7e34bea4190f490328af">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[41/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRegistrationReportSendRequestFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae778764d8d486bfdd60d1eac39075af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae778764d8d486bfdd60d1eac39075af0">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[42/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRegistrationReportSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af429a72ec01f648dc0bb639b3925fd51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af429a72ec01f648dc0bb639b3925fd51">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[43/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fillCashInfoReportFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ef811c9d42a4e65a17062934ddc1f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef811c9d42a4e65a17062934ddc1f1f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[44/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fillCashInfoReportSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a7ef811c9d42a4e65a17062934ddc1f1f_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a7ef811c9d42a4e65a17062934ddc1f1f_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a7ef811c9d42a4e65a17062934ddc1f1f_cgraph" id="testHttpsExchange_8h_a7ef811c9d42a4e65a17062934ddc1f1f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,148,76,175"/>
+<area shape="rect"  href="classLicense.html#a347839f049599ef744c55f8e54f68993" title="clear &#45; Ð¾ÑÐ¸ÑÑÐºÐ° ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ»ÑÐ³" alt="" coords="156,5,259,32"/>
+<area shape="rect"  href="classLicense.html#a72d30ae5ff13769d8ba3f9d783e4c9ff" title="addTag &#45; Ð´Ð¾Ð±Ð°Ð²Ð¸ÑÑ ÑÑÐ³" alt="" coords="148,56,267,83"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0d74bfcf65662f1d66d14c34b0027098" title="returns the number of occurrences of a key in a JSON object" alt="" coords="133,107,281,149"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="133,173,281,214"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="124,239,291,265"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a25e27ad0c6d53c01871c5485e1f75b96" title="returns the number of elements" alt="" coords="133,290,281,331"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="340,101,488,142"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="340,166,488,207"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="343,231,485,273"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="339,297,489,338"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="340,362,488,403"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="537,265,719,306"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af6b2eb7a41f24036b4caffaaaefafd99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b2eb7a41f24036b4caffaaaefafd99">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[45/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestCashInfoReportSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_af6b2eb7a41f24036b4caffaaaefafd99_cgraph.png" border="0" usemap="#testHttpsExchange_8h_af6b2eb7a41f24036b4caffaaaefafd99_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_af6b2eb7a41f24036b4caffaaaefafd99_cgraph" id="testHttpsExchange_8h_af6b2eb7a41f24036b4caffaaaefafd99_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,289,76,316"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="157,217,305,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0d74bfcf65662f1d66d14c34b0027098" title="returns the number of occurrences of a key in a JSON object" alt="" coords="157,282,305,323"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="124,348,339,375"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="387,217,548,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="605,5,785,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="619,86,772,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="619,151,772,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="617,217,774,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="605,283,785,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="596,363,795,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="600,429,791,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="843,217,1024,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="393,282,541,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abff403cd799bb36546da72c2cbcd6778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff403cd799bb36546da72c2cbcd6778">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[46/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestCashInfoReportNotRegistered&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_abff403cd799bb36546da72c2cbcd6778_cgraph.png" border="0" usemap="#testHttpsExchange_8h_abff403cd799bb36546da72c2cbcd6778_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_abff403cd799bb36546da72c2cbcd6778_cgraph" id="testHttpsExchange_8h_abff403cd799bb36546da72c2cbcd6778_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,289,76,316"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="157,217,305,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0d74bfcf65662f1d66d14c34b0027098" title="returns the number of occurrences of a key in a JSON object" alt="" coords="157,282,305,323"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="124,348,339,375"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="387,217,548,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="605,5,785,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="619,86,772,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="619,151,772,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="617,217,774,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="605,283,785,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="596,363,795,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="600,429,791,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="843,217,1024,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="393,282,541,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2ce673839f0b7af037c678fe1bf45e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ce673839f0b7af037c678fe1bf45e7">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[47/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestCashInfoReportInvalidFnNum&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_ae2ce673839f0b7af037c678fe1bf45e7_cgraph.png" border="0" usemap="#testHttpsExchange_8h_ae2ce673839f0b7af037c678fe1bf45e7_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_ae2ce673839f0b7af037c678fe1bf45e7_cgraph" id="testHttpsExchange_8h_ae2ce673839f0b7af037c678fe1bf45e7_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,257,76,284"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0d74bfcf65662f1d66d14c34b0027098" title="returns the number of occurrences of a key in a JSON object" alt="" coords="124,282,272,323"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="327,282,475,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a50f5d4e77e1f41ddfaf1adb420ff7a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f5d4e77e1f41ddfaf1adb420ff7a9f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[48/48]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHttpsExchangeTest.html">HttpsExchangeTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sendRequestCashInfoReportStageNotFiscal&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testHttpsExchange_8h_a50f5d4e77e1f41ddfaf1adb420ff7a9f_cgraph.png" border="0" usemap="#testHttpsExchange_8h_a50f5d4e77e1f41ddfaf1adb420ff7a9f_cgraph" alt=""/></div>
+<map name="testHttpsExchange_8h_a50f5d4e77e1f41ddfaf1adb420ff7a9f_cgraph" id="testHttpsExchange_8h_a50f5d4e77e1f41ddfaf1adb420ff7a9f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,257,76,284"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0d74bfcf65662f1d66d14c34b0027098" title="returns the number of occurrences of a key in a JSON object" alt="" coords="124,282,272,323"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="327,282,475,323"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

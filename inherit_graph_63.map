@@ -1,0 +1,16 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" title=" " alt="" coords="5,309,53,336"/>
+<area shape="rect" id="node2" href="$classHttpsExchangeTest.html" title="The HttpsExchangeTest class &#45; тесты для HttpsExchange." alt="" coords="101,5,240,32"/>
+<area shape="rect" id="node3" href="$classMenuTest.html" title=" " alt="" coords="131,56,211,83"/>
+<area shape="rect" id="node4" href="$classPaidServiceTest.html" title=" " alt="" coords="111,107,230,133"/>
+<area shape="rect" id="node5" href="$classTaxTest.html" title=" " alt="" coords="135,157,206,184"/>
+<area shape="rect" id="node6" href="$classTestConvert.html" title=" " alt="" coords="123,208,218,235"/>
+<area shape="rect" id="node7" href="$classTestFilesFG.html" title=" " alt="" coords="123,259,218,285"/>
+<area shape="rect" id="node8" href="$classTestFiscalMem.html" title="The TestFiscalMem class &#45; тестовый класс Фискального Накопителя" alt="" coords="115,309,227,336"/>
+<area shape="rect" id="node9" href="$classTestJSON.html" title=" " alt="" coords="129,360,213,387"/>
+<area shape="rect" id="node10" href="$classTestLcd.html" title=" " alt="" coords="136,411,205,437"/>
+<area shape="rect" id="node11" href="$classTestLicense.html" title=" " alt="" coords="124,461,217,488"/>
+<area shape="rect" id="node12" href="$classTestPositionsNew.html" title=" " alt="" coords="106,512,235,539"/>
+<area shape="rect" id="node13" href="$classTestPrinter.html" title=" " alt="" coords="127,563,214,589"/>
+<area shape="rect" id="node14" href="$classTestReceiptsDb.html" title=" " alt="" coords="112,613,229,640"/>
+</map>

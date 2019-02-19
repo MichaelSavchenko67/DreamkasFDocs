@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['filesfg',['FilesFG',['../classFilesFG.html',1,'']]],
+  ['fiscal_5fdata',['Fiscal_data',['../structReceipt_1_1Fiscal__data.html',1,'Receipt']]],
+  ['fiscal_5fdoc',['fiscal_doc',['../structfiscal__doc.html',1,'']]],
+  ['fiscal_5fdoc_5f11',['fiscal_doc_11',['../structFiscal__store_1_1fiscal__doc__11.html',1,'Fiscal_store']]],
+  ['fiscal_5fdoc_5f2',['fiscal_doc_2',['../structFiscal__store_1_1fiscal__doc__2.html',1,'Fiscal_store']]],
+  ['fiscal_5fdoc_5f21',['fiscal_doc_21',['../structFiscal__store_1_1fiscal__doc__21.html',1,'Fiscal_store']]],
+  ['fiscal_5fdoc_5f5',['fiscal_doc_5',['../structFiscal__store_1_1fiscal__doc__5.html',1,'Fiscal_store']]],
+  ['fiscal_5fdoc_5f6',['fiscal_doc_6',['../structFiscal__store_1_1fiscal__doc__6.html',1,'Fiscal_store']]],
+  ['fiscal_5fresult',['FISCAL_RESULT',['../structFiscal__store_1_1FISCAL__RESULT.html',1,'Fiscal_store']]],
+  ['fiscal_5fresult_5f1_5f1',['FISCAL_RESULT_1_1',['../structFiscal__store_1_1FISCAL__RESULT__1__1.html',1,'Fiscal_store']]],
+  ['fiscal_5fstore',['Fiscal_store',['../classFiscal__store.html',1,'']]],
+  ['fiscaldocdb',['FiscalDocDb',['../classFiscalDocDb.html',1,'']]],
+  ['fisgo_5ftest_5fapi',['FISGO_TEST_API',['../classFISGO__TEST__API.html',1,'']]],
+  ['flashmounter',['FlashMounter',['../classFlashMounter.html',1,'']]],
+  ['fontstruct',['FontStruct',['../structFontStruct.html',1,'']]],
+  ['from_5fjson_5ffn',['from_json_fn',['../structnlohmann_1_1detail_1_1from__json__fn.html',1,'nlohmann::detail']]],
+  ['fs_5fanswer_5flog',['FS_ANSWER_LOG',['../structFiscal__store_1_1FS__ANSWER__LOG.html',1,'Fiscal_store']]],
+  ['fs_5farchive',['FS_ARCHIVE',['../structFiscal__store_1_1FS__ARCHIVE.html',1,'Fiscal_store']]],
+  ['fs_5farchive_5fclc_5fstate_5freport',['FS_ARCHIVE_CLC_STATE_REPORT',['../structFiscal__store_1_1FS__ARCHIVE__CLC__STATE__REPORT.html',1,'Fiscal_store']]],
+  ['fs_5farchive_5ffs_5fclose',['FS_ARCHIVE_FS_CLOSE',['../structFiscal__store_1_1FS__ARCHIVE__FS__CLOSE.html',1,'Fiscal_store']]],
+  ['fs_5farchive_5fre_5freg_5freport',['FS_ARCHIVE_RE_REG_REPORT',['../structFiscal__store_1_1FS__ARCHIVE__RE__REG__REPORT.html',1,'Fiscal_store']]],
+  ['fs_5farchive_5freceipt',['FS_ARCHIVE_RECEIPT',['../structFiscal__store_1_1FS__ARCHIVE__RECEIPT.html',1,'Fiscal_store']]],
+  ['fs_5farchive_5freg_5freport',['FS_ARCHIVE_REG_REPORT',['../structFiscal__store_1_1FS__ARCHIVE__REG__REPORT.html',1,'Fiscal_store']]],
+  ['fs_5farchive_5fshift',['FS_ARCHIVE_SHIFT',['../structFiscal__store_1_1FS__ARCHIVE__SHIFT.html',1,'Fiscal_store']]],
+  ['fs_5fversion',['FS_VERSION',['../structFiscal__store_1_1FS__VERSION.html',1,'Fiscal_store']]]
+];

@@ -1,0 +1,10 @@
+<map id="Goods" name="Goods">
+<area shape="rect" id="node1" title=" " alt="" coords="33,2120,184,2300"/>
+<area shape="rect" id="node2" href="$classPositions.html" title=" " alt="" coords="101,1335,300,2057"/>
+<area shape="rect" id="node3" href="$classGoodsData.html" title=" " alt="" coords="91,263,233,575"/>
+<area shape="rect" id="node4" href="$classPositions_1_1Position.html" title=" " alt="" coords="202,637,378,1243"/>
+<area shape="rect" id="node5" href="$structAGENTS.html" title=" " alt="" coords="258,380,335,457"/>
+<area shape="rect" id="node6" href="$structAGENT.html" title=" " alt="" coords="5,35,180,141"/>
+<area shape="rect" id="node7" href="$structBANK__AGENT.html" title=" " alt="" coords="204,5,389,171"/>
+<area shape="rect" id="node8" href="$structSPEC__AGENT.html" title=" " alt="" coords="414,49,547,127"/>
+</map>

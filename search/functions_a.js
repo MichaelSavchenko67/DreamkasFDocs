@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['key',['key',['../structnlohmann_1_1json__sax.html#a2e0c7ecd80b18d18a8cc76f71cfc2028',1,'nlohmann::json_sax::key()'],['../classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad427febda4997cbd8345a2596af66649',1,'nlohmann::detail::json_sax_dom_parser::key()'],['../classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a0cc4a5192fe9b803276edb831b6099fa',1,'nlohmann::detail::json_sax_dom_callback_parser::key()'],['../classnlohmann_1_1detail_1_1json__sax__acceptor.html#a59e1ea5e9c8d25346a564bf9287a5c2a',1,'nlohmann::detail::json_sax_acceptor::key()'],['../classnlohmann_1_1detail_1_1iter__impl.html#a15dfb2744fed2ef40c12a9e9a20d6dbc',1,'nlohmann::detail::iter_impl::key()'],['../classnlohmann_1_1detail_1_1json__reverse__iterator.html#adc648a641e8e9a1072c5abd56ad06401',1,'nlohmann::detail::json_reverse_iterator::key()']]],
+  ['key_5factivation_5fclear',['key_activation_clear',['../classJSON.html#a92f1724ef4b96406768c0e39a22618e3',1,'JSON']]],
+  ['keydiscount',['keyDiscount',['../classMenu.html#a947bc3ea0608bfb86f6badb74c8a3deb',1,'Menu']]],
+  ['keydown',['KeyDown',['../bsp__printer__keypad_8c.html#a93df587a3ecf20077b5ea824ff8e5d1c',1,'KeyDown(unsigned char key_):&#160;bsp_printer_keypad.c'],['../bsp__printer__keypad_8h.html#a93df587a3ecf20077b5ea824ff8e5d1c',1,'KeyDown(unsigned char key_):&#160;bsp_printer_keypad.c']]],
+  ['keyhold',['KeyHold',['../bsp__printer__keypad_8c.html#aaa7d088331dd265ec6dc010c2beade10',1,'KeyHold(unsigned char key_):&#160;bsp_printer_keypad.c'],['../bsp__printer__keypad_8h.html#aaa7d088331dd265ec6dc010c2beade10',1,'KeyHold(unsigned char key_):&#160;bsp_printer_keypad.c']]],
+  ['keypad_5fcontrol',['keypad_control',['../classMenu.html#a73d6dd24f2c35ba2a477f0faac080b03',1,'Menu']]],
+  ['keypad_5fctrl_5ftask',['KEYPAD_CTRL_TASK',['../structFISGO__TEST__API_1_1KEYPAD__CTRL__TASK.html#aef15aa0b8474c67d03ecf7b677d11bf5',1,'FISGO_TEST_API::KEYPAD_CTRL_TASK']]],
+  ['keypad_5fgetevents',['keypad_getEvents',['../keypad_8h.html#aface684b0d43cc5c10e6192e26809251',1,'keypad.h']]],
+  ['keypad_5fgettimesettings',['keypad_getTimeSettings',['../keypad_8h.html#a3f3f6c10d2cda0faf7ae322980dfac66',1,'keypad.h']]],
+  ['keypad_5finit',['keypad_Init',['../keypad_8h.html#ab165049a1bc88820f9cc389ff15ec503',1,'keypad.h']]],
+  ['keypad_5finsertkeyevent',['keypad_insertKeyEvent',['../keypad_8h.html#aea7d09a5aceb5447a0b9552ef51ab6b1',1,'keypad.h']]],
+  ['keypad_5fmixed_5fmode_5f',['keypad_mixed_mode_',['../threads_8h.html#a750c6f52c7d659d7ec53a3cce5359a0a',1,'threads.h']]],
+  ['keypad_5fmode_5ftask',['KEYPAD_MODE_TASK',['../structFISGO__TEST__API_1_1KEYPAD__MODE__TASK.html#a20d5950c79230a49d3189dccfc915b12',1,'FISGO_TEST_API::KEYPAD_MODE_TASK']]],
+  ['keypad_5fsettimesettings',['keypad_setTimeSettings',['../keypad_8h.html#ac2e8557545db5177a4890d60ce30fa49',1,'keypad.h']]],
+  ['keyup',['KeyUp',['../bsp__printer__keypad_8c.html#a4dc7db703212a2a88e64dc279e598527',1,'KeyUp(unsigned char key_):&#160;bsp_printer_keypad.c'],['../bsp__printer__keypad_8h.html#a4dc7db703212a2a88e64dc279e598527',1,'KeyUp(unsigned char key_):&#160;bsp_printer_keypad.c']]],
+  ['kkt_5fmode',['KKT_MODE',['../dynamic__mask_8h.html#a82124c5172f4e6ad3d984a5ab3b08ede',1,'dynamic_mask.h']]],
+  ['kkt_5fplant_5fnum',['KKT_PLANT_NUM',['../dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1',1,'dynamic_mask.h']]],
+  ['kkt_5freg_5fnum',['KKT_REG_NUM',['../dynamic__mask_8h.html#ac734db8c00867dfccda9d0497839983e',1,'dynamic_mask.h']]],
+  ['kkt_5freg_5fversion',['KKT_REG_VERSION',['../dynamic__mask_8h.html#a3f6abcce860e88fef89a5fee0d954f0a',1,'dynamic_mask.h']]],
+  ['kkt_5fsigns',['KKT_SIGNS',['../dynamic__mask_8h.html#a427516a38783f1c43e93b276c8703cae',1,'dynamic_mask.h']]],
+  ['kktreginfoparse',['kktRegInfoParse',['../classJSON.html#aa7edc40f3f04d9ca0e022b78f079efc9',1,'JSON']]],
+  ['kktregistrationinfoparse',['kktRegistrationInfoParse',['../classJSON.html#ace7323717a064ed7a0f4e6cf57710087',1,'JSON']]]
+];

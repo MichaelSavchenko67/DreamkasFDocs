@@ -1,0 +1,8 @@
+<map id="PaidFeaturesService::activationCodeIsValid" name="PaidFeaturesService::activationCodeIsValid">
+<area shape="rect" id="node1" title="Проверка активационного кода." alt="" coords="5,39,163,80"/>
+<area shape="rect" id="node2" href="$classPaidFeaturesService.html#a2f6055003fb734f3b3cd191fa2136c3d" title="Декодирование из base64 строки" alt="" coords="213,5,355,47"/>
+<area shape="rect" id="node4" href="$classPaidFeaturesService.html#a49b0e541534fa257e9d534cd3ac60cfa" title="Проверка ключа" alt="" coords="211,71,357,112"/>
+<area shape="rect" id="node3" href="$classPaidFeaturesService.html#a40bcca2a33e64c739f8845a01400933b" title="Вычисление длины декодируемой из base64 строки" alt="" coords="405,5,548,47"/>
+<area shape="rect" id="node5" href="$classPaidFeaturesService.html#ad903ef66a51eb5df9f1d44fc0cd89e44" title="Создание ключа" alt="" coords="405,71,548,112"/>
+<area shape="rect" id="node6" href="$classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18" title="Создание RSA* из строки" alt="" coords="596,100,787,141"/>
+</map>

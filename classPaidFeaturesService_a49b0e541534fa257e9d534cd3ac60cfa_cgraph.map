@@ -1,0 +1,5 @@
+<map id="PaidFeaturesService::checkActivationKey" name="PaidFeaturesService::checkActivationKey">
+<area shape="rect" id="node1" title="Проверка ключа" alt="" coords="5,35,152,76"/>
+<area shape="rect" id="node2" href="$classPaidFeaturesService.html#ad903ef66a51eb5df9f1d44fc0cd89e44" title="Создание ключа" alt="" coords="200,5,343,47"/>
+<area shape="rect" id="node3" href="$classPaidFeaturesService.html#a0148929c363947150b6c08f68790fb18" title="Создание RSA* из строки" alt="" coords="391,35,581,76"/>
+</map>

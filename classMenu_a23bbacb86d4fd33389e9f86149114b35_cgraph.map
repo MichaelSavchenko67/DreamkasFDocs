@@ -1,0 +1,5 @@
+<map id="Menu::drawLicWarnScreen" name="Menu::drawLicWarnScreen">
+<area shape="rect" id="node1" title="drawLicWarnScreen &#45; Окно с предупреждением об отсутствии важных лицензионных тегов" alt="" coords="5,31,184,57"/>
+<area shape="rect" id="node2" href="$classLicense.html#a760804fd30c6ef3e114e222bb6f700d8" title="isTagExistAndValid &#45; проверка наличия тэга в векторе" alt="" coords="232,5,421,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a4ab0e26037e1a80dc947186ee3e8e92b" title=" " alt="" coords="259,56,394,83"/>
+</map>

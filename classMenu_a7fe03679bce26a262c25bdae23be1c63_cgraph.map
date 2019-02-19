@@ -1,0 +1,5 @@
+<map id="Menu::loadLicenseFromConfig" name="Menu::loadLicenseFromConfig">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,204,57"/>
+<area shape="rect" id="node2" href="$classLicense.html#a2c40c2748cc1c4bbbae915cbb026a141" title=" " alt="" coords="252,5,435,32"/>
+<area shape="rect" id="node3" href="$classLicense.html#a256cdc19062818167eb290fd49317d77" title="showLicense &#45; вывод всех услуг в лог и консоль" alt="" coords="268,56,419,83"/>
+</map>

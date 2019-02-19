@@ -1,0 +1,1590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/tests/include/testMenu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testMenu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;gmock/gmock.h&gt;</code><br />
+<code>#include &quot;gmock/gmock-global.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для testMenu.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="testMenu_8h__incl.png" border="0" usemap="#src_2tests_2include_2testMenu_8h" alt=""/></div>
+<map name="src_2tests_2include_2testMenu_8h" id="src_2tests_2include_2testMenu_8h">
+<area shape="rect"  title=" " alt="" coords="2020,5,2207,32"/>
+<area shape="rect"  title=" " alt="" coords="1778,80,1873,107"/>
+<area shape="rect"  title=" " alt="" coords="1897,80,2012,107"/>
+<area shape="rect"  title=" " alt="" coords="2037,80,2190,107"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="2214,80,2279,107"/>
+<area shape="rect"  title=" " alt="" coords="3261,304,3331,331"/>
+<area shape="rect"  title=" " alt="" coords="1740,827,1812,853"/>
+<area shape="rect"  title=" " alt="" coords="3021,155,3115,181"/>
+<area shape="rect"  title=" " alt="" coords="594,752,633,779"/>
+<area shape="rect"  title=" " alt="" coords="1435,304,1482,331"/>
+<area shape="rect"  title=" " alt="" coords="3139,155,3194,181"/>
+<area shape="rect"  title=" " alt="" coords="3219,155,3277,181"/>
+<area shape="rect"  title=" " alt="" coords="1525,379,1584,405"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="1659,229,1709,256"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="1396,752,1447,779"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="783,677,868,704"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="462,752,562,779"/>
+<area shape="rect"  href="counters_8h.html" title=" " alt="" coords="1227,304,1309,331"/>
+<area shape="rect"  href="keypad_8h.html" title=" " alt="" coords="2528,229,2603,256"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="2573,379,2635,405"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="1916,155,1985,181"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="2470,304,2535,331"/>
+<area shape="rect"  href="exceptions__fsc_8h.html" title=" " alt="" coords="2913,379,3034,405"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="1112,603,1184,629"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="671,379,774,405"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="358,677,474,704"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1843,603,1911,629"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1649,453,1706,480"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="1309,528,1360,555"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="2278,528,2346,555"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="1966,528,2101,555"/>
+<area shape="rect"  href="fiscal__mem_8h.html" title=" " alt="" coords="2729,229,2829,256"/>
+<area shape="rect"  title=" " alt="" coords="2915,304,3035,331"/>
+<area shape="rect"  href="fiscal__doc__db_8h.html" title=" " alt="" coords="2187,229,2301,256"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="347,304,415,331"/>
+<area shape="rect"  href="ofd_8h.html" title=" " alt="" coords="1227,453,1277,480"/>
+<area shape="rect"  href="barcodeScanner_8h.html" title=" " alt="" coords="2870,155,2997,181"/>
+<area shape="rect"  href="NodeConflictResolver_8h.html" title=" " alt="" coords="2853,229,3014,256"/>
+<area shape="rect"  href="flashMounter_8h.html" title=" " alt="" coords="3302,155,3410,181"/>
+<area shape="rect"  href="md5LibChecker_8h.html" title=" " alt="" coords="3434,155,3558,181"/>
+<area shape="rect"  href="md5Lib__1__1__Checker_8h.html" title=" " alt="" coords="3582,155,3741,181"/>
+<area shape="rect"  href="gen__uuid_8h.html" title=" " alt="" coords="3831,453,3916,480"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="2013,229,2112,256"/>
+<area shape="rect"  href="https__exchange_8h.html" title=" " alt="" coords="927,155,1052,181"/>
+<area shape="rect"  href="goods__new_8h.html" title=" " alt="" coords="317,229,416,256"/>
+<area shape="rect"  href="LogServant_8h.html" title=" " alt="" coords="1435,229,1533,256"/>
+<area shape="rect"  title=" " alt="" coords="3765,155,3937,181"/>
+<area shape="rect"  href="ReceiptsDb_8h.html" title=" " alt="" coords="694,304,797,331"/>
+<area shape="rect"  href="MenuTree_8h.html" title=" " alt="" coords="2119,155,2209,181"/>
+<area shape="rect"  href="scale__shtrih_8h.html" title=" " alt="" coords="2539,155,2642,181"/>
+</map>
+</div>
+</div>
+<p><a href="testMenu_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest.html">MenuTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockPrinter.html">MenuTest::MockPrinter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockNet.html">MenuTest::MockNet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockFn.html">MenuTest::MockFn</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockConvert.html">MenuTest::MockConvert</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockKeypad.html">MenuTest::MockKeypad</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockLcd.html">MenuTest::MockLcd</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockFg.html">MenuTest::MockFg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockHttpsExchange.html">MenuTest::MockHttpsExchange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockSqlWrapper.html">MenuTest::MockSqlWrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockPositions.html">MenuTest::MockPositions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMenuTest_1_1MockGoods__new.html">MenuTest::MockGoods_new</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a7018901950e8ef45d33f9f0e0f1ca7d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a7018901950e8ef45d33f9f0e0f1ca7d3">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, scrollScreenNullPtrFailed)</td></tr>
+<tr class="separator:a7018901950e8ef45d33f9f0e0f1ca7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7485d54638991b8ac6fac45d5dcdbf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#ad7485d54638991b8ac6fac45d5dcdbf7">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, scrollScreenLcdScrollFailed)</td></tr>
+<tr class="separator:ad7485d54638991b8ac6fac45d5dcdbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7270a21f520119b3ff3d24513e8017"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a4d7270a21f520119b3ff3d24513e8017">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, scrollScreenWithoutHeaderSuccess)</td></tr>
+<tr class="separator:a4d7270a21f520119b3ff3d24513e8017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8871daaa8025d521a4a66377ec2685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#abe8871daaa8025d521a4a66377ec2685">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, scrollScreenWithHeaderSuccess)</td></tr>
+<tr class="separator:abe8871daaa8025d521a4a66377ec2685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617c49c2e9aae3272acddaf453365c96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a617c49c2e9aae3272acddaf453365c96">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubRegNone)</td></tr>
+<tr class="separator:a617c49c2e9aae3272acddaf453365c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3231a4e6b7766c00ee453545032153f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#aa3231a4e6b7766c00ee453545032153f">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubCabinetDisable)</td></tr>
+<tr class="separator:aa3231a4e6b7766c00ee453545032153f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da47a8a37d32f33277c2c1823666989"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a9da47a8a37d32f33277c2c1823666989">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubCloudRegistration)</td></tr>
+<tr class="separator:a9da47a8a37d32f33277c2c1823666989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7aa88138cf931398e59dc9811a946f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#aab7aa88138cf931398e59dc9811a946f">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubRegRegistrationBadFsStatus)</td></tr>
+<tr class="separator:aab7aa88138cf931398e59dc9811a946f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873d85fad288085835fee6eb038d20d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a873d85fad288085835fee6eb038d20d4">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubRegRegistrationAlreadyFiscal)</td></tr>
+<tr class="separator:a873d85fad288085835fee6eb038d20d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5944a8f5324474303c2140c382b67629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a5944a8f5324474303c2140c382b67629">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubChangeParametersNotFiscalMode)</td></tr>
+<tr class="separator:a5944a8f5324474303c2140c382b67629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700dc9baaf6a3f3005016e971b2b350c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a700dc9baaf6a3f3005016e971b2b350c">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubChangeParametersShiftIsOpen)</td></tr>
+<tr class="separator:a700dc9baaf6a3f3005016e971b2b350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2132d3e4c88752c4a8e1dda662fea705"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a2132d3e4c88752c4a8e1dda662fea705">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubCloseFn)</td></tr>
+<tr class="separator:a2132d3e4c88752c4a8e1dda662fea705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade254276cb6f9a1f5ef1df3cfdaccf18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#ade254276cb6f9a1f5ef1df3cfdaccf18">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubRegistrationPostFiscalMode)</td></tr>
+<tr class="separator:ade254276cb6f9a1f5ef1df3cfdaccf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4b026d897a6a3202e21024cd080849"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a3d4b026d897a6a3202e21024cd080849">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubRegistrationNotAvailable)</td></tr>
+<tr class="separator:a3d4b026d897a6a3202e21024cd080849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36709896c21a1854fca6bb8735baf5c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a36709896c21a1854fca6bb8735baf5c3">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoGetError)</td></tr>
+<tr class="separator:a36709896c21a1854fca6bb8735baf5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2a65391d0ceb23b37faf72eed58d0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a0c2a65391d0ceb23b37faf72eed58d0f">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoEmptyOrgInn)</td></tr>
+<tr class="separator:a0c2a65391d0ceb23b37faf72eed58d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2355cd22ca02924eebc019a325c5a3e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a2355cd22ca02924eebc019a325c5a3e7">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoEmptyRegNum)</td></tr>
+<tr class="separator:a2355cd22ca02924eebc019a325c5a3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb01737451d3a6f25dfaf01680a68ac6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#aeb01737451d3a6f25dfaf01680a68ac6">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoInvalidRegNum)</td></tr>
+<tr class="separator:aeb01737451d3a6f25dfaf01680a68ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1458eb848a96eec433cc60b33f9a97d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a1458eb848a96eec433cc60b33f9a97d5">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoBadTaxSystem)</td></tr>
+<tr class="separator:a1458eb848a96eec433cc60b33f9a97d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9584d54650533e88f6bf802fe8428266"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a9584d54650533e88f6bf802fe8428266">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoUnsentDocuments)</td></tr>
+<tr class="separator:a9584d54650533e88f6bf802fe8428266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd28568120a05c7cddbc9d210bddd98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a9fd28568120a05c7cddbc9d210bddd98">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, regFromHubExRegInfoSUCCSESS)</td></tr>
+<tr class="separator:a9fd28568120a05c7cddbc9d210bddd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40ed1014b3a65c685a1da53750327bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#ae40ed1014b3a65c685a1da53750327bb">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, fsCloseFromHubAlreadyFiscal)</td></tr>
+<tr class="separator:ae40ed1014b3a65c685a1da53750327bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418ae836bd7a5d5eac02a765c223bbca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a418ae836bd7a5d5eac02a765c223bbca">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, fsCloseFromHubNotFiscat)</td></tr>
+<tr class="separator:a418ae836bd7a5d5eac02a765c223bbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef242b565a6bcf7fc00acefb370cea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a1ef242b565a6bcf7fc00acefb370cea4">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, fsCloseFromHubShiftIsOpened)</td></tr>
+<tr class="separator:a1ef242b565a6bcf7fc00acefb370cea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf824709a4d9f5b179a99f4b2ed344c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#aecf824709a4d9f5b179a99f4b2ed344c">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, fsCloseFromHubHasUnsentDocs)</td></tr>
+<tr class="separator:aecf824709a4d9f5b179a99f4b2ed344c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab560622e5bc945b32ed0d77fe225af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a1ab560622e5bc945b32ed0d77fe225af">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, fsCloseFromHubErrCloseFN)</td></tr>
+<tr class="separator:a1ab560622e5bc945b32ed0d77fe225af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301889d8b6d7f8282ba34b5638a2eb8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a301889d8b6d7f8282ba34b5638a2eb8f">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, fsCloseFromHubOK)</td></tr>
+<tr class="separator:a301889d8b6d7f8282ba34b5638a2eb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacc1a579254e013b39cb4a284a95166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#adacc1a579254e013b39cb4a284a95166">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, checkDateTimeFromNtp)</td></tr>
+<tr class="separator:adacc1a579254e013b39cb4a284a95166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15443336dbeed1b7bc965d85ed1fb5f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a15443336dbeed1b7bc965d85ed1fb5f5">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, checkDateTimeFromFn)</td></tr>
+<tr class="separator:a15443336dbeed1b7bc965d85ed1fb5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a934047b60fdc31a9c6bc95f76f6435"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a8a934047b60fdc31a9c6bc95f76f6435">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, checkDateTimeFromUser)</td></tr>
+<tr class="separator:a8a934047b60fdc31a9c6bc95f76f6435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb63d67c26fde5e2c0cf554daf13f65c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#afb63d67c26fde5e2c0cf554daf13f65c">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnScreenSuccess)</td></tr>
+<tr class="separator:afb63d67c26fde5e2c0cf554daf13f65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9e253e39424bfc29393620da16c8a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a2d9e253e39424bfc29393620da16c8a6">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnScreenOtherSNOSuccess)</td></tr>
+<tr class="separator:a2d9e253e39424bfc29393620da16c8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10040d266d528e7e7897392f105edc50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a10040d266d528e7e7897392f105edc50">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnScreenCancel)</td></tr>
+<tr class="separator:a10040d266d528e7e7897392f105edc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52507eb23a68cd4f7493aece3e2ad135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a52507eb23a68cd4f7493aece3e2ad135">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnScreenOtherSNOCancel)</td></tr>
+<tr class="separator:a52507eb23a68cd4f7493aece3e2ad135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5ed4fec8f577c66e6a8b8f625b5f01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#ada5ed4fec8f577c66e6a8b8f625b5f01">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnIgnoreNDSSuccess)</td></tr>
+<tr class="separator:ada5ed4fec8f577c66e6a8b8f625b5f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d798fce6b791ddba1a09e6873bba92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a58d798fce6b791ddba1a09e6873bba92">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnScreenAlreadyLicensedFFDSuccess)</td></tr>
+<tr class="separator:a58d798fce6b791ddba1a09e6873bba92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600226ff6522a2bec16579a01fd33218"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a600226ff6522a2bec16579a01fd33218">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, drawLicWarnScreenAlreadyLicensedFFDAndNDSSuccess)</td></tr>
+<tr class="separator:a600226ff6522a2bec16579a01fd33218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0216c4059a2a8bf0cb7abe1b352045"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a9b0216c4059a2a8bf0cb7abe1b352045">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, SetPosWeightNotWeightGood)</td></tr>
+<tr class="separator:a9b0216c4059a2a8bf0cb7abe1b352045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9baf3b938c5acd3a2beb715e8f23302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#af9baf3b938c5acd3a2beb715e8f23302">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, SetPosWeightZeroWeight)</td></tr>
+<tr class="separator:af9baf3b938c5acd3a2beb715e8f23302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b9d702f764bcdef4ea10587992137d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a73b9d702f764bcdef4ea10587992137d">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, SetPosWeightZeroSuccess)</td></tr>
+<tr class="separator:a73b9d702f764bcdef4ea10587992137d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a44b1634680567849d11f773b5b5cc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a6a44b1634680567849d11f773b5b5cc4">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, searchGoodsSuccessEAN13)</td></tr>
+<tr class="separator:a6a44b1634680567849d11f773b5b5cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21c02c31d9b0943b567d12ca7b978f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#ae21c02c31d9b0943b567d12ca7b978f1">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, searchGoodsEAN13NotWeight)</td></tr>
+<tr class="separator:ae21c02c31d9b0943b567d12ca7b978f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d53610cd5b9968c98deaa727d951432"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a9d53610cd5b9968c98deaa727d951432">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, searchGoodsEAN13WrongBarcode)</td></tr>
+<tr class="separator:a9d53610cd5b9968c98deaa727d951432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c8ab8371dc19e36ba6c0a65a2c063c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a71c8ab8371dc19e36ba6c0a65a2c063c">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, lastDocDateTimeFillSuccess)</td></tr>
+<tr class="separator:a71c8ab8371dc19e36ba6c0a65a2c063c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d47a1d7a8e1bba07adb7d84dae73bcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#a5d47a1d7a8e1bba07adb7d84dae73bcc">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, lastDocDateTimeFillFailed)</td></tr>
+<tr class="separator:a5d47a1d7a8e1bba07adb7d84dae73bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac638389d7179c3c66b808c9798942094"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testMenu_8h.html#ac638389d7179c3c66b808c9798942094">TEST_F</a> (<a class="el" href="classMenuTest.html">MenuTest</a>, lastDocDateTimeFillFailed_2)</td></tr>
+<tr class="separator:ac638389d7179c3c66b808c9798942094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a7018901950e8ef45d33f9f0e0f1ca7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7018901950e8ef45d33f9f0e0f1ca7d3">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scrollScreenNullPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7485d54638991b8ac6fac45d5dcdbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7485d54638991b8ac6fac45d5dcdbf7">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scrollScreenLcdScrollFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d7270a21f520119b3ff3d24513e8017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7270a21f520119b3ff3d24513e8017">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scrollScreenWithoutHeaderSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe8871daaa8025d521a4a66377ec2685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8871daaa8025d521a4a66377ec2685">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scrollScreenWithHeaderSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a617c49c2e9aae3272acddaf453365c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617c49c2e9aae3272acddaf453365c96">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubRegNone&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3231a4e6b7766c00ee453545032153f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3231a4e6b7766c00ee453545032153f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubCabinetDisable&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9da47a8a37d32f33277c2c1823666989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da47a8a37d32f33277c2c1823666989">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubCloudRegistration&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab7aa88138cf931398e59dc9811a946f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7aa88138cf931398e59dc9811a946f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubRegRegistrationBadFsStatus&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a873d85fad288085835fee6eb038d20d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873d85fad288085835fee6eb038d20d4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubRegRegistrationAlreadyFiscal&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5944a8f5324474303c2140c382b67629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5944a8f5324474303c2140c382b67629">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[10/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubChangeParametersNotFiscalMode&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a700dc9baaf6a3f3005016e971b2b350c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700dc9baaf6a3f3005016e971b2b350c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[11/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubChangeParametersShiftIsOpen&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2132d3e4c88752c4a8e1dda662fea705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2132d3e4c88752c4a8e1dda662fea705">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[12/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubCloseFn&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade254276cb6f9a1f5ef1df3cfdaccf18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade254276cb6f9a1f5ef1df3cfdaccf18">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[13/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubRegistrationPostFiscalMode&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d4b026d897a6a3202e21024cd080849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4b026d897a6a3202e21024cd080849">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[14/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubRegistrationNotAvailable&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36709896c21a1854fca6bb8735baf5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36709896c21a1854fca6bb8735baf5c3">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[15/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoGetError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c2a65391d0ceb23b37faf72eed58d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2a65391d0ceb23b37faf72eed58d0f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[16/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoEmptyOrgInn&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2355cd22ca02924eebc019a325c5a3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2355cd22ca02924eebc019a325c5a3e7">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[17/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoEmptyRegNum&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb01737451d3a6f25dfaf01680a68ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb01737451d3a6f25dfaf01680a68ac6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[18/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoInvalidRegNum&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1458eb848a96eec433cc60b33f9a97d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1458eb848a96eec433cc60b33f9a97d5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[19/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoBadTaxSystem&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9584d54650533e88f6bf802fe8428266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9584d54650533e88f6bf802fe8428266">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[20/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoUnsentDocuments&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fd28568120a05c7cddbc9d210bddd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fd28568120a05c7cddbc9d210bddd98">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[21/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">regFromHubExRegInfoSUCCSESS&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae40ed1014b3a65c685a1da53750327bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40ed1014b3a65c685a1da53750327bb">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[22/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fsCloseFromHubAlreadyFiscal&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a418ae836bd7a5d5eac02a765c223bbca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418ae836bd7a5d5eac02a765c223bbca">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[23/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fsCloseFromHubNotFiscat&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ef242b565a6bcf7fc00acefb370cea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef242b565a6bcf7fc00acefb370cea4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[24/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fsCloseFromHubShiftIsOpened&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecf824709a4d9f5b179a99f4b2ed344c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf824709a4d9f5b179a99f4b2ed344c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[25/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fsCloseFromHubHasUnsentDocs&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ab560622e5bc945b32ed0d77fe225af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab560622e5bc945b32ed0d77fe225af">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[26/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fsCloseFromHubErrCloseFN&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a301889d8b6d7f8282ba34b5638a2eb8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301889d8b6d7f8282ba34b5638a2eb8f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[27/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fsCloseFromHubOK&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adacc1a579254e013b39cb4a284a95166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacc1a579254e013b39cb4a284a95166">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[28/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">checkDateTimeFromNtp&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15443336dbeed1b7bc965d85ed1fb5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15443336dbeed1b7bc965d85ed1fb5f5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[29/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">checkDateTimeFromFn&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a934047b60fdc31a9c6bc95f76f6435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a934047b60fdc31a9c6bc95f76f6435">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[30/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">checkDateTimeFromUser&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb63d67c26fde5e2c0cf554daf13f65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb63d67c26fde5e2c0cf554daf13f65c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[31/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnScreenSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d9e253e39424bfc29393620da16c8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9e253e39424bfc29393620da16c8a6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[32/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnScreenOtherSNOSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10040d266d528e7e7897392f105edc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10040d266d528e7e7897392f105edc50">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[33/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnScreenCancel&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52507eb23a68cd4f7493aece3e2ad135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52507eb23a68cd4f7493aece3e2ad135">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[34/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnScreenOtherSNOCancel&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada5ed4fec8f577c66e6a8b8f625b5f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5ed4fec8f577c66e6a8b8f625b5f01">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[35/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnIgnoreNDSSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58d798fce6b791ddba1a09e6873bba92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d798fce6b791ddba1a09e6873bba92">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[36/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnScreenAlreadyLicensedFFDSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a600226ff6522a2bec16579a01fd33218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600226ff6522a2bec16579a01fd33218">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[37/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">drawLicWarnScreenAlreadyLicensedFFDAndNDSSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b0216c4059a2a8bf0cb7abe1b352045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0216c4059a2a8bf0cb7abe1b352045">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[38/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetPosWeightNotWeightGood&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testMenu_8h_a9b0216c4059a2a8bf0cb7abe1b352045_cgraph.png" border="0" usemap="#testMenu_8h_a9b0216c4059a2a8bf0cb7abe1b352045_cgraph" alt=""/></div>
+<map name="testMenu_8h_a9b0216c4059a2a8bf0cb7abe1b352045_cgraph" id="testMenu_8h_a9b0216c4059a2a8bf0cb7abe1b352045_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,76,39"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="124,5,255,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9baf3b938c5acd3a2beb715e8f23302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9baf3b938c5acd3a2beb715e8f23302">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[39/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetPosWeightZeroWeight&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testMenu_8h_af9baf3b938c5acd3a2beb715e8f23302_cgraph.png" border="0" usemap="#testMenu_8h_af9baf3b938c5acd3a2beb715e8f23302_cgraph" alt=""/></div>
+<map name="testMenu_8h_af9baf3b938c5acd3a2beb715e8f23302_cgraph" id="testMenu_8h_af9baf3b938c5acd3a2beb715e8f23302_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,76,39"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="124,5,255,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73b9d702f764bcdef4ea10587992137d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b9d702f764bcdef4ea10587992137d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[40/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetPosWeightZeroSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testMenu_8h_a73b9d702f764bcdef4ea10587992137d_cgraph.png" border="0" usemap="#testMenu_8h_a73b9d702f764bcdef4ea10587992137d_cgraph" alt=""/></div>
+<map name="testMenu_8h_a73b9d702f764bcdef4ea10587992137d_cgraph" id="testMenu_8h_a73b9d702f764bcdef4ea10587992137d_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,143,76,170"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="152,5,283,47"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="152,71,283,112"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf" title=" " alt="" coords="135,136,299,177"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="124,202,311,229"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="151,253,284,295"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6a44b1634680567849d11f773b5b5cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a44b1634680567849d11f773b5b5cc4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[41/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">searchGoodsSuccessEAN13&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae21c02c31d9b0943b567d12ca7b978f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae21c02c31d9b0943b567d12ca7b978f1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[42/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">searchGoodsEAN13NotWeight&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d53610cd5b9968c98deaa727d951432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d53610cd5b9968c98deaa727d951432">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[43/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">searchGoodsEAN13WrongBarcode&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71c8ab8371dc19e36ba6c0a65a2c063c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c8ab8371dc19e36ba6c0a65a2c063c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[44/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lastDocDateTimeFillSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d47a1d7a8e1bba07adb7d84dae73bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d47a1d7a8e1bba07adb7d84dae73bcc">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[45/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lastDocDateTimeFillFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac638389d7179c3c66b808c9798942094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac638389d7179c3c66b808c9798942094">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[46/46]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenuTest.html">MenuTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lastDocDateTimeFillFailed_2&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

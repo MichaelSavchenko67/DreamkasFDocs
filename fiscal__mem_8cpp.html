@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/fiscal_mem.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Файл fiscal_mem.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="fiscal__mem_8h_source.html">fiscal_mem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tax_8h_source.html">tax.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="users_8h_source.html">users.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для fiscal_mem.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="fiscal__mem_8cpp__incl.png" border="0" usemap="#src_2appl_2fiscal__mem_8cpp" alt=""/></div>
+<map name="src_2appl_2fiscal__mem_8cpp" id="src_2appl_2fiscal__mem_8cpp">
+<area shape="rect"  title=" " alt="" coords="3466,5,3630,32"/>
+<area shape="rect"  title=" " alt="" coords="1104,610,1176,637"/>
+<area shape="rect"  title=" " alt="" coords="4450,528,4505,555"/>
+<area shape="rect"  href="fiscal__mem_8h.html" title=" " alt="" coords="2137,80,2237,107"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="4295,379,4361,405"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1896,379,1947,405"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="2615,528,2691,555"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="827,304,895,331"/>
+<area shape="rect"  title=" " alt="" coords="3257,610,3340,637"/>
+<area shape="rect"  title=" " alt="" coords="577,610,639,637"/>
+<area shape="rect"  title=" " alt="" coords="201,155,261,181"/>
+<area shape="rect"  title=" " alt="" coords="1339,453,1408,480"/>
+<area shape="rect"  href="bsp__fiscal__mem_8h.html" title=" " alt="" coords="3437,379,3565,405"/>
+<area shape="rect"  title=" " alt="" coords="449,692,514,719"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="2151,229,2223,256"/>
+<area shape="rect"  href="requisites_8h.html" title=" " alt="" coords="1589,229,1678,256"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1745,155,1847,181"/>
+<area shape="rect"  title=" " alt="" coords="2968,155,3088,181"/>
+<area shape="rect"  title=" " alt="" coords="3113,155,3261,181"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="3907,379,4034,405"/>
+<area shape="rect"  title=" " alt="" coords="899,453,960,480"/>
+<area shape="rect"  title=" " alt="" coords="3918,453,3986,480"/>
+<area shape="rect"  title=" " alt="" coords="3835,453,3893,480"/>
+<area shape="rect"  title=" " alt="" coords="3539,453,3621,480"/>
+<area shape="rect"  title=" " alt="" coords="3823,692,3892,719"/>
+<area shape="rect"  title=" " alt="" coords="3645,453,3709,480"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="3463,610,3513,637"/>
+<area shape="rect"  href="exceptions__fsc_8h.html" title=" " alt="" coords="4502,453,4623,480"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="4416,453,4477,480"/>
+<area shape="rect"  title=" " alt="" coords="1980,610,2041,637"/>
+<area shape="rect"  title=" " alt="" coords="2105,610,2162,637"/>
+<area shape="rect"  title=" " alt="" coords="1705,610,1743,637"/>
+<area shape="rect"  title=" " alt="" coords="3135,610,3193,637"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="1417,379,1517,405"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="1715,304,1800,331"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="825,379,897,405"/>
+<area shape="rect"  title=" " alt="" coords="1989,453,2048,480"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="2933,453,3008,480"/>
+<area shape="rect"  title=" " alt="" coords="2548,610,2607,637"/>
+<area shape="rect"  title=" " alt="" coords="2631,610,2700,637"/>
+<area shape="rect"  title=" " alt="" coords="2724,610,2791,637"/>
+<area shape="rect"  title=" " alt="" coords="3364,610,3439,637"/>
+<area shape="rect"  title=" " alt="" coords="2815,610,2929,637"/>
+<area shape="rect"  title=" " alt="" coords="2954,610,3110,637"/>
+<area shape="rect"  title=" " alt="" coords="2186,603,2337,644"/>
+<area shape="rect"  title=" " alt="" coords="2361,603,2524,644"/>
+<area shape="rect"  title=" " alt="" coords="1246,304,1314,331"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="94,528,215,555"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="1845,304,1961,331"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1062,229,1119,256"/>
+</map>
+</div>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/sqlWrapper.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл sqlWrapper.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="sqlWrapper_8h_source.html">sqlWrapper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="log_8h_source.html">log.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;boost/filesystem.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="keypad_8h_source.html">keypad.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для sqlWrapper.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="sqlWrapper_8cpp__incl.png" border="0" usemap="#src_2appl_2sqlWrapper_8cpp" alt=""/></div>
+<map name="src_2appl_2sqlWrapper_8cpp" id="src_2appl_2sqlWrapper_8cpp">
+<area shape="rect"  title=" " alt="" coords="1852,5,2014,32"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="506,80,605,107"/>
+<area shape="rect"  title=" " alt="" coords="870,401,929,427"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2112,401,2162,427"/>
+<area shape="rect"  title=" " alt="" coords="1682,319,1744,345"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1430,319,1506,345"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1299,80,1356,107"/>
+<area shape="rect"  title=" " alt="" coords="1663,244,1731,271"/>
+<area shape="rect"  title=" " alt="" coords="2131,80,2274,107"/>
+<area shape="rect"  href="keypad_8h.html" title=" " alt="" coords="2281,319,2356,345"/>
+<area shape="rect"  title=" " alt="" coords="442,162,501,189"/>
+<area shape="rect"  title=" " alt="" coords="525,162,586,189"/>
+<area shape="rect"  title=" " alt="" coords="791,401,846,427"/>
+<area shape="rect"  title=" " alt="" coords="184,162,255,189"/>
+<area shape="rect"  title=" " alt="" coords="280,155,418,196"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="92,162,160,189"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="1136,319,1202,345"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1434,244,1502,271"/>
+<area shape="rect"  title=" " alt="" coords="289,401,350,427"/>
+<area shape="rect"  title=" " alt="" coords="446,401,518,427"/>
+<area shape="rect"  title=" " alt="" coords="203,401,260,427"/>
+<area shape="rect"  title=" " alt="" coords="542,401,604,427"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="182,319,282,345"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="328,244,413,271"/>
+<area shape="rect"  title=" " alt="" coords="628,401,667,427"/>
+<area shape="rect"  title=" " alt="" coords="2252,483,2315,509"/>
+<area shape="rect"  title=" " alt="" coords="2158,483,2228,509"/>
+<area shape="rect"  title=" " alt="" coords="2508,483,2577,509"/>
+<area shape="rect"  title=" " alt="" coords="1843,483,1908,509"/>
+<area shape="rect"  title=" " alt="" coords="1932,483,2003,509"/>
+<area shape="rect"  title=" " alt="" coords="2028,483,2134,509"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="1481,401,1542,427"/>
+<area shape="rect"  title=" " alt="" coords="1190,401,1273,427"/>
+<area shape="rect"  title=" " alt="" coords="2237,401,2296,427"/>
+<area shape="rect"  title=" " alt="" coords="1297,401,1366,427"/>
+<area shape="rect"  title=" " alt="" coords="1390,401,1457,427"/>
+<area shape="rect"  title=" " alt="" coords="692,401,766,427"/>
+<area shape="rect"  title=" " alt="" coords="1566,401,1681,427"/>
+<area shape="rect"  title=" " alt="" coords="1706,401,1862,427"/>
+<area shape="rect"  title=" " alt="" coords="1886,393,2036,435"/>
+<area shape="rect"  title=" " alt="" coords="1004,393,1166,435"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="1600,162,1650,189"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="1355,162,1423,189"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="662,319,756,345"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1229,244,1304,271"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="1819,319,1954,345"/>
+<area shape="rect"  title=" " alt="" coords="2752,401,2828,427"/>
+<area shape="rect"  title=" " alt="" coords="2320,401,2418,427"/>
+<area shape="rect"  title=" " alt="" coords="2442,401,2557,427"/>
+<area shape="rect"  href="bsp__printer__keypad_8h.html" title=" " alt="" coords="2581,401,2728,427"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a265b679840423917db3e16ac5915eab0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a265b679840423917db3e16ac5915eab0">BLANK_VALUE</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a265b679840423917db3e16ac5915eab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dc223ea6c72cd998e96d93c6ddc3bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a88dc223ea6c72cd998e96d93c6ddc3bc">BLANK_STRING</a>&#160;&#160;&#160;&quot;&lt;&lt;&lt;&lt;BLANK&gt;&gt;&gt;&gt;&quot;</td></tr>
+<tr class="separator:a88dc223ea6c72cd998e96d93c6ddc3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:af63a9f10d8252003d7fc89220d343aec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#af63a9f10d8252003d7fc89220d343aec">queryUsersRdy</a> = false</td></tr>
+<tr class="separator:af63a9f10d8252003d7fc89220d343aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8817077b6b9b157522091c7c8ceb42f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#ad8817077b6b9b157522091c7c8ceb42f">findUserOperation</a> = false</td></tr>
+<tr class="separator:ad8817077b6b9b157522091c7c8ceb42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ea0ee67d500794eaf320b52a18fab6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#ac3ea0ee67d500794eaf320b52a18fab6">userWasFound</a> = false</td></tr>
+<tr class="separator:ac3ea0ee67d500794eaf320b52a18fab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbed666289f453f7ee48ef23812d239"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#aafbed666289f453f7ee48ef23812d239">flagUserBaseSize</a> = false</td></tr>
+<tr class="separator:aafbed666289f453f7ee48ef23812d239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d1c12240df66ffda6a1bedbe3befb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a24d1c12240df66ffda6a1bedbe3befb4">usersBaseSize</a> = 0</td></tr>
+<tr class="separator:a24d1c12240df66ffda6a1bedbe3befb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f51577f2be11268673baf6e721e2e84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a8f51577f2be11268673baf6e721e2e84">getUsersList</a> = false</td></tr>
+<tr class="separator:a8f51577f2be11268673baf6e721e2e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48eccacc0152541558eaf04be0633017"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a48eccacc0152541558eaf04be0633017">getUser</a> = false</td></tr>
+<tr class="separator:a48eccacc0152541558eaf04be0633017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a019152705064cb970bfd2f48d33959ed"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a019152705064cb970bfd2f48d33959ed">users</a></td></tr>
+<tr class="separator:a019152705064cb970bfd2f48d33959ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc4c2fb50aaadbbe5eff22af6b44195"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#aecc4c2fb50aaadbbe5eff22af6b44195">userStrings</a></td></tr>
+<tr class="separator:aecc4c2fb50aaadbbe5eff22af6b44195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b9e757ecb1b24e1469025d1471dd3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a30b9e757ecb1b24e1469025d1471dd3a">queryHotkeyRdy</a> = false</td></tr>
+<tr class="separator:a30b9e757ecb1b24e1469025d1471dd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad712440dbb6c0f6d4e0c0fc68791c692"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#ad712440dbb6c0f6d4e0c0fc68791c692">updateHotkeyFlag</a> = false</td></tr>
+<tr class="separator:ad712440dbb6c0f6d4e0c0fc68791c692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057210a1e2b937bf03afef09cce77b04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a057210a1e2b937bf03afef09cce77b04">hotkeyDbSize</a> = 0</td></tr>
+<tr class="separator:a057210a1e2b937bf03afef09cce77b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce80b71774582d24781ca8aa49d3e33"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a8ce80b71774582d24781ca8aa49d3e33">foundHotkeySize</a></td></tr>
+<tr class="separator:a8ce80b71774582d24781ca8aa49d3e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28683d626888e00e04cbcad8ec43ecbc"><td class="memItemLeft" align="right" valign="top">atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a28683d626888e00e04cbcad8ec43ecbc">queryConfigRdy</a></td></tr>
+<tr class="separator:a28683d626888e00e04cbcad8ec43ecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08cbc979152bb1b4c396906d82c0f9e"><td class="memItemLeft" align="right" valign="top">atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#ac08cbc979152bb1b4c396906d82c0f9e">updateConfigFlag</a></td></tr>
+<tr class="separator:ac08cbc979152bb1b4c396906d82c0f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0787ffb608e4b6fcadd7165edfdfaf83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a0787ffb608e4b6fcadd7165edfdfaf83">configDbSize</a> = 0</td></tr>
+<tr class="separator:a0787ffb608e4b6fcadd7165edfdfaf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac1d8f7180f89c7a294483b0b642ab2"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#abac1d8f7180f89c7a294483b0b642ab2">fieldNames</a></td></tr>
+<tr class="separator:abac1d8f7180f89c7a294483b0b642ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d4279804703cdb6f7e214553be85c5"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#a39d4279804703cdb6f7e214553be85c5">foundCfgValue</a></td></tr>
+<tr class="separator:a39d4279804703cdb6f7e214553be85c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56f131aeb9da690627c6c5c2264e24e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html#af56f131aeb9da690627c6c5c2264e24e">foundCfgSize</a></td></tr>
+<tr class="separator:af56f131aeb9da690627c6c5c2264e24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a88dc223ea6c72cd998e96d93c6ddc3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dc223ea6c72cd998e96d93c6ddc3bc">&#9670;&nbsp;</a></span>BLANK_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLANK_STRING&#160;&#160;&#160;&quot;&lt;&lt;&lt;&lt;BLANK&gt;&gt;&gt;&gt;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a265b679840423917db3e16ac5915eab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265b679840423917db3e16ac5915eab0">&#9670;&nbsp;</a></span>BLANK_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLANK_VALUE&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a0787ffb608e4b6fcadd7165edfdfaf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0787ffb608e4b6fcadd7165edfdfaf83">&#9670;&nbsp;</a></span>configDbSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int configDbSize = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abac1d8f7180f89c7a294483b0b642ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac1d8f7180f89c7a294483b0b642ab2">&#9670;&nbsp;</a></span>fieldNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; fieldNames</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8817077b6b9b157522091c7c8ceb42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8817077b6b9b157522091c7c8ceb42f">&#9670;&nbsp;</a></span>findUserOperation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool findUserOperation = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafbed666289f453f7ee48ef23812d239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbed666289f453f7ee48ef23812d239">&#9670;&nbsp;</a></span>flagUserBaseSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool flagUserBaseSize = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af56f131aeb9da690627c6c5c2264e24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56f131aeb9da690627c6c5c2264e24e">&#9670;&nbsp;</a></span>foundCfgSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string foundCfgSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39d4279804703cdb6f7e214553be85c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d4279804703cdb6f7e214553be85c5">&#9670;&nbsp;</a></span>foundCfgValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; foundCfgValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ce80b71774582d24781ca8aa49d3e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce80b71774582d24781ca8aa49d3e33">&#9670;&nbsp;</a></span>foundHotkeySize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string foundHotkeySize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48eccacc0152541558eaf04be0633017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48eccacc0152541558eaf04be0633017">&#9670;&nbsp;</a></span>getUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getUser = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f51577f2be11268673baf6e721e2e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f51577f2be11268673baf6e721e2e84">&#9670;&nbsp;</a></span>getUsersList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getUsersList = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a057210a1e2b937bf03afef09cce77b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057210a1e2b937bf03afef09cce77b04">&#9670;&nbsp;</a></span>hotkeyDbSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hotkeyDbSize = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28683d626888e00e04cbcad8ec43ecbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28683d626888e00e04cbcad8ec43ecbc">&#9670;&nbsp;</a></span>queryConfigRdy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">atomic&lt;bool&gt; queryConfigRdy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30b9e757ecb1b24e1469025d1471dd3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b9e757ecb1b24e1469025d1471dd3a">&#9670;&nbsp;</a></span>queryHotkeyRdy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queryHotkeyRdy = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af63a9f10d8252003d7fc89220d343aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af63a9f10d8252003d7fc89220d343aec">&#9670;&nbsp;</a></span>queryUsersRdy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool queryUsersRdy = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac08cbc979152bb1b4c396906d82c0f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08cbc979152bb1b4c396906d82c0f9e">&#9670;&nbsp;</a></span>updateConfigFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">atomic&lt;bool&gt; updateConfigFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad712440dbb6c0f6d4e0c0fc68791c692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad712440dbb6c0f6d4e0c0fc68791c692">&#9670;&nbsp;</a></span>updateHotkeyFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool updateHotkeyFlag = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a019152705064cb970bfd2f48d33959ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a019152705064cb970bfd2f48d33959ed">&#9670;&nbsp;</a></span>users</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; users</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24d1c12240df66ffda6a1bedbe3befb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d1c12240df66ffda6a1bedbe3befb4">&#9670;&nbsp;</a></span>usersBaseSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int usersBaseSize = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecc4c2fb50aaadbbe5eff22af6b44195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc4c2fb50aaadbbe5eff22af6b44195">&#9670;&nbsp;</a></span>userStrings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; userStrings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3ea0ee67d500794eaf320b52a18fab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ea0ee67d500794eaf320b52a18fab6">&#9670;&nbsp;</a></span>userWasFound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool userWasFound = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
