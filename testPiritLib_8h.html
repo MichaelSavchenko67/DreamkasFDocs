@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FisGo: Файл src/tests/include/testPiritLib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="kassa-f-sim.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.20.2</span>
+   </div>
+   <div id="projectbrief">Software documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testPiritLib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;gmock/gmock.h&gt;</code><br />
+<code>#include &lt;gmock/gmock-global.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для testPiritLib.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="testPiritLib_8h__incl.png" border="0" usemap="#src_2tests_2include_2testPiritLib_8h" alt=""/></div>
+<map name="src_2tests_2include_2testPiritLib_8h" id="src_2tests_2include_2testPiritLib_8h">
+<area shape="rect"  title=" " alt="" coords="425,5,592,47"/>
+<area shape="rect"  title=" " alt="" coords="5,95,100,121"/>
+<area shape="rect"  title=" " alt="" coords="125,95,239,121"/>
+<area shape="rect"  title=" " alt="" coords="264,95,417,121"/>
+<area shape="rect"  title=" " alt="" coords="441,95,507,121"/>
+<area shape="rect"  title=" " alt="" coords="1310,543,1382,569"/>
+<area shape="rect"  title=" " alt="" coords="1319,468,1373,495"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1828,468,1904,495"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="1551,95,1658,121"/>
+<area shape="rect"  title=" " alt="" coords="2035,543,2118,569"/>
+<area shape="rect"  title=" " alt="" coords="1953,543,2011,569"/>
+<area shape="rect"  title=" " alt="" coords="1545,543,1614,569"/>
+<area shape="rect"  title=" " alt="" coords="2937,543,2998,569"/>
+<area shape="rect"  title=" " alt="" coords="1638,543,1705,569"/>
+<area shape="rect"  title=" " alt="" coords="1729,543,1803,569"/>
+<area shape="rect"  title=" " alt="" coords="3180,543,3237,569"/>
+<area shape="rect"  title=" " alt="" coords="2774,543,2835,569"/>
+<area shape="rect"  title=" " alt="" coords="2532,543,2571,569"/>
+<area shape="rect"  title=" " alt="" coords="2217,543,2275,569"/>
+<area shape="rect"  title=" " alt="" coords="1406,543,1521,569"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2142,543,2193,569"/>
+<area shape="rect"  title=" " alt="" coords="1827,543,1929,569"/>
+<area shape="rect"  title=" " alt="" coords="2359,617,2421,644"/>
+<area shape="rect"  title=" " alt="" coords="1945,617,2014,644"/>
+<area shape="rect"  title=" " alt="" coords="2038,617,2107,644"/>
+<area shape="rect"  title=" " alt="" coords="563,617,628,644"/>
+<area shape="rect"  title=" " alt="" coords="2132,617,2203,644"/>
+<area shape="rect"  title=" " alt="" coords="2227,617,2334,644"/>
+<area shape="rect"  title=" " alt="" coords="1548,169,1661,196"/>
+<area shape="rect"  title=" " alt="" coords="1685,169,1759,196"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="1329,319,1401,345"/>
+<area shape="rect"  href="beeper_8h.html" title=" " alt="" coords="787,393,859,420"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1404,244,1472,271"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1931,393,2006,420"/>
+<area shape="rect"  href="requisites_8h.html" title=" " alt="" coords="2835,169,2924,196"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="2203,169,2305,196"/>
+<area shape="rect"  title=" " alt="" coords="1783,169,1842,196"/>
+<area shape="rect"  title=" " alt="" coords="1867,169,1913,196"/>
+<area shape="rect"  href="barcodeScanner_8h.html" title=" " alt="" coords="884,393,1011,420"/>
+<area shape="rect"  title=" " alt="" coords="1339,393,1401,420"/>
+<area shape="rect"  title=" " alt="" coords="683,468,758,495"/>
+<area shape="rect"  title=" " alt="" coords="782,468,865,495"/>
+<area shape="rect"  title=" " alt="" coords="939,468,998,495"/>
+<area shape="rect"  title=" " alt="" coords="1175,468,1243,495"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="2014,319,2065,345"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="980,319,1101,345"/>
+<area shape="rect"  title=" " alt="" coords="3153,244,3221,271"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="2969,468,3069,495"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="2583,244,2669,271"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1881,319,1939,345"/>
+</map>
+</div>
+</div>
+<p><a href="testPiritLib_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPiritLib.html">TestPiritLib</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPiritLib_1_1TestBios.html">TestPiritLib::TestBios</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:abae6b482ace65bffd21611dc9272a46c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#abae6b482ace65bffd21611dc9272a46c">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimePositive)</td></tr>
+<tr class="separator:abae6b482ace65bffd21611dc9272a46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bbf43e1b6693a3d3df49bbdc2f4b29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a76bbf43e1b6693a3d3df49bbdc2f4b29">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimeNegativeDateError)</td></tr>
+<tr class="separator:a76bbf43e1b6693a3d3df49bbdc2f4b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc09c4b63dfaf0a86e49dce1b080434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a9cc09c4b63dfaf0a86e49dce1b080434">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimeNegativeTimeError)</td></tr>
+<tr class="separator:a9cc09c4b63dfaf0a86e49dce1b080434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a8bdc54b7de6d90aff7519b5e456a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#aa0a8bdc54b7de6d90aff7519b5e456a4">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimeNegativeCriticalError)</td></tr>
+<tr class="separator:aa0a8bdc54b7de6d90aff7519b5e456a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaff672531782d5999070caf90205205"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#abaff672531782d5999070caf90205205">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimeNegativeTimeCriticalError)</td></tr>
+<tr class="separator:abaff672531782d5999070caf90205205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9488304113180d76b4d6dff34d2227eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a9488304113180d76b4d6dff34d2227eb">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimeNegativeFormatDateError)</td></tr>
+<tr class="separator:a9488304113180d76b4d6dff34d2227eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab856fca6ec2c43ace92a5f7b369e20be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#ab856fca6ec2c43ace92a5f7b369e20be">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, GetFNDateTimeNegativeFormatTimeError)</td></tr>
+<tr class="separator:ab856fca6ec2c43ace92a5f7b369e20be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fe09398c7d265602991306ded4697e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a81fe09398c7d265602991306ded4697e">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyActivateSuccess)</td></tr>
+<tr class="separator:a81fe09398c7d265602991306ded4697e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa535708b33b7011856e6ecd85036aacf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#aa535708b33b7011856e6ecd85036aacf">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyActivateEmptyKeyError)</td></tr>
+<tr class="separator:aa535708b33b7011856e6ecd85036aacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b88922220b3032f3ca20daa45c4f729"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a2b88922220b3032f3ca20daa45c4f729">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyActivateLibError)</td></tr>
+<tr class="separator:a2b88922220b3032f3ca20daa45c4f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27df33f0d1156238cd6890819c89163"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#aa27df33f0d1156238cd6890819c89163">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyGetServiceInfoSuccess)</td></tr>
+<tr class="separator:aa27df33f0d1156238cd6890819c89163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbef28d3d18e635335ee03bf2847f083"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#afbef28d3d18e635335ee03bf2847f083">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyGetServiceInfoLibError)</td></tr>
+<tr class="separator:afbef28d3d18e635335ee03bf2847f083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40229fb4f1e9becfc3d47b07653cd2a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a40229fb4f1e9becfc3d47b07653cd2a1">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyGetServiceInfoListSuccess)</td></tr>
+<tr class="separator:a40229fb4f1e9becfc3d47b07653cd2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3b0df5d799493fc69670bb453c2a77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a8a3b0df5d799493fc69670bb453c2a77">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyGetServiceInfoListLibError)</td></tr>
+<tr class="separator:a8a3b0df5d799493fc69670bb453c2a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1557c16219d51bb9eb8adcd54404d4db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#a1557c16219d51bb9eb8adcd54404d4db">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyPrintAllSuccess)</td></tr>
+<tr class="separator:a1557c16219d51bb9eb8adcd54404d4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6166d020dd307d5b3018da41ca96b67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPiritLib_8h.html#ae6166d020dd307d5b3018da41ca96b67">TEST_F</a> (<a class="el" href="classTestPiritLib.html">TestPiritLib</a>, dreamkasKeyPrintAllLibError)</td></tr>
+<tr class="separator:ae6166d020dd307d5b3018da41ca96b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="abae6b482ace65bffd21611dc9272a46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae6b482ace65bffd21611dc9272a46c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimePositive&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;120918&quot;</span>), Return(0)) );</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;132115&quot;</span>), Return(0)) );</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    EXPECT_TRUE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    EXPECT_EQ(   13, dateIso.<a class="code" href="structConvert_1_1DATE__ISO__8601.html#a9750c6eed465db9d66e10b97c945900f">hours</a>   );</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    EXPECT_EQ(   21, dateIso.<a class="code" href="structConvert_1_1DATE__ISO__8601.html#a066e9db4abc53fd3edc7688e530189dd">minutes</a> );</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    EXPECT_EQ(   15, dateIso.<a class="code" href="structConvert_1_1DATE__ISO__8601.html#a0e8637995ed3e52d3e36b04e53271c7d">seconds</a> );</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    EXPECT_EQ(   12, dateIso.<a class="code" href="structConvert_1_1DATE__ISO__8601.html#a72e0734bcebc91a3c39fdace08340bd6">day</a>     );</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    EXPECT_EQ(    9, dateIso.<a class="code" href="structConvert_1_1DATE__ISO__8601.html#af8134b5385abce45b3ad141e8296c6db">month</a>   );</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    EXPECT_EQ( 2018, dateIso.<a class="code" href="structConvert_1_1DATE__ISO__8601.html#a7584dee80e1969bbf827f81404630c71">year</a>    );</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div><div class="ttc" id="structConvert_1_1DATE__ISO__8601_html_a066e9db4abc53fd3edc7688e530189dd"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html#a066e9db4abc53fd3edc7688e530189dd">Convert::DATE_ISO_8601::minutes</a></div><div class="ttdeci">int minutes</div><div class="ttdef"><b>Definition:</b> convert.h:98</div></div>
+<div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html_a72e0734bcebc91a3c39fdace08340bd6"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html#a72e0734bcebc91a3c39fdace08340bd6">Convert::DATE_ISO_8601::day</a></div><div class="ttdeci">int day</div><div class="ttdef"><b>Definition:</b> convert.h:94</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html_af8134b5385abce45b3ad141e8296c6db"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html#af8134b5385abce45b3ad141e8296c6db">Convert::DATE_ISO_8601::month</a></div><div class="ttdeci">int month</div><div class="ttdef"><b>Definition:</b> convert.h:95</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html_a0e8637995ed3e52d3e36b04e53271c7d"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html#a0e8637995ed3e52d3e36b04e53271c7d">Convert::DATE_ISO_8601::seconds</a></div><div class="ttdeci">int seconds</div><div class="ttdef"><b>Definition:</b> convert.h:99</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html_a7584dee80e1969bbf827f81404630c71"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html#a7584dee80e1969bbf827f81404630c71">Convert::DATE_ISO_8601::year</a></div><div class="ttdeci">int year</div><div class="ttdef"><b>Definition:</b> convert.h:96</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html_a9750c6eed465db9d66e10b97c945900f"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html#a9750c6eed465db9d66e10b97c945900f">Convert::DATE_ISO_8601::hours</a></div><div class="ttdeci">int hours</div><div class="ttdef"><b>Definition:</b> convert.h:97</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="structConvert_1_1DATE__ISO__8601.html#a72e0734bcebc91a3c39fdace08340bd6">Convert::DATE_ISO_8601::day</a>, <a class="el" href="structConvert_1_1DATE__ISO__8601.html#a9750c6eed465db9d66e10b97c945900f">Convert::DATE_ISO_8601::hours</a>, <a class="el" href="structConvert_1_1DATE__ISO__8601.html#a066e9db4abc53fd3edc7688e530189dd">Convert::DATE_ISO_8601::minutes</a>, <a class="el" href="structConvert_1_1DATE__ISO__8601.html#af8134b5385abce45b3ad141e8296c6db">Convert::DATE_ISO_8601::month</a>, <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a>, <a class="el" href="structConvert_1_1DATE__ISO__8601.html#a0e8637995ed3e52d3e36b04e53271c7d">Convert::DATE_ISO_8601::seconds</a>, <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a> и <a class="el" href="structConvert_1_1DATE__ISO__8601.html#a7584dee80e1969bbf827f81404630c71">Convert::DATE_ISO_8601::year</a>.</p>
+
+</div>
+</div>
+<a id="a76bbf43e1b6693a3d3df49bbdc2f4b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bbf43e1b6693a3d3df49bbdc2f4b29">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimeNegativeDateError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;&quot;</span>), Return(-1)) );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(AtMost(1)).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;132115&quot;</span>), Return(0)) );</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a9cc09c4b63dfaf0a86e49dce1b080434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc09c4b63dfaf0a86e49dce1b080434">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimeNegativeTimeError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;120918&quot;</span>), Return(0)) );</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;&quot;</span>), Return(-1)) );</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="aa0a8bdc54b7de6d90aff7519b5e456a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a8bdc54b7de6d90aff7519b5e456a4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimeNegativeCriticalError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;120918&quot;</span>), Return(0)) );</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;132115&quot;</span>), Return(0)) );</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">true</span>) );</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    EXPECT_TRUE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="abaff672531782d5999070caf90205205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaff672531782d5999070caf90205205">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimeNegativeTimeCriticalError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;120918&quot;</span>), Return(0)) );</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;&quot;</span>), Return(-1)) );</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">true</span>) );</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a9488304113180d76b4d6dff34d2227eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9488304113180d76b4d6dff34d2227eb">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimeNegativeFormatDateError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;12918&quot;</span>), Return(0)) );</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;132115&quot;</span>), Return(0)) );</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="ab856fca6ec2c43ace92a5f7b369e20be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab856fca6ec2c43ace92a5f7b369e20be">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GetFNDateTimeNegativeFormatTimeError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a> dateIso;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_DATE, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;120918&quot;</span>), Return(0)) );</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    EXPECT_GLOBAL_CALL( getStrFromInfoFN, getStrFromInfoFN(PIRIT_INFO_FN_DATETIME, PIRIT_DATETIME_TIME, _) ).Times(1).WillOnce( DoAll(SetArgReferee&lt;2&gt;(<span class="stringliteral">&quot;13211&quot;</span>), Return(0)) );</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(2)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;getFNDateTime(dateIso) );</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+<div class="ttc" id="structConvert_1_1DATE__ISO__8601_html"><div class="ttname"><a href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></div><div class="ttdef"><b>Definition:</b> convert.h:92</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a81fe09398c7d265602991306ded4697e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fe09398c7d265602991306ded4697e">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyActivateSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeySet, libDreamkasKeySet(_) ).Times(AtMost(1)).WillOnce( Return(0) );</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">string</span> key = <span class="stringliteral">&quot;String with Dreamkas Key&quot;</span>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    EXPECT_TRUE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyActivate(key) );</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="aa535708b33b7011856e6ecd85036aacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa535708b33b7011856e6ecd85036aacf">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyActivateEmptyKeyError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeySet, libDreamkasKeySet(_) ).Times(AtMost(1)).WillOnce( Return(0) );</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">string</span> key;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyActivate(key) );</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a2b88922220b3032f3ca20daa45c4f729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b88922220b3032f3ca20daa45c4f729">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyActivateLibError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeySet, libDreamkasKeySet(_) ).Times(AtMost(1)).WillOnce( Return(-1) );</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">true</span>) );</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">string</span> key = <span class="stringliteral">&quot;String with Dreamkas Key&quot;</span>;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyActivate(key) );</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="aa27df33f0d1156238cd6890819c89163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa27df33f0d1156238cd6890819c89163">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyGetServiceInfoSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeyGetInfo, libDreamkasKeyGetInfo(_,_) ).Times(AtMost(1)).WillOnce( Return(0) );</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="structLicense_1_1LicenseTag.html">License::LicenseTag</a> license;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> uint8_t index = 0;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    EXPECT_TRUE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyGetServiceInfo(license, index) );</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div><div class="ttc" id="structLicense_1_1LicenseTag_html"><div class="ttname"><a href="structLicense_1_1LicenseTag.html">License::LicenseTag</a></div><div class="ttdoc">The LicenseTag struct - структура для одного тэга</div><div class="ttdef"><b>Definition:</b> license.h:30</div></div>
+<div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="afbef28d3d18e635335ee03bf2847f083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbef28d3d18e635335ee03bf2847f083">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyGetServiceInfoLibError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeyGetInfo, libDreamkasKeyGetInfo(_,_) ).Times(AtMost(1)).WillOnce( Return(-1) );</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">true</span>) );</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="structLicense_1_1LicenseTag.html">License::LicenseTag</a> license;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">const</span> uint8_t index = 0;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyGetServiceInfo(license, index) );</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div><div class="ttc" id="structLicense_1_1LicenseTag_html"><div class="ttname"><a href="structLicense_1_1LicenseTag.html">License::LicenseTag</a></div><div class="ttdoc">The LicenseTag struct - структура для одного тэга</div><div class="ttdef"><b>Definition:</b> license.h:30</div></div>
+<div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a40229fb4f1e9becfc3d47b07653cd2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40229fb4f1e9becfc3d47b07653cd2a1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyGetServiceInfoListSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeyGetInfoList, libDreamkasKeyGetInfoList(_) ).Times(AtMost(1)).WillOnce( Return(0) );</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    vector&lt;License::LicenseTag&gt; licenseList;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    EXPECT_TRUE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyGetServiceInfoList(licenseList) );</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a8a3b0df5d799493fc69670bb453c2a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3b0df5d799493fc69670bb453c2a77">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyGetServiceInfoListLibError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeyGetInfoList, libDreamkasKeyGetInfoList(_) ).Times(AtMost(1)).WillOnce( Return(-1) );</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">true</span>) );</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    vector&lt;License::LicenseTag&gt; licenseList;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyGetServiceInfoList(licenseList) );</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="a1557c16219d51bb9eb8adcd54404d4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1557c16219d51bb9eb8adcd54404d4db">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyPrintAllSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;{</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeyPrintAll, libDreamkasKeyPrintAll() ).Times(AtMost(1)).WillOnce( Return(0) );</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">false</span>) );</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    EXPECT_TRUE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyPrintAll() );</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+<a id="ae6166d020dd307d5b3018da41ca96b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6166d020dd307d5b3018da41ca96b67">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestPiritLib.html">TestPiritLib</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dreamkasKeyPrintAllLibError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    EXPECT_GLOBAL_CALL( libDreamkasKeyPrintAll, libDreamkasKeyPrintAll() ).Times(AtMost(1)).WillOnce( Return(-1) );</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    EXPECT_GLOBAL_CALL( libIsErrorCritical, libIsErrorCritical(_, _, _) ).Times(AtMost(1)).WillOnce( Return(<span class="keyword">true</span>) );</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    EXPECT_FALSE( <a class="code" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.<a class="code" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">RF</a>-&gt;dreamkasKeyPrintAll() );</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div><div class="ttc" id="classBIOS_html_af882eae3b657e7a2552f9248f3158e18"><div class="ttname"><a href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a></div><div class="ttdeci">shared_ptr&lt; RUS &gt; RF</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1034</div></div>
+<div class="ttc" id="testExamples_8h_html_a277495edde80acff79322d3b4db9ec87"><div class="ttname"><a href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a></div><div class="ttdeci">BIOS testBios</div><div class="ttdef"><b>Definition:</b> testExamples.h:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#af882eae3b657e7a2552f9248f3158e18">BIOS::RF</a> и <a class="el" href="testExamples_8h.html#a277495edde80acff79322d3b4db9ec87">testBios</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:17:33. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

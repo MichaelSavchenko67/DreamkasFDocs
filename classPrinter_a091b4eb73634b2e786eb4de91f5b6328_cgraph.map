@@ -1,14 +1,14 @@
 <map id="Printer::fiscal_receipt_print" name="Printer::fiscal_receipt_print">
-<area shape="rect" id="node1" title=" " alt="" coords="5,282,151,323"/>
-<area shape="rect" id="node2" href="$classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="211,5,362,32"/>
-<area shape="rect" id="node3" href="$classConvert.html#a46680f3461deb20c9c111d23ce53cefb" title=" " alt="" coords="211,56,362,83"/>
-<area shape="rect" id="node4" href="$classConvert.html#ab7971a59f8ca1b69c0c193498acb5251" title=" " alt="" coords="201,107,372,133"/>
-<area shape="rect" id="node5" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="221,158,352,199"/>
-<area shape="rect" id="node6" href="$classReceipt__new.html#ac0f54ec75ef765fdc54e52cf47159400" title=" " alt="" coords="221,223,352,265"/>
-<area shape="rect" id="node7" href="$classReceipt__new.html#a7c8aeeafa2454a10269f43d8fe875dfb" title=" " alt="" coords="205,289,368,316"/>
-<area shape="rect" id="node8" href="$classReceipt__new.html#a51e2f9ce19acc05b040aea01970d3698" title=" " alt="" coords="209,340,365,367"/>
-<area shape="rect" id="node9" href="$classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="221,391,352,433"/>
-<area shape="rect" id="node10" href="$classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="199,457,375,484"/>
-<area shape="rect" id="node11" href="$classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="203,508,371,535"/>
-<area shape="rect" id="node12" href="$classConvert.html#ad13d2a4f1fae92241a9593f0010fb3f9" title=" " alt="" coords="223,559,351,585"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,251,151,293"/>
+<area shape="rect" id="node2" href="$classConvert.html#ad13d2a4f1fae92241a9593f0010fb3f9" title=" " alt="" coords="223,5,351,32"/>
+<area shape="rect" id="node3" href="$classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="199,56,375,83"/>
+<area shape="rect" id="node4" href="$classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="211,107,362,133"/>
+<area shape="rect" id="node5" href="$classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="203,157,371,184"/>
+<area shape="rect" id="node6" href="$classReceipt__new.html#a7c8aeeafa2454a10269f43d8fe875dfb" title=" " alt="" coords="205,208,368,235"/>
+<area shape="rect" id="node7" href="$classConvert.html#ab7971a59f8ca1b69c0c193498acb5251" title=" " alt="" coords="201,259,372,285"/>
+<area shape="rect" id="node8" href="$classReceipt__new.html#a51e2f9ce19acc05b040aea01970d3698" title=" " alt="" coords="209,309,365,336"/>
+<area shape="rect" id="node9" href="$classConvert.html#a46680f3461deb20c9c111d23ce53cefb" title=" " alt="" coords="211,360,362,387"/>
+<area shape="rect" id="node10" href="$classReceipt__new.html#ac0f54ec75ef765fdc54e52cf47159400" title=" " alt="" coords="221,411,352,453"/>
+<area shape="rect" id="node11" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="221,477,352,518"/>
+<area shape="rect" id="node12" href="$classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="221,542,352,583"/>
 </map>

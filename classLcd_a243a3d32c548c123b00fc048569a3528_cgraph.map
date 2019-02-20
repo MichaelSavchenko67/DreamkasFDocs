@@ -1,9 +1,9 @@
 <map id="Lcd::lcd_draw_rev_receipt_and_card_return" name="Lcd::lcd_draw_rev_receipt_and_card_return">
 <area shape="rect" id="node1" title=" " alt="" coords="5,74,180,115"/>
-<area shape="rect" id="node2" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="237,5,341,32"/>
-<area shape="rect" id="node3" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="229,56,348,83"/>
-<area shape="rect" id="node6" href="$classLcd.html#aeeb9b4672490ae6d80b9f035b7d9445d" title=" " alt="" coords="228,107,349,133"/>
-<area shape="rect" id="node7" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="231,157,346,184"/>
-<area shape="rect" id="node4" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="397,56,525,83"/>
-<area shape="rect" id="node5" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="573,56,735,83"/>
+<area shape="rect" id="node2" href="$classLcd.html#aeeb9b4672490ae6d80b9f035b7d9445d" title=" " alt="" coords="228,5,349,32"/>
+<area shape="rect" id="node3" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="237,56,341,83"/>
+<area shape="rect" id="node4" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="231,107,346,133"/>
+<area shape="rect" id="node5" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="229,157,348,184"/>
+<area shape="rect" id="node6" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="397,157,525,184"/>
+<area shape="rect" id="node7" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="573,157,735,184"/>
 </map>

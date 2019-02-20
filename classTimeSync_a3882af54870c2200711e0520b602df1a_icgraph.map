@@ -1,0 +1,4 @@
+<map id="TimeSync::forceTimeSync" name="TimeSync::forceTimeSync">
+<area shape="rect" id="node1" title="forceTimeSync принудительная синхронизация времени" alt="" coords="204,5,381,32"/>
+<area shape="rect" id="node2" href="$classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title="timeSyncForce &#45; принудительная синхронизация времени" alt="" coords="5,5,156,32"/>
+</map>

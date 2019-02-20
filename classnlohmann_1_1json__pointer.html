@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Шаблон класса nlohmann::json_pointer&lt; BasicJsonType &gt;</title>
+<title>FisGo: Шаблон класса nlohmann::json_pointer&lt; BasicJsonType &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -79,9 +82,11 @@ $(function() {
  <a href="classnlohmann_1_1json__pointer.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::json_pointer&lt; BasicJsonType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::json_pointer&lt; BasicJsonType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1json__pointer__coll__graph.png" border="0" usemap="#nlohmann_1_1json__pointer_3_01BasicJsonType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1json__pointer_3_01BasicJsonType_01_4_coll__map" id="nlohmann_1_1json__pointer_3_01BasicJsonType_01_4_coll__map">
 <area shape="rect"  title="JSON Pointer." alt="" coords="5,5,161,141"/>
@@ -166,7 +171,7 @@ template&lt;typename BasicJsonType &gt; </div>
 </dl>
 <p>@liveexample{The example shows the construction several valid <a class="el" href="classJSON.html">JSON</a> pointers as well as the exceptional behavior.,<a class="el" href="classnlohmann_1_1json__pointer.html" title="JSON Pointer.">json_pointer</a>}</p>
 <dl class="section since"><dt>Начиная с</dt><dd>version 2.0.0 </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l10475"></a><span class="lineno">10475</span>&#160;        : reference_tokens(split(s))</div><div class="line"><a name="l10476"></a><span class="lineno">10476</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -208,14 +213,35 @@ template&lt;typename BasicJsonType &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l10517"></a><span class="lineno">10517</span>&#160;    {</div><div class="line"><a name="l10518"></a><span class="lineno">10518</span>&#160;        std::size_t processed_chars = 0;</div><div class="line"><a name="l10519"></a><span class="lineno">10519</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> res = std::stoi(s, &amp;processed_chars);</div><div class="line"><a name="l10520"></a><span class="lineno">10520</span>&#160;</div><div class="line"><a name="l10521"></a><span class="lineno">10521</span>&#160;        <span class="comment">// check if the string was completely read</span></div><div class="line"><a name="l10522"></a><span class="lineno">10522</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(processed_chars != s.size()))</div><div class="line"><a name="l10523"></a><span class="lineno">10523</span>&#160;        {</div><div class="line"><a name="l10524"></a><span class="lineno">10524</span>&#160;            <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(<a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">detail::out_of_range::create</a>(404, <span class="stringliteral">&quot;unresolved reference token &#39;&quot;</span> + s + <span class="stringliteral">&quot;&#39;&quot;</span>));</div><div class="line"><a name="l10525"></a><span class="lineno">10525</span>&#160;        }</div><div class="line"><a name="l10526"></a><span class="lineno">10526</span>&#160;</div><div class="line"><a name="l10527"></a><span class="lineno">10527</span>&#160;        <span class="keywordflow">return</span> res;</div><div class="line"><a name="l10528"></a><span class="lineno">10528</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:162</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_a3f6d82a6f967c4728a1ec735a7867073"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create</a></div><div class="ttdeci">static out_of_range create(int id_, const std::string &amp;what_arg)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:820</div></div>
+<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:193</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create()</a>, <a class="el" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a> и <a class="el" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::patch()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_cgraph.png" border="0" usemap="#classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_cgraph" id="classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,161,47"/>
 <area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="209,5,352,47"/>
 <area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="400,5,581,47"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_icgraph.png" border="0" usemap="#classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_icgraph" id="classnlohmann_1_1json__pointer_ac53f5b79dd91da78743c437832f57ce4_icgraph">
+<area shape="rect"  title=" " alt="" coords="397,5,553,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="201,5,349,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="5,5,153,47"/>
 </map>
 </div>
 
@@ -251,9 +277,14 @@ template&lt;typename BasicJsonType &gt; </div>
 <dl class="section return"><dt>Возвращает</dt><dd>a string representation of the <a class="el" href="classJSON.html">JSON</a> pointer</dd></dl>
 <p>@liveexample{The example shows the result of <code>to_string</code>., json_pointer__to_string}</p>
 <dl class="section since"><dt>Начиная с</dt><dd>version 2.0.0 </dd></dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l10505"></a><span class="lineno">10505</span>&#160;    {</div><div class="line"><a name="l10506"></a><span class="lineno">10506</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnlohmann_1_1json__pointer.html#ad7d3a3a215db8fe0964e644a918dcccb">to_string</a>();</div><div class="line"><a name="l10507"></a><span class="lineno">10507</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1json__pointer_html_ad7d3a3a215db8fe0964e644a918dcccb"><div class="ttname"><a href="classnlohmann_1_1json__pointer.html#ad7d3a3a215db8fe0964e644a918dcccb">nlohmann::json_pointer::to_string</a></div><div class="ttdeci">std::string to_string() const noexcept</div><div class="ttdoc">return a string representation of the JSON pointer</div><div class="ttdef"><b>Definition:</b> jsonParser.h:10493</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1json__pointer.html#ad7d3a3a215db8fe0964e644a918dcccb">nlohmann::json_pointer&lt; BasicJsonType &gt;::to_string()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1json__pointer_ae9015c658f99cf3d48a8563accc79988_cgraph.png" border="0" usemap="#classnlohmann_1_1json__pointer_ae9015c658f99cf3d48a8563accc79988_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1json__pointer_ae9015c658f99cf3d48a8563accc79988_cgraph" id="classnlohmann_1_1json__pointer_ae9015c658f99cf3d48a8563accc79988_cgraph">
 <area shape="rect"  title="return a string representation of the JSON pointer" alt="" coords="5,5,161,47"/>
@@ -293,6 +324,19 @@ template&lt;typename BasicJsonType &gt; </div>
 <dl class="section return"><dt>Возвращает</dt><dd>a string representation of the <a class="el" href="classJSON.html">JSON</a> pointer</dd></dl>
 <p>@liveexample{The example shows the result of <code>to_string</code>., json_pointer__to_string}</p>
 <dl class="section since"><dt>Начиная с</dt><dd>version 2.0.0 </dd></dl>
+<div class="fragment"><div class="line"><a name="l10494"></a><span class="lineno">10494</span>&#160;    {</div><div class="line"><a name="l10495"></a><span class="lineno">10495</span>&#160;        <span class="keywordflow">return</span> std::accumulate(reference_tokens.begin(), reference_tokens.end(),</div><div class="line"><a name="l10496"></a><span class="lineno">10496</span>&#160;                               std::string{},</div><div class="line"><a name="l10497"></a><span class="lineno">10497</span>&#160;                               [](<span class="keyword">const</span> std::string &amp; a, <span class="keyword">const</span> std::string &amp; b)</div><div class="line"><a name="l10498"></a><span class="lineno">10498</span>&#160;        {</div><div class="line"><a name="l10499"></a><span class="lineno">10499</span>&#160;            <span class="keywordflow">return</span> a + <span class="stringliteral">&quot;/&quot;</span> + escape(b);</div><div class="line"><a name="l10500"></a><span class="lineno">10500</span>&#160;        });</div><div class="line"><a name="l10501"></a><span class="lineno">10501</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1json__pointer.html#ae9015c658f99cf3d48a8563accc79988">nlohmann::json_pointer&lt; BasicJsonType &gt;::operator std::string()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1json__pointer_ad7d3a3a215db8fe0964e644a918dcccb_icgraph.png" border="0" usemap="#classnlohmann_1_1json__pointer_ad7d3a3a215db8fe0964e644a918dcccb_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1json__pointer_ad7d3a3a215db8fe0964e644a918dcccb_icgraph" id="classnlohmann_1_1json__pointer_ad7d3a3a215db8fe0964e644a918dcccb_icgraph">
+<area shape="rect"  title="return a string representation of the JSON pointer" alt="" coords="209,5,365,47"/>
+<area shape="rect"  href="classnlohmann_1_1json__pointer.html#ae9015c658f99cf3d48a8563accc79988" title="return a string representation of the JSON pointer" alt="" coords="5,5,161,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -356,7 +400,7 @@ template&lt;typename BasicJsonType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l11120"></a><span class="lineno">11120</span>&#160;    {</div><div class="line"><a name="l11121"></a><span class="lineno">11121</span>&#160;        <span class="keywordflow">return</span> not (lhs == rhs);</div><div class="line"><a name="l11122"></a><span class="lineno">11122</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4667ef558c8c3f8a646bfda0c6654653"></a>
@@ -394,7 +438,7 @@ template&lt;typename BasicJsonType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l11114"></a><span class="lineno">11114</span>&#160;    {</div><div class="line"><a name="l11115"></a><span class="lineno">11115</span>&#160;        <span class="keywordflow">return</span> (lhs.reference_tokens == rhs.reference_tokens);</div><div class="line"><a name="l11116"></a><span class="lineno">11116</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -403,7 +447,7 @@ template&lt;typename BasicJsonType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс nlohmann::detail::input_buffer_adapter</title>
+<title>FisGo: Класс nlohmann::detail::input_buffer_adapter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -77,18 +80,22 @@ $(function() {
  <a href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:nlohmann::detail::input_buffer_adapter:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:nlohmann::detail::input_buffer_adapter:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__buffer__adapter__inherit__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__buffer__adapter_inherit__map" alt="Inheritance graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__buffer__adapter_inherit__map" id="nlohmann_1_1detail_1_1input__buffer__adapter_inherit__map">
 <area shape="rect"  title="input adapter for buffer input" alt="" coords="16,160,176,296"/>
 <area shape="rect"  href="structnlohmann_1_1detail_1_1input__adapter__protocol.html" title="abstract input adapter interface" alt="" coords="5,5,187,112"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::input_buffer_adapter:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::input_buffer_adapter:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__buffer__adapter__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__buffer__adapter_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__buffer__adapter_coll__map" id="nlohmann_1_1detail_1_1input__buffer__adapter_coll__map">
 <area shape="rect"  title="input adapter for buffer input" alt="" coords="16,160,176,296"/>
@@ -147,7 +154,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;        : cursor(b), limit(b + l)</div><div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ada76d7b75c5d6b989af0e18687ef07b6"></a>
@@ -203,6 +210,9 @@ $(function() {
 <p>get a character [0,255] or std::char_traits&lt;char&gt;::eof(). </p>
 
 <p>Замещает <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#aac10a6a4048a8ce8e2ed50277692a3ca">nlohmann::detail::input_adapter_protocol</a>.</p>
+<div class="fragment"><div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;    {</div><div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(cursor &lt; limit))</div><div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;        {</div><div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;            <span class="keywordflow">return</span> std::char_traits&lt;char&gt;::to_int_type(*(cursor++));</div><div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;        }</div><div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;</div><div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;        <span class="keywordflow">return</span> std::char_traits&lt;char&gt;::eof();</div><div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a41ecd1c4cf7c3d56477b9b685b5daa72"><div class="ttname"><a href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a></div><div class="ttdeci">#define JSON_LIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:192</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>.</p>
 
 </div>
 </div>
@@ -238,7 +248,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Файл src/appl/pos2.cpp</title>
+<title>FisGo: Файл src/appl/pos2.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -72,9 +75,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="pos2_8h_source.html">pos2.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для pos2.cpp:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для pos2.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pos2_8cpp__incl.png" border="0" usemap="#src_2appl_2pos2_8cpp" alt=""/></div>
 <map name="src_2appl_2pos2_8cpp" id="src_2appl_2pos2_8cpp">
 <area shape="rect"  title=" " alt="" coords="5,5,131,32"/>
@@ -121,6 +126,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">length</a> &lt; <a class="code" href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a>)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac2cc1089d727b9c00ca906952b869fbe">buf</a>[pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">length</a>] = byte;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">length</a>++;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="pos2_8h_html_a2fcd2ed58830d0ef06a967ede3245da8"><div class="ttname"><a href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a></div><div class="ttdeci">#define POS2_BUF_LENGTH</div><div class="ttdef"><b>Definition:</b> pos2.h:13</div></div>
+<div class="ttc" id="structst__pos2_html_ac2cc1089d727b9c00ca906952b869fbe"><div class="ttname"><a href="structst__pos2.html#ac2cc1089d727b9c00ca906952b869fbe">st_pos2::buf</a></div><div class="ttdeci">unsigned char buf[POS2_BUF_LENGTH]</div><div class="ttdef"><b>Definition:</b> pos2.h:19</div></div>
+<div class="ttc" id="structst__pos2_html_ac616bd78bab71d951fe33ae4d2b59ea0"><div class="ttname"><a href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">st_pos2::length</a></div><div class="ttdeci">unsigned char length</div><div class="ttdef"><b>Definition:</b> pos2.h:18</div></div>
+<div class="ttc" id="unionun__pos2_html_a0aef23ae8a0640494000747f86b7bdba"><div class="ttname"><a href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">un_pos2::fields</a></div><div class="ttdeci">st_pos2 fields</div><div class="ttdef"><b>Definition:</b> pos2.h:24</div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="pos2_8cpp.html#ab940aad1465fcdc421ab925f31c4c3e0">pos2_add_password()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pos2_8cpp_a17f13819e7725bc2b825273501b9c96b_icgraph.png" border="0" usemap="#pos2_8cpp_a17f13819e7725bc2b825273501b9c96b_icgraph" alt=""/></div>
+<map name="pos2_8cpp_a17f13819e7725bc2b825273501b9c96b_icgraph" id="pos2_8cpp_a17f13819e7725bc2b825273501b9c96b_icgraph">
+<area shape="rect"  title=" " alt="" coords="195,5,305,32"/>
+<area shape="rect"  href="pos2_8cpp.html#ab940aad1465fcdc421ab925f31c4c3e0" title=" " alt="" coords="5,5,147,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -138,7 +160,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> crc;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  crc = 0;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (c = 1; c &lt; pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">length</a> + 2; c++)</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    crc = crc ^ pos2_buf.<a class="code" href="unionun__pos2.html#a70c0dbdac9ac6dff865d08699dfc2854">packet</a>[c];</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac2cc1089d727b9c00ca906952b869fbe">buf</a>[pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">length</a>] = crc;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div><div class="ttc" id="structst__pos2_html_ac2cc1089d727b9c00ca906952b869fbe"><div class="ttname"><a href="structst__pos2.html#ac2cc1089d727b9c00ca906952b869fbe">st_pos2::buf</a></div><div class="ttdeci">unsigned char buf[POS2_BUF_LENGTH]</div><div class="ttdef"><b>Definition:</b> pos2.h:19</div></div>
+<div class="ttc" id="structst__pos2_html_ac616bd78bab71d951fe33ae4d2b59ea0"><div class="ttname"><a href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">st_pos2::length</a></div><div class="ttdeci">unsigned char length</div><div class="ttdef"><b>Definition:</b> pos2.h:18</div></div>
+<div class="ttc" id="unionun__pos2_html_a70c0dbdac9ac6dff865d08699dfc2854"><div class="ttname"><a href="unionun__pos2.html#a70c0dbdac9ac6dff865d08699dfc2854">un_pos2::packet</a></div><div class="ttdeci">unsigned char packet[sizeof(st_pos2)]</div><div class="ttdef"><b>Definition:</b> pos2.h:25</div></div>
+<div class="ttc" id="unionun__pos2_html_a0aef23ae8a0640494000747f86b7bdba"><div class="ttname"><a href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">un_pos2::fields</a></div><div class="ttdeci">st_pos2 fields</div><div class="ttdef"><b>Definition:</b> pos2.h:24</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab940aad1465fcdc421ab925f31c4c3e0"></a>
@@ -156,9 +182,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">union</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;       <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b[4];</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;       <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> l;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  } t;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  t.l = p;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="pos2_8cpp.html#a17f13819e7725bc2b825273501b9c96b">pos2_add_byte</a>(t.b[0]);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="pos2_8cpp.html#a17f13819e7725bc2b825273501b9c96b">pos2_add_byte</a>(t.b[1]);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="pos2_8cpp.html#a17f13819e7725bc2b825273501b9c96b">pos2_add_byte</a>(t.b[2]);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="pos2_8cpp.html#a17f13819e7725bc2b825273501b9c96b">pos2_add_byte</a>(t.b[3]);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div><div class="ttc" id="pos2_8cpp_html_a17f13819e7725bc2b825273501b9c96b"><div class="ttname"><a href="pos2_8cpp.html#a17f13819e7725bc2b825273501b9c96b">pos2_add_byte</a></div><div class="ttdeci">void pos2_add_byte(unsigned char byte)</div><div class="ttdef"><b>Definition:</b> pos2.cpp:53</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="pos2_8cpp.html#a17f13819e7725bc2b825273501b9c96b">pos2_add_byte()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pos2_8cpp_ab940aad1465fcdc421ab925f31c4c3e0_cgraph.png" border="0" usemap="#pos2_8cpp_ab940aad1465fcdc421ab925f31c4c3e0_cgraph" alt=""/></div>
 <map name="pos2_8cpp_ab940aad1465fcdc421ab925f31c4c3e0_cgraph" id="pos2_8cpp_ab940aad1465fcdc421ab925f31c4c3e0_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,147,32"/>
@@ -183,7 +214,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// check if command byte in answer is eqv cmd and error byte is 0</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">if</span> (pos2_r_buf[2] == cmd &amp;&amp; pos2_r_buf[3] == 0)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad7326456e39ae5ec3021afda5029a8c4"></a>
@@ -200,7 +231,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> c;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">for</span> (c = 0; c &lt; <span class="keyword">sizeof</span>(<a class="code" href="structst__pos2.html">st_pos2</a>); c++) pos2_buf.<a class="code" href="unionun__pos2.html#a70c0dbdac9ac6dff865d08699dfc2854">packet</a>[c] = 0;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  pos2_buf.<a class="code" href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">fields</a>.<a class="code" href="structst__pos2.html#a9909cc735432b55b182f1ff8d197e50a">stx</a> = <a class="code" href="pos2_8h.html#a928a9040167d3110f74835848d6a351f">PB_STX</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  for (c = 0; c &lt; <a class="code" href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a>; c++) pos2_r_buf[c] = 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  pos2_r_buf_p = 0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="ttc" id="pos2_8h_html_a928a9040167d3110f74835848d6a351f"><div class="ttname"><a href="pos2_8h.html#a928a9040167d3110f74835848d6a351f">PB_STX</a></div><div class="ttdeci">#define PB_STX</div><div class="ttdef"><b>Definition:</b> pos2.h:9</div></div>
+<div class="ttc" id="pos2_8h_html_a2fcd2ed58830d0ef06a967ede3245da8"><div class="ttname"><a href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a></div><div class="ttdeci">#define POS2_BUF_LENGTH</div><div class="ttdef"><b>Definition:</b> pos2.h:13</div></div>
+<div class="ttc" id="structst__pos2_html_a9909cc735432b55b182f1ff8d197e50a"><div class="ttname"><a href="structst__pos2.html#a9909cc735432b55b182f1ff8d197e50a">st_pos2::stx</a></div><div class="ttdeci">unsigned char stx</div><div class="ttdef"><b>Definition:</b> pos2.h:17</div></div>
+<div class="ttc" id="structst__pos2_html"><div class="ttname"><a href="structst__pos2.html">st_pos2</a></div><div class="ttdef"><b>Definition:</b> pos2.h:15</div></div>
+<div class="ttc" id="unionun__pos2_html_a70c0dbdac9ac6dff865d08699dfc2854"><div class="ttname"><a href="unionun__pos2.html#a70c0dbdac9ac6dff865d08699dfc2854">un_pos2::packet</a></div><div class="ttdeci">unsigned char packet[sizeof(st_pos2)]</div><div class="ttdef"><b>Definition:</b> pos2.h:25</div></div>
+<div class="ttc" id="unionun__pos2_html_a0aef23ae8a0640494000747f86b7bdba"><div class="ttname"><a href="unionun__pos2.html#a0aef23ae8a0640494000747f86b7bdba">un_pos2::fields</a></div><div class="ttdeci">st_pos2 fields</div><div class="ttdef"><b>Definition:</b> pos2.h:24</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7796081bf3638bb96c86d7eb65ea37fa"></a>
@@ -218,7 +255,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> &amp;pos2_r_buf[pos];</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a17a928ae304447416102e8921ad215af"></a>
@@ -236,7 +273,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> pos2_buf.<a class="code" href="unionun__pos2.html#a70c0dbdac9ac6dff865d08699dfc2854">packet</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div><div class="ttc" id="unionun__pos2_html_a70c0dbdac9ac6dff865d08699dfc2854"><div class="ttname"><a href="unionun__pos2.html#a70c0dbdac9ac6dff865d08699dfc2854">un_pos2::packet</a></div><div class="ttdeci">unsigned char packet[sizeof(st_pos2)]</div><div class="ttdef"><b>Definition:</b> pos2.h:25</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a61b03fc90781d774ff17a8638346d99d"></a>
@@ -254,7 +292,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (pos &lt; pos2_r_buf_p) <span class="keywordflow">return</span> pos2_r_buf[pos];</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a9173b4af45a6ead063d85d50beda9a38"></a>
@@ -271,7 +309,9 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// analize STX</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span> (pos2_r_buf[0] != <a class="code" href="pos2_8h.html#a928a9040167d3110f74835848d6a351f">PB_STX</a>)</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    pos2_r_buf_p = 0;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// analize LEN</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> len;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  len = pos2_r_buf[1];</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span> (len &gt;= <a class="code" href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a>)</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    pos2_r_buf_p = 0;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  };</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// analize pos2_r_buf_p</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> (pos2_r_buf_p &gt; (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(len + 2))</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// check crc</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> crc;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    crc = 0;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span> (c = 1; c &lt; len + 2; c++)</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      crc = crc ^ pos2_r_buf[c];</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (crc == pos2_r_buf[len + 2]) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      pos2_r_buf_p = 0;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    };</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  };</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div><div class="ttc" id="pos2_8h_html_a928a9040167d3110f74835848d6a351f"><div class="ttname"><a href="pos2_8h.html#a928a9040167d3110f74835848d6a351f">PB_STX</a></div><div class="ttdeci">#define PB_STX</div><div class="ttdef"><b>Definition:</b> pos2.h:9</div></div>
+<div class="ttc" id="pos2_8h_html_a2fcd2ed58830d0ef06a967ede3245da8"><div class="ttname"><a href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a></div><div class="ttdeci">#define POS2_BUF_LENGTH</div><div class="ttdef"><b>Definition:</b> pos2.h:13</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a18a24dcb8af518224f2ed464d2568e3a"></a>
@@ -289,13 +329,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// add byte to buffer</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (pos2_r_buf_p &gt;= <a class="code" href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a>) <span class="keywordflow">return</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  pos2_r_buf[pos2_r_buf_p] = byte;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  pos2_r_buf_p++;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div><div class="ttc" id="pos2_8h_html_a2fcd2ed58830d0ef06a967ede3245da8"><div class="ttname"><a href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">POS2_BUF_LENGTH</a></div><div class="ttdeci">#define POS2_BUF_LENGTH</div><div class="ttdef"><b>Definition:</b> pos2.h:13</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,6 +1,6 @@
 <map id="Fiscal_store::fsWrite" name="Fiscal_store::fsWrite">
 <area shape="rect" id="node1" title="fsWrite &#45; запись данных в ФН" alt="" coords="5,56,148,83"/>
-<area shape="rect" id="node2" href="$bsp__fiscal__mem_8c.html#a7c51c72e32a1ea4484c7b9a2e362d68c" title=" " alt="" coords="203,5,344,32"/>
-<area shape="rect" id="node3" href="$bsp__fiscal__mem_8c.html#acf672231f53521834b6f6f8e233c35bc" title=" " alt="" coords="197,56,349,83"/>
-<area shape="rect" id="node4" href="$bsp__fiscal__mem_8c.html#a94083a14d6cf11783fc89dc71db4bd63" title=" " alt="" coords="196,107,351,133"/>
+<area shape="rect" id="node2" href="$bsp__fiscal__mem_8c.html#a94083a14d6cf11783fc89dc71db4bd63" title=" " alt="" coords="196,5,351,32"/>
+<area shape="rect" id="node3" href="$bsp__fiscal__mem_8c.html#a7c51c72e32a1ea4484c7b9a2e362d68c" title=" " alt="" coords="203,56,344,83"/>
+<area shape="rect" id="node4" href="$bsp__fiscal__mem_8c.html#acf672231f53521834b6f6f8e233c35bc" title=" " alt="" coords="197,107,349,133"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="PaidFeaturesService::activationCodeIsValid" name="PaidFeaturesService::activationCodeIsValid">
+<area shape="rect" id="node1" title="Проверка активационного кода." alt="" coords="196,5,353,47"/>
+<area shape="rect" id="node2" href="$classPaidFeaturesService.html#ab85fc7341f2fd14aa304fc1e6e308103" title="Получение из ключа строки информации о фичах" alt="" coords="5,5,148,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="bsp_fiscal_mem_close" name="bsp_fiscal_mem_close">
+<area shape="rect" id="node1" title=" " alt="" coords="196,31,351,57"/>
+<area shape="rect" id="node2" href="$classFiscal__store.html#a979b4b6efc273f7aa79c317e0479a94b" title="fsRead &#45; чтение из ФН" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node3" href="$classFiscal__store.html#a0f6c07f87e855463756b12e44c8dc74a" title="fsWrite &#45; запись данных в ФН" alt="" coords="5,56,148,83"/>
+</map>

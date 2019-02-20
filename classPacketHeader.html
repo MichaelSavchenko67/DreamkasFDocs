@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс PacketHeader</title>
+<title>FisGo: Класс PacketHeader</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -71,9 +74,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="ofd_8h_source.html">ofd.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса PacketHeader:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса PacketHeader:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classPacketHeader__coll__graph.png" border="0" usemap="#PacketHeader_coll__map" alt="Collaboration graph"/></div>
 <map name="PacketHeader_coll__map" id="PacketHeader_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,236,273"/>
@@ -150,6 +155,28 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">int</span> count = 0;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            memcpy( buffer + count, &amp;<a class="code" href="classPacketHeader.html#acf2112b2fa5e7842dd857446f7c37b00">signature</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#acf2112b2fa5e7842dd857446f7c37b00">signature</a>) );</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#acf2112b2fa5e7842dd857446f7c37b00">signature</a>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            memcpy( buffer + count, &amp;<a class="code" href="classPacketHeader.html#a0b133d91ec74b4334db5a65d95c917e6">protocolSID</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a0b133d91ec74b4334db5a65d95c917e6">protocolSID</a>) );</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a0b133d91ec74b4334db5a65d95c917e6">protocolSID</a>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            memcpy( buffer + count, &amp;<a class="code" href="classPacketHeader.html#a70799beaa38ac84a04a1195e97b33c82">protocolAID</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a70799beaa38ac84a04a1195e97b33c82">protocolAID</a>) );</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a70799beaa38ac84a04a1195e97b33c82">protocolAID</a>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            memcpy( buffer + count, <a class="code" href="classPacketHeader.html#aaa53e1c66b1e88f0008cff804d9034ae">serialnumFN</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#aaa53e1c66b1e88f0008cff804d9034ae">serialnumFN</a>) );</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#aaa53e1c66b1e88f0008cff804d9034ae">serialnumFN</a>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            memcpy( buffer + count, &amp;<a class="code" href="classPacketHeader.html#a4c197c416cdcfe184c61ede14d8b6074">dataLength</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a4c197c416cdcfe184c61ede14d8b6074">dataLength</a>) );</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a4c197c416cdcfe184c61ede14d8b6074">dataLength</a>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            memcpy( buffer + count, &amp;<a class="code" href="classPacketHeader.html#ac86554ae7e79a4366c27f5ca55f7826d">flags</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#ac86554ae7e79a4366c27f5ca55f7826d">flags</a>) );</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#ac86554ae7e79a4366c27f5ca55f7826d">flags</a>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            memcpy( buffer + count, &amp;<a class="code" href="classPacketHeader.html#a527cf41984bdd5058d9f08f5511f1343">crc</a>, <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a527cf41984bdd5058d9f08f5511f1343">crc</a>) );</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            count += <span class="keyword">sizeof</span>(<a class="code" href="classPacketHeader.html#a527cf41984bdd5058d9f08f5511f1343">crc</a>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">//        ConvertTLV.setInteger(buffer, count, protocolSID, 2); count+=2;</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="comment">//        ConvertTLV.setInteger(buffer, count, protocolAID, 2); count+=2;</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="comment">//        ConvertTLV.setString(buffer, count, serialnumFN, 16); count+=16;</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment">//        ConvertTLV.setInteger(buffer, count, dataLength, 2);count+=2;</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="comment">//        ConvertTLV.setInteger(buffer, count, flags, 2);count+=2;</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">//        ConvertTLV.setInteger(buffer, count, crc, 2);count+=2;</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div><div class="ttc" id="classPacketHeader_html_a527cf41984bdd5058d9f08f5511f1343"><div class="ttname"><a href="classPacketHeader.html#a527cf41984bdd5058d9f08f5511f1343">PacketHeader::crc</a></div><div class="ttdeci">unsigned short crc</div><div class="ttdef"><b>Definition:</b> ofd.h:58</div></div>
+<div class="ttc" id="classPacketHeader_html_acf2112b2fa5e7842dd857446f7c37b00"><div class="ttname"><a href="classPacketHeader.html#acf2112b2fa5e7842dd857446f7c37b00">PacketHeader::signature</a></div><div class="ttdeci">unsigned int signature</div><div class="ttdef"><b>Definition:</b> ofd.h:52</div></div>
+<div class="ttc" id="classPacketHeader_html_a70799beaa38ac84a04a1195e97b33c82"><div class="ttname"><a href="classPacketHeader.html#a70799beaa38ac84a04a1195e97b33c82">PacketHeader::protocolAID</a></div><div class="ttdeci">unsigned short protocolAID</div><div class="ttdef"><b>Definition:</b> ofd.h:54</div></div>
+<div class="ttc" id="classPacketHeader_html_a4c197c416cdcfe184c61ede14d8b6074"><div class="ttname"><a href="classPacketHeader.html#a4c197c416cdcfe184c61ede14d8b6074">PacketHeader::dataLength</a></div><div class="ttdeci">unsigned short dataLength</div><div class="ttdef"><b>Definition:</b> ofd.h:56</div></div>
+<div class="ttc" id="classPacketHeader_html_ac86554ae7e79a4366c27f5ca55f7826d"><div class="ttname"><a href="classPacketHeader.html#ac86554ae7e79a4366c27f5ca55f7826d">PacketHeader::flags</a></div><div class="ttdeci">unsigned short flags</div><div class="ttdef"><b>Definition:</b> ofd.h:57</div></div>
+<div class="ttc" id="classPacketHeader_html_a0b133d91ec74b4334db5a65d95c917e6"><div class="ttname"><a href="classPacketHeader.html#a0b133d91ec74b4334db5a65d95c917e6">PacketHeader::protocolSID</a></div><div class="ttdeci">unsigned short protocolSID</div><div class="ttdef"><b>Definition:</b> ofd.h:53</div></div>
+<div class="ttc" id="classPacketHeader_html_aaa53e1c66b1e88f0008cff804d9034ae"><div class="ttname"><a href="classPacketHeader.html#aaa53e1c66b1e88f0008cff804d9034ae">PacketHeader::serialnumFN</a></div><div class="ttdeci">char serialnumFN[16]</div><div class="ttdef"><b>Definition:</b> ofd.h:55</div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#a92e3f01ea732498cd7fefaee9607ec7c">Menu::ofd_packet_create()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classPacketHeader_aebd94beea590c6f36e45df5c23bb41e3_icgraph.png" border="0" usemap="#classPacketHeader_aebd94beea590c6f36e45df5c23bb41e3_icgraph" alt=""/></div>
+<map name="classPacketHeader_aebd94beea590c6f36e45df5c23bb41e3_icgraph" id="classPacketHeader_aebd94beea590c6f36e45df5c23bb41e3_icgraph">
+<area shape="rect"  title=" " alt="" coords="531,5,717,47"/>
+<area shape="rect"  href="classMenu.html#a92e3f01ea732498cd7fefaee9607ec7c" title=" " alt="" coords="313,13,483,39"/>
+<area shape="rect"  href="classMenu.html#a3a4308711cdc04ab24c57b39b7482122" title=" " alt="" coords="143,13,265,39"/>
+<area shape="rect"  href="threads_8h.html#a34b3aa75337e4ebef69b66bfdbc42910" title=" " alt="" coords="5,13,95,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -192,7 +219,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordtype">int</span> count = 0;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> len = <span class="keyword">sizeof</span>(value);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                memcpy( buffer + count, &amp;typeID, <span class="keyword">sizeof</span>(typeID) );</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                count += <span class="keyword">sizeof</span>(typeID);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                memcpy( buffer + count, &amp;len, <span class="keyword">sizeof</span>(len) );</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                count += <span class="keyword">sizeof</span>(value);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                memcpy( buffer + count, &amp;value, <span class="keyword">sizeof</span>(value) );</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                count += <span class="keyword">sizeof</span>(value);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">return</span> count;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -278,6 +305,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenu.html#a92e3f01ea732498cd7fefaee9607ec7c">Menu::ofd_packet_create()</a>.</p>
+
 </div>
 </div>
 <a id="ac86554ae7e79a4366c27f5ca55f7826d"></a>
@@ -334,6 +363,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenu.html#a92e3f01ea732498cd7fefaee9607ec7c">Menu::ofd_packet_create()</a>.</p>
+
 </div>
 </div>
 <a id="acf2112b2fa5e7842dd857446f7c37b00"></a>
@@ -362,6 +393,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenu.html#a92e3f01ea732498cd7fefaee9607ec7c">Menu::ofd_packet_create()</a>.</p>
+
 </div>
 </div>
 <a id="aaccd72121dece3313cd661bdb8be5fc8"></a>
@@ -384,7 +417,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс MenuTest</title>
+<title>FisGo: Класс MenuTest</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -72,18 +75,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="testMenu_8h_source.html">testMenu.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:MenuTest:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:MenuTest:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTest__inherit__graph.png" border="0" usemap="#MenuTest_inherit__map" alt="Inheritance graph"/></div>
 <map name="MenuTest_inherit__map" id="MenuTest_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,131,153,413"/>
 <area shape="rect"  title=" " alt="" coords="55,5,103,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса MenuTest:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса MenuTest:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTest__coll__graph.png" border="0" usemap="#MenuTest_coll__map" alt="Collaboration graph"/></div>
 <map name="MenuTest_coll__map" id="MenuTest_coll__map">
 <area shape="rect"  title=" " alt="" coords="2696,8791,2804,8912"/>
@@ -225,9 +232,26 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        EXPECT_GLOBAL_CALL( access, access( _, F_OK ) ).WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        EXPECT_GLOBAL_CALL( system, system( _ ) ).WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_open,  sqlite3_open(_,_)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_exec,  sqlite3_exec(_,_,_,_,_)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_close, sqlite3_close(_)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_)).WillRepeatedly(Return(<span class="stringliteral">&quot;&quot;</span>));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>.reset( <span class="keyword">new</span> <a class="code" href="classMenu.html">Menu</a>() );</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;convert.reset( &amp;<a class="code" href="classMenuTest.html#ad771d8a10624e35b46ac5e616fcb20b0">mockConvert</a> );</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classMenuTest.html#a0a2b5adddad5c893229e0387482a3e80">mockPrinter</a>.reset(<span class="keyword">new</span> MockPrinter());</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;printer.reset( <a class="code" href="classMenuTest.html#a0a2b5adddad5c893229e0387482a3e80">mockPrinter</a>.get() );</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;net.reset( &amp;<a class="code" href="classMenuTest.html#a40a1f893f2dbd64e0ee6b79dd4f5c0d8">mockNet</a> );</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;lcd.reset( &amp;<a class="code" href="classMenuTest.html#aea581e69e578ac3c6f62d4acbd5a7097">mockLcd</a> );</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;fg.reset( &amp;<a class="code" href="classMenuTest.html#aa8aef772d966ec806610e531465bea9e">mockFg</a> );</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;fn.reset( &amp;<a class="code" href="classMenuTest.html#aea1f18a931d1d56c9ca93ece02cd6fbf">mockFn</a> );</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;keypad.reset( &amp;<a class="code" href="classMenuTest.html#ac5d88fa667fa7299d223cc936fa7b6e6">mockKeypad</a> );</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;he.reset( &amp;<a class="code" href="classMenuTest.html#ab785d5a81f7384d3fb2d9cda094d19f9">mockHe</a> );</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;sql.reset( &amp;<a class="code" href="classMenuTest.html#aefaa434b6da7825825557dd7a1346f5c">mockSqlWrapper</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;goodsNew.reset(&amp;<a class="code" href="classMenuTest.html#a4de6c5c7e7d406414d84ae421c04335d">mockGoodsNew</a>) ;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classMenuTest.html#ac4fff78fe045d195806a89bb067924e8">initJson</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="ttc" id="classMenuTest_html_a78065794165a811e1c806c912ac997f6"><div class="ttname"><a href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">MenuTest::menu</a></div><div class="ttdeci">unique_ptr&lt; Menu &gt; menu</div><div class="ttdef"><b>Definition:</b> testMenu.h:90</div></div>
+<div class="ttc" id="classMenuTest_html_aea1f18a931d1d56c9ca93ece02cd6fbf"><div class="ttname"><a href="classMenuTest.html#aea1f18a931d1d56c9ca93ece02cd6fbf">MenuTest::mockFn</a></div><div class="ttdeci">MenuTest::MockFn mockFn</div></div>
+<div class="ttc" id="classMenuTest_html_aea581e69e578ac3c6f62d4acbd5a7097"><div class="ttname"><a href="classMenuTest.html#aea581e69e578ac3c6f62d4acbd5a7097">MenuTest::mockLcd</a></div><div class="ttdeci">MenuTest::MockLcd mockLcd</div></div>
+<div class="ttc" id="classMenuTest_html_a0a2b5adddad5c893229e0387482a3e80"><div class="ttname"><a href="classMenuTest.html#a0a2b5adddad5c893229e0387482a3e80">MenuTest::mockPrinter</a></div><div class="ttdeci">unique_ptr&lt; MockPrinter &gt; mockPrinter</div><div class="ttdef"><b>Definition:</b> testMenu.h:101</div></div>
+<div class="ttc" id="classMenuTest_html_a40a1f893f2dbd64e0ee6b79dd4f5c0d8"><div class="ttname"><a href="classMenuTest.html#a40a1f893f2dbd64e0ee6b79dd4f5c0d8">MenuTest::mockNet</a></div><div class="ttdeci">MenuTest::MockNet mockNet</div></div>
+<div class="ttc" id="classMenuTest_html_ad771d8a10624e35b46ac5e616fcb20b0"><div class="ttname"><a href="classMenuTest.html#ad771d8a10624e35b46ac5e616fcb20b0">MenuTest::mockConvert</a></div><div class="ttdeci">MenuTest::MockConvert mockConvert</div></div>
+<div class="ttc" id="classMenuTest_html_aefaa434b6da7825825557dd7a1346f5c"><div class="ttname"><a href="classMenuTest.html#aefaa434b6da7825825557dd7a1346f5c">MenuTest::mockSqlWrapper</a></div><div class="ttdeci">MenuTest::MockSqlWrapper mockSqlWrapper</div></div>
+<div class="ttc" id="classMenuTest_html_ac4fff78fe045d195806a89bb067924e8"><div class="ttname"><a href="classMenuTest.html#ac4fff78fe045d195806a89bb067924e8">MenuTest::initJson</a></div><div class="ttdeci">void initJson()</div><div class="ttdef"><b>Definition:</b> testMenu.h:67</div></div>
+<div class="ttc" id="classMenuTest_html_ac5d88fa667fa7299d223cc936fa7b6e6"><div class="ttname"><a href="classMenuTest.html#ac5d88fa667fa7299d223cc936fa7b6e6">MenuTest::mockKeypad</a></div><div class="ttdeci">MenuTest::MockKeypad mockKeypad</div></div>
+<div class="ttc" id="classMenu_html"><div class="ttname"><a href="classMenu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> menu.h:95</div></div>
+<div class="ttc" id="classMenuTest_html_aa8aef772d966ec806610e531465bea9e"><div class="ttname"><a href="classMenuTest.html#aa8aef772d966ec806610e531465bea9e">MenuTest::mockFg</a></div><div class="ttdeci">MenuTest::MockFg mockFg</div></div>
+<div class="ttc" id="classMenuTest_html_ab785d5a81f7384d3fb2d9cda094d19f9"><div class="ttname"><a href="classMenuTest.html#ab785d5a81f7384d3fb2d9cda094d19f9">MenuTest::mockHe</a></div><div class="ttdeci">MenuTest::MockHttpsExchange mockHe</div></div>
+<div class="ttc" id="classMenuTest_html_a4de6c5c7e7d406414d84ae421c04335d"><div class="ttname"><a href="classMenuTest.html#a4de6c5c7e7d406414d84ae421c04335d">MenuTest::mockGoodsNew</a></div><div class="ttdeci">MenuTest::MockGoods_new mockGoodsNew</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuTest.html#ac4fff78fe045d195806a89bb067924e8">initJson()</a>, <a class="el" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>, <a class="el" href="classMenuTest.html#ad771d8a10624e35b46ac5e616fcb20b0">mockConvert</a>, <a class="el" href="classMenuTest.html#aa8aef772d966ec806610e531465bea9e">mockFg</a>, <a class="el" href="classMenuTest.html#aea1f18a931d1d56c9ca93ece02cd6fbf">mockFn</a>, <a class="el" href="classMenuTest.html#a4de6c5c7e7d406414d84ae421c04335d">mockGoodsNew</a>, <a class="el" href="classMenuTest.html#ab785d5a81f7384d3fb2d9cda094d19f9">mockHe</a>, <a class="el" href="classMenuTest.html#ac5d88fa667fa7299d223cc936fa7b6e6">mockKeypad</a>, <a class="el" href="classMenuTest.html#aea581e69e578ac3c6f62d4acbd5a7097">mockLcd</a>, <a class="el" href="classMenuTest.html#a40a1f893f2dbd64e0ee6b79dd4f5c0d8">mockNet</a>, <a class="el" href="classMenuTest.html#a0a2b5adddad5c893229e0387482a3e80">mockPrinter</a> и <a class="el" href="classMenuTest.html#aefaa434b6da7825825557dd7a1346f5c">mockSqlWrapper</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTest_a609e563a366f805f1ad35641478f72cc_cgraph.png" border="0" usemap="#classMenuTest_a609e563a366f805f1ad35641478f72cc_cgraph" alt=""/></div>
 <map name="classMenuTest_a609e563a366f805f1ad35641478f72cc_cgraph" id="classMenuTest_a609e563a366f805f1ad35641478f72cc_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,152,32"/>
@@ -259,6 +283,9 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;convert.release();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;net.release();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;lcd.release();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;fg.release();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;fn.release();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;keypad.release();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;he.release();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>-&gt;sql.release();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>.release();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        EXPECT_GLOBAL_CALL( access, access( _, F_OK ) )           .WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        EXPECT_GLOBAL_CALL( system, system( _ ) )                 .WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_open,  sqlite3_open(_,_))      .WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_exec,  sqlite3_exec(_,_,_,_,_)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_close, sqlite3_close(_))       .WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_))     .WillRepeatedly(Return(<span class="stringliteral">&quot;&quot;</span>));</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div><div class="ttc" id="classMenuTest_html_a78065794165a811e1c806c912ac997f6"><div class="ttname"><a href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">MenuTest::menu</a></div><div class="ttdeci">unique_ptr&lt; Menu &gt; menu</div><div class="ttdef"><b>Definition:</b> testMenu.h:90</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuTest.html#a78065794165a811e1c806c912ac997f6">menu</a>.</p>
 
 </div>
 </div>
@@ -285,6 +312,42 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a954de2dda4c46892eec776c5315f09db">organizationName</a>    = <span class="stringliteral">&quot;organizationName&quot;</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a2e7b8284be13af7911003e8f30177602">calculationAddress</a>  = <span class="stringliteral">&quot;calculationAddress&quot;</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#acdf6730a52ae1f627c656eb1e166378e">calculationPlace</a>    = <span class="stringliteral">&quot;calculationPlace&quot;</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a79639c18b6b5a2d588a0c578131ac6cb">organizationInn</a>     = <span class="stringliteral">&quot;2632810596&quot;</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a8505c46c0bcb117dec7c0581bc1d96eb">kktRegNum</a>           = <span class="stringliteral">&quot;0000000001016333&quot;</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a30a3136f9751a9937e70e3a641512973">ofdName</a>             = <span class="stringliteral">&quot;ofdName&quot;</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a9da54a8f4c17106d5724b53732858212">ofdServerAddress</a>    = <span class="stringliteral">&quot;ya.ru&quot;</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#adcf0b19bd3ce62be6f15d7d634ae0d78">ofdServerPort</a>       = 69;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a2e86ea7c4c164745253a1f893fb6059f">ofdInn</a>              = <span class="stringliteral">&quot;1214325432&quot;</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a0d31d9c8766f89ee1483c49e1977aa76">checkReceiptAddress</a> = <span class="stringliteral">&quot;ya.ru&quot;</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a2bf6d24a545f5a8d34ea844f89b0716c">isAutonomicMode</a>     = <span class="keyword">false</span>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#abd0a6854402e81ba655469a603918009">taxSystems</a>          = 0x01;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#ae2fc9be483836901d853c60f2d3e91b5">encryptionSign</a>      = <span class="keyword">false</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a0357cb7ac66b87b63601b3a6aedd3063">excisableSign</a>       = <span class="keyword">false</span>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a0d3e64dbf03f759daaae6ac1417d1ed2">clcServicesSign</a>     = <span class="keyword">false</span>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a7313feeb5d311ae5ee8a0ccecb0dfd3a">gamblingSign</a>        = <span class="keyword">false</span>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#af29f73586ea52c6d754726620dd2860b">lotterySign</a>         = <span class="keyword">false</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a51401f906b72a984694353620ec95bdf">payingAgentSign</a>     = <span class="keyword">false</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a53d9ecf05c2a61f8599d3d74f7e9db8d">agentTypes</a>          =  0x00;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>.<a class="code" href="structJSONKKTRegInfo.html#a03b88c116b03cede9a27189165c22443">result</a>              =     0;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div><div class="ttc" id="structJSONKKTRegInfo_html_a2e86ea7c4c164745253a1f893fb6059f"><div class="ttname"><a href="structJSONKKTRegInfo.html#a2e86ea7c4c164745253a1f893fb6059f">JSONKKTRegInfo::ofdInn</a></div><div class="ttdeci">string ofdInn</div><div class="ttdef"><b>Definition:</b> json.h:112</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_adcf0b19bd3ce62be6f15d7d634ae0d78"><div class="ttname"><a href="structJSONKKTRegInfo.html#adcf0b19bd3ce62be6f15d7d634ae0d78">JSONKKTRegInfo::ofdServerPort</a></div><div class="ttdeci">int ofdServerPort</div><div class="ttdef"><b>Definition:</b> json.h:111</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_af29f73586ea52c6d754726620dd2860b"><div class="ttname"><a href="structJSONKKTRegInfo.html#af29f73586ea52c6d754726620dd2860b">JSONKKTRegInfo::lotterySign</a></div><div class="ttdeci">bool lotterySign</div><div class="ttdef"><b>Definition:</b> json.h:120</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a9da54a8f4c17106d5724b53732858212"><div class="ttname"><a href="structJSONKKTRegInfo.html#a9da54a8f4c17106d5724b53732858212">JSONKKTRegInfo::ofdServerAddress</a></div><div class="ttdeci">string ofdServerAddress</div><div class="ttdef"><b>Definition:</b> json.h:110</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a79639c18b6b5a2d588a0c578131ac6cb"><div class="ttname"><a href="structJSONKKTRegInfo.html#a79639c18b6b5a2d588a0c578131ac6cb">JSONKKTRegInfo::organizationInn</a></div><div class="ttdeci">string organizationInn</div><div class="ttdef"><b>Definition:</b> json.h:107</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a51401f906b72a984694353620ec95bdf"><div class="ttname"><a href="structJSONKKTRegInfo.html#a51401f906b72a984694353620ec95bdf">JSONKKTRegInfo::payingAgentSign</a></div><div class="ttdeci">bool payingAgentSign</div><div class="ttdef"><b>Definition:</b> json.h:121</div></div>
+<div class="ttc" id="classMenuTest_html_ac2786aa78992565617aadec7f0f59bae"><div class="ttname"><a href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">MenuTest::jsonKKTRegistrInfo</a></div><div class="ttdeci">JSONKKTRegInfo jsonKKTRegistrInfo</div><div class="ttdef"><b>Definition:</b> testMenu.h:91</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_acdf6730a52ae1f627c656eb1e166378e"><div class="ttname"><a href="structJSONKKTRegInfo.html#acdf6730a52ae1f627c656eb1e166378e">JSONKKTRegInfo::calculationPlace</a></div><div class="ttdeci">string calculationPlace</div><div class="ttdef"><b>Definition:</b> json.h:106</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a0357cb7ac66b87b63601b3a6aedd3063"><div class="ttname"><a href="structJSONKKTRegInfo.html#a0357cb7ac66b87b63601b3a6aedd3063">JSONKKTRegInfo::excisableSign</a></div><div class="ttdeci">bool excisableSign</div><div class="ttdef"><b>Definition:</b> json.h:117</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a7313feeb5d311ae5ee8a0ccecb0dfd3a"><div class="ttname"><a href="structJSONKKTRegInfo.html#a7313feeb5d311ae5ee8a0ccecb0dfd3a">JSONKKTRegInfo::gamblingSign</a></div><div class="ttdeci">bool gamblingSign</div><div class="ttdef"><b>Definition:</b> json.h:119</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a954de2dda4c46892eec776c5315f09db"><div class="ttname"><a href="structJSONKKTRegInfo.html#a954de2dda4c46892eec776c5315f09db">JSONKKTRegInfo::organizationName</a></div><div class="ttdeci">string organizationName</div><div class="ttdef"><b>Definition:</b> json.h:104</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a0d3e64dbf03f759daaae6ac1417d1ed2"><div class="ttname"><a href="structJSONKKTRegInfo.html#a0d3e64dbf03f759daaae6ac1417d1ed2">JSONKKTRegInfo::clcServicesSign</a></div><div class="ttdeci">bool clcServicesSign</div><div class="ttdef"><b>Definition:</b> json.h:118</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a03b88c116b03cede9a27189165c22443"><div class="ttname"><a href="structJSONKKTRegInfo.html#a03b88c116b03cede9a27189165c22443">JSONKKTRegInfo::result</a></div><div class="ttdeci">int result</div><div class="ttdef"><b>Definition:</b> json.h:124</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a30a3136f9751a9937e70e3a641512973"><div class="ttname"><a href="structJSONKKTRegInfo.html#a30a3136f9751a9937e70e3a641512973">JSONKKTRegInfo::ofdName</a></div><div class="ttdeci">string ofdName</div><div class="ttdef"><b>Definition:</b> json.h:109</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a2e7b8284be13af7911003e8f30177602"><div class="ttname"><a href="structJSONKKTRegInfo.html#a2e7b8284be13af7911003e8f30177602">JSONKKTRegInfo::calculationAddress</a></div><div class="ttdeci">string calculationAddress</div><div class="ttdef"><b>Definition:</b> json.h:105</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a8505c46c0bcb117dec7c0581bc1d96eb"><div class="ttname"><a href="structJSONKKTRegInfo.html#a8505c46c0bcb117dec7c0581bc1d96eb">JSONKKTRegInfo::kktRegNum</a></div><div class="ttdeci">string kktRegNum</div><div class="ttdef"><b>Definition:</b> json.h:108</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_abd0a6854402e81ba655469a603918009"><div class="ttname"><a href="structJSONKKTRegInfo.html#abd0a6854402e81ba655469a603918009">JSONKKTRegInfo::taxSystems</a></div><div class="ttdeci">unsigned char taxSystems</div><div class="ttdef"><b>Definition:</b> json.h:115</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a53d9ecf05c2a61f8599d3d74f7e9db8d"><div class="ttname"><a href="structJSONKKTRegInfo.html#a53d9ecf05c2a61f8599d3d74f7e9db8d">JSONKKTRegInfo::agentTypes</a></div><div class="ttdeci">unsigned char agentTypes</div><div class="ttdef"><b>Definition:</b> json.h:122</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a0d31d9c8766f89ee1483c49e1977aa76"><div class="ttname"><a href="structJSONKKTRegInfo.html#a0d31d9c8766f89ee1483c49e1977aa76">JSONKKTRegInfo::checkReceiptAddress</a></div><div class="ttdeci">string checkReceiptAddress</div><div class="ttdef"><b>Definition:</b> json.h:113</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_a2bf6d24a545f5a8d34ea844f89b0716c"><div class="ttname"><a href="structJSONKKTRegInfo.html#a2bf6d24a545f5a8d34ea844f89b0716c">JSONKKTRegInfo::isAutonomicMode</a></div><div class="ttdeci">bool isAutonomicMode</div><div class="ttdef"><b>Definition:</b> json.h:114</div></div>
+<div class="ttc" id="structJSONKKTRegInfo_html_ae2fc9be483836901d853c60f2d3e91b5"><div class="ttname"><a href="structJSONKKTRegInfo.html#ae2fc9be483836901d853c60f2d3e91b5">JSONKKTRegInfo::encryptionSign</a></div><div class="ttdeci">bool encryptionSign</div><div class="ttdef"><b>Definition:</b> json.h:116</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="structJSONKKTRegInfo.html#a53d9ecf05c2a61f8599d3d74f7e9db8d">JSONKKTRegInfo::agentTypes</a>, <a class="el" href="structJSONKKTRegInfo.html#a2e7b8284be13af7911003e8f30177602">JSONKKTRegInfo::calculationAddress</a>, <a class="el" href="structJSONKKTRegInfo.html#acdf6730a52ae1f627c656eb1e166378e">JSONKKTRegInfo::calculationPlace</a>, <a class="el" href="structJSONKKTRegInfo.html#a0d31d9c8766f89ee1483c49e1977aa76">JSONKKTRegInfo::checkReceiptAddress</a>, <a class="el" href="structJSONKKTRegInfo.html#a0d3e64dbf03f759daaae6ac1417d1ed2">JSONKKTRegInfo::clcServicesSign</a>, <a class="el" href="structJSONKKTRegInfo.html#ae2fc9be483836901d853c60f2d3e91b5">JSONKKTRegInfo::encryptionSign</a>, <a class="el" href="structJSONKKTRegInfo.html#a0357cb7ac66b87b63601b3a6aedd3063">JSONKKTRegInfo::excisableSign</a>, <a class="el" href="structJSONKKTRegInfo.html#a7313feeb5d311ae5ee8a0ccecb0dfd3a">JSONKKTRegInfo::gamblingSign</a>, <a class="el" href="structJSONKKTRegInfo.html#a2bf6d24a545f5a8d34ea844f89b0716c">JSONKKTRegInfo::isAutonomicMode</a>, <a class="el" href="classMenuTest.html#ac2786aa78992565617aadec7f0f59bae">jsonKKTRegistrInfo</a>, <a class="el" href="structJSONKKTRegInfo.html#a8505c46c0bcb117dec7c0581bc1d96eb">JSONKKTRegInfo::kktRegNum</a>, <a class="el" href="structJSONKKTRegInfo.html#af29f73586ea52c6d754726620dd2860b">JSONKKTRegInfo::lotterySign</a>, <a class="el" href="structJSONKKTRegInfo.html#a2e86ea7c4c164745253a1f893fb6059f">JSONKKTRegInfo::ofdInn</a>, <a class="el" href="structJSONKKTRegInfo.html#a30a3136f9751a9937e70e3a641512973">JSONKKTRegInfo::ofdName</a>, <a class="el" href="structJSONKKTRegInfo.html#a9da54a8f4c17106d5724b53732858212">JSONKKTRegInfo::ofdServerAddress</a>, <a class="el" href="structJSONKKTRegInfo.html#adcf0b19bd3ce62be6f15d7d634ae0d78">JSONKKTRegInfo::ofdServerPort</a>, <a class="el" href="structJSONKKTRegInfo.html#a79639c18b6b5a2d588a0c578131ac6cb">JSONKKTRegInfo::organizationInn</a>, <a class="el" href="structJSONKKTRegInfo.html#a954de2dda4c46892eec776c5315f09db">JSONKKTRegInfo::organizationName</a>, <a class="el" href="structJSONKKTRegInfo.html#a51401f906b72a984694353620ec95bdf">JSONKKTRegInfo::payingAgentSign</a>, <a class="el" href="structJSONKKTRegInfo.html#a03b88c116b03cede9a27189165c22443">JSONKKTRegInfo::result</a> и <a class="el" href="structJSONKKTRegInfo.html#abd0a6854402e81ba655469a603918009">JSONKKTRegInfo::taxSystems</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTest_ac4fff78fe045d195806a89bb067924e8_icgraph.png" border="0" usemap="#classMenuTest_ac4fff78fe045d195806a89bb067924e8_icgraph" alt=""/></div>
+<map name="classMenuTest_ac4fff78fe045d195806a89bb067924e8_icgraph" id="classMenuTest_ac4fff78fe045d195806a89bb067924e8_icgraph">
+<area shape="rect"  title=" " alt="" coords="200,5,333,32"/>
+<area shape="rect"  href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc" title=" " alt="" coords="5,5,152,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -301,6 +364,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#ac4fff78fe045d195806a89bb067924e8">initJson()</a>.</p>
+
 </div>
 </div>
 <a id="a78065794165a811e1c806c912ac997f6"></a>
@@ -314,6 +379,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a> и <a class="el" href="classMenuTest.html#a243510a089c58412834bf0f9bda6a971">~MenuTest()</a>.</p>
 
 </div>
 </div>
@@ -329,6 +396,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+
 </div>
 </div>
 <a id="aa8aef772d966ec806610e531465bea9e"></a>
@@ -342,6 +411,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
 
 </div>
 </div>
@@ -357,6 +428,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+
 </div>
 </div>
 <a id="a4de6c5c7e7d406414d84ae421c04335d"></a>
@@ -370,6 +443,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
 
 </div>
 </div>
@@ -385,6 +460,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+
 </div>
 </div>
 <a id="ac5d88fa667fa7299d223cc936fa7b6e6"></a>
@@ -398,6 +475,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
 
 </div>
 </div>
@@ -413,6 +492,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+
 </div>
 </div>
 <a id="a40a1f893f2dbd64e0ee6b79dd4f5c0d8"></a>
@@ -426,6 +507,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
 
 </div>
 </div>
@@ -455,6 +538,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+
 </div>
 </div>
 <a id="aefaa434b6da7825825557dd7a1346f5c"></a>
@@ -469,6 +554,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classMenuTest.html#a609e563a366f805f1ad35641478f72cc">MenuTest()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -477,7 +564,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

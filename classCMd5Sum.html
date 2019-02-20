@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс CMd5Sum</title>
+<title>FisGo: Класс CMd5Sum</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +73,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="Md5Sum_8h_source.html">Md5Sum.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса CMd5Sum:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса CMd5Sum:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classCMd5Sum__coll__graph.png" border="0" usemap="#CMd5Sum_coll__map" alt="Collaboration graph"/></div>
 <map name="CMd5Sum_coll__map" id="CMd5Sum_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,109,127"/>
@@ -105,7 +110,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    MD5_init();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    m_count[0] = m_count[1] = 0;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// Load magic initialization constants.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    m_state[0] = 0x67452301;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    m_state[1] = 0xefcdab89;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    m_state[2] = 0x98badcfe;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    m_state[3] = 0x10325476;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    m_complete = <span class="keyword">false</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -123,6 +128,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    MD5Final(m_digest);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_complete = <span class="keyword">true</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMd5LibChecker.html#aaa9306b0a546e79f6ed6434a8aae7891">Md5LibChecker::calculateLibMd5()</a> и <a class="el" href="classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e">HttpsExchange::getMd5Sum()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classCMd5Sum_ae6217a2ca5e9e10a27ee5aefb4308334_icgraph.png" border="0" usemap="#classCMd5Sum_ae6217a2ca5e9e10a27ee5aefb4308334_icgraph" alt=""/></div>
+<map name="classCMd5Sum_ae6217a2ca5e9e10a27ee5aefb4308334_icgraph" id="classCMd5Sum_ae6217a2ca5e9e10a27ee5aefb4308334_icgraph">
+<area shape="rect"  title=" " alt="" coords="727,46,872,73"/>
+<area shape="rect"  href="classMd5LibChecker.html#aaa9306b0a546e79f6ed6434a8aae7891" title=" " alt="" coords="497,8,670,49"/>
+<area shape="rect"  href="classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e" title=" " alt="" coords="488,75,679,102"/>
+<area shape="rect"  href="classMd5LibChecker.html#a0909a6b483cf1fb6473ba2a972bfadec" title=" " alt="" coords="259,5,428,47"/>
+<area shape="rect"  href="classHttpsExchange.html#ac0ae307c5c09c29d9d27679903b91454" title=" " alt="" coords="247,71,440,112"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="5,78,199,105"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -141,6 +163,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span>(m_complete){</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        MD5_memcpy((POINTER)pHash, m_digest, 16);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMd5LibChecker.html#aaa9306b0a546e79f6ed6434a8aae7891">Md5LibChecker::calculateLibMd5()</a> и <a class="el" href="classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e">HttpsExchange::getMd5Sum()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classCMd5Sum_a993a542e50847ab9786a326cbfa78da9_icgraph.png" border="0" usemap="#classCMd5Sum_a993a542e50847ab9786a326cbfa78da9_icgraph" alt=""/></div>
+<map name="classCMd5Sum_a993a542e50847ab9786a326cbfa78da9_icgraph" id="classCMd5Sum_a993a542e50847ab9786a326cbfa78da9_icgraph">
+<area shape="rect"  title=" " alt="" coords="727,46,868,73"/>
+<area shape="rect"  href="classMd5LibChecker.html#aaa9306b0a546e79f6ed6434a8aae7891" title=" " alt="" coords="497,8,670,49"/>
+<area shape="rect"  href="classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e" title=" " alt="" coords="488,75,679,102"/>
+<area shape="rect"  href="classMd5LibChecker.html#a0909a6b483cf1fb6473ba2a972bfadec" title=" " alt="" coords="259,5,428,47"/>
+<area shape="rect"  href="classHttpsExchange.html#ac0ae307c5c09c29d9d27679903b91454" title=" " alt="" coords="247,71,440,112"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="5,78,199,105"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -169,6 +208,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    MD5Update(reinterpret_cast&lt;unsigned char*&gt;(pData), dwSize);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMd5LibChecker.html#aaa9306b0a546e79f6ed6434a8aae7891">Md5LibChecker::calculateLibMd5()</a> и <a class="el" href="classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e">HttpsExchange::getMd5Sum()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classCMd5Sum_af631069a78f033cb1516eb8dddf54122_icgraph.png" border="0" usemap="#classCMd5Sum_af631069a78f033cb1516eb8dddf54122_icgraph" alt=""/></div>
+<map name="classCMd5Sum_af631069a78f033cb1516eb8dddf54122_icgraph" id="classCMd5Sum_af631069a78f033cb1516eb8dddf54122_icgraph">
+<area shape="rect"  title=" " alt="" coords="727,46,857,73"/>
+<area shape="rect"  href="classMd5LibChecker.html#aaa9306b0a546e79f6ed6434a8aae7891" title=" " alt="" coords="497,8,670,49"/>
+<area shape="rect"  href="classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e" title=" " alt="" coords="488,75,679,102"/>
+<area shape="rect"  href="classMd5LibChecker.html#a0909a6b483cf1fb6473ba2a972bfadec" title=" " alt="" coords="259,5,428,47"/>
+<area shape="rect"  href="classHttpsExchange.html#ac0ae307c5c09c29d9d27679903b91454" title=" " alt="" coords="247,71,440,112"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="5,78,199,105"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -179,7 +235,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

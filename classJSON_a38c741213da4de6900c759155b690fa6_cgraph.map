@@ -1,5 +1,5 @@
 <map id="JSON::taxSystemsInfoParse" name="JSON::taxSystemsInfoParse">
 <area shape="rect" id="node1" title=" " alt="" coords="5,46,197,73"/>
-<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="245,5,393,47"/>
-<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="245,71,393,112"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="245,5,393,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="245,71,393,112"/>
 </map>

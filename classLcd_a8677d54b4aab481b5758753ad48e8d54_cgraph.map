@@ -1,11 +1,11 @@
 <map id="Lcd::lcd_draw_rev_receipt_and_cash_return" name="Lcd::lcd_draw_rev_receipt_and_cash_return">
 <area shape="rect" id="node1" title=" " alt="" coords="5,125,180,166"/>
-<area shape="rect" id="node2" href="$classConvert.html#a46680f3461deb20c9c111d23ce53cefb" title=" " alt="" coords="228,5,379,32"/>
-<area shape="rect" id="node3" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="251,56,355,83"/>
-<area shape="rect" id="node4" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="244,107,363,133"/>
-<area shape="rect" id="node7" href="$classLcd.html#aeeb9b4672490ae6d80b9f035b7d9445d" title=" " alt="" coords="243,157,364,184"/>
-<area shape="rect" id="node8" href="$classLcd.html#a53d758242ebdea651702cff606fea6da" title=" " alt="" coords="248,208,359,235"/>
-<area shape="rect" id="node9" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="246,259,361,285"/>
-<area shape="rect" id="node5" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="427,107,555,133"/>
-<area shape="rect" id="node6" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="603,107,764,133"/>
+<area shape="rect" id="node2" href="$classLcd.html#aeeb9b4672490ae6d80b9f035b7d9445d" title=" " alt="" coords="243,5,364,32"/>
+<area shape="rect" id="node3" href="$classLcd.html#a53d758242ebdea651702cff606fea6da" title=" " alt="" coords="248,56,359,83"/>
+<area shape="rect" id="node4" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="251,107,355,133"/>
+<area shape="rect" id="node5" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="246,157,361,184"/>
+<area shape="rect" id="node6" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="244,208,363,235"/>
+<area shape="rect" id="node9" href="$classConvert.html#a46680f3461deb20c9c111d23ce53cefb" title=" " alt="" coords="228,259,379,285"/>
+<area shape="rect" id="node7" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="427,208,555,235"/>
+<area shape="rect" id="node8" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="603,208,764,235"/>
 </map>

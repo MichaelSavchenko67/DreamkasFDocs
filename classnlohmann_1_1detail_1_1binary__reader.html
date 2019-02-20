@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Шаблон класса nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</title>
+<title>FisGo: Шаблон класса nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -78,9 +81,11 @@ $(function() {
  <a href="classnlohmann_1_1detail_1_1binary__reader.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1binary__reader__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1binary__reader_3_01BasicJsonType_00_01SAX_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1binary__reader_3_01BasicJsonType_00_01SAX_01_4_coll__map" id="nlohmann_1_1detail_1_1binary__reader_3_01BasicJsonType_00_01SAX_01_4_coll__map">
 <area shape="rect"  title="deserialization of CBOR, MessagePack, and UBJSON values" alt="" coords="5,5,220,127"/>
@@ -140,7 +145,7 @@ template&lt;typename BasicJsonType , typename SAX  = json_sax_dom_parser&lt;Basi
   </table>
   </dd>
 </dl>
-
+<div class="fragment"><div class="line"><a name="l06026"></a><span class="lineno"> 6026</span>&#160;                                                    : ia(std::move(adapter))</div><div class="line"><a name="l06027"></a><span class="lineno"> 6027</span>&#160;    {</div><div class="line"><a name="l06028"></a><span class="lineno"> 6028</span>&#160;        (void)detail::is_sax_static_asserts&lt;SAX, BasicJsonType&gt; {};</div><div class="line"><a name="l06029"></a><span class="lineno"> 6029</span>&#160;        assert(ia);</div><div class="line"><a name="l06030"></a><span class="lineno"> 6030</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -173,7 +178,7 @@ template&lt;typename BasicJsonType , typename SAX  = json_sax_dom_parser&lt;Basi
 <p>determine system byte order </p>
 <dl class="section return"><dt>Возвращает</dt><dd>true if and only if system's byte order is little endian</dd></dl>
 <dl class="section note"><dt>Заметки</dt><dd>from <a href="http://stackoverflow.com/a/1001328/266378">http://stackoverflow.com/a/1001328/266378</a> </dd></dl>
-
+<div class="fragment"><div class="line"><a name="l06095"></a><span class="lineno"> 6095</span>&#160;    {</div><div class="line"><a name="l06096"></a><span class="lineno"> 6096</span>&#160;        <span class="keywordflow">return</span> (*reinterpret_cast&lt;char*&gt;(&amp;num) == 1);</div><div class="line"><a name="l06097"></a><span class="lineno"> 6097</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab94a54d6e595c2620b07589cf4116256"></a>
@@ -226,14 +231,39 @@ template&lt;typename BasicJsonType , typename SAX  = json_sax_dom_parser&lt;Basi
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l06042"></a><span class="lineno"> 6042</span>&#160;    {</div><div class="line"><a name="l06043"></a><span class="lineno"> 6043</span>&#160;        sax = sax_;</div><div class="line"><a name="l06044"></a><span class="lineno"> 6044</span>&#160;        <span class="keywordtype">bool</span> result = <span class="keyword">false</span>;</div><div class="line"><a name="l06045"></a><span class="lineno"> 6045</span>&#160;</div><div class="line"><a name="l06046"></a><span class="lineno"> 6046</span>&#160;        <span class="keywordflow">switch</span> (format)</div><div class="line"><a name="l06047"></a><span class="lineno"> 6047</span>&#160;        {</div><div class="line"><a name="l06048"></a><span class="lineno"> 6048</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40aaf9de350d652f0c9055ddab514bd23ea">input_format_t::cbor</a>:</div><div class="line"><a name="l06049"></a><span class="lineno"> 6049</span>&#160;                result = parse_cbor_internal();</div><div class="line"><a name="l06050"></a><span class="lineno"> 6050</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l06051"></a><span class="lineno"> 6051</span>&#160;</div><div class="line"><a name="l06052"></a><span class="lineno"> 6052</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40ac40d516627022a54003ac2b74a82688a">input_format_t::msgpack</a>:</div><div class="line"><a name="l06053"></a><span class="lineno"> 6053</span>&#160;                result = parse_msgpack_internal();</div><div class="line"><a name="l06054"></a><span class="lineno"> 6054</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l06055"></a><span class="lineno"> 6055</span>&#160;</div><div class="line"><a name="l06056"></a><span class="lineno"> 6056</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8">input_format_t::ubjson</a>:</div><div class="line"><a name="l06057"></a><span class="lineno"> 6057</span>&#160;                result = parse_ubjson_internal();</div><div class="line"><a name="l06058"></a><span class="lineno"> 6058</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l06059"></a><span class="lineno"> 6059</span>&#160;</div><div class="line"><a name="l06060"></a><span class="lineno"> 6060</span>&#160;            <span class="comment">// LCOV_EXCL_START</span></div><div class="line"><a name="l06061"></a><span class="lineno"> 6061</span>&#160;            <span class="keywordflow">default</span>:</div><div class="line"><a name="l06062"></a><span class="lineno"> 6062</span>&#160;                assert(<span class="keyword">false</span>);</div><div class="line"><a name="l06063"></a><span class="lineno"> 6063</span>&#160;                <span class="comment">// LCOV_EXCL_STOP</span></div><div class="line"><a name="l06064"></a><span class="lineno"> 6064</span>&#160;        }</div><div class="line"><a name="l06065"></a><span class="lineno"> 6065</span>&#160;</div><div class="line"><a name="l06066"></a><span class="lineno"> 6066</span>&#160;        <span class="comment">// strict mode: next byte must be EOF</span></div><div class="line"><a name="l06067"></a><span class="lineno"> 6067</span>&#160;        <span class="keywordflow">if</span> (result and strict)</div><div class="line"><a name="l06068"></a><span class="lineno"> 6068</span>&#160;        {</div><div class="line"><a name="l06069"></a><span class="lineno"> 6069</span>&#160;            <span class="keywordflow">if</span> (format == <a class="code" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8">input_format_t::ubjson</a>)</div><div class="line"><a name="l06070"></a><span class="lineno"> 6070</span>&#160;            {</div><div class="line"><a name="l06071"></a><span class="lineno"> 6071</span>&#160;                get_ignore_noop();</div><div class="line"><a name="l06072"></a><span class="lineno"> 6072</span>&#160;            }</div><div class="line"><a name="l06073"></a><span class="lineno"> 6073</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l06074"></a><span class="lineno"> 6074</span>&#160;            {</div><div class="line"><a name="l06075"></a><span class="lineno"> 6075</span>&#160;                get();</div><div class="line"><a name="l06076"></a><span class="lineno"> 6076</span>&#160;            }</div><div class="line"><a name="l06077"></a><span class="lineno"> 6077</span>&#160;</div><div class="line"><a name="l06078"></a><span class="lineno"> 6078</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(current != std::char_traits&lt;char&gt;::eof()))</div><div class="line"><a name="l06079"></a><span class="lineno"> 6079</span>&#160;            {</div><div class="line"><a name="l06080"></a><span class="lineno"> 6080</span>&#160;                <span class="keywordflow">return</span> sax-&gt;parse_error(chars_read, get_token_string(), <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(110, chars_read, <span class="stringliteral">&quot;expected end of input&quot;</span>));</div><div class="line"><a name="l06081"></a><span class="lineno"> 6081</span>&#160;            }</div><div class="line"><a name="l06082"></a><span class="lineno"> 6082</span>&#160;        }</div><div class="line"><a name="l06083"></a><span class="lineno"> 6083</span>&#160;</div><div class="line"><a name="l06084"></a><span class="lineno"> 6084</span>&#160;        <span class="keywordflow">return</span> result;</div><div class="line"><a name="l06085"></a><span class="lineno"> 6085</span>&#160;    }</div><div class="ttc" id="namespacenlohmann_1_1detail_html_aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8">nlohmann::detail::input_format_t::ubjson</a></div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_aa554fc6a11519e4f347deb25a9f0db40ac40d516627022a54003ac2b74a82688a"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40ac40d516627022a54003ac2b74a82688a">nlohmann::detail::input_format_t::msgpack</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parse__error_html_a9fd60ad6bce80fd99686ad332faefd37"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">nlohmann::detail::parse_error::create</a></div><div class="ttdeci">static parse_error create(int id_, std::size_t byte_, const std::string &amp;what_arg)</div><div class="ttdoc">create a parse error exception</div><div class="ttdef"><b>Definition:</b> jsonParser.h:659</div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_aa554fc6a11519e4f347deb25a9f0db40aaf9de350d652f0c9055ddab514bd23ea"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40aaf9de350d652f0c9055ddab514bd23ea">nlohmann::detail::input_format_t::cbor</a></div></div>
+<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:193</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40aaf9de350d652f0c9055ddab514bd23ea">nlohmann::detail::cbor</a>, <a class="el" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">nlohmann::detail::parse_error::create()</a>, <a class="el" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>, <a class="el" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40ac40d516627022a54003ac2b74a82688a">nlohmann::detail::msgpack</a> и <a class="el" href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8">nlohmann::detail::ubjson</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1basic__json.html#a3d4b91e391612285bf834569edcc58e8">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::from_cbor()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a7e724c9d881b953a5f1bff9fb6648d21">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::from_msgpack()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a98ef289216564da59a78903a5cabfc8a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::from_ubjson()</a> и <a class="el" href="classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::sax_parse()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_cgraph" id="classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,165,47"/>
 <area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="213,5,371,47"/>
 <area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="419,5,600,47"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_icgraph" id="classnlohmann_1_1detail_1_1binary__reader_ab94a54d6e595c2620b07589cf4116256_icgraph">
+<area shape="rect"  title=" " alt="" coords="201,104,361,145"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a3d4b91e391612285bf834569edcc58e8" title="create a JSON value from an input in CBOR format" alt="" coords="5,5,153,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a7e724c9d881b953a5f1bff9fb6648d21" title="create a JSON value from an input in MessagePack format" alt="" coords="5,71,153,112"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a98ef289216564da59a78903a5cabfc8a" title="create a JSON value from an input in UBJSON format" alt="" coords="5,136,153,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="5,201,153,243"/>
 </map>
 </div>
 
@@ -245,7 +275,7 @@ template&lt;typename BasicJsonType , typename SAX  = json_sax_dom_parser&lt;Basi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

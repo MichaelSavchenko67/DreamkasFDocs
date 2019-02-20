@@ -1,8 +1,8 @@
 <map id="Fiscal_store::fs_reciept_req_list_create" name="Fiscal_store::fs_reciept_req_list_create">
-<area shape="rect" id="node1" title=" " alt="" coords="5,123,164,164"/>
-<area shape="rect" id="node2" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="228,5,359,47"/>
-<area shape="rect" id="node3" href="$classReceipt__new.html#a7c8aeeafa2454a10269f43d8fe875dfb" title=" " alt="" coords="212,71,375,98"/>
-<area shape="rect" id="node4" href="$classReceipt__new.html#ac0f54ec75ef765fdc54e52cf47159400" title=" " alt="" coords="228,123,359,164"/>
-<area shape="rect" id="node5" href="$classReceipt__new.html#a51e2f9ce19acc05b040aea01970d3698" title=" " alt="" coords="215,189,371,215"/>
-<area shape="rect" id="node6" href="$classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="228,240,359,281"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,164,149"/>
+<area shape="rect" id="node2" href="$classReceipt__new.html#a7c8aeeafa2454a10269f43d8fe875dfb" title=" " alt="" coords="212,5,375,32"/>
+<area shape="rect" id="node3" href="$classReceipt__new.html#a51e2f9ce19acc05b040aea01970d3698" title=" " alt="" coords="215,56,371,83"/>
+<area shape="rect" id="node4" href="$classReceipt__new.html#ac0f54ec75ef765fdc54e52cf47159400" title=" " alt="" coords="228,107,359,149"/>
+<area shape="rect" id="node5" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="228,173,359,214"/>
+<area shape="rect" id="node6" href="$classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="228,238,359,279"/>
 </map>

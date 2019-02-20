@@ -1,0 +1,4 @@
+<map id="TimeSync::startNtpd" name="TimeSync::startNtpd">
+<area shape="rect" id="node1" title="startNtpd старт сервиса синхронизации времени" alt="" coords="204,5,347,32"/>
+<area shape="rect" id="node2" href="$classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title="timeSyncForce &#45; принудительная синхронизация времени" alt="" coords="5,5,156,32"/>
+</map>

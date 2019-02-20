@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс SlipsDB</title>
+<title>FisGo: Класс SlipsDB</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +73,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="slipsDB_8h_source.html">slipsDB.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса SlipsDB:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса SlipsDB:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSlipsDB__coll__graph.png" border="0" usemap="#SlipsDB_coll__map" alt="Collaboration graph"/></div>
 <map name="SlipsDB_coll__map" id="SlipsDB_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,123,259"/>
@@ -124,9 +129,19 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;{</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">if</span>(slip == NULL)</div><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {</div><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">char</span> *sqlQuery = sqlite3_mprintf(<span class="stringliteral">&quot;INSERT INTO SLIPS&quot;</span></div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                     <span class="stringliteral">&quot;(DATE,&quot;</span></div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                     <span class="stringliteral">&quot;AUTHORIZATION_CODE,&quot;</span></div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                     <span class="stringliteral">&quot;PAN,&quot;</span></div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                                     <span class="stringliteral">&quot;RRN,&quot;</span></div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                     <span class="stringliteral">&quot;SHIFT_NUM) &quot;</span></div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                                     <span class="stringliteral">&quot;VALUES&quot;</span></div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                     <span class="stringliteral">&quot;(&#39;%q&#39;, &#39;%q&#39;,  &#39;%q&#39;, &#39;%q&#39;, &#39;%q&#39;);\n&quot;</span>,</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                     slip-&gt;<a class="code" href="structSlip.html#a93d17f93079f39a333b633a62ef2d3a7">date</a>.c_str(),</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                     slip-&gt;<a class="code" href="structSlip.html#a906d9baeac302e7b79ca6ff2d0f0f2ec">authCode</a>.c_str(),</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                                     slip-&gt;<a class="code" href="structSlip.html#a58cef03b4f988afa9cd5612b34e03a19">PAN</a>.c_str(),</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                                     slip-&gt;<a class="code" href="structSlip.html#a9d4ce2a40c86f3285a88ff5060450006">RRN</a>.c_str(),</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                     slip-&gt;<a class="code" href="structSlip.html#a7f996d5581e18ee97a30b072e77d00ae">shiftNum</a>.c_str());</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    query.clear();</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    query += <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>(sqlQuery);</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    sqlite3_free(sqlQuery);</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> add();</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div><div class="ttc" id="structSlip_html_a9d4ce2a40c86f3285a88ff5060450006"><div class="ttname"><a href="structSlip.html#a9d4ce2a40c86f3285a88ff5060450006">Slip::RRN</a></div><div class="ttdeci">string RRN</div><div class="ttdef"><b>Definition:</b> slipsDB.h:20</div></div>
+<div class="ttc" id="structSlip_html_a906d9baeac302e7b79ca6ff2d0f0f2ec"><div class="ttname"><a href="structSlip.html#a906d9baeac302e7b79ca6ff2d0f0f2ec">Slip::authCode</a></div><div class="ttdeci">string authCode</div><div class="ttdef"><b>Definition:</b> slipsDB.h:18</div></div>
+<div class="ttc" id="structSlip_html_a93d17f93079f39a333b633a62ef2d3a7"><div class="ttname"><a href="structSlip.html#a93d17f93079f39a333b633a62ef2d3a7">Slip::date</a></div><div class="ttdeci">string date</div><div class="ttdef"><b>Definition:</b> slipsDB.h:17</div></div>
+<div class="ttc" id="classConvert_html_a9d413a4d0ae48dd4817751ed9cbce859"><div class="ttname"><a href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a></div><div class="ttdeci">static string charToString(const char *source)</div><div class="ttdef"><b>Definition:</b> convert.cpp:144</div></div>
+<div class="ttc" id="structSlip_html_a7f996d5581e18ee97a30b072e77d00ae"><div class="ttname"><a href="structSlip.html#a7f996d5581e18ee97a30b072e77d00ae">Slip::shiftNum</a></div><div class="ttdeci">string shiftNum</div><div class="ttdef"><b>Definition:</b> slipsDB.h:21</div></div>
+<div class="ttc" id="structSlip_html_a58cef03b4f988afa9cd5612b34e03a19"><div class="ttname"><a href="structSlip.html#a58cef03b4f988afa9cd5612b34e03a19">Slip::PAN</a></div><div class="ttdeci">string PAN</div><div class="ttdef"><b>Definition:</b> slipsDB.h:19</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="structSlip.html#a906d9baeac302e7b79ca6ff2d0f0f2ec">Slip::authCode</a>, <a class="el" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString()</a>, <a class="el" href="structSlip.html#a93d17f93079f39a333b633a62ef2d3a7">Slip::date</a>, <a class="el" href="structSlip.html#a58cef03b4f988afa9cd5612b34e03a19">Slip::PAN</a>, <a class="el" href="structSlip.html#a9d4ce2a40c86f3285a88ff5060450006">Slip::RRN</a> и <a class="el" href="structSlip.html#a7f996d5581e18ee97a30b072e77d00ae">Slip::shiftNum</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSlipsDB_a66741540469c87998182a9c89d5d3931_cgraph.png" border="0" usemap="#classSlipsDB_a66741540469c87998182a9c89d5d3931_cgraph" alt=""/></div>
 <map name="classSlipsDB_a66741540469c87998182a9c89d5d3931_cgraph" id="classSlipsDB_a66741540469c87998182a9c89d5d3931_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,104,32"/>
@@ -151,9 +166,17 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">if</span>(status == NULL)</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    {</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    }</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">char</span> *sqlQuery = sqlite3_mprintf(<span class="stringliteral">&quot;INSERT INTO OPS_STATUSES&quot;</span></div><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                                     <span class="stringliteral">&quot;(AUTHORIZATION_CODE,&quot;</span></div><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                     <span class="stringliteral">&quot;AMOUNT,&quot;</span></div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                                     <span class="stringliteral">&quot;STATUS) &quot;</span></div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                     <span class="stringliteral">&quot;VALUES&quot;</span></div><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                                     <span class="stringliteral">&quot;(&#39;%q&#39;, &#39;%q&#39;,  &#39;%q&#39;);\n&quot;</span>,</div><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                                     status-&gt;<a class="code" href="structStatusOp.html#a025e789e1424806c55d7373d5e75a1e2">authCode</a>.c_str(),</div><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                     status-&gt;<a class="code" href="structStatusOp.html#a1255af971f901e59a1d506b2fe3d83a3">amount</a>.c_str(),</div><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                                     status-&gt;<a class="code" href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">status</a>.c_str());</div><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    query.clear();</div><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    query += <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>(sqlQuery);</div><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    sqlite3_free(sqlQuery);</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">return</span> add();</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;}</div><div class="ttc" id="structStatusOp_html_a1255af971f901e59a1d506b2fe3d83a3"><div class="ttname"><a href="structStatusOp.html#a1255af971f901e59a1d506b2fe3d83a3">StatusOp::amount</a></div><div class="ttdeci">string amount</div><div class="ttdef"><b>Definition:</b> slipsDB.h:37</div></div>
+<div class="ttc" id="structStatusOp_html_a8a49f7f852491be30b37e65bfbead352"><div class="ttname"><a href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">StatusOp::status</a></div><div class="ttdeci">string status</div><div class="ttdef"><b>Definition:</b> slipsDB.h:38</div></div>
+<div class="ttc" id="classConvert_html_a9d413a4d0ae48dd4817751ed9cbce859"><div class="ttname"><a href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a></div><div class="ttdeci">static string charToString(const char *source)</div><div class="ttdef"><b>Definition:</b> convert.cpp:144</div></div>
+<div class="ttc" id="structStatusOp_html_a025e789e1424806c55d7373d5e75a1e2"><div class="ttname"><a href="structStatusOp.html#a025e789e1424806c55d7373d5e75a1e2">StatusOp::authCode</a></div><div class="ttdeci">string authCode</div><div class="ttdef"><b>Definition:</b> slipsDB.h:36</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="structStatusOp.html#a1255af971f901e59a1d506b2fe3d83a3">StatusOp::amount</a>, <a class="el" href="structStatusOp.html#a025e789e1424806c55d7373d5e75a1e2">StatusOp::authCode</a>, <a class="el" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString()</a> и <a class="el" href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">StatusOp::status</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSlipsDB_a69db572f46df36790aeb710812e5d1e9_cgraph.png" border="0" usemap="#classSlipsDB_a69db572f46df36790aeb710812e5d1e9_cgraph" alt=""/></div>
 <map name="classSlipsDB_a69db572f46df36790aeb710812e5d1e9_cgraph" id="classSlipsDB_a69db572f46df36790aeb710812e5d1e9_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,104,32"/>
@@ -177,14 +200,20 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;{</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <a class="code" href="classSlipsDB.html#afd86b467c53318518c3fc76ad8e275d9">clearStatTbl</a>();</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <a class="code" href="classSlipsDB.html#abc71b0c14e25e4fc2fb7d4a485acd3c9">clearSlipsTbl</a>();</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div><div class="ttc" id="classSlipsDB_html_afd86b467c53318518c3fc76ad8e275d9"><div class="ttname"><a href="classSlipsDB.html#afd86b467c53318518c3fc76ad8e275d9">SlipsDB::clearStatTbl</a></div><div class="ttdeci">void clearStatTbl()</div><div class="ttdef"><b>Definition:</b> slipsDB.cpp:417</div></div>
+<div class="ttc" id="classSlipsDB_html_abc71b0c14e25e4fc2fb7d4a485acd3c9"><div class="ttname"><a href="classSlipsDB.html#abc71b0c14e25e4fc2fb7d4a485acd3c9">SlipsDB::clearSlipsTbl</a></div><div class="ttdeci">void clearSlipsTbl()</div><div class="ttdef"><b>Definition:</b> slipsDB.cpp:427</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classSlipsDB.html#abc71b0c14e25e4fc2fb7d4a485acd3c9">clearSlipsTbl()</a> и <a class="el" href="classSlipsDB.html#afd86b467c53318518c3fc76ad8e275d9">clearStatTbl()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSlipsDB_aa8ab0561a11b0d16d0d2e47a8732a6af_cgraph.png" border="0" usemap="#classSlipsDB_aa8ab0561a11b0d16d0d2e47a8732a6af_cgraph" alt=""/></div>
 <map name="classSlipsDB_aa8ab0561a11b0d16d0d2e47a8732a6af_cgraph" id="classSlipsDB_aa8ab0561a11b0d16d0d2e47a8732a6af_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,31,157,57"/>
-<area shape="rect"  href="classSlipsDB.html#afd86b467c53318518c3fc76ad8e275d9" title=" " alt="" coords="208,5,356,32"/>
-<area shape="rect"  href="classSlipsDB.html#abc71b0c14e25e4fc2fb7d4a485acd3c9" title=" " alt="" coords="205,56,359,83"/>
+<area shape="rect"  href="classSlipsDB.html#abc71b0c14e25e4fc2fb7d4a485acd3c9" title=" " alt="" coords="205,5,359,32"/>
+<area shape="rect"  href="classSlipsDB.html#afd86b467c53318518c3fc76ad8e275d9" title=" " alt="" coords="208,56,356,83"/>
 </map>
 </div>
 
@@ -204,6 +233,22 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;{</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    query = <span class="stringliteral">&quot;DELETE FROM SLIPS;&quot;</span>;</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordflow">if</span>(queryNotSaveResult() &lt; 0)</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    {</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;Error: clear slips table on slips.db failed! [ %s ]&quot;</span>, query.c_str());</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    }</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div><div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classSlipsDB.html#aa8ab0561a11b0d16d0d2e47a8732a6af">clearSlipsDb()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classSlipsDB_abc71b0c14e25e4fc2fb7d4a485acd3c9_icgraph.png" border="0" usemap="#classSlipsDB_abc71b0c14e25e4fc2fb7d4a485acd3c9_icgraph" alt=""/></div>
+<map name="classSlipsDB_abc71b0c14e25e4fc2fb7d4a485acd3c9_icgraph" id="classSlipsDB_abc71b0c14e25e4fc2fb7d4a485acd3c9_icgraph">
+<area shape="rect"  title=" " alt="" coords="205,5,359,32"/>
+<area shape="rect"  href="classSlipsDB.html#aa8ab0561a11b0d16d0d2e47a8732a6af" title=" " alt="" coords="5,5,157,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -221,6 +266,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;{</div><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    query = <span class="stringliteral">&quot;DELETE FROM OPS_STATUSES;&quot;</span>;</div><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div><div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordflow">if</span>(queryNotSaveResult() &lt; 0)</div><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    {</div><div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;Error: clear statuses table on slips.db failed! [ %s ]&quot;</span>, query.c_str());</div><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;}</div><div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classSlipsDB.html#aa8ab0561a11b0d16d0d2e47a8732a6af">clearSlipsDb()</a> и <a class="el" href="classMenu.html#a35653ef28eb4f993f9f574050952a0b6">Menu::pay_by_card_integ_term()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classSlipsDB_afd86b467c53318518c3fc76ad8e275d9_icgraph.png" border="0" usemap="#classSlipsDB_afd86b467c53318518c3fc76ad8e275d9_icgraph" alt=""/></div>
+<map name="classSlipsDB_afd86b467c53318518c3fc76ad8e275d9_icgraph" id="classSlipsDB_afd86b467c53318518c3fc76ad8e275d9_icgraph">
+<area shape="rect"  title=" " alt="" coords="257,31,405,57"/>
+<area shape="rect"  href="classSlipsDB.html#aa8ab0561a11b0d16d0d2e47a8732a6af" title=" " alt="" coords="31,5,183,32"/>
+<area shape="rect"  href="classMenu.html#a35653ef28eb4f993f9f574050952a0b6" title=" " alt="" coords="5,56,209,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -238,6 +300,19 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    query = <span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS SLIPS(&quot;</span></div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="stringliteral">&quot;DATE TEXT,&quot;</span></div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="stringliteral">&quot;AUTHORIZATION_CODE TEXT,&quot;</span></div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="stringliteral">&quot;PAN TEXT,&quot;</span></div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="stringliteral">&quot;RRN TEXT,&quot;</span></div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="stringliteral">&quot;SHIFT_NUM TEXT);&quot;</span>;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">if</span>( queryNotSaveResult() &lt; 0 )</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    {</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    query = <span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS OPS_STATUSES(&quot;</span></div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="stringliteral">&quot;AUTHORIZATION_CODE TEXT,&quot;</span></div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="stringliteral">&quot;AMOUNT TEXT,&quot;</span></div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="stringliteral">&quot;STATUS TEXT);&quot;</span>;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">if</span>( queryNotSaveResult() &lt; 0 )</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    {</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#ad466dd83355124a6ed958430450bfe94">Menu::Menu()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classSlipsDB_a82f6212810a7866ac71fdb7038da45fe_icgraph.png" border="0" usemap="#classSlipsDB_a82f6212810a7866ac71fdb7038da45fe_icgraph" alt=""/></div>
+<map name="classSlipsDB_a82f6212810a7866ac71fdb7038da45fe_icgraph" id="classSlipsDB_a82f6212810a7866ac71fdb7038da45fe_icgraph">
+<area shape="rect"  title=" " alt="" coords="148,5,281,32"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="5,5,100,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -272,6 +347,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classSlipsDB.html#aa6ad976005bd3cbbfb705fecbf5abac8">findSlip</a>(field, value))</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    parseAnswer(slip);</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div><div class="ttc" id="classSlipsDB_html_aa6ad976005bd3cbbfb705fecbf5abac8"><div class="ttname"><a href="classSlipsDB.html#aa6ad976005bd3cbbfb705fecbf5abac8">SlipsDB::findSlip</a></div><div class="ttdeci">int findSlip(const string &amp;field, const string &amp;value, vector&lt; Slip &gt; &amp;slip)</div><div class="ttdef"><b>Definition:</b> slipsDB.cpp:379</div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classSlipsDB.html#a6ade82004acbee55e45b2d7399f321d1">findSlip()</a> и <a class="el" href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd">Menu::pay_by_card_revert_integ_term()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classSlipsDB_aa6ad976005bd3cbbfb705fecbf5abac8_icgraph.png" border="0" usemap="#classSlipsDB_aa6ad976005bd3cbbfb705fecbf5abac8_icgraph" alt=""/></div>
+<map name="classSlipsDB_aa6ad976005bd3cbbfb705fecbf5abac8_icgraph" id="classSlipsDB_aa6ad976005bd3cbbfb705fecbf5abac8_icgraph">
+<area shape="rect"  title=" " alt="" coords="565,35,687,61"/>
+<area shape="rect"  href="classSlipsDB.html#a6ade82004acbee55e45b2d7399f321d1" title=" " alt="" coords="369,5,490,32"/>
+<area shape="rect"  href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd" title=" " alt="" coords="341,57,517,98"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="148,57,293,98"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="5,64,100,91"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -306,9 +398,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classSlipsDB.html#aa6ad976005bd3cbbfb705fecbf5abac8">findSlip</a>(field, value))</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    {</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    parseAnswer(ansSt);</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;}</div><div class="ttc" id="classSlipsDB_html_aa6ad976005bd3cbbfb705fecbf5abac8"><div class="ttname"><a href="classSlipsDB.html#aa6ad976005bd3cbbfb705fecbf5abac8">SlipsDB::findSlip</a></div><div class="ttdeci">int findSlip(const string &amp;field, const string &amp;value, vector&lt; Slip &gt; &amp;slip)</div><div class="ttdef"><b>Definition:</b> slipsDB.cpp:379</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classSlipsDB.html#aa6ad976005bd3cbbfb705fecbf5abac8">findSlip()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSlipsDB_a6ade82004acbee55e45b2d7399f321d1_cgraph.png" border="0" usemap="#classSlipsDB_a6ade82004acbee55e45b2d7399f321d1_cgraph" alt=""/></div>
 <map name="classSlipsDB_a6ade82004acbee55e45b2d7399f321d1_cgraph" id="classSlipsDB_a6ade82004acbee55e45b2d7399f321d1_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,127,32"/>
@@ -343,7 +440,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;{</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">return</span> find(<span class="stringliteral">&quot;SLIPS&quot;</span>, field, value);</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a5b6659e019fe921e58a04e2c13c9d02e"></a>
@@ -377,6 +474,20 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;{</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classSlipsDB.html#a5b6659e019fe921e58a04e2c13c9d02e">findStatus</a>(field, value))</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    {</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    }</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    parseAnswer(stat);</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;}</div><div class="ttc" id="classSlipsDB_html_a5b6659e019fe921e58a04e2c13c9d02e"><div class="ttname"><a href="classSlipsDB.html#a5b6659e019fe921e58a04e2c13c9d02e">SlipsDB::findStatus</a></div><div class="ttdeci">int findStatus(const string &amp;field, const string &amp;value, vector&lt; StatusOp &gt; &amp;stat)</div><div class="ttdef"><b>Definition:</b> slipsDB.cpp:461</div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classSlipsDB.html#a79707019686afe47942a955cddb438a3">findStatus()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classSlipsDB_a5b6659e019fe921e58a04e2c13c9d02e_icgraph.png" border="0" usemap="#classSlipsDB_a5b6659e019fe921e58a04e2c13c9d02e_icgraph" alt=""/></div>
+<map name="classSlipsDB_a5b6659e019fe921e58a04e2c13c9d02e_icgraph" id="classSlipsDB_a5b6659e019fe921e58a04e2c13c9d02e_icgraph">
+<area shape="rect"  title=" " alt="" coords="191,5,328,32"/>
+<area shape="rect"  href="classSlipsDB.html#a79707019686afe47942a955cddb438a3" title=" " alt="" coords="5,5,143,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -411,9 +522,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;{</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classSlipsDB.html#a5b6659e019fe921e58a04e2c13c9d02e">findStatus</a>(field, value))</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    {</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    }</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    parseAnswer(ansSt);</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}</div><div class="ttc" id="classSlipsDB_html_a5b6659e019fe921e58a04e2c13c9d02e"><div class="ttname"><a href="classSlipsDB.html#a5b6659e019fe921e58a04e2c13c9d02e">SlipsDB::findStatus</a></div><div class="ttdeci">int findStatus(const string &amp;field, const string &amp;value, vector&lt; StatusOp &gt; &amp;stat)</div><div class="ttdef"><b>Definition:</b> slipsDB.cpp:461</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classSlipsDB.html#a5b6659e019fe921e58a04e2c13c9d02e">findStatus()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSlipsDB_a79707019686afe47942a955cddb438a3_cgraph.png" border="0" usemap="#classSlipsDB_a79707019686afe47942a955cddb438a3_cgraph" alt=""/></div>
 <map name="classSlipsDB_a79707019686afe47942a955cddb438a3_cgraph" id="classSlipsDB_a79707019686afe47942a955cddb438a3_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,143,32"/>
@@ -448,7 +564,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;{</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordflow">return</span> find(<span class="stringliteral">&quot;OPS_STATUSES&quot;</span>, field, value);</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0da0e0a7c18d788745b34652bfe32b5b"></a>
@@ -465,7 +581,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;{</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
@@ -475,7 +591,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

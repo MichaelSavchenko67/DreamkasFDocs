@@ -1,6 +1,6 @@
 <map id="Menu::res_insert" name="Menu::res_insert">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,124,83"/>
-<area shape="rect" id="node2" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="177,5,263,32"/>
-<area shape="rect" id="node3" href="$dynamic__mask_8h.html#a1027b0d977ad14d7f6c8968cdcefcdb8" title=" " alt="" coords="172,56,268,83"/>
-<area shape="rect" id="node4" href="$dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="177,107,263,133"/>
+<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a1027b0d977ad14d7f6c8968cdcefcdb8" title=" " alt="" coords="172,5,268,32"/>
+<area shape="rect" id="node3" href="$dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="177,56,263,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="177,107,263,133"/>
 </map>

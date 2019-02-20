@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс LogServant</title>
+<title>FisGo: Класс LogServant</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +73,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="LogServant_8h_source.html">LogServant.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса LogServant:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса LogServant:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classLogServant__coll__graph.png" border="0" usemap="#LogServant_coll__map" alt="Collaboration graph"/></div>
 <map name="LogServant_coll__map" id="LogServant_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,121,141"/>
@@ -107,7 +112,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                       {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8f51831ecc035953c7a3c20a293c8b98"></a>
@@ -132,7 +137,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -150,6 +155,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    logServantMutex.lock();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;echo \&quot;\&quot; &gt; /var/log/messages&quot;</span>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(ret != 0)</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        logServantMutex.unlock();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>(<span class="stringliteral">&quot;=====LOG CLEANED======&quot;</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    logServantMutex.unlock();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div><div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:31</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#ac7ee3901b8987d501b1734dbd0c9a41b">Menu::log_level_choose()</a> и <a class="el" href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d">log_servant_thread_()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLogServant_a39b38cc5dff66bbdfbc8c93105e105e4_icgraph.png" border="0" usemap="#classLogServant_a39b38cc5dff66bbdfbc8c93105e105e4_icgraph" alt=""/></div>
+<map name="classLogServant_a39b38cc5dff66bbdfbc8c93105e105e4_icgraph" id="classLogServant_a39b38cc5dff66bbdfbc8c93105e105e4_icgraph">
+<area shape="rect"  title=" " alt="" coords="216,31,361,57"/>
+<area shape="rect"  href="classMenu.html#ac7ee3901b8987d501b1734dbd0c9a41b" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect"  href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d" title=" " alt="" coords="17,56,156,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -167,7 +189,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    logServantMutex.lock();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">struct </span>stat buf;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> ret = stat(<span class="stringliteral">&quot;/var/log/messages&quot;</span>, &amp;buf);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span>(ret != 0)</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        logServantMutex.unlock();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    logServantMutex.unlock();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> (uint64_t)buf.st_size;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4c46a0f164b67b4a3149a8eefd50f808"></a>
@@ -184,6 +206,22 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    logServantMutex.lock();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">struct </span>stat buf;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> ret = stat(<span class="stringliteral">&quot;/var/log/messages&quot;</span>, &amp;buf);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span>(ret != 0)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        logServantMutex.unlock();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span>(buf.st_size &gt;= <a class="code" href="LogServant_8cpp.html#ab6bc945ce840e4f0a16ec0fb12acc1a0">MAX_LOG_SIZE</a>)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        logServantMutex.unlock();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    logServantMutex.unlock();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="ttc" id="LogServant_8cpp_html_ab6bc945ce840e4f0a16ec0fb12acc1a0"><div class="ttname"><a href="LogServant_8cpp.html#ab6bc945ce840e4f0a16ec0fb12acc1a0">MAX_LOG_SIZE</a></div><div class="ttdeci">#define MAX_LOG_SIZE</div><div class="ttdef"><b>Definition:</b> LogServant.cpp:14</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="LogServant_8cpp.html#ab6bc945ce840e4f0a16ec0fb12acc1a0">MAX_LOG_SIZE</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d">log_servant_thread_()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLogServant_a4c46a0f164b67b4a3149a8eefd50f808_icgraph.png" border="0" usemap="#classLogServant_a4c46a0f164b67b4a3149a8eefd50f808_icgraph" alt=""/></div>
+<map name="classLogServant_a4c46a0f164b67b4a3149a8eefd50f808_icgraph" id="classLogServant_a4c46a0f164b67b4a3149a8eefd50f808_icgraph">
+<area shape="rect"  title=" " alt="" coords="192,5,360,32"/>
+<area shape="rect"  href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d" title=" " alt="" coords="5,5,144,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -194,7 +232,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

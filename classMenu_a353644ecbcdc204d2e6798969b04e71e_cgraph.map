@@ -1,19 +1,19 @@
 <map id="Menu::pay_by_card_success" name="Menu::pay_by_card_success">
-<area shape="rect" id="node1" title=" " alt="" coords="5,238,197,265"/>
-<area shape="rect" id="node2" href="$classMenu.html#a8af092b856ae4c3fd4bf1e82ed661c6f" title=" " alt="" coords="260,5,409,47"/>
-<area shape="rect" id="node4" href="$classMenu.html#a6dc02af23d7f357b06e5c9ce79a3694d" title=" " alt="" coords="270,71,399,112"/>
-<area shape="rect" id="node6" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="291,137,378,163"/>
-<area shape="rect" id="node7" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="286,187,383,214"/>
-<area shape="rect" id="node8" href="$classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="245,238,424,265"/>
-<area shape="rect" id="node9" href="$classMenu.html#aa976dfe8661f80cb8a68922cf0378f88" title=" " alt="" coords="253,289,416,315"/>
-<area shape="rect" id="node10" href="$classMenu.html#a29dbc71c031e13554911d060a216822d" title=" " alt="" coords="265,339,404,366"/>
-<area shape="rect" id="node11" href="$classMenu.html#ada1e942c38cd206ec0b571082e8927a3" title=" " alt="" coords="267,391,403,432"/>
-<area shape="rect" id="node13" href="$classMenu.html#a0ad4930e8377d212f1f44849d7f25350" title=" " alt="" coords="265,469,404,495"/>
-<area shape="rect" id="node3" href="$dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="480,13,627,39"/>
-<area shape="rect" id="node5" href="$classMenu.html#a9641dd9485223b467180296bd93bc89e" title=" " alt="" coords="474,78,633,105"/>
-<area shape="rect" id="node12" href="$classNet.html#a4ab4be6b8df86176011e22405d38d3bf" title=" " alt="" coords="490,385,617,411"/>
-<area shape="rect" id="node14" href="$classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="486,435,621,462"/>
-<area shape="rect" id="node16" href="$classReceipt__new.html#a0655b5939fb0178fdd415820522f99b4" title=" " alt="" coords="472,487,635,528"/>
-<area shape="rect" id="node17" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="485,553,621,579"/>
-<area shape="rect" id="node15" href="$classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="683,435,867,462"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,231,197,257"/>
+<area shape="rect" id="node2" href="$classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="245,5,424,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#aa976dfe8661f80cb8a68922cf0378f88" title=" " alt="" coords="253,56,416,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a0ad4930e8377d212f1f44849d7f25350" title=" " alt="" coords="265,107,404,133"/>
+<area shape="rect" id="node9" href="$classMenu.html#a8af092b856ae4c3fd4bf1e82ed661c6f" title=" " alt="" coords="260,158,409,199"/>
+<area shape="rect" id="node11" href="$classMenu.html#a6dc02af23d7f357b06e5c9ce79a3694d" title=" " alt="" coords="270,223,399,265"/>
+<area shape="rect" id="node13" href="$classMenu.html#a29dbc71c031e13554911d060a216822d" title=" " alt="" coords="265,289,404,316"/>
+<area shape="rect" id="node14" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="286,340,383,367"/>
+<area shape="rect" id="node15" href="$classMenu.html#ada1e942c38cd206ec0b571082e8927a3" title=" " alt="" coords="267,391,403,433"/>
+<area shape="rect" id="node17" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="291,457,378,484"/>
+<area shape="rect" id="node5" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="485,5,621,32"/>
+<area shape="rect" id="node6" href="$classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="486,56,621,83"/>
+<area shape="rect" id="node8" href="$classReceipt__new.html#a0655b5939fb0178fdd415820522f99b4" title=" " alt="" coords="472,107,635,149"/>
+<area shape="rect" id="node7" href="$classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="683,56,867,83"/>
+<area shape="rect" id="node10" href="$dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="480,173,627,200"/>
+<area shape="rect" id="node12" href="$classMenu.html#a9641dd9485223b467180296bd93bc89e" title=" " alt="" coords="474,231,633,257"/>
+<area shape="rect" id="node16" href="$classNet.html#a4ab4be6b8df86176011e22405d38d3bf" title=" " alt="" coords="490,399,617,425"/>
 </map>

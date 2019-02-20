@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс nlohmann::detail::invalid_iterator</title>
+<title>FisGo: Класс nlohmann::detail::invalid_iterator</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -77,9 +80,11 @@ $(function() {
  <a href="classnlohmann_1_1detail_1_1invalid__iterator.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:nlohmann::detail::invalid_iterator:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:nlohmann::detail::invalid_iterator:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1invalid__iterator__inherit__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1invalid__iterator_inherit__map" alt="Inheritance graph"/></div>
 <map name="nlohmann_1_1detail_1_1invalid__iterator_inherit__map" id="nlohmann_1_1detail_1_1invalid__iterator_inherit__map">
 <area shape="rect"  title="exception indicating errors with iterators" alt="" coords="15,285,177,377"/>
@@ -87,9 +92,11 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="44,5,148,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::invalid_iterator:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::invalid_iterator:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1invalid__iterator__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1invalid__iterator_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1invalid__iterator_coll__map" id="nlohmann_1_1detail_1_1invalid__iterator_coll__map">
 <area shape="rect"  title="exception indicating errors with iterators" alt="" coords="15,285,177,377"/>
@@ -201,13 +208,49 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    {</div><div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> w = <a class="code" href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">exception::name</a>(<span class="stringliteral">&quot;invalid_iterator&quot;</span>, id_) + what_arg;</div><div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="keywordflow">return</span> invalid_iterator(id_, w.c_str());</div><div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1exception_html_abf41a7e9178356314082284e6cfea278"><div class="ttname"><a href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">nlohmann::detail::exception::name</a></div><div class="ttdeci">static std::string name(const std::string &amp;ename, int id_)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:595</div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">nlohmann::detail::exception::name()</a> и <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::string</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1basic__json.html#abe197e9f3184487805cfb5bba6fd5938">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::basic_json()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::erase()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::insert()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a15dfb2744fed2ef40c12a9e9a20d6dbc">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::key()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ad6f85e5945429bbdb5a6bef8d3e99d5b">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator *()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a3eef94f9d167046e7f773aeb6b78090c">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator+=()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a49bf3e708a9c1c88c415011735962d06">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a6da3d2b34528aff328f3dcb513076dec">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-&gt;()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a0d14cd76203e00bdcef6a64a5d055cc7">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator&lt;()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2b592605b63ae7f5401996ffa3b14393">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator==()</a>, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ac0b9276f1102ed4b9cd3f5f56287e3ce">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator[]()</a> и <a class="el" href="classnlohmann_1_1basic__json.html#a27921dafadb3bbefd180235ec763e3ea">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::update()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_cgraph" id="classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,168,47"/>
 <area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="216,5,397,47"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_icgraph" id="classnlohmann_1_1detail_1_1invalid__iterator_a4e849260a3caa1b288c7e619130c6c09_icgraph">
+<area shape="rect"  title=" " alt="" coords="397,365,560,407"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#abe197e9f3184487805cfb5bba6fd5938" title="construct a JSON container given an iterator range" alt="" coords="201,5,349,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="201,71,349,112"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c" title="inserts element" alt="" coords="201,136,349,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a15dfb2744fed2ef40c12a9e9a20d6dbc" title="return the key of an object iterator" alt="" coords="204,201,347,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#ad6f85e5945429bbdb5a6bef8d3e99d5b" title="return a reference to the value pointed to by the iterator" alt="" coords="204,267,347,308"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a3eef94f9d167046e7f773aeb6b78090c" title="add to iterator" alt="" coords="204,332,347,373"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a49bf3e708a9c1c88c415011735962d06" title="return difference" alt="" coords="204,397,347,439"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a6da3d2b34528aff328f3dcb513076dec" title="dereference the iterator" alt="" coords="204,463,347,504"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a0d14cd76203e00bdcef6a64a5d055cc7" title="comparison: smaller" alt="" coords="204,528,347,569"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a2b592605b63ae7f5401996ffa3b14393" title="comparison: equal" alt="" coords="204,593,347,635"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#ac0b9276f1102ed4b9cd3f5f56287e3ce" title="access to successor" alt="" coords="204,659,347,700"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a27921dafadb3bbefd180235ec763e3ea" title="updates a JSON object from another object, overwriting existing keys" alt="" coords="201,724,349,765"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="5,71,153,112"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a1ecce113ff11dd294689ee4d45cbb855" title="inserts element" alt="" coords="5,136,153,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c" title="return the value of an iterator" alt="" coords="8,267,151,308"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#abcc9d51bc52f2e8483bbe4018f05e978" title="subtract from iterator" alt="" coords="8,332,151,373"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#a634f85da575cb60b012a687efa26e11a" title="comparison: greater than or equal" alt="" coords="8,528,151,569"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1iter__impl.html#aeab0e2b5da70b3bdebecd5b1a6ee66a6" title="comparison: not equal" alt="" coords="8,593,151,635"/>
 </map>
 </div>
 
@@ -219,7 +262,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

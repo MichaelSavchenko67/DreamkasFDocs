@@ -1,0 +1,6 @@
+<map id="PaidFeaturesService::createKey" name="PaidFeaturesService::createKey">
+<area shape="rect" id="node1" title="Создание ключа" alt="" coords="596,5,739,47"/>
+<area shape="rect" id="node2" href="$classPaidFeaturesService.html#a49b0e541534fa257e9d534cd3ac60cfa" title="Проверка ключа" alt="" coords="401,5,548,47"/>
+<area shape="rect" id="node3" href="$classPaidFeaturesService.html#a5caa7ab36e46a5218cb09abec638d6f1" title="Проверка активационного кода." alt="" coords="196,5,353,47"/>
+<area shape="rect" id="node4" href="$classPaidFeaturesService.html#ab85fc7341f2fd14aa304fc1e6e308103" title="Получение из ключа строки информации о фичах" alt="" coords="5,5,148,47"/>
+</map>

@@ -1,9 +1,9 @@
 <map id="Menu::term_ad_operations" name="Menu::term_ad_operations">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,181,57"/>
-<area shape="rect" id="node2" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="677,5,775,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#ad8616e547f3b060a927d65308142473f" title=" " alt="" coords="229,31,367,57"/>
-<area shape="rect" id="node6" href="$classMenu.html#ac0601dacad4b6fedc4505d5c01cfea0f" title=" " alt="" coords="241,81,355,108"/>
-<area shape="rect" id="node4" href="$classMenu.html#a5112b233064a94694b8fc38ff9fe51db" title=" " alt="" coords="439,31,605,57"/>
-<area shape="rect" id="node5" href="$classEncodeConvertor.html#a89ca427f61ab1cdcd15904e26c70fdfd" title=" " alt="" coords="415,81,629,108"/>
-<area shape="rect" id="node7" href="$classMenu.html#a10b5cf11379cc4de82aeca2d4b6c343f" title=" " alt="" coords="455,132,589,159"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,181,133"/>
+<area shape="rect" id="node2" href="$classMenu.html#ad8616e547f3b060a927d65308142473f" title=" " alt="" coords="229,56,367,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="677,81,775,108"/>
+<area shape="rect" id="node6" href="$classMenu.html#ac0601dacad4b6fedc4505d5c01cfea0f" title=" " alt="" coords="241,107,355,133"/>
+<area shape="rect" id="node3" href="$classMenu.html#a5112b233064a94694b8fc38ff9fe51db" title=" " alt="" coords="439,5,605,32"/>
+<area shape="rect" id="node5" href="$classEncodeConvertor.html#a89ca427f61ab1cdcd15904e26c70fdfd" title=" " alt="" coords="415,56,629,83"/>
+<area shape="rect" id="node7" href="$classMenu.html#a10b5cf11379cc4de82aeca2d4b6c343f" title=" " alt="" coords="455,107,589,133"/>
 </map>

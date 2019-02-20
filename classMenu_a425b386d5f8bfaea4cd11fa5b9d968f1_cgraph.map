@@ -1,41 +1,41 @@
 <map id="Menu::search_goods" name="Menu::search_goods">
-<area shape="rect" id="node1" title=" " alt="" coords="5,663,148,690"/>
-<area shape="rect" id="node2" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="750,94,837,121"/>
-<area shape="rect" id="node3" href="$classBarcodeScanner.html#aed8b4c339d28d67d0a74eabb8c8b861a" title="weightBarcodeParse &#45; парс весового ШК" alt="" coords="196,627,408,668"/>
-<area shape="rect" id="node6" href="$classMenu.html#a72574d841ede155397054a650e818a10" title=" " alt="" coords="223,743,381,770"/>
-<area shape="rect" id="node7" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="457,677,642,703"/>
-<area shape="rect" id="node8" href="$classMenu.html#a6c17ba52d196222acff69fc26a6ea5ee" title="goodsFromCloud &#45; поиск товара в облаке" alt="" coords="221,373,383,399"/>
-<area shape="rect" id="node12" href="$classMenu.html#acec880a0f9cdbb0cf02d06f54c6c6101" title=" " alt="" coords="462,525,637,551"/>
-<area shape="rect" id="node13" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="725,474,861,501"/>
-<area shape="rect" id="node14" href="$classMenu.html#a340702e5bbf34abb4d2d2208608becf4" title=" " alt="" coords="714,543,873,584"/>
-<area shape="rect" id="node15" href="$classMenu.html#a0734ebb308fda53e013acb061c753521" title=" " alt="" coords="468,221,631,247"/>
-<area shape="rect" id="node16" href="$classMenu.html#aa62723c943887fb3728c800017c2ef19" title=" " alt="" coords="218,423,386,450"/>
-<area shape="rect" id="node17" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="483,976,616,1017"/>
-<area shape="rect" id="node18" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="209,969,395,995"/>
-<area shape="rect" id="node19" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="237,1020,367,1061"/>
-<area shape="rect" id="node20" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="237,1085,367,1127"/>
-<area shape="rect" id="node21" href="$classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="235,1151,369,1192"/>
-<area shape="rect" id="node22" href="$classMenu.html#a123cf95fd65ce670ec64a3b8afd4237c" title=" " alt="" coords="243,170,361,197"/>
-<area shape="rect" id="node26" href="$classMenu.html#a877f76bc43ac9fdb758636aaaf577a2a" title=" " alt="" coords="229,801,375,827"/>
-<area shape="rect" id="node31" href="$classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="235,918,369,945"/>
-<area shape="rect" id="node39" href="$classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="213,1217,391,1243"/>
-<area shape="rect" id="node4" href="$classBarcodeScanner.html#a19ec048f46d75741f7a6e9ac35f46e75" title="isEan13 &#45; тест на валидность EAN13" alt="" coords="463,626,636,653"/>
-<area shape="rect" id="node5" href="$classBarcodeScanner.html#a6e056913d31c91889d3ff56038e0484d" title="ean13Gs1Clc &#45; расчёт КС EAN13" alt="" coords="691,626,896,653"/>
-<area shape="rect" id="node9" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="501,373,598,399"/>
-<area shape="rect" id="node10" href="$classMenu.html#a59bab4de785a0e0f8570fd045fdab872" title=" " alt="" coords="478,322,621,349"/>
-<area shape="rect" id="node11" href="$classMenu.html#a15935c2531dc2e756cbb2a40c41dedfd" title=" " alt="" coords="727,361,860,403"/>
-<area shape="rect" id="node23" href="$classMenu.html#a10f0361710bd082683684ad6fb2c0355" title=" " alt="" coords="490,18,609,45"/>
-<area shape="rect" id="node24" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="729,18,857,45"/>
-<area shape="rect" id="node25" href="$keypad_8cpp.html#a886f953457a1879ed82073f2a6fed00a" title=" " alt="" coords="972,18,1119,45"/>
-<area shape="rect" id="node27" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="484,793,615,835"/>
-<area shape="rect" id="node28" href="$classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="484,859,615,900"/>
-<area shape="rect" id="node29" href="$classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="467,728,631,769"/>
-<area shape="rect" id="node30" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="456,925,643,951"/>
-<area shape="rect" id="node32" href="$classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="944,1158,1147,1185"/>
-<area shape="rect" id="node35" href="$classMenu.html#a81581e3c5eb7fb60f306d1221c3654c3" title=" " alt="" coords="487,1209,612,1235"/>
-<area shape="rect" id="node36" href="$classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda" title=" " alt="" coords="468,1158,631,1185"/>
-<area shape="rect" id="node38" href="$classConvert.html#a00ab449d5afd03a41a7cc5daa2df1341" title=" " alt="" coords="481,1041,617,1083"/>
-<area shape="rect" id="node33" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="1195,1117,1345,1159"/>
-<area shape="rect" id="node34" href="$classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="1195,1183,1345,1224"/>
-<area shape="rect" id="node37" href="$classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="715,1209,871,1235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,576,148,603"/>
+<area shape="rect" id="node2" href="$classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="213,44,391,71"/>
+<area shape="rect" id="node3" href="$classMenu.html#aa62723c943887fb3728c800017c2ef19" title=" " alt="" coords="218,95,386,121"/>
+<area shape="rect" id="node5" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="725,399,861,425"/>
+<area shape="rect" id="node6" href="$classMenu.html#a123cf95fd65ce670ec64a3b8afd4237c" title=" " alt="" coords="243,348,361,375"/>
+<area shape="rect" id="node10" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="750,221,837,248"/>
+<area shape="rect" id="node11" href="$classMenu.html#a0734ebb308fda53e013acb061c753521" title=" " alt="" coords="468,449,631,476"/>
+<area shape="rect" id="node12" href="$classMenu.html#a6c17ba52d196222acff69fc26a6ea5ee" title="goodsFromCloud &#45; поиск товара в облаке" alt="" coords="221,145,383,172"/>
+<area shape="rect" id="node15" href="$classMenu.html#acec880a0f9cdbb0cf02d06f54c6c6101" title=" " alt="" coords="462,399,637,425"/>
+<area shape="rect" id="node16" href="$classMenu.html#a340702e5bbf34abb4d2d2208608becf4" title=" " alt="" coords="714,497,873,538"/>
+<area shape="rect" id="node17" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="457,601,642,628"/>
+<area shape="rect" id="node18" href="$classMenu.html#a72574d841ede155397054a650e818a10" title=" " alt="" coords="223,652,381,679"/>
+<area shape="rect" id="node19" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="209,900,395,927"/>
+<area shape="rect" id="node20" href="$classMenu.html#a877f76bc43ac9fdb758636aaaf577a2a" title=" " alt="" coords="229,725,375,752"/>
+<area shape="rect" id="node25" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="483,901,616,942"/>
+<area shape="rect" id="node26" href="$classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="235,951,369,993"/>
+<area shape="rect" id="node27" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="237,1017,367,1058"/>
+<area shape="rect" id="node28" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="237,1082,367,1123"/>
+<area shape="rect" id="node29" href="$classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="235,849,369,876"/>
+<area shape="rect" id="node37" href="$classBarcodeScanner.html#aed8b4c339d28d67d0a74eabb8c8b861a" title="weightBarcodeParse &#45; парс весового ШК" alt="" coords="196,1162,408,1203"/>
+<area shape="rect" id="node4" href="$classMenu.html#a15935c2531dc2e756cbb2a40c41dedfd" title=" " alt="" coords="727,11,860,53"/>
+<area shape="rect" id="node7" href="$classMenu.html#a10f0361710bd082683684ad6fb2c0355" title=" " alt="" coords="490,297,609,324"/>
+<area shape="rect" id="node8" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="729,297,857,324"/>
+<area shape="rect" id="node9" href="$keypad_8cpp.html#a886f953457a1879ed82073f2a6fed00a" title=" " alt="" coords="972,297,1119,324"/>
+<area shape="rect" id="node13" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="501,95,598,121"/>
+<area shape="rect" id="node14" href="$classMenu.html#a59bab4de785a0e0f8570fd045fdab872" title=" " alt="" coords="478,44,621,71"/>
+<area shape="rect" id="node21" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="484,718,615,759"/>
+<area shape="rect" id="node22" href="$classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="484,783,615,825"/>
+<area shape="rect" id="node23" href="$classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="467,653,631,694"/>
+<area shape="rect" id="node24" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="456,849,643,876"/>
+<area shape="rect" id="node30" href="$classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="944,1135,1147,1161"/>
+<area shape="rect" id="node33" href="$classMenu.html#a81581e3c5eb7fb60f306d1221c3654c3" title=" " alt="" coords="487,967,612,993"/>
+<area shape="rect" id="node34" href="$classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda" title=" " alt="" coords="468,1135,631,1161"/>
+<area shape="rect" id="node36" href="$classConvert.html#a00ab449d5afd03a41a7cc5daa2df1341" title=" " alt="" coords="481,1018,617,1059"/>
+<area shape="rect" id="node31" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="1195,1094,1345,1135"/>
+<area shape="rect" id="node32" href="$classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="1195,1159,1345,1201"/>
+<area shape="rect" id="node35" href="$classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="715,1135,871,1161"/>
+<area shape="rect" id="node38" href="$classBarcodeScanner.html#a19ec048f46d75741f7a6e9ac35f46e75" title="isEan13 &#45; тест на валидность EAN13" alt="" coords="463,1211,636,1237"/>
+<area shape="rect" id="node39" href="$classBarcodeScanner.html#a6e056913d31c91889d3ff56038e0484d" title="ean13Gs1Clc &#45; расчёт КС EAN13" alt="" coords="691,1236,896,1263"/>
 </map>

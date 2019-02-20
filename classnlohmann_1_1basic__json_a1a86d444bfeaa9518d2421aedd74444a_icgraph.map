@@ -1,0 +1,22 @@
+<map id="nlohmann::basic_json::empty" name="nlohmann::basic_json::empty">
+<area shape="rect" id="node1" title="checks whether the container is empty." alt="" coords="772,435,920,476"/>
+<area shape="rect" id="node2" href="$classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281" title=" " alt="" coords="532,5,715,47"/>
+<area shape="rect" id="node5" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="548,71,699,98"/>
+<area shape="rect" id="node6" href="$classJSON.html#ace7323717a064ed7a0f4e6cf57710087" title=" " alt="" coords="535,123,711,164"/>
+<area shape="rect" id="node7" href="$classJSON.html#a7a0992d7877148cee04671fa62af9390" title=" " alt="" coords="529,189,717,215"/>
+<area shape="rect" id="node8" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="279,151,452,178"/>
+<area shape="rect" id="node9" href="$classJSON.html#abd23054c5eab628237e2cb0a1a0d6eff" title=" " alt="" coords="534,290,713,317"/>
+<area shape="rect" id="node10" href="$classJSON.html#ae1597662cacf17e82f0c3ec2d86e3537" title=" " alt="" coords="539,341,708,367"/>
+<area shape="rect" id="node11" href="$classJSON.html#a4833610f276b8c7896387e07f5486e7a" title=" " alt="" coords="533,391,714,418"/>
+<area shape="rect" id="node12" href="$classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="парс таски на внешний чек" alt="" coords="523,442,724,469"/>
+<area shape="rect" id="node13" href="$classJSON.html#a50e4d0d2e07f3752de0c520965cb75a8" title="parseTags &#45; парс тегов из внешнего чека" alt="" coords="560,493,687,519"/>
+<area shape="rect" id="node14" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="532,543,715,570"/>
+<area shape="rect" id="node15" href="$classJSON.html#a4dcb89878d6178110d54daf172aee196" title=" " alt="" coords="531,594,715,621"/>
+<area shape="rect" id="node16" href="$classJSON.html#a2a0e43b55a3febb7e377c956e0659605" title="pushTags &#45; добавить тег в вектор тегов" alt="" coords="562,645,685,671"/>
+<area shape="rect" id="node17" href="$classJSON.html#a959b735e6b101f9d222990c1307731e6" title=" " alt="" coords="548,695,699,722"/>
+<area shape="rect" id="node18" href="$classJSON.html#a38c741213da4de6900c759155b690fa6" title=" " alt="" coords="527,746,719,773"/>
+<area shape="rect" id="node19" href="$testHttpsExchange_8h.html#a7ef811c9d42a4e65a17062934ddc1f1f" title=" " alt="" coords="588,797,659,823"/>
+<area shape="rect" id="node20" href="$classJSON.html#a121777874397b2f02f830b972f9a3283" title=" " alt="" coords="532,847,715,874"/>
+<area shape="rect" id="node3" href="$classFISGO__TEST__API.html#a639ead2ba2cad720847e97cac076c072" title=" " alt="" coords="256,57,475,83"/>
+<area shape="rect" id="node4" href="$classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="5,119,208,160"/>
+</map>

@@ -1,9 +1,9 @@
 <map id="ReceiptsDb::parseFromBaseFields" name="ReceiptsDb::parseFromBaseFields">
-<area shape="rect" id="node1" title=" " alt="" coords="5,165,196,207"/>
-<area shape="rect" id="node2" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="272,5,403,47"/>
-<area shape="rect" id="node3" href="$classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="272,71,403,112"/>
-<area shape="rect" id="node4" href="$classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="272,136,403,177"/>
-<area shape="rect" id="node5" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="244,202,431,229"/>
-<area shape="rect" id="node6" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="271,253,404,295"/>
-<area shape="rect" id="node7" href="$classPosition__new.html#ad564f96eb227c5eb67085d289f7e909d" title=" " alt="" coords="257,319,418,360"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,196,197"/>
+<area shape="rect" id="node2" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="244,5,431,32"/>
+<area shape="rect" id="node3" href="$classPosition__new.html#ad564f96eb227c5eb67085d289f7e909d" title=" " alt="" coords="257,57,418,98"/>
+<area shape="rect" id="node4" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="271,122,404,163"/>
+<area shape="rect" id="node5" href="$classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="272,187,403,229"/>
+<area shape="rect" id="node6" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="272,253,403,294"/>
+<area shape="rect" id="node7" href="$classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="272,318,403,359"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Файл src/tests/include/testSqlWrapper.h</title>
+<title>FisGo: Файл src/tests/include/testSqlWrapper.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -75,9 +78,11 @@ $(function() {
 <code>#include &lt;gmock/gmock.h&gt;</code><br />
 <code>#include &lt;gmock/gmock-global.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="sqlWrapper_8h_source.html">sqlWrapper.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для testSqlWrapper.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для testSqlWrapper.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h__incl.png" border="0" usemap="#src_2tests_2include_2testSqlWrapper_8h" alt=""/></div>
 <map name="src_2tests_2include_2testSqlWrapper_8h" id="src_2tests_2include_2testSqlWrapper_8h">
 <area shape="rect"  title=" " alt="" coords="352,5,515,47"/>
@@ -178,9 +183,15 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> key = <span class="stringliteral">&quot;1234567890qwertyuiop[]ASDFGHJKL:&quot;</span><span class="stringliteral">&quot;|zxcvbnm,./&quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,  sqlite3_open(_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_exec,  sqlite3_exec(_,_,_,_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_close, sqlite3_close(_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    EXPECT_TRUE(wrapper.<a class="code" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">setDreamkasKey</a>(key));</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_a4241ee92db4efef31891b7eb557bc714"><div class="ttname"><a href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey</a></div><div class="ttdeci">bool setDreamkasKey(const string &amp;strKey)</div><div class="ttdoc">saveDreamkasKey - сохранить Дримкас-ключ в БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1608</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_aed55b14704227be53ac3244e95c4a9f6_cgraph.png" border="0" usemap="#testSqlWrapper_8h_aed55b14704227be53ac3244e95c4a9f6_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_aed55b14704227be53ac3244e95c4a9f6_cgraph" id="testSqlWrapper_8h_aed55b14704227be53ac3244e95c4a9f6_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -215,9 +226,15 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> key = <span class="stringliteral">&quot;1234567890qwertyuiop[]ASDFGHJKL:&quot;</span><span class="stringliteral">&quot;|zxcvbnm,./&quot;</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,   sqlite3_open(_,_)).WillOnce(Return(SQLITE_LOCKED));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_)).Times(1).WillOnce(Return(<span class="stringliteral">&quot;Error open file!&quot;</span>));</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    EXPECT_FALSE(wrapper.<a class="code" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">setDreamkasKey</a>(key));</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_a4241ee92db4efef31891b7eb557bc714"><div class="ttname"><a href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey</a></div><div class="ttdeci">bool setDreamkasKey(const string &amp;strKey)</div><div class="ttdoc">saveDreamkasKey - сохранить Дримкас-ключ в БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1608</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_af5799a912dc272b64e72342cd19a6825_cgraph.png" border="0" usemap="#testSqlWrapper_8h_af5799a912dc272b64e72342cd19a6825_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_af5799a912dc272b64e72342cd19a6825_cgraph" id="testSqlWrapper_8h_af5799a912dc272b64e72342cd19a6825_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -252,9 +269,15 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> key = <span class="stringliteral">&quot;1234567890qwertyuiop[]ASDFGHJKL:&quot;</span><span class="stringliteral">&quot;|zxcvbnm,./&quot;</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,   sqlite3_open(_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_exec,   sqlite3_exec(_,_,_,_,_)).WillOnce(Return(SQLITE_NOMEM));</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_)).Times(1).WillOnce(Return(<span class="stringliteral">&quot;Error exec query!&quot;</span>));</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_close,  sqlite3_close(_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    EXPECT_FALSE(wrapper.<a class="code" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">setDreamkasKey</a>(key));</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_a4241ee92db4efef31891b7eb557bc714"><div class="ttname"><a href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey</a></div><div class="ttdeci">bool setDreamkasKey(const string &amp;strKey)</div><div class="ttdoc">saveDreamkasKey - сохранить Дримкас-ключ в БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1608</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_a6bc4e43bc9ea6c075dcc2a593edaad64_cgraph.png" border="0" usemap="#testSqlWrapper_8h_a6bc4e43bc9ea6c075dcc2a593edaad64_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_a6bc4e43bc9ea6c075dcc2a593edaad64_cgraph" id="testSqlWrapper_8h_a6bc4e43bc9ea6c075dcc2a593edaad64_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -289,9 +312,15 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> key = <span class="stringliteral">&quot;1234567890qwertyuiop[]ASDFGHJKL:&quot;</span><span class="stringliteral">&quot;|zxcvbnm,./&quot;</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,  sqlite3_open(_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_exec,  sqlite3_exec(_,_,_,_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_close, sqlite3_close(_)).WillOnce(Return(SQLITE_BUSY));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    EXPECT_FALSE(wrapper.<a class="code" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">setDreamkasKey</a>(key));</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_a4241ee92db4efef31891b7eb557bc714"><div class="ttname"><a href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey</a></div><div class="ttdeci">bool setDreamkasKey(const string &amp;strKey)</div><div class="ttdoc">saveDreamkasKey - сохранить Дримкас-ключ в БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1608</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#a4241ee92db4efef31891b7eb557bc714">sqlWrapper::setDreamkasKey()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_a1ad9d0cc2f2d69b118925e3f26f08741_cgraph.png" border="0" usemap="#testSqlWrapper_8h_a1ad9d0cc2f2d69b118925e3f26f08741_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_a1ad9d0cc2f2d69b118925e3f26f08741_cgraph" id="testSqlWrapper_8h_a1ad9d0cc2f2d69b118925e3f26f08741_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -326,9 +355,16 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,   sqlite3_open(_,_)).WillOnce(Return(SQLITE_LOCKED));</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_)).Times(1).WillOnce(Return(<span class="stringliteral">&quot;Error open file!&quot;</span>));</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    EXPECT_EQ(wrapper.<a class="code" href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">getDreamkasKey</a>(), <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(<span class="stringliteral">&quot;&quot;</span>));</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_aa4bbfa9cb069d800316f94b5e609c892"><div class="ttname"><a href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">sqlWrapper::getDreamkasKey</a></div><div class="ttdeci">string getDreamkasKey()</div><div class="ttdoc">getDreamkasKey - получение Дримкас-ключа из БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1625</div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">sqlWrapper::getDreamkasKey()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_a58ec4a46f85c05fa535271ddca90a18f_cgraph.png" border="0" usemap="#testSqlWrapper_8h_a58ec4a46f85c05fa535271ddca90a18f_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_a58ec4a46f85c05fa535271ddca90a18f_cgraph" id="testSqlWrapper_8h_a58ec4a46f85c05fa535271ddca90a18f_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -363,9 +399,16 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,   sqlite3_open(_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_exec,   sqlite3_exec(_,_,_,_,_)).WillOnce(Return(SQLITE_NOMEM));</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_)).Times(1).WillOnce(Return(<span class="stringliteral">&quot;Error exec query!&quot;</span>));</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_close,  sqlite3_close(_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    EXPECT_EQ(wrapper.<a class="code" href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">getDreamkasKey</a>(), <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(<span class="stringliteral">&quot;&quot;</span>));</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_aa4bbfa9cb069d800316f94b5e609c892"><div class="ttname"><a href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">sqlWrapper::getDreamkasKey</a></div><div class="ttdeci">string getDreamkasKey()</div><div class="ttdoc">getDreamkasKey - получение Дримкас-ключа из БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1625</div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">sqlWrapper::getDreamkasKey()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_a1fec92e42a9e611f44729cc00c8dadb6_cgraph.png" border="0" usemap="#testSqlWrapper_8h_a1fec92e42a9e611f44729cc00c8dadb6_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_a1fec92e42a9e611f44729cc00c8dadb6_cgraph" id="testSqlWrapper_8h_a1fec92e42a9e611f44729cc00c8dadb6_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -400,9 +443,16 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classsqlWrapper.html">sqlWrapper</a> wrapper;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_open,  sqlite3_open(_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_exec,  sqlite3_exec(_,_,_,_,_)).WillOnce(Return(SQLITE_OK));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    EXPECT_GLOBAL_CALL(sqlite3_close, sqlite3_close(_)).WillOnce(Return(SQLITE_BUSY));</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    EXPECT_EQ(wrapper.<a class="code" href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">getDreamkasKey</a>(), <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(<span class="stringliteral">&quot;&quot;</span>));</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div><div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> sqlWrapper.h:25</div></div>
+<div class="ttc" id="classsqlWrapper_html_aa4bbfa9cb069d800316f94b5e609c892"><div class="ttname"><a href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">sqlWrapper::getDreamkasKey</a></div><div class="ttdeci">string getDreamkasKey()</div><div class="ttdoc">getDreamkasKey - получение Дримкас-ключа из БД</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:1625</div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classsqlWrapper.html#aa4bbfa9cb069d800316f94b5e609c892">sqlWrapper::getDreamkasKey()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testSqlWrapper_8h_a4b3535376638d376a237279a886099dd_cgraph.png" border="0" usemap="#testSqlWrapper_8h_a4b3535376638d376a237279a886099dd_cgraph" alt=""/></div>
 <map name="testSqlWrapper_8h_a4b3535376638d376a237279a886099dd_cgraph" id="testSqlWrapper_8h_a4b3535376638d376a237279a886099dd_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
@@ -415,7 +465,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

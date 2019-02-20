@@ -1,0 +1,11 @@
+<map id="Receipt_new::total_tax_sum_get" name="Receipt_new::total_tax_sum_get">
+<area shape="rect" id="node1" title=" " alt="" coords="853,73,984,114"/>
+<area shape="rect" id="node2" href="$classReceipt__new.html#a75349ba0f42d64767ac4e24201c7994d" title=" " alt="" coords="409,5,555,32"/>
+<area shape="rect" id="node5" href="$classPrinter.html#a091b4eb73634b2e786eb4de91f5b6328" title=" " alt="" coords="647,39,792,81"/>
+<area shape="rect" id="node6" href="$classFiscal__store.html#a229f9c0cbbf22511e2a497f0e069bc18" title=" " alt="" coords="640,105,799,146"/>
+<area shape="rect" id="node7" href="$classReceiptsDb.html#a537093c79f7bf41a340e2d57786d65d4" title=" " alt="" coords="633,171,805,197"/>
+<area shape="rect" id="node3" href="$classMenu.html#a01055d22b4ff7219c63941cd7c28e9cd" title=" " alt="" coords="176,21,323,48"/>
+<area shape="rect" id="node4" href="$threads_8h.html#ade37d508fb463321815e016967362fa8" title=" " alt="" coords="5,21,120,48"/>
+<area shape="rect" id="node8" href="$classReceiptsDb.html#a6598df0cf139566f0d2f57ea77cb90cd" title=" " alt="" coords="379,105,585,132"/>
+<area shape="rect" id="node9" href="$classMenu.html#ae32d60f1bb7ba2f6f21f4561a0fce080" title="saveReceiptData &#45; сохранение чека в базу receiptsDb.db" alt="" coords="168,105,331,132"/>
+</map>

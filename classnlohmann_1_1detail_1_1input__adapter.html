@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс nlohmann::detail::input_adapter</title>
+<title>FisGo: Класс nlohmann::detail::input_adapter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -74,9 +77,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::input_adapter:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::input_adapter:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__adapter__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__adapter_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__adapter_coll__map" id="nlohmann_1_1detail_1_1input__adapter_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,188,244"/>
@@ -146,7 +151,7 @@ $(function() {
 </div><div class="memdoc">
 
 <p>input adapter for input stream </p>
-
+<div class="fragment"><div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;        : ia(std::make_shared&lt;input_stream_adapter&gt;(i)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af002dd2e53ac0855a03cb68d0ce626b2"></a>
@@ -174,7 +179,7 @@ $(function() {
 </div><div class="memdoc">
 
 <p>input adapter for input stream </p>
-
+<div class="fragment"><div class="line"><a name="l02119"></a><span class="lineno"> 2119</span>&#160;        : ia(std::make_shared&lt;input_stream_adapter&gt;(i)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a32f5ddd06562edce43ee86f5b5c2031b"></a>
@@ -200,7 +205,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l02122"></a><span class="lineno"> 2122</span>&#160;        : ia(std::make_shared&lt;wide_string_input_adapter&lt;std::wstring&gt;&gt;(ws)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a58163eaa485b17dd878d3c782efc1e43"></a>
@@ -226,7 +231,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;        : ia(std::make_shared&lt;wide_string_input_adapter&lt;std::u16string&gt;&gt;(ws)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abe0015ae09e855f502620315b9dcc3db"></a>
@@ -252,7 +257,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;        : ia(std::make_shared&lt;wide_string_input_adapter&lt;std::u32string&gt;&gt;(ws)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a37816622d79ab4a1a76f4d7e872b65e1"></a>
@@ -292,7 +297,7 @@ template&lt;typename CharT , typename std::enable_if&lt; std::is_pointer&lt; Cha
 </div><div class="memdoc">
 
 <p>input adapter for buffer </p>
-
+<div class="fragment"><div class="line"><a name="l02138"></a><span class="lineno"> 2138</span>&#160;        : ia(std::make_shared&lt;input_buffer_adapter&gt;(reinterpret_cast&lt;const char*&gt;(b), l)) {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a86f035d9c4319360014b922b5e433ced"></a>
@@ -322,7 +327,8 @@ template&lt;typename CharT , typename std::enable_if&lt; std::is_pointer&lt; Cha
 </div><div class="memdoc">
 
 <p>input adapter for string literal </p>
-
+<div class="fragment"><div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1input__adapter.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a>(reinterpret_cast&lt;const char*&gt;(b),</div><div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160;                        std::strlen(reinterpret_cast&lt;const char*&gt;(b))) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1input__adapter_html_ae89f11268d4724b3080473f7218abe86"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__adapter.html#ae89f11268d4724b3080473f7218abe86">nlohmann::detail::input_adapter::input_adapter</a></div><div class="ttdeci">input_adapter(std::istream &amp;i)</div><div class="ttdoc">input adapter for input stream</div><div class="ttdef"><b>Definition:</b> jsonParser.h:2114</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad6824b0f792691f75186c527fa31a6b4"></a>
@@ -362,6 +368,9 @@ template&lt;class IteratorType , typename std::enable_if&lt; std::is_same&lt; ty
 </div><div class="memdoc">
 
 <p>input adapter for iterator range with contiguous storage </p>
+<div class="fragment"><div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;    {</div><div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;        <span class="comment">// assertion to check that the iterator range is indeed contiguous,</span></div><div class="line"><a name="l02161"></a><span class="lineno"> 2161</span>&#160;        <span class="comment">// see http://stackoverflow.com/a/35008842/266378 for more discussion</span></div><div class="line"><a name="l02162"></a><span class="lineno"> 2162</span>&#160;        assert(std::accumulate(</div><div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;                   first, last, std::pair&lt;bool, int&gt;(<span class="keyword">true</span>, 0),</div><div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;                   [&amp;first](std::pair&lt;bool, int&gt; res, decltype(*first) val)</div><div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;        {</div><div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;            res.first &amp;= (val == *(std::next(std::addressof(*first), res.second++)));</div><div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;            <span class="keywordflow">return</span> res;</div><div class="line"><a name="l02168"></a><span class="lineno"> 2168</span>&#160;        }).first);</div><div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;</div><div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;        <span class="comment">// assertion to check that each element is 1 byte long</span></div><div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;        static_assert(</div><div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;            <span class="keyword">sizeof</span>(<span class="keyword">typename</span> std::iterator_traits&lt;IteratorType&gt;::value_type) == 1,</div><div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;            <span class="stringliteral">&quot;each element in the iterator range must have the size of 1 byte&quot;</span>);</div><div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;</div><div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> len = static_cast&lt;size_t&gt;(std::distance(first, last));</div><div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(len &gt; 0))</div><div class="line"><a name="l02177"></a><span class="lineno"> 2177</span>&#160;        {</div><div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;            <span class="comment">// there is at least one element: use the address of first</span></div><div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;            ia = std::make_shared&lt;input_buffer_adapter&gt;(reinterpret_cast&lt;const char*&gt;(&amp;(*first)), len);</div><div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;        }</div><div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;        {</div><div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;            <span class="comment">// the address of first cannot be used: use nullptr</span></div><div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;            ia = std::make_shared&lt;input_buffer_adapter&gt;(<span class="keyword">nullptr</span>, len);</div><div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;        }</div><div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a41ecd1c4cf7c3d56477b9b685b5daa72"><div class="ttname"><a href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a></div><div class="ttdeci">#define JSON_LIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:192</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>.</p>
 
 </div>
 </div>
@@ -392,7 +401,9 @@ template&lt;class T , std::size_t N&gt; </div>
 </div><div class="memdoc">
 
 <p>input adapter for array </p>
-
+<div class="fragment"><div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1input__adapter.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a>(std::begin(<a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">array</a>), std::end(<a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">array</a>)) {}</div><div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985af1f713c9e000f5d3f280adbd124df4f5">nlohmann::detail::value_t::array</a></div><div class="ttdoc">array (ordered collection of values)</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1input__adapter_html_ae89f11268d4724b3080473f7218abe86"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__adapter.html#ae89f11268d4724b3080473f7218abe86">nlohmann::detail::input_adapter::input_adapter</a></div><div class="ttdeci">input_adapter(std::istream &amp;i)</div><div class="ttdoc">input adapter for input stream</div><div class="ttdef"><b>Definition:</b> jsonParser.h:2114</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6f92fe82cb49a508dbfb297c5630cc7f"></a>
@@ -422,7 +433,8 @@ template&lt;class ContiguousContainer , typename std::enable_if&lt; not std::is_
 </div><div class="memdoc">
 
 <p>input adapter for contiguous container </p>
-
+<div class="fragment"><div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1input__adapter.html#ae89f11268d4724b3080473f7218abe86">input_adapter</a>(std::begin(c), std::end(c)) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1input__adapter_html_ae89f11268d4724b3080473f7218abe86"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__adapter.html#ae89f11268d4724b3080473f7218abe86">nlohmann::detail::input_adapter::input_adapter</a></div><div class="ttdeci">input_adapter(std::istream &amp;i)</div><div class="ttdoc">input adapter for input stream</div><div class="ttdef"><b>Definition:</b> jsonParser.h:2114</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -448,7 +460,7 @@ template&lt;class ContiguousContainer , typename std::enable_if&lt; not std::is_
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;    {</div><div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;        <span class="keywordflow">return</span> ia;</div><div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -457,7 +469,7 @@ template&lt;class ContiguousContainer , typename std::enable_if&lt; not std::is_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

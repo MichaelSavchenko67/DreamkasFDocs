@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Шаблон класса nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</title>
+<title>FisGo: Шаблон класса nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -74,18 +77,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1wide__string__input__adapter__inherit__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1wide__string__input__adapter_3_01WideStringType_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="nlohmann_1_1detail_1_1wide__string__input__adapter_3_01WideStringType_01_4_inherit__map" id="nlohmann_1_1detail_1_1wide__string__input__adapter_3_01WideStringType_01_4_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,160,199,281"/>
 <area shape="rect"  href="structnlohmann_1_1detail_1_1input__adapter__protocol.html" title="abstract input adapter interface" alt="" coords="11,5,193,112"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1wide__string__input__adapter__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1wide__string__input__adapter_3_01WideStringType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1wide__string__input__adapter_3_01WideStringType_01_4_coll__map" id="nlohmann_1_1detail_1_1wide__string__input__adapter_3_01WideStringType_01_4_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,160,199,281"/>
@@ -130,7 +137,7 @@ template&lt;typename WideStringType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;: str(w) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -162,7 +169,7 @@ template&lt;typename WideStringType &gt; </div>
 <p>get a character [0,255] or std::char_traits&lt;char&gt;::eof(). </p>
 
 <p>Замещает <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#aac10a6a4048a8ce8e2ed50277692a3ca">nlohmann::detail::input_adapter_protocol</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;    {</div><div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;        <span class="comment">// check if buffer needs to be filled</span></div><div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;        <span class="keywordflow">if</span> (utf8_bytes_index == utf8_bytes_filled)</div><div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;        {</div><div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">sizeof</span>(<span class="keyword">typename</span> WideStringType::value_type) == 2)</div><div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;            {</div><div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;                fill_buffer_utf16();</div><div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;            }</div><div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;            {</div><div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;                fill_buffer_utf32();</div><div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;            }</div><div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;</div><div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;            assert(utf8_bytes_filled &gt; 0);</div><div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;            assert(utf8_bytes_index == 0);</div><div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;        }</div><div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;</div><div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;        <span class="comment">// use buffer</span></div><div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;        assert(utf8_bytes_filled &gt; 0);</div><div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;        assert(utf8_bytes_index &lt; utf8_bytes_filled);</div><div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;        <span class="keywordflow">return</span> utf8_bytes[utf8_bytes_index++];</div><div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -171,7 +178,7 @@ template&lt;typename WideStringType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:32. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

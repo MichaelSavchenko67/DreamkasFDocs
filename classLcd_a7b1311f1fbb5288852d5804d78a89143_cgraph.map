@@ -1,9 +1,9 @@
 <map id="Lcd::lcd_draw_fs_doc_unload_dialog" name="Lcd::lcd_draw_fs_doc_unload_dialog">
 <area shape="rect" id="node1" title=" " alt="" coords="5,49,155,90"/>
 <area shape="rect" id="node2" href="$classLcd.html#a8e554d336f4ddec74baadf8366795038" title=" " alt="" coords="211,5,313,32"/>
-<area shape="rect" id="node4" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="203,56,321,83"/>
-<area shape="rect" id="node7" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="205,107,319,133"/>
+<area shape="rect" id="node4" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="205,56,319,83"/>
+<area shape="rect" id="node5" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="203,107,321,133"/>
 <area shape="rect" id="node3" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="381,5,485,32"/>
-<area shape="rect" id="node5" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="369,56,497,83"/>
-<area shape="rect" id="node6" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="545,56,707,83"/>
+<area shape="rect" id="node6" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="369,107,497,133"/>
+<area shape="rect" id="node7" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="545,107,707,133"/>
 </map>

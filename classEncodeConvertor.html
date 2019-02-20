@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс EncodeConvertor</title>
+<title>FisGo: Класс EncodeConvertor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +73,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="EncodeConvertor_8h_source.html">EncodeConvertor.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса EncodeConvertor:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса EncodeConvertor:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classEncodeConvertor__coll__graph.png" border="0" usemap="#EncodeConvertor_coll__map" alt="Collaboration graph"/></div>
 <map name="EncodeConvertor_coll__map" id="EncodeConvertor_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,156,127"/>
@@ -105,7 +110,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                 {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2d76636221b786cc11066f96628e0580"></a>
@@ -130,7 +135,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                  {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -159,6 +164,38 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span>(*err == 0)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(val.length() &gt; 0) <span class="keywordflow">return</span> conv(<span class="stringliteral">&quot;UTF-8&quot;</span>, <span class="stringliteral">&quot;CP866&quot;</span>, val, err);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281">FISGO_TEST_API::answer_create()</a>, <a class="el" href="classHttpsExchange.html#afb5c4632a63fcb3d7d65ac5be07f4aee">HttpsExchange::fillCashInfoReport()</a>, <a class="el" href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8">FISGO_TEST_API::GoodsDataJsonCreate()</a>, <a class="el" href="structJSON_1_1JSON__KKT__INFO.html#a0f405595f9cc6f9b805f816af62aba79">JSON::JSON_KKT_INFO::JSON_KKT_INFO()</a>, <a class="el" href="structJSON_1_1JSON__OFD__REGISTER.html#a0fc7d79e975f804a6e9f575c477ebe30">JSON::JSON_OFD_REGISTER::JSON_OFD_REGISTER()</a>, <a class="el" href="classJSON.html#afd8a90418d8834fba483e9588d579539">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="printer_8h.html#a6887fe0a6a7b8e3d41f9440740f910e7">printer_print()</a>, <a class="el" href="classPrinter.html#abf3f27a30fdac7b99b1254f6bb9fcc3a">Printer::printerEvent()</a>, <a class="el" href="classHttpsExchange.html#a76dd38b6c6d4ecdf50a733e0330d50e3">HttpsExchange::RegistrationReportJsonCreate()</a>, <a class="el" href="classHttpsExchange.html#ac0ae307c5c09c29d9d27679903b91454">HttpsExchange::sendReceiptRequest()</a>, <a class="el" href="classHttpsExchange.html#a0e8127ecd317b1b5a5ee641517631145">HttpsExchange::sendRequest()</a>, <a class="el" href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9">Menu::task_manager()</a> и <a class="el" href="testHttpsExchange_8h.html#a807cec5964decb7e3c720216776ede00">TEST_F()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classEncodeConvertor_abc751a9512177eed813c00a8074197e3_icgraph.png" border="0" usemap="#classEncodeConvertor_abc751a9512177eed813c00a8074197e3_icgraph" alt=""/></div>
+<map name="classEncodeConvertor_abc751a9512177eed813c00a8074197e3_icgraph" id="classEncodeConvertor_abc751a9512177eed813c00a8074197e3_icgraph">
+<area shape="rect"  title=" " alt="" coords="1063,371,1277,397"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281" title=" " alt="" coords="541,29,723,70"/>
+<area shape="rect"  href="classHttpsExchange.html#afb5c4632a63fcb3d7d65ac5be07f4aee" title=" " alt="" coords="809,123,995,165"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8" title=" " alt="" coords="799,58,1005,99"/>
+<area shape="rect"  href="structJSON_1_1JSON__KKT__INFO.html#a0f405595f9cc6f9b805f816af62aba79" title=" " alt="" coords="815,189,989,230"/>
+<area shape="rect"  href="structJSON_1_1JSON__OFD__REGISTER.html#a0fc7d79e975f804a6e9f575c477ebe30" title=" " alt="" coords="795,254,1009,295"/>
+<area shape="rect"  href="classJSON.html#afd8a90418d8834fba483e9588d579539" title=" " alt="" coords="789,320,1015,347"/>
+<area shape="rect"  href="printer_8h.html#a6887fe0a6a7b8e3d41f9440740f910e7" title=" " alt="" coords="857,371,947,397"/>
+<area shape="rect"  href="classPrinter.html#abf3f27a30fdac7b99b1254f6bb9fcc3a" title=" " alt="" coords="833,421,971,448"/>
+<area shape="rect"  href="classHttpsExchange.html#a76dd38b6c6d4ecdf50a733e0330d50e3" title=" " alt="" coords="807,473,997,514"/>
+<area shape="rect"  href="classHttpsExchange.html#ac0ae307c5c09c29d9d27679903b91454" title=" " alt="" coords="805,538,999,579"/>
+<area shape="rect"  href="classHttpsExchange.html#a0e8127ecd317b1b5a5ee641517631145" title=" " alt="" coords="803,604,1001,631"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="830,655,974,681"/>
+<area shape="rect"  href="testHttpsExchange_8h.html#a807cec5964decb7e3c720216776ede00" title=" " alt="" coords="867,705,937,732"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a639ead2ba2cad720847e97cac076c072" title=" " alt="" coords="256,36,475,63"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="5,29,208,70"/>
+<area shape="rect"  href="classHttpsExchange.html#ab12ce2b0dc797f356ef8c8d9388c05bd" title=" " alt="" coords="533,131,731,157"/>
+<area shape="rect"  href="classMenu.html#a4145ff5326c102dd55b1fa5d8668bc67" title=" " alt="" coords="549,320,715,347"/>
+<area shape="rect"  href="classHttpsExchange.html#a8894190048d4015a4c51acac6b04c263" title=" " alt="" coords="523,473,741,514"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="535,545,729,572"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="560,655,704,681"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -187,6 +224,42 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span>(*err == 0)</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span>(val.length() &gt; 0) <span class="keywordflow">return</span> conv( <span class="stringliteral">&quot;CP866//IGNORE&quot;</span>, <span class="stringliteral">&quot;UTF-8&quot;</span>, val, err);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#ad8616e547f3b060a927d65308142473f">Menu::error_handler()</a>, <a class="el" href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c">JSON::jsonParser()</a>, <a class="el" href="classJSON.html#a7a0992d7877148cee04671fa62af9390">JSON::ofdProviderInfoParse()</a>, <a class="el" href="classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f">JSON::parseExternalPurchase()</a>, <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>, <a class="el" href="classMenu.html#ac0601dacad4b6fedc4505d5c01cfea0f">Menu::print_slip()</a>, <a class="el" href="classHttpsExchange.html#a18172b3e0fe27e1e31d8ffd729188ad5">HttpsExchange::sendSearchProduct()</a> и <a class="el" href="classJSON.html#a959b735e6b101f9d222990c1307731e6">JSON::shopInfoParse()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classEncodeConvertor_a89ca427f61ab1cdcd15904e26c70fdfd_icgraph.png" border="0" usemap="#classEncodeConvertor_a89ca427f61ab1cdcd15904e26c70fdfd_icgraph" alt=""/></div>
+<map name="classEncodeConvertor_a89ca427f61ab1cdcd15904e26c70fdfd_icgraph" id="classEncodeConvertor_a89ca427f61ab1cdcd15904e26c70fdfd_icgraph">
+<area shape="rect"  title=" " alt="" coords="1937,258,2152,285"/>
+<area shape="rect"  href="classMenu.html#ad8616e547f3b060a927d65308142473f" title=" " alt="" coords="1720,62,1857,89"/>
+<area shape="rect"  href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c" title=" " alt="" coords="1725,182,1853,209"/>
+<area shape="rect"  href="classJSON.html#a7a0992d7877148cee04671fa62af9390" title=" " alt="" coords="1695,233,1883,259"/>
+<area shape="rect"  href="classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="Ð¿Ð°ÑÑ ÑÐ°ÑÐºÐ¸ Ð½Ð° Ð²Ð½ÐµÑÐ½Ð¸Ð¹ ÑÐµÐº" alt="" coords="1688,283,1889,310"/>
+<area shape="rect"  href="classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="1697,334,1880,361"/>
+<area shape="rect"  href="classMenu.html#ac0601dacad4b6fedc4505d5c01cfea0f" title=" " alt="" coords="1731,131,1846,158"/>
+<area shape="rect"  href="classHttpsExchange.html#a18172b3e0fe27e1e31d8ffd729188ad5" title=" " alt="" coords="1694,385,1883,427"/>
+<area shape="rect"  href="classJSON.html#a959b735e6b101f9d222990c1307731e6" title=" " alt="" coords="1713,451,1864,478"/>
+<area shape="rect"  href="classMenu.html#aeb866b6a915a73b8415d5ece37af73a1" title=" " alt="" coords="1464,33,1640,59"/>
+<area shape="rect"  href="classMenu.html#a35653ef28eb4f993f9f574050952a0b6" title=" " alt="" coords="1212,150,1416,177"/>
+<area shape="rect"  href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd" title=" " alt="" coords="1464,84,1640,125"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,96,523,137"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,103,297,130"/>
+<area shape="rect"  href="classMenu.html#a774274ef8c15603ce7eb72e0d67eea45" title=" " alt="" coords="1489,251,1615,278"/>
+<area shape="rect"  href="classMenu.html#ab69e35a972a4a7e69d4f12289a1210da" title=" " alt="" coords="1467,201,1637,227"/>
+<area shape="rect"  href="classMenu.html#a0a335efeb995db89995ccc3c8dafb172" title=" " alt="" coords="1247,244,1381,285"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,251,1164,278"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,193,949,219"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,193,751,219"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,142,773,169"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,170,523,197"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,238,293,265"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,170,329,197"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,154,123,181"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -197,7 +270,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

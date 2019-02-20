@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс ScaleShtrih</title>
+<title>FisGo: Класс ScaleShtrih</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +73,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="scale__shtrih_8h_source.html">scale_shtrih.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса ScaleShtrih:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса ScaleShtrih:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classScaleShtrih__coll__graph.png" border="0" usemap="#ScaleShtrih_coll__map" alt="Collaboration graph"/></div>
 <map name="ScaleShtrih_coll__map" id="ScaleShtrih_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,153,127"/>
@@ -105,7 +110,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;{</div><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="afef324719ac8e86823f150bf09f43c3a"></a>
@@ -122,7 +127,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -140,15 +145,50 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    uint32_t rv = 0;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordtype">long</span> weight = 0;</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">long</span> weightTare = 0;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70">isScaleConnected</a>() )</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    {</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span> ( getWeightFromScale(&amp;weight, &amp;weightTare) == 0 )</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        {</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            rv = static_cast&lt;int32_t&gt;(weight);</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            rv = -1;</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    }</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    {</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        rv = -1;</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span> rv;</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div><div class="ttc" id="classScaleShtrih_html_ad12ce140bcdf8f9c7475dae0de629e70"><div class="ttname"><a href="classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70">ScaleShtrih::isScaleConnected</a></div><div class="ttdeci">bool isScaleConnected()</div><div class="ttdef"><b>Definition:</b> scale_shtrih.cpp:359</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70">isScaleConnected()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda">Menu::get_weight_scale()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_cgraph.png" border="0" usemap="#classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_cgraph" alt=""/></div>
 <map name="classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_cgraph" id="classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,46,161,73"/>
 <area shape="rect"  href="classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="209,46,412,73"/>
 <area shape="rect"  href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="460,5,611,47"/>
 <area shape="rect"  href="classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="460,71,611,112"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_icgraph.png" border="0" usemap="#classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_icgraph" alt=""/></div>
+<map name="classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_icgraph" id="classScaleShtrih_af9e796ac3ccd4e2b6946732a1f25c0c6_icgraph">
+<area shape="rect"  title=" " alt="" coords="2173,321,2329,348"/>
+<area shape="rect"  href="classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda" title=" " alt="" coords="1963,321,2125,348"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="1780,321,1915,348"/>
+<area shape="rect"  href="classMenu.html#a425b386d5f8bfaea4cd11fa5b9d968f1" title=" " alt="" coords="1589,321,1732,348"/>
+<area shape="rect"  href="classMenu.html#a10f0361710bd082683684ad6fb2c0355" title=" " alt="" coords="1403,296,1522,323"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="212,144,357,171"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="212,263,357,305"/>
+<area shape="rect"  href="classMenu.html#a0d6516b8f1350f9af395aae5679f75ea" title=" " alt="" coords="1384,448,1541,475"/>
+<area shape="rect"  href="classMenu.html#a44a4d270e53f3463cc219d7e685f292d" title=" " alt="" coords="1181,397,1336,424"/>
+<area shape="rect"  href="classMenu.html#a123cf95fd65ce670ec64a3b8afd4237c" title=" " alt="" coords="1199,245,1318,272"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="5,93,164,120"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="37,271,132,297"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="1047,245,1133,272"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="857,245,974,272"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="656,245,784,272"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="832,296,999,323"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="427,271,586,297"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="405,220,608,247"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="1195,448,1323,475"/>
 </map>
 </div>
 
@@ -168,14 +208,54 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;{</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    config.<a class="code" href="structScaleConfig.html#a91f6082bc7d3338d9ffae7ae1e60b428">portName</a> = <a class="code" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a>()-&gt;<a class="code" href="classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734">getScaleNode</a>();</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    config.<a class="code" href="structScaleConfig.html#a148792c2be5df763ca24399463641b0c">speed</a>    = defaultSpeed;</div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    config.<a class="code" href="structScaleConfig.html#aca2318713d067061f00aa99f6aa289a4">type</a>     = defaultType;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">if</span> ( config.<a class="code" href="structScaleConfig.html#a91f6082bc7d3338d9ffae7ae1e60b428">portName</a>.empty() )</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div><div class="ttc" id="structScaleConfig_html_a91f6082bc7d3338d9ffae7ae1e60b428"><div class="ttname"><a href="structScaleConfig.html#a91f6082bc7d3338d9ffae7ae1e60b428">ScaleConfig::portName</a></div><div class="ttdeci">string portName</div><div class="ttdef"><b>Definition:</b> config.h:158</div></div>
+<div class="ttc" id="structScaleConfig_html_a148792c2be5df763ca24399463641b0c"><div class="ttname"><a href="structScaleConfig.html#a148792c2be5df763ca24399463641b0c">ScaleConfig::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition:</b> config.h:157</div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a6ea7fc4ab55c437f6502616769c15acd"><div class="ttname"><a href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a></div><div class="ttdeci">static NodeConflictResolver * instance()</div><div class="ttdef"><b>Definition:</b> NodeConflictResolver.cpp:12</div></div>
+<div class="ttc" id="structScaleConfig_html_aca2318713d067061f00aa99f6aa289a4"><div class="ttname"><a href="structScaleConfig.html#aca2318713d067061f00aa99f6aa289a4">ScaleConfig::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> config.h:154</div></div>
+<div class="ttc" id="classNodeConflictResolver_html_aa1973b944ec61c9d8a96d3d4f337d734"><div class="ttname"><a href="classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734">NodeConflictResolver::getScaleNode</a></div><div class="ttdeci">string getScaleNode()</div><div class="ttdef"><b>Definition:</b> NodeConflictResolver.cpp:113</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734">NodeConflictResolver::getScaleNode()</a>, <a class="el" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance()</a>, <a class="el" href="structScaleConfig.html#a91f6082bc7d3338d9ffae7ae1e60b428">ScaleConfig::portName</a>, <a class="el" href="structScaleConfig.html#a148792c2be5df763ca24399463641b0c">ScaleConfig::speed</a> и <a class="el" href="structScaleConfig.html#aca2318713d067061f00aa99f6aa289a4">ScaleConfig::type</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda">Menu::get_weight_scale()</a>, <a class="el" href="classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6">getWeight()</a> и <a class="el" href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc">Menu::weight_price()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_cgraph.png" border="0" usemap="#classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_cgraph" alt=""/></div>
 <map name="classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_cgraph" id="classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,46,208,73"/>
-<area shape="rect"  href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="256,5,407,47"/>
-<area shape="rect"  href="classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="256,71,407,112"/>
+<area shape="rect"  href="classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="256,5,407,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="256,71,407,112"/>
+</map>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_icgraph.png" border="0" usemap="#classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_icgraph" alt=""/></div>
+<map name="classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_icgraph" id="classScaleShtrih_ad12ce140bcdf8f9c7475dae0de629e70_icgraph">
+<area shape="rect"  title=" " alt="" coords="2377,347,2580,373"/>
+<area shape="rect"  href="classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda" title=" " alt="" coords="1963,347,2125,373"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="1780,321,1915,348"/>
+<area shape="rect"  href="classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="2173,347,2329,373"/>
+<area shape="rect"  href="classMenu.html#a425b386d5f8bfaea4cd11fa5b9d968f1" title=" " alt="" coords="1589,321,1732,348"/>
+<area shape="rect"  href="classMenu.html#a10f0361710bd082683684ad6fb2c0355" title=" " alt="" coords="1403,296,1522,323"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="212,144,357,171"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="212,263,357,305"/>
+<area shape="rect"  href="classMenu.html#a0d6516b8f1350f9af395aae5679f75ea" title=" " alt="" coords="1384,448,1541,475"/>
+<area shape="rect"  href="classMenu.html#a44a4d270e53f3463cc219d7e685f292d" title=" " alt="" coords="1181,397,1336,424"/>
+<area shape="rect"  href="classMenu.html#a123cf95fd65ce670ec64a3b8afd4237c" title=" " alt="" coords="1199,245,1318,272"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="5,93,164,120"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="37,271,132,297"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="1047,245,1133,272"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="857,245,974,272"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="656,245,784,272"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="832,296,999,323"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="427,271,586,297"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="405,220,608,247"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="1195,448,1323,475"/>
 </map>
 </div>
 
@@ -188,7 +268,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

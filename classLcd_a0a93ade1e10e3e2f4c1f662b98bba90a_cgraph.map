@@ -1,13 +1,13 @@
 <map id="Lcd::msg_return_receipt_card" name="Lcd::msg_return_receipt_card">
-<area shape="rect" id="node1" title=" " alt="" coords="5,124,200,151"/>
-<area shape="rect" id="node2" href="$classLcd.html#ab8a7be20bb5aa10e4dac6c73148eaf96" title=" " alt="" coords="251,51,426,93"/>
-<area shape="rect" id="node9" href="$classLcd.html#acd0e39e1c63eb265b893574ba6e45ffa" title=" " alt="" coords="248,183,429,209"/>
-<area shape="rect" id="node11" href="$classLcd.html#a243a3d32c548c123b00fc048569a3528" title=" " alt="" coords="251,117,426,158"/>
-<area shape="rect" id="node3" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="659,132,763,159"/>
-<area shape="rect" id="node4" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="479,183,597,209"/>
-<area shape="rect" id="node7" href="$classLcd.html#aeeb9b4672490ae6d80b9f035b7d9445d" title=" " alt="" coords="477,31,599,57"/>
-<area shape="rect" id="node8" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="481,81,595,108"/>
-<area shape="rect" id="node5" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="647,183,775,209"/>
-<area shape="rect" id="node6" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="823,183,984,209"/>
-<area shape="rect" id="node10" href="$classLcd.html#a8e554d336f4ddec74baadf8366795038" title=" " alt="" coords="487,233,589,260"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,143,200,169"/>
+<area shape="rect" id="node2" href="$classLcd.html#acd0e39e1c63eb265b893574ba6e45ffa" title=" " alt="" coords="248,84,429,111"/>
+<area shape="rect" id="node9" href="$classLcd.html#ab8a7be20bb5aa10e4dac6c73148eaf96" title=" " alt="" coords="251,135,426,177"/>
+<area shape="rect" id="node11" href="$classLcd.html#a243a3d32c548c123b00fc048569a3528" title=" " alt="" coords="251,201,426,242"/>
+<area shape="rect" id="node3" href="$classLcd.html#a8e554d336f4ddec74baadf8366795038" title=" " alt="" coords="487,5,589,32"/>
+<area shape="rect" id="node5" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="481,157,595,184"/>
+<area shape="rect" id="node6" href="$classLcd.html#ad8f1e249aa37f7ecae4c8f2c287d664e" title=" " alt="" coords="479,107,597,133"/>
+<area shape="rect" id="node4" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="659,56,763,83"/>
+<area shape="rect" id="node7" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="647,107,775,133"/>
+<area shape="rect" id="node8" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="823,107,984,133"/>
+<area shape="rect" id="node10" href="$classLcd.html#aeeb9b4672490ae6d80b9f035b7d9445d" title=" " alt="" coords="477,208,599,235"/>
 </map>

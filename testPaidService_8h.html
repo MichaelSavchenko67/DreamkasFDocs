@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Файл src/tests/include/testPaidService.h</title>
+<title>FisGo: Файл src/tests/include/testPaidService.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -76,9 +79,11 @@ $(function() {
 <code>#include &lt;gmock/gmock.h&gt;</code><br />
 <code>#include &quot;gmock/gmock-global.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="paidFeaturesService_8h_source.html">paidFeaturesService.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для testPaidService.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для testPaidService.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testPaidService_8h__incl.png" border="0" usemap="#src_2tests_2include_2testPaidService_8h" alt=""/></div>
 <map name="src_2tests_2include_2testPaidService_8h" id="src_2tests_2include_2testPaidService_8h">
 <area shape="rect"  title=" " alt="" coords="575,5,746,47"/>
@@ -157,7 +162,7 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::string act_code = <span class="stringliteral">&quot;MSwxOzRfMDUxMTE5OzMsPE4XkBUs8Q5N2ynYSeS6UgtMw+yQmgML/OqqtOa13hipKt3iBXm8tf8FdR0QQlltG/CJzZlPPb0eewsN4QlRuQF313xrdxphbekZQO9DEtLPTGh2+qU9fDRMXktDgpcC1wBD0ZFZHoDzW5GwL5ckeTLER9Sr4HgAB2KtqrO/s6mXlxiiBy+YRgbouZTso4u/PBNvb+qjf/P3fyRWjfSOYqRGa+gI5qZPkfbaFtiaC/niXTXPY3mQuiS1ClJQ9NHIq3T3JrRAW41ajqnD15MRvSdSvoPsfqeOYuFI756stHOq7Pj/BVROy9qJLwmot6YbLOrjIHna1yOfuqxn12os5Q==&quot;</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string serial = <span class="stringliteral">&quot;0496040822&quot;</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    EXPECT_TRUE(paidService-&gt;activationCodeIsValid(act_code, serial));</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3a7b18f2048b09603b8b62d56313d642"></a>
@@ -185,13 +190,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string act_code = <span class="stringliteral">&quot;MSwwLFgA+SdY84sE5UGH4KYECZfMe5e5FMI/VbiCpkk51cETaHN7RHyIwDfHJnMjZ+iL7ja7vyeJT0OEuqPyuAS+utMlSDwr9G7uSIbX16dScx+QtK1LVv1Nin9WIrSS4qimsFviry4frP9/ixZX3Wh7yQXGPXUV5Et5rzb3bXVVRAAQcsN4kAErLTbz4C8/vI+8E+WB3JX6arViwBybUML2y8Sw0Y7r5PHHsg4QrbWYSZ0rxCleCEuKGpRgYE4oxxVNaTK2Smt51yoJotcnTfTpVXAOpSjnODpLoxuMH5oEZ+COWBk7DmCWrkxckEB86XiR69U8PXmFBzThPLki7NNLlTs=&quot;</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string serial = <span class="stringliteral">&quot;0496040822&quot;</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    EXPECT_FALSE(paidService-&gt;activationCodeIsValid(act_code, serial));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

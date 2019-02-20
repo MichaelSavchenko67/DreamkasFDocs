@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Шаблон класса nlohmann::detail::json_ref&lt; BasicJsonType &gt;</title>
+<title>FisGo: Шаблон класса nlohmann::detail::json_ref&lt; BasicJsonType &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -75,9 +78,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::json_ref&lt; BasicJsonType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::json_ref&lt; BasicJsonType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1json__ref__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1json__ref_3_01BasicJsonType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1json__ref_3_01BasicJsonType_01_4_coll__map" id="nlohmann_1_1detail_1_1json__ref_3_01BasicJsonType_01_4_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,164,229"/>
@@ -156,7 +161,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10380"></a><span class="lineno">10380</span>&#160;        : owned_value(std::move(value)), value_ref(&amp;owned_value), is_rvalue(<span class="keyword">true</span>)</div><div class="line"><a name="l10381"></a><span class="lineno">10381</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8c3eb3c6e952ed0cd7eece586ab4047c"></a>
@@ -184,7 +189,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10384"></a><span class="lineno">10384</span>&#160;        : value_ref(const_cast&lt;value_type*&gt;(&amp;value)), is_rvalue(<span class="keyword">false</span>)</div><div class="line"><a name="l10385"></a><span class="lineno">10385</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adfba2db547283a7c6a5df9a32e72efc5"></a>
@@ -212,7 +217,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10388"></a><span class="lineno">10388</span>&#160;        : owned_value(init), value_ref(&amp;owned_value), is_rvalue(<span class="keyword">true</span>)</div><div class="line"><a name="l10389"></a><span class="lineno">10389</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abe3ef8c2f07430bd5699bbd552f9e9c3"></a>
@@ -242,7 +247,7 @@ template&lt;class... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10393"></a><span class="lineno">10393</span>&#160;        : owned_value(std::forward&lt;Args&gt;(args)...), value_ref(&amp;owned_value), is_rvalue(<span class="keyword">true</span>)</div><div class="line"><a name="l10394"></a><span class="lineno">10394</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a59221ddbd756ca24d289c787fab38dbc"></a>
@@ -326,7 +331,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10402"></a><span class="lineno">10402</span>&#160;    {</div><div class="line"><a name="l10403"></a><span class="lineno">10403</span>&#160;        <span class="keywordflow">if</span> (is_rvalue)</div><div class="line"><a name="l10404"></a><span class="lineno">10404</span>&#160;        {</div><div class="line"><a name="l10405"></a><span class="lineno">10405</span>&#160;            <span class="keywordflow">return</span> std::move(*value_ref);</div><div class="line"><a name="l10406"></a><span class="lineno">10406</span>&#160;        }</div><div class="line"><a name="l10407"></a><span class="lineno">10407</span>&#160;        <span class="keywordflow">return</span> *value_ref;</div><div class="line"><a name="l10408"></a><span class="lineno">10408</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af96699d7e27c3b1f9d778fe142f8bb41"></a>
@@ -353,7 +358,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10411"></a><span class="lineno">10411</span>&#160;    {</div><div class="line"><a name="l10412"></a><span class="lineno">10412</span>&#160;        <span class="keywordflow">return</span> *static_cast&lt;value_type const*&gt;(value_ref);</div><div class="line"><a name="l10413"></a><span class="lineno">10413</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adb652774a67829876449dc0b30637456"></a>
@@ -380,7 +385,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l10416"></a><span class="lineno">10416</span>&#160;    {</div><div class="line"><a name="l10417"></a><span class="lineno">10417</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;value_type const*&gt;(value_ref);</div><div class="line"><a name="l10418"></a><span class="lineno">10418</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a98956ba676b1ae16b62346f9c4fb752e"></a>
@@ -417,7 +422,7 @@ template&lt;typename BasicJsonType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:32. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

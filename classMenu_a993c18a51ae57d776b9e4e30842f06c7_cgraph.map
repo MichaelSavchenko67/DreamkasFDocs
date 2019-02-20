@@ -1,9 +1,9 @@
 <map id="Menu::regRep" name="Menu::regRep">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,109,108"/>
-<area shape="rect" id="node2" href="$classMenu.html#ae10fc59cb82ab28db1b3fdce7fb918e3" title=" " alt="" coords="179,31,317,57"/>
-<area shape="rect" id="node5" href="$classMenu.html#acd7e8625b22657f2b87c7cf4eaedee14" title="lastDocDateTimeFill &#45; заполнить дату и время последней фискальной операцией" alt="" coords="157,81,339,108"/>
-<area shape="rect" id="node6" href="$classMenu.html#a20b391a8fa383d254bac2e3647f7a96d" title=" " alt="" coords="177,132,319,159"/>
-<area shape="rect" id="node3" href="$classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="395,5,546,32"/>
-<area shape="rect" id="node4" href="$classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="387,56,555,83"/>
-<area shape="rect" id="node7" href="$classMenu.html#abd7b7d1d0eb5009ca82f6cbb8042a2f8" title=" " alt="" coords="397,132,544,159"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$classMenu.html#acd7e8625b22657f2b87c7cf4eaedee14" title="lastDocDateTimeFill &#45; заполнить дату и время последней фискальной операцией" alt="" coords="157,5,339,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#ae10fc59cb82ab28db1b3fdce7fb918e3" title=" " alt="" coords="179,56,317,83"/>
+<area shape="rect" id="node6" href="$classMenu.html#a20b391a8fa383d254bac2e3647f7a96d" title=" " alt="" coords="177,107,319,133"/>
+<area shape="rect" id="node4" href="$classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="395,5,546,32"/>
+<area shape="rect" id="node5" href="$classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="387,56,555,83"/>
+<area shape="rect" id="node7" href="$classMenu.html#abd7b7d1d0eb5009ca82f6cbb8042a2f8" title=" " alt="" coords="397,107,544,133"/>
 </map>

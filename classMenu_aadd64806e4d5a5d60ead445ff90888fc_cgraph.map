@@ -1,12 +1,12 @@
 <map id="Menu::weight_price" name="Menu::weight_price">
-<area shape="rect" id="node1" title=" " alt="" coords="5,130,140,157"/>
-<area shape="rect" id="node2" href="$classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="627,50,829,77"/>
-<area shape="rect" id="node5" href="$classMenu.html#a81581e3c5eb7fb60f306d1221c3654c3" title=" " alt="" coords="219,50,344,77"/>
-<area shape="rect" id="node6" href="$classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda" title=" " alt="" coords="200,101,363,128"/>
-<area shape="rect" id="node8" href="$classConvert.html#a00ab449d5afd03a41a7cc5daa2df1341" title=" " alt="" coords="213,152,349,194"/>
-<area shape="rect" id="node9" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="188,218,375,245"/>
-<area shape="rect" id="node10" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="215,270,348,311"/>
-<area shape="rect" id="node3" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="877,10,1028,51"/>
-<area shape="rect" id="node4" href="$classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="877,75,1028,116"/>
-<area shape="rect" id="node7" href="$classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="423,101,579,128"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,140,159"/>
+<area shape="rect" id="node2" href="$classMenu.html#a81581e3c5eb7fb60f306d1221c3654c3" title=" " alt="" coords="219,5,344,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a4c1ba145f67fa6ca2dbc85e09a3dafda" title=" " alt="" coords="200,56,363,83"/>
+<area shape="rect" id="node5" href="$classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="627,56,829,83"/>
+<area shape="rect" id="node8" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="188,157,375,184"/>
+<area shape="rect" id="node9" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="215,209,348,250"/>
+<area shape="rect" id="node10" href="$classConvert.html#a00ab449d5afd03a41a7cc5daa2df1341" title=" " alt="" coords="213,274,349,315"/>
+<area shape="rect" id="node4" href="$classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="423,5,579,32"/>
+<area shape="rect" id="node6" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="877,15,1028,57"/>
+<area shape="rect" id="node7" href="$classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="877,81,1028,122"/>
 </map>

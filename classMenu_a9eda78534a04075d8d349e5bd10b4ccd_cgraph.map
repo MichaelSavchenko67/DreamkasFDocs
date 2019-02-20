@@ -1,19 +1,19 @@
 <map id="Menu::receipt_correction_step" name="Menu::receipt_correction_step">
 <area shape="rect" id="node1" title=" " alt="" coords="5,284,203,311"/>
-<area shape="rect" id="node2" href="$classMenu.html#a2527752049dc0887ba1ba2f439a616fb" title=" " alt="" coords="264,56,404,83"/>
-<area shape="rect" id="node4" href="$classMenu.html#aee8411159ed7d42ee510da29626012fe" title=" " alt="" coords="255,5,413,32"/>
-<area shape="rect" id="node6" href="$classMenu.html#ad8e6a89a4a9ee495d156b9b8d91f71b7" title=" " alt="" coords="277,107,391,133"/>
-<area shape="rect" id="node7" href="$classMenu.html#a4b04c56cc467cc637ac5a4389387b588" title=" " alt="" coords="278,157,390,184"/>
-<area shape="rect" id="node8" href="$classMenu.html#a463fd46ee68fe3d818ccda9e54584a28" title=" " alt="" coords="255,208,413,235"/>
-<area shape="rect" id="node11" href="$classMenu.html#adcaf65b5374075268d0f9a6cab46b8c4" title=" " alt="" coords="263,259,405,285"/>
-<area shape="rect" id="node12" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="291,309,377,336"/>
-<area shape="rect" id="node13" href="$dynamic__mask_8h.html#a5e0d7e819cd26833f470ca1885d1e41b" title=" " alt="" coords="251,360,417,387"/>
-<area shape="rect" id="node14" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="283,411,385,437"/>
-<area shape="rect" id="node15" href="$dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="261,461,407,488"/>
-<area shape="rect" id="node16" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="285,512,383,539"/>
-<area shape="rect" id="node17" href="$classMenu.html#a29dbc71c031e13554911d060a216822d" title=" " alt="" coords="265,563,403,589"/>
+<area shape="rect" id="node2" href="$classMenu.html#a2527752049dc0887ba1ba2f439a616fb" title=" " alt="" coords="264,5,404,32"/>
+<area shape="rect" id="node4" href="$classMenu.html#a4b04c56cc467cc637ac5a4389387b588" title=" " alt="" coords="278,56,390,83"/>
+<area shape="rect" id="node5" href="$dynamic__mask_8h.html#a5e0d7e819cd26833f470ca1885d1e41b" title=" " alt="" coords="251,157,417,184"/>
+<area shape="rect" id="node6" href="$dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="261,208,407,235"/>
+<area shape="rect" id="node7" href="$classMenu.html#adcaf65b5374075268d0f9a6cab46b8c4" title=" " alt="" coords="263,259,405,285"/>
+<area shape="rect" id="node8" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="283,309,385,336"/>
+<area shape="rect" id="node9" href="$classMenu.html#a29dbc71c031e13554911d060a216822d" title=" " alt="" coords="265,360,403,387"/>
+<area shape="rect" id="node10" href="$classMenu.html#ad8e6a89a4a9ee495d156b9b8d91f71b7" title=" " alt="" coords="277,411,391,437"/>
+<area shape="rect" id="node11" href="$classMenu.html#a463fd46ee68fe3d818ccda9e54584a28" title=" " alt="" coords="255,461,413,488"/>
+<area shape="rect" id="node14" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="285,512,383,539"/>
+<area shape="rect" id="node15" href="$classMenu.html#aee8411159ed7d42ee510da29626012fe" title=" " alt="" coords="255,107,413,133"/>
+<area shape="rect" id="node17" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="291,563,377,589"/>
 <area shape="rect" id="node3" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="487,56,620,83"/>
-<area shape="rect" id="node5" href="$classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="465,5,641,32"/>
-<area shape="rect" id="node9" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="489,208,617,235"/>
-<area shape="rect" id="node10" href="$keypad_8cpp.html#a886f953457a1879ed82073f2a6fed00a" title=" " alt="" coords="689,208,836,235"/>
+<area shape="rect" id="node12" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="489,461,617,488"/>
+<area shape="rect" id="node13" href="$keypad_8cpp.html#a886f953457a1879ed82073f2a6fed00a" title=" " alt="" coords="689,461,836,488"/>
+<area shape="rect" id="node16" href="$classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="465,107,641,133"/>
 </map>

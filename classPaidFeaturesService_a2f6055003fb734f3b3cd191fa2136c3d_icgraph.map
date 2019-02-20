@@ -1,0 +1,5 @@
+<map id="PaidFeaturesService::base64Decode" name="PaidFeaturesService::base64Decode">
+<area shape="rect" id="node1" title="Декодирование из base64 строки" alt="" coords="401,35,544,76"/>
+<area shape="rect" id="node2" href="$classPaidFeaturesService.html#a5caa7ab36e46a5218cb09abec638d6f1" title="Проверка активационного кода." alt="" coords="196,5,353,47"/>
+<area shape="rect" id="node3" href="$classPaidFeaturesService.html#ab85fc7341f2fd14aa304fc1e6e308103" title="Получение из ключа строки информации о фичах" alt="" coords="5,35,148,76"/>
+</map>

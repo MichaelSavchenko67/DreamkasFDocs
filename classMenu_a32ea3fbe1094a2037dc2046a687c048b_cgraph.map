@@ -1,7 +1,7 @@
 <map id="Menu::action_open_shift" name="Menu::action_open_shift">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,169,57"/>
-<area shape="rect" id="node2" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title="showExpireLicenseServices &#45; вывод истекающих фич на экран" alt="" coords="217,5,444,32"/>
-<area shape="rect" id="node5" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="282,56,379,83"/>
-<area shape="rect" id="node3" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="492,5,645,32"/>
-<area shape="rect" id="node4" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="693,5,824,32"/>
+<area shape="rect" id="node2" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="282,5,379,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title="showExpireLicenseServices &#45; вывод истекающих фич на экран" alt="" coords="217,56,444,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="492,56,645,83"/>
+<area shape="rect" id="node5" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="693,56,824,83"/>
 </map>

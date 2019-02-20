@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс MenuTree</title>
+<title>FisGo: Класс MenuTree</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +73,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="MenuTree_8h_source.html">MenuTree.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса MenuTree:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса MenuTree:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree__coll__graph.png" border="0" usemap="#MenuTree_coll__map" alt="Collaboration graph"/></div>
 <map name="MenuTree_coll__map" id="MenuTree_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,185,493"/>
@@ -163,6 +168,11 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    {root_item = <span class="keyword">new</span> <a class="code" href="classMenuItem.html">MenuItem</a>(NULL, <span class="stringliteral">&quot;root&quot;</span>, <a class="code" href="MenuTree_8h.html#a025279585f93967b0c7184f5b8597490aa56e5166ae53c8f9910a72cdc3622454">NODE_</a>, <a class="code" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daad19f61fc6c409804e4604ca161bebe21">Lcd::ROOT_ID</a>, 0);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    cur_item = root_item;};</div><div class="ttc" id="classLcd_html_a1eb88d4f3f81db32b4b119c8ecce72daad19f61fc6c409804e4604ca161bebe21"><div class="ttname"><a href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daad19f61fc6c409804e4604ca161bebe21">Lcd::ROOT_ID</a></div><div class="ttdef"><b>Definition:</b> lcd.h:253</div></div>
+<div class="ttc" id="classMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:34</div></div>
+<div class="ttc" id="MenuTree_8h_html_a025279585f93967b0c7184f5b8597490aa56e5166ae53c8f9910a72cdc3622454"><div class="ttname"><a href="MenuTree_8h.html#a025279585f93967b0c7184f5b8597490aa56e5166ae53c8f9910a72cdc3622454">NODE_</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:21</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="MenuTree_8h.html#a025279585f93967b0c7184f5b8597490aa56e5166ae53c8f9910a72cdc3622454">NODE_</a> и <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daad19f61fc6c409804e4604ca161bebe21">Lcd::ROOT_ID</a>.</p>
 
 </div>
 </div>
@@ -188,7 +198,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{<span class="keyword">delete</span> root_item;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -207,9 +217,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;{</div><div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a7b347d0922bf28c78729f4ebf96c8c92">AddChild</a>(newItem);</div><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a7b347d0922bf28c78729f4ebf96c8c92"><div class="ttname"><a href="classMenuItem.html#a7b347d0922bf28c78729f4ebf96c8c92">MenuItem::AddChild</a></div><div class="ttdeci">bool AddChild(MenuItem *newChild)</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:82</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a7b347d0922bf28c78729f4ebf96c8c92">MenuItem::AddChild()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a679a81b3c7a2fd3989a12bdb8290c47b_cgraph.png" border="0" usemap="#classMenuTree_a679a81b3c7a2fd3989a12bdb8290c47b_cgraph" alt=""/></div>
 <map name="classMenuTree_a679a81b3c7a2fd3989a12bdb8290c47b_cgraph" id="classMenuTree_a679a81b3c7a2fd3989a12bdb8290c47b_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,31,172,57"/>
@@ -258,13 +273,33 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;{</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="classMenuItem.html">MenuItem</a> *newItem;</div><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    newItem = <span class="keyword">new</span> <a class="code" href="classMenuItem.html">MenuItem</a>(cur_item, newName, it, <span class="keywordtype">id</span>, rule);</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    newItem-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().clear();</div><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+<div class="ttc" id="classMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:34</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935">Menu::menu_tree_create()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_ae18b50f63474926d18b6ef949def5bb9_cgraph.png" border="0" usemap="#classMenuTree_ae18b50f63474926d18b6ef949def5bb9_cgraph" alt=""/></div>
 <map name="classMenuTree_ae18b50f63474926d18b6ef949def5bb9_cgraph" id="classMenuTree_ae18b50f63474926d18b6ef949def5bb9_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,188,32"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="236,5,403,32"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_ae18b50f63474926d18b6ef949def5bb9_icgraph.png" border="0" usemap="#classMenuTree_ae18b50f63474926d18b6ef949def5bb9_icgraph" alt=""/></div>
+<map name="classMenuTree_ae18b50f63474926d18b6ef949def5bb9_icgraph" id="classMenuTree_ae18b50f63474926d18b6ef949def5bb9_icgraph">
+<area shape="rect"  title=" " alt="" coords="363,5,545,32"/>
+<area shape="rect"  href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935" title=" " alt="" coords="148,5,315,32"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="5,5,100,32"/>
 </map>
 </div>
 
@@ -292,6 +327,36 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{<span class="keywordflow">return</span> cur_item;}    <span class="comment">// Указатель на тек Item в дереве меню(элемент дерева) ПОЛЬЗОВАТЬСЯ НЕЖЕЛАТЕЛЬНО, ИБО ОПАСНО</span></div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030">Menu::Correct_tree_visibility()</a>, <a class="el" href="classMenu.html#a59f7ee2dc33d2adf3e33fba96ea833ae">Menu::getCurItemID()</a> и <a class="el" href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935">Menu::menu_tree_create()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_a2e324c3a561efb70d49f5b1b8dcf8283_icgraph.png" border="0" usemap="#classMenuTree_a2e324c3a561efb70d49f5b1b8dcf8283_icgraph" alt=""/></div>
+<map name="classMenuTree_a2e324c3a561efb70d49f5b1b8dcf8283_icgraph" id="classMenuTree_a2e324c3a561efb70d49f5b1b8dcf8283_icgraph">
+<area shape="rect"  title=" " alt="" coords="1291,335,1448,361"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1092,151,1227,193"/>
+<area shape="rect"  href="classMenu.html#a59f7ee2dc33d2adf3e33fba96ea833ae" title=" " alt="" coords="1089,335,1230,361"/>
+<area shape="rect"  href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935" title=" " alt="" coords="1076,385,1243,412"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,107,801,133"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="885,196,1013,223"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,309,823,336"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,208,343,235"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="877,5,1021,32"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,309,572,336"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,361,572,402"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,309,379,336"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,183,147,209"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,233,172,260"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,368,347,395"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="649,5,793,32"/>
+<area shape="rect"  href="classMenu.html#a0d6516b8f1350f9af395aae5679f75ea" title=" " alt="" coords="871,335,1028,361"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="657,360,785,387"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="902,385,997,412"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -317,13 +382,40 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45">GetID</a>();}             <span class="comment">// Получить уникальный ID эл-та меню</span></div><div class="ttc" id="classMenuItem_html_a7b65ae40397c8131c28e213f73e2fe45"><div class="ttname"><a href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45">MenuItem::GetID</a></div><div class="ttdeci">Lcd::MENU_ID GetID()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:68</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45">MenuItem::GetID()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_cgraph.png" border="0" usemap="#classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_cgraph" alt=""/></div>
 <map name="classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_cgraph" id="classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,149,32"/>
 <area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="197,5,320,32"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_icgraph.png" border="0" usemap="#classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_icgraph" alt=""/></div>
+<map name="classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_icgraph" id="classMenuTree_aac0ebe0f3702418a176d7e62fc55deb7_icgraph">
+<area shape="rect"  title=" " alt="" coords="1047,144,1191,171"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="871,144,999,171"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,5,801,32"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,144,823,171"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,128,147,155"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,249,172,276"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -351,15 +443,42 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">GetIndexOfItm</a>();}     <span class="comment">// Получение порядкового номера тек ВИДИМОЙ поз-и в меню 1...N</span></div><div class="ttc" id="classMenuItem_html_a270767e329482ab3170b7800db3d857d"><div class="ttname"><a href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">MenuItem::GetIndexOfItm</a></div><div class="ttdeci">unsigned int GetIndexOfItm()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:135</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">MenuItem::GetIndexOfItm()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_ad810752a8d5a21d372c10d448e538960_cgraph.png" border="0" usemap="#classMenuTree_ad810752a8d5a21d372c10d448e538960_cgraph" alt=""/></div>
 <map name="classMenuTree_ad810752a8d5a21d372c10d448e538960_cgraph" id="classMenuTree_ad810752a8d5a21d372c10d448e538960_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,31,168,57"/>
 <area shape="rect"  href="classMenuItem.html#a270767e329482ab3170b7800db3d857d" title=" " alt="" coords="216,31,391,57"/>
-<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="449,5,595,32"/>
-<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="439,56,605,83"/>
+<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="439,5,605,32"/>
+<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="449,56,595,83"/>
+</map>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_ad810752a8d5a21d372c10d448e538960_icgraph.png" border="0" usemap="#classMenuTree_ad810752a8d5a21d372c10d448e538960_icgraph" alt=""/></div>
+<map name="classMenuTree_ad810752a8d5a21d372c10d448e538960_icgraph" id="classMenuTree_ad810752a8d5a21d372c10d448e538960_icgraph">
+<area shape="rect"  title=" " alt="" coords="1047,144,1209,171"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="871,144,999,171"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,5,801,32"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,144,823,171"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,128,147,155"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,249,172,276"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -387,9 +506,14 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a3aa710ce116ff61b7473318bd775f5e0">GetLvlOfItm</a>();}       <span class="comment">// Получить текущий уровень вложенности</span></div><div class="ttc" id="classMenuItem_html_a3aa710ce116ff61b7473318bd775f5e0"><div class="ttname"><a href="classMenuItem.html#a3aa710ce116ff61b7473318bd775f5e0">MenuItem::GetLvlOfItm</a></div><div class="ttdeci">int GetLvlOfItm()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:119</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a3aa710ce116ff61b7473318bd775f5e0">MenuItem::GetLvlOfItm()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_adcc2264c4361ddc636430f4d1d1b20b9_cgraph.png" border="0" usemap="#classMenuTree_adcc2264c4361ddc636430f4d1d1b20b9_cgraph" alt=""/></div>
 <map name="classMenuTree_adcc2264c4361ddc636430f4d1d1b20b9_cgraph" id="classMenuTree_adcc2264c4361ddc636430f4d1d1b20b9_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,167,32"/>
@@ -422,9 +546,14 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a396e20bb2e3053731fb00050b241ba9b">GetName</a>();}           <span class="comment">// Получить имя эл-та без номера</span></div><div class="ttc" id="classMenuItem_html_a396e20bb2e3053731fb00050b241ba9b"><div class="ttname"><a href="classMenuItem.html#a396e20bb2e3053731fb00050b241ba9b">MenuItem::GetName</a></div><div class="ttdeci">string GetName()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:78</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a396e20bb2e3053731fb00050b241ba9b">MenuItem::GetName()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_aa00f52d581acef165d4f9dfea8062c87_cgraph.png" border="0" usemap="#classMenuTree_aa00f52d581acef165d4f9dfea8062c87_cgraph" alt=""/></div>
 <map name="classMenuTree_aa00f52d581acef165d4f9dfea8062c87_cgraph" id="classMenuTree_aa00f52d581acef165d4f9dfea8062c87_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,171,32"/>
@@ -456,9 +585,14 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a78b7b970e31a7f1a789c32592fc4edaa">GetNameWithNo</a>();}     <span class="comment">// Получить имя эл-та с приклееным номером</span></div><div class="ttc" id="classMenuItem_html_a78b7b970e31a7f1a789c32592fc4edaa"><div class="ttname"><a href="classMenuItem.html#a78b7b970e31a7f1a789c32592fc4edaa">MenuItem::GetNameWithNo</a></div><div class="ttdeci">string GetNameWithNo()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:77</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a78b7b970e31a7f1a789c32592fc4edaa">MenuItem::GetNameWithNo()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a77aca7ce1d47125bbfca3688e127d65f_cgraph.png" border="0" usemap="#classMenuTree_a77aca7ce1d47125bbfca3688e127d65f_cgraph" alt=""/></div>
 <map name="classMenuTree_a77aca7ce1d47125bbfca3688e127d65f_cgraph" id="classMenuTree_a77aca7ce1d47125bbfca3688e127d65f_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,215,32"/>
@@ -490,9 +624,14 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#aa671fe323280ad3bdb89ed784d4f92dc">GetRule</a>();}           <span class="comment">// Получить права эл-та</span></div><div class="ttc" id="classMenuItem_html_aa671fe323280ad3bdb89ed784d4f92dc"><div class="ttname"><a href="classMenuItem.html#aa671fe323280ad3bdb89ed784d4f92dc">MenuItem::GetRule</a></div><div class="ttdeci">__uint64_t GetRule()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:82</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#aa671fe323280ad3bdb89ed784d4f92dc">MenuItem::GetRule()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a9b5315aa509cfbb1a98637e11a5be86d_cgraph.png" border="0" usemap="#classMenuTree_a9b5315aa509cfbb1a98637e11a5be86d_cgraph" alt=""/></div>
 <map name="classMenuTree_a9b5315aa509cfbb1a98637e11a5be86d_cgraph" id="classMenuTree_a9b5315aa509cfbb1a98637e11a5be86d_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,163,32"/>
@@ -524,13 +663,40 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{<span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#aecc89cb23d04191126b9544f128423ab">GetType</a>();}           <span class="comment">// Получить тип эл-та</span></div><div class="ttc" id="classMenuItem_html_aecc89cb23d04191126b9544f128423ab"><div class="ttname"><a href="classMenuItem.html#aecc89cb23d04191126b9544f128423ab">MenuItem::GetType</a></div><div class="ttdeci">ITEM_TYPE GetType()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:73</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#aecc89cb23d04191126b9544f128423ab">MenuItem::GetType()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_ac832e16e1f4d7556178ec412a8d01705_cgraph.png" border="0" usemap="#classMenuTree_ac832e16e1f4d7556178ec412a8d01705_cgraph" alt=""/></div>
 <map name="classMenuTree_ac832e16e1f4d7556178ec412a8d01705_cgraph" id="classMenuTree_ac832e16e1f4d7556178ec412a8d01705_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,164,32"/>
 <area shape="rect"  href="classMenuItem.html#aecc89cb23d04191126b9544f128423ab" title=" " alt="" coords="212,5,351,32"/>
+</map>
+</div>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_ac832e16e1f4d7556178ec412a8d01705_icgraph.png" border="0" usemap="#classMenuTree_ac832e16e1f4d7556178ec412a8d01705_icgraph" alt=""/></div>
+<map name="classMenuTree_ac832e16e1f4d7556178ec412a8d01705_icgraph" id="classMenuTree_ac832e16e1f4d7556178ec412a8d01705_icgraph">
+<area shape="rect"  title=" " alt="" coords="1047,144,1205,171"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="871,144,999,171"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,5,801,32"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,144,823,171"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,128,147,155"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,249,172,276"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -558,13 +724,43 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> root_item-&gt;<a class="code" href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45">GetID</a>();</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div><div class="ttc" id="classMenuItem_html_a7b65ae40397c8131c28e213f73e2fe45"><div class="ttname"><a href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45">MenuItem::GetID</a></div><div class="ttdeci">Lcd::MENU_ID GetID()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:68</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45">MenuItem::GetID()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030">Menu::Correct_tree_visibility()</a> и <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_cgraph.png" border="0" usemap="#classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_cgraph" alt=""/></div>
 <map name="classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_cgraph" id="classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,153,32"/>
 <area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="201,5,324,32"/>
+</map>
+</div>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_icgraph.png" border="0" usemap="#classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_icgraph" alt=""/></div>
+<map name="classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_icgraph" id="classMenuTree_a4e8f17f54eb880f5acc283cd538c287f_icgraph">
+<area shape="rect"  title=" " alt="" coords="1245,136,1393,163"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1063,99,1197,141"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,161,1007,188"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,56,801,83"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,161,823,188"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,271,343,297"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,9,1015,36"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,220,572,247"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,154,572,195"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,220,379,247"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,233,147,260"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,309,172,336"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,161,347,188"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="649,5,793,32"/>
 </map>
 </div>
 
@@ -585,13 +781,41 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">if</span> (cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().empty() || cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().size() &lt;= (<span class="keywordtype">unsigned</span> int)index)</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    {</div><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daa77375e0fe213efec336252e4474ba5f0">Lcd::INVALID_ID</a>;</div><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">return</span> ( cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().at(index)-&gt;GetID()    ) ;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+<div class="ttc" id="classLcd_html_a1eb88d4f3f81db32b4b119c8ecce72daa77375e0fe213efec336252e4474ba5f0"><div class="ttname"><a href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daa77375e0fe213efec336252e4474ba5f0">Lcd::INVALID_ID</a></div><div class="ttdef"><b>Definition:</b> lcd.h:254</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a> и <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daa77375e0fe213efec336252e4474ba5f0">Lcd::INVALID_ID</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a0e95daef676a2260d1f1b7505509d17a_cgraph.png" border="0" usemap="#classMenuTree_a0e95daef676a2260d1f1b7505509d17a_cgraph" alt=""/></div>
 <map name="classMenuTree_a0e95daef676a2260d1f1b7505509d17a_cgraph" id="classMenuTree_a0e95daef676a2260d1f1b7505509d17a_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,200,47"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="248,13,415,39"/>
+</map>
+</div>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_a0e95daef676a2260d1f1b7505509d17a_icgraph.png" border="0" usemap="#classMenuTree_a0e95daef676a2260d1f1b7505509d17a_icgraph" alt=""/></div>
+<map name="classMenuTree_a0e95daef676a2260d1f1b7505509d17a_icgraph" id="classMenuTree_a0e95daef676a2260d1f1b7505509d17a_icgraph">
+<area shape="rect"  title=" " alt="" coords="1047,137,1241,178"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="871,144,999,171"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,5,801,32"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,144,823,171"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,128,147,155"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,249,172,276"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -611,13 +835,43 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    vector&lt;string&gt; vectorNames;</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    vectorNames.clear();</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// Если нет детей(подменю)</span></div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">if</span> (cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().empty())</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    {</div><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        vectorNames.push_back(<span class="stringliteral">&quot;NO ITEMS&quot;</span>);</div><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> vectorNames;</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">for</span>(vector&lt;MenuItem*&gt;::iterator it = cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().begin();</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        it != cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().end();</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        it++)</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    {</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="comment">// Если элемент Видимый, то помещаем его в список</span></div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span>((*it)-&gt;GetVisible())</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        {</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            vectorNames.push_back( (*it)-&gt;GetNameWithNo() );</div><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="comment">// cout &lt;&lt; &quot;++VISIBLE ELEMENT NAME = &quot; &lt;&lt; (*it)-&gt;GetNameWithNo() &lt;&lt; endl;</span></div><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        } <span class="keywordflow">else</span></div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="comment">// cout &lt;&lt; &quot;----INVISIBLE ELEMENT NAME = &quot; &lt;&lt; (*it)-&gt;GetNameWithNo() &lt;&lt; endl;</span></div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    }</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">if</span> (vectorNames.empty())</div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    {</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        vectorNames.push_back(<span class="stringliteral">&quot;NO ITEMS&quot;</span>);</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">return</span> vectorNames;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span> vectorNames;</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a575c29fe812806522677f4a24c55c745">Menu::getCurChilds()</a> и <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_ad1ca1629a3c625e66300c5660ccced96_cgraph.png" border="0" usemap="#classMenuTree_ad1ca1629a3c625e66300c5660ccced96_cgraph" alt=""/></div>
 <map name="classMenuTree_ad1ca1629a3c625e66300c5660ccced96_cgraph" id="classMenuTree_ad1ca1629a3c625e66300c5660ccced96_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,212,32"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="260,5,427,32"/>
+</map>
+</div>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_ad1ca1629a3c625e66300c5660ccced96_icgraph.png" border="0" usemap="#classMenuTree_ad1ca1629a3c625e66300c5660ccced96_icgraph" alt=""/></div>
+<map name="classMenuTree_ad1ca1629a3c625e66300c5660ccced96_icgraph" id="classMenuTree_ad1ca1629a3c625e66300c5660ccced96_icgraph">
+<area shape="rect"  title=" " alt="" coords="1057,115,1264,141"/>
+<area shape="rect"  href="classMenu.html#a575c29fe812806522677f4a24c55c745" title=" " alt="" coords="871,44,1009,71"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="876,140,1004,167"/>
+<area shape="rect"  href="classMenu.html#a0d6516b8f1350f9af395aae5679f75ea" title=" " alt="" coords="643,5,800,32"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="435,5,563,32"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,115,801,141"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,165,823,192"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,249,147,276"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,128,172,155"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -638,13 +892,42 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// Если мы в конечном элементе дерева, то false</span></div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">if</span> (cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().empty())</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="comment">//logDBG( &quot;MenuTree:: GoDown(subMenuID) %s:: FALSE No Child Vector&quot;, cur_item-&gt;GetName().c_str());</span></div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// Ищем совпадение</span></div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">for</span>(vector&lt;MenuItem*&gt;::iterator it = cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().begin();</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                    it != cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().end();</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                    it++)</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    {</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> ( (*it)-&gt;GetID() == subMenuID )</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        {</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="comment">//logDBG( &quot;MenuTree:: GoDown(subMenuID) %s:: TRUE&quot;, cur_item-&gt;GetName().c_str());</span></div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            cur_item = *it;</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="comment">// Если совпадения не найдено</span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935">Menu::menu_tree_create()</a> и <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_ac50897814305d7f0202c7c0ac203847a_cgraph.png" border="0" usemap="#classMenuTree_ac50897814305d7f0202c7c0ac203847a_cgraph" alt=""/></div>
 <map name="classMenuTree_ac50897814305d7f0202c7c0ac203847a_cgraph" id="classMenuTree_ac50897814305d7f0202c7c0ac203847a_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,144,32"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="192,5,359,32"/>
+</map>
+</div>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_ac50897814305d7f0202c7c0ac203847a_icgraph.png" border="0" usemap="#classMenuTree_ac50897814305d7f0202c7c0ac203847a_icgraph" alt=""/></div>
+<map name="classMenuTree_ac50897814305d7f0202c7c0ac203847a_icgraph" id="classMenuTree_ac50897814305d7f0202c7c0ac203847a_icgraph">
+<area shape="rect"  title=" " alt="" coords="1085,107,1224,133"/>
+<area shape="rect"  href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935" title=" " alt="" coords="871,44,1037,71"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="890,132,1018,159"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="674,5,769,32"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,107,801,133"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,208,823,235"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,208,572,235"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,259,572,301"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,208,379,235"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,157,343,184"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,216,147,243"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,107,172,133"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,267,347,293"/>
 </map>
 </div>
 
@@ -665,9 +948,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// Если мы в конечном элементе дерева, то false</span></div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().empty())</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    {</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">//logDBG( &quot;MenuTree:: GoDown(fullName) %s:: FALSE No Child Vector&quot;, cur_item-&gt;GetName().c_str());</span></div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// Ищем совпадение по параметру</span></div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">for</span>(vector&lt;MenuItem*&gt;::iterator it = cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().begin();</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                    it != cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().end();</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                    it++)</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    {</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span> ( (*it)-&gt;GetNameWithNo() == fullName )</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="comment">//logDBG( &quot;MenuTree:: GoDown(fullName) %s:: TRUE&quot;, cur_item-&gt;GetName().c_str());</span></div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            cur_item = *it;</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// Если совпадения не найдено</span></div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a263636e36a927346b69e5e47702f93d5_cgraph.png" border="0" usemap="#classMenuTree_a263636e36a927346b69e5e47702f93d5_cgraph" alt=""/></div>
 <map name="classMenuTree_a263636e36a927346b69e5e47702f93d5_cgraph" id="classMenuTree_a263636e36a927346b69e5e47702f93d5_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,144,32"/>
@@ -691,15 +979,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;{</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <a class="code" href="classMenuItem.html">MenuItem</a> *newItem;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">int</span> itmIndex=-1;    <span class="comment">// Индекс потенциального места для перехода</span></div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    itmIndex = cur_item-&gt;<a class="code" href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">GetIndexOfItm</a>();</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (itmIndex &lt; 0)</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        {<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    itmIndex--; <span class="comment">// тк отсчет от 0 а не от 1</span></div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">if</span> (itmIndex &lt;= 0)</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    {</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">//logDBG( &quot;MenuTree:: GoLeft() %s:: FALSE Current item is min  itmIndex = %d&quot;, cur_item-&gt;GetName().c_str(), itmIndex );</span></div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    newItem = cur_item-&gt;<a class="code" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">GetParent</a>()-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().at(itmIndex - 1);</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//logDBG( &quot;MenuTree:: GoLeft() %s:: TRUE New name=&quot;, newItem-&gt;GetName().c_str() );</span></div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    cur_item = newItem;</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+<div class="ttc" id="classMenuItem_html_a270767e329482ab3170b7800db3d857d"><div class="ttname"><a href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">MenuItem::GetIndexOfItm</a></div><div class="ttdeci">unsigned int GetIndexOfItm()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:135</div></div>
+<div class="ttc" id="classMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:34</div></div>
+<div class="ttc" id="classMenuItem_html_aa41b6a67fe6a896c8d1e87a4abd5bdcb"><div class="ttname"><a href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">MenuItem::GetParent</a></div><div class="ttdeci">MenuItem * GetParent()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:61</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>, <a class="el" href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">MenuItem::GetIndexOfItm()</a> и <a class="el" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">MenuItem::GetParent()</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_aa36a4ea5ac8e0219fead52f0a172ca2a_cgraph.png" border="0" usemap="#classMenuTree_aa36a4ea5ac8e0219fead52f0a172ca2a_cgraph" alt=""/></div>
 <map name="classMenuTree_aa36a4ea5ac8e0219fead52f0a172ca2a_cgraph" id="classMenuTree_aa36a4ea5ac8e0219fead52f0a172ca2a_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,31,132,57"/>
+<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="403,5,569,32"/>
 <area shape="rect"  href="classMenuItem.html#a270767e329482ab3170b7800db3d857d" title=" " alt="" coords="180,31,355,57"/>
-<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="413,5,559,32"/>
-<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="403,68,569,95"/>
+<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="413,68,559,95"/>
 </map>
 </div>
 
@@ -719,15 +1015,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <a class="code" href="classMenuItem.html">MenuItem</a> *newItem;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">int</span> itmIndex=-1;    <span class="comment">// Индекс потенциального места для перехода</span></div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    itmIndex = cur_item-&gt;<a class="code" href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">GetIndexOfItm</a>();</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">if</span> (itmIndex &lt; 0)</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        {<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    itmIndex--; <span class="comment">// тк отсчет от 0 а не от 1</span></div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (itmIndex &gt;= <span class="keywordtype">int</span>(cur_item-&gt;<a class="code" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">GetParent</a>()-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().size()))</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">//logDBG( &quot;MenuTree:: GoRight() %s:: FALSE Current item is max  itmIndex = %d&quot;, cur_item-&gt;GetName().c_str(), itmIndex);</span></div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    newItem = cur_item-&gt;<a class="code" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">GetParent</a>()-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().at(itmIndex + 1);</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    cur_item = newItem;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+<div class="ttc" id="classMenuItem_html_a270767e329482ab3170b7800db3d857d"><div class="ttname"><a href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">MenuItem::GetIndexOfItm</a></div><div class="ttdeci">unsigned int GetIndexOfItm()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:135</div></div>
+<div class="ttc" id="classMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:34</div></div>
+<div class="ttc" id="classMenuItem_html_aa41b6a67fe6a896c8d1e87a4abd5bdcb"><div class="ttname"><a href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">MenuItem::GetParent</a></div><div class="ttdeci">MenuItem * GetParent()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:61</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>, <a class="el" href="classMenuItem.html#a270767e329482ab3170b7800db3d857d">MenuItem::GetIndexOfItm()</a> и <a class="el" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">MenuItem::GetParent()</a>.</p>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_abe78313eb0e8cebd464c72a89270b511_cgraph.png" border="0" usemap="#classMenuTree_abe78313eb0e8cebd464c72a89270b511_cgraph" alt=""/></div>
 <map name="classMenuTree_abe78313eb0e8cebd464c72a89270b511_cgraph" id="classMenuTree_abe78313eb0e8cebd464c72a89270b511_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,31,141,57"/>
+<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="412,5,579,32"/>
 <area shape="rect"  href="classMenuItem.html#a270767e329482ab3170b7800db3d857d" title=" " alt="" coords="189,31,364,57"/>
-<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="422,5,569,32"/>
-<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="412,68,579,95"/>
+<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="422,68,569,95"/>
 </map>
 </div>
 
@@ -755,6 +1059,32 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{cur_item = root_item;}             <span class="comment">// Перейти в корень</span></div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c">Menu::buyers_data_get()</a>, <a class="el" href="classMenu.html#affcd5fb30a33900370d96e9b8526889f">Menu::first_start()</a>, <a class="el" href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c">Menu::item_action_by_id()</a>, <a class="el" href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935">Menu::menu_tree_create()</a>, <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>, <a class="el" href="classMenu.html#a178388971a2fcded644b2c347228aaf2">Menu::spec_clc_method_mode()</a> и <a class="el" href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9">Menu::task_manager()</a>.</p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_a9ad9f70417b039df5ac4f61d66ce6abf_icgraph.png" border="0" usemap="#classMenuTree_a9ad9f70417b039df5ac4f61d66ce6abf_icgraph" alt=""/></div>
+<map name="classMenuTree_a9ad9f70417b039df5ac4f61d66ce6abf_icgraph" id="classMenuTree_a9ad9f70417b039df5ac4f61d66ce6abf_icgraph">
+<area shape="rect"  title=" " alt="" coords="1277,165,1411,192"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,115,801,141"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="1087,216,1205,243"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,165,1007,192"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,64,823,91"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,165,172,192"/>
+<area shape="rect"  href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935" title=" " alt="" coords="1063,279,1229,305"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="1074,355,1218,381"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,115,572,141"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,49,572,90"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,115,379,141"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,165,343,192"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,56,347,83"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="895,317,990,344"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="871,368,1015,395"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -772,13 +1102,45 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;{</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">if</span>(cur_item-&gt;<a class="code" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">GetParent</a>() == NULL)</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    cur_item = cur_item-&gt;<a class="code" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">GetParent</a>();</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div><div class="ttc" id="classMenuItem_html_aa41b6a67fe6a896c8d1e87a4abd5bdcb"><div class="ttname"><a href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">MenuItem::GetParent</a></div><div class="ttdeci">MenuItem * GetParent()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:61</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb">MenuItem::GetParent()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030">Menu::Correct_tree_visibility()</a>, <a class="el" href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935">Menu::menu_tree_create()</a> и <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_abf311c36141820335205f98043044ffb_cgraph.png" border="0" usemap="#classMenuTree_abf311c36141820335205f98043044ffb_cgraph" alt=""/></div>
 <map name="classMenuTree_abf311c36141820335205f98043044ffb_cgraph" id="classMenuTree_abf311c36141820335205f98043044ffb_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,128,32"/>
 <area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="176,5,323,32"/>
+</map>
+</div>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_abf311c36141820335205f98043044ffb_icgraph.png" border="0" usemap="#classMenuTree_abf311c36141820335205f98043044ffb_icgraph" alt=""/></div>
+<map name="classMenuTree_abf311c36141820335205f98043044ffb_icgraph" id="classMenuTree_abf311c36141820335205f98043044ffb_icgraph">
+<area shape="rect"  title=" " alt="" coords="1277,227,1400,253"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1079,161,1213,202"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,219,1007,245"/>
+<area shape="rect"  href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935" title=" " alt="" coords="1063,299,1229,325"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,56,801,83"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,191,823,217"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,257,343,284"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,29,1015,56"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,207,572,233"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,141,572,182"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,207,379,233"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,220,147,247"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,296,172,323"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,148,347,175"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="649,5,793,32"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="895,359,990,385"/>
 </map>
 </div>
 
@@ -798,13 +1160,40 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;{</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i &lt; cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().size(); i++)</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    {</div><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keywordflow">if</span>(cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().at(i)-&gt;GetVisible() == <span class="keyword">true</span>)</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;            {<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    }</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_adf28573370b98abe3e05547289f8979c_cgraph.png" border="0" usemap="#classMenuTree_adf28573370b98abe3e05547289f8979c_cgraph" alt=""/></div>
 <map name="classMenuTree_adf28573370b98abe3e05547289f8979c_cgraph" id="classMenuTree_adf28573370b98abe3e05547289f8979c_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,128,32"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="176,5,343,32"/>
+</map>
+</div>
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_adf28573370b98abe3e05547289f8979c_icgraph.png" border="0" usemap="#classMenuTree_adf28573370b98abe3e05547289f8979c_icgraph" alt=""/></div>
+<map name="classMenuTree_adf28573370b98abe3e05547289f8979c_icgraph" id="classMenuTree_adf28573370b98abe3e05547289f8979c_icgraph">
+<area shape="rect"  title=" " alt="" coords="1047,144,1169,171"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="871,144,999,171"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,5,801,32"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,144,823,171"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,128,147,155"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,249,172,276"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -832,6 +1221,31 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{ <span class="keywordflow">return</span> (cur_item == root_item) ? true : <span class="keyword">false</span>; }</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030">Menu::Correct_tree_visibility()</a> и <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_a2f54c26048b54be44a43209728d14141_icgraph.png" border="0" usemap="#classMenuTree_a2f54c26048b54be44a43209728d14141_icgraph" alt=""/></div>
+<map name="classMenuTree_a2f54c26048b54be44a43209728d14141_icgraph" id="classMenuTree_a2f54c26048b54be44a43209728d14141_icgraph">
+<area shape="rect"  title=" " alt="" coords="1245,136,1372,163"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1063,99,1197,141"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,161,1007,188"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,56,801,83"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,161,823,188"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,271,343,297"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,9,1015,36"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,220,572,247"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,154,572,195"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,220,379,247"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,233,147,260"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,309,172,336"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,161,347,188"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="649,5,793,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -850,13 +1264,40 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;{</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keywordflow">if</span>(cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().size() &lt;= index  )</div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    {</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">return</span> cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>().at(index)-&gt;GetVisible() ? true : <span class="keyword">false</span>;</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#aabae6f664c6a7901ad084f28c8818704">Menu::menuCycle()</a>.</p>
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a333e01d5383d506747dd4abe440402ed_cgraph.png" border="0" usemap="#classMenuTree_a333e01d5383d506747dd4abe440402ed_cgraph" alt=""/></div>
 <map name="classMenuTree_a333e01d5383d506747dd4abe440402ed_cgraph" id="classMenuTree_a333e01d5383d506747dd4abe440402ed_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,200,32"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="248,5,415,32"/>
+</map>
+</div>
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_a333e01d5383d506747dd4abe440402ed_icgraph.png" border="0" usemap="#classMenuTree_a333e01d5383d506747dd4abe440402ed_icgraph" alt=""/></div>
+<map name="classMenuTree_a333e01d5383d506747dd4abe440402ed_icgraph" id="classMenuTree_a333e01d5383d506747dd4abe440402ed_icgraph">
+<area shape="rect"  title=" " alt="" coords="1047,144,1241,171"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="871,144,999,171"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,5,801,32"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,144,823,171"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,173,572,200"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,107,572,149"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,173,379,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,224,343,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,128,147,155"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,249,172,276"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,115,347,141"/>
 </map>
 </div>
 
@@ -876,9 +1317,14 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> num = 0;</div><div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    vector &lt;MenuItem*&gt; clds = cur_item-&gt;<a class="code" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">GetChildVect</a>();</div><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt; clds.size(); i++)</div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    {</div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">if</span>(clds.at(i)-&gt;GetVisible() == <span class="keyword">true</span>) {num++;}</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="keywordflow">return</span> num;</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;}</div><div class="ttc" id="classMenuItem_html_a8d669fe5badf04704c81343264ed92d4"><div class="ttname"><a href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect</a></div><div class="ttdeci">vector&lt; MenuItem * &gt; &amp; GetChildVect()</div><div class="ttdef"><b>Definition:</b> MenuTree.h:65</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4">MenuItem::GetChildVect()</a>.</p>
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a55281fc4b4be31e790e5778edf53e76c_cgraph.png" border="0" usemap="#classMenuTree_a55281fc4b4be31e790e5778edf53e76c_cgraph" alt=""/></div>
 <map name="classMenuTree_a55281fc4b4be31e790e5778edf53e76c_cgraph" id="classMenuTree_a55281fc4b4be31e790e5778edf53e76c_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,172,32"/>
@@ -911,7 +1357,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{cur_item = it;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af7e756fc557e6cc0e7f36d3ddde90ab7"></a>
@@ -929,16 +1375,49 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;{</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <a class="code" href="classMenuItem.html">MenuItem</a> *tmpItem;</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keywordtype">bool</span> res = <span class="keyword">true</span>;</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="comment">// Идем по списку vID</span></div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <span class="keywordflow">for</span> (vector&lt;Lcd::MENU_ID&gt;::iterator it = vID.begin();</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;         it != vID.end();</div><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;         it++)</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    {</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        tmpItem = root_item-&gt;<a class="code" href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f">FindItmById</a>(*it);</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="comment">// Если элемент с таким именем не найден, то переходим к след из списка vID</span></div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">if</span>(tmpItem == NULL)</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        {</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            res = <span class="keyword">false</span>;</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;MenuTree::TreeSetVisibleItems: Can&#39;t find ID = %d&quot;</span>, (*it));</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        }</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="comment">// Иначе делаем данный элемент и все что ниже невидимым</span></div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        tmpItem-&gt;<a class="code" href="classMenuItem.html#af867942c91e584773df5705b5267d430">SetInvisibleRecursiveDown</a>();</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    }</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div><div class="ttc" id="classMenuItem_html_abe368d153f44d8aa5e44b9fcef003f9f"><div class="ttname"><a href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f">MenuItem::FindItmById</a></div><div class="ttdeci">MenuItem * FindItmById(Lcd::MENU_ID searchingID)</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:57</div></div>
+<div class="ttc" id="classMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:34</div></div>
+<div class="ttc" id="classMenuItem_html_af867942c91e584773df5705b5267d430"><div class="ttname"><a href="classMenuItem.html#af867942c91e584773df5705b5267d430">MenuItem::SetInvisibleRecursiveDown</a></div><div class="ttdeci">void SetInvisibleRecursiveDown()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:190</div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f">MenuItem::FindItmById()</a>, <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a> и <a class="el" href="classMenuItem.html#af867942c91e584773df5705b5267d430">MenuItem::SetInvisibleRecursiveDown()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030">Menu::Correct_tree_visibility()</a>.</p>
+<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_cgraph.png" border="0" usemap="#classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_cgraph" alt=""/></div>
 <map name="classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_cgraph" id="classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,23,188,65"/>
-<area shape="rect"  href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="281,5,440,32"/>
-<area shape="rect"  href="classMenuItem.html#af867942c91e584773df5705b5267d430" title=" " alt="" coords="236,56,485,83"/>
-<area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="555,5,678,32"/>
-<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="533,56,700,83"/>
+<area shape="rect"  href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="281,56,440,83"/>
+<area shape="rect"  href="classMenuItem.html#af867942c91e584773df5705b5267d430" title=" " alt="" coords="236,5,485,32"/>
+<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="533,5,700,32"/>
+<area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="555,56,678,83"/>
+</map>
+</div>
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_icgraph.png" border="0" usemap="#classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_icgraph" alt=""/></div>
+<map name="classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_icgraph" id="classMenuTree_af7e756fc557e6cc0e7f36d3ddde90ab7_icgraph">
+<area shape="rect"  title=" " alt="" coords="1245,115,1428,156"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1063,115,1197,156"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,21,801,47"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,122,1007,149"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,71,823,98"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,173,343,199"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,325,1015,351"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,71,572,98"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,5,572,47"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,71,379,98"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,198,147,225"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,135,172,162"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,13,347,39"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="649,325,793,351"/>
 </map>
 </div>
 
@@ -966,14 +1445,44 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        root_item-&gt;<a class="code" href="classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b">SetVisibleRecursiveDown</a>();</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div><div class="ttc" id="classMenuItem_html_ae1f8e92fbd46aa798f8e62ccd1c9695b"><div class="ttname"><a href="classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b">MenuItem::SetVisibleRecursiveDown</a></div><div class="ttdeci">void SetVisibleRecursiveDown()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:170</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b">MenuItem::SetVisibleRecursiveDown()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030">Menu::Correct_tree_visibility()</a>.</p>
+<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_ad4739105350f6beed5592d1bfcdfa462_cgraph.png" border="0" usemap="#classMenuTree_ad4739105350f6beed5592d1bfcdfa462_cgraph" alt=""/></div>
 <map name="classMenuTree_ad4739105350f6beed5592d1bfcdfa462_cgraph" id="classMenuTree_ad4739105350f6beed5592d1bfcdfa462_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,193,32"/>
 <area shape="rect"  href="classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b" title=" " alt="" coords="241,5,481,32"/>
 <area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="529,5,696,32"/>
+</map>
+</div>
+<div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classMenuTree_ad4739105350f6beed5592d1bfcdfa462_icgraph.png" border="0" usemap="#classMenuTree_ad4739105350f6beed5592d1bfcdfa462_icgraph" alt=""/></div>
+<map name="classMenuTree_ad4739105350f6beed5592d1bfcdfa462_icgraph" id="classMenuTree_ad4739105350f6beed5592d1bfcdfa462_icgraph">
+<area shape="rect"  title=" " alt="" coords="1245,122,1433,149"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1063,115,1197,156"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,21,801,47"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,122,1007,149"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,71,823,98"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,173,343,199"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,325,1015,351"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,71,572,98"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,5,572,47"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,71,379,98"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,198,147,225"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,135,172,162"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,13,347,39"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="649,325,793,351"/>
 </map>
 </div>
 
@@ -994,18 +1503,26 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+<div class="fragment"><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;{</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="classMenuItem.html">MenuItem</a> *tmpItem;</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordtype">bool</span> res = <span class="keyword">true</span>;</div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="comment">// Идем по списку vID</span></div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">for</span> (vector&lt;Lcd::MENU_ID&gt;::iterator it = vID.begin();</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;         it != vID.end();</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;         it++)</div><div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    {</div><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        tmpItem = root_item-&gt;<a class="code" href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f">FindItmById</a>(*it);</div><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="comment">// Если элемент с таким именем не найден, то переходим к след из списка vID</span></div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="keywordflow">if</span>(tmpItem == NULL)</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            {</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                res = <span class="keyword">false</span>;</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;MenuTree::TreeSetVisibleItems: Can&#39;t find ID = %d&quot;</span>, (*it));</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;                <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            }</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="comment">// Иначе делаем данный элемент видимым до корня</span></div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        tmpItem-&gt;<a class="code" href="classMenuItem.html#a1de438f343c62d7e3fb7f048cceaf532">SetVisibleRecursiveUp</a>();</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    }</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordflow">return</span> res;</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div><div class="ttc" id="classMenuItem_html_abe368d153f44d8aa5e44b9fcef003f9f"><div class="ttname"><a href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f">MenuItem::FindItmById</a></div><div class="ttdeci">MenuItem * FindItmById(Lcd::MENU_ID searchingID)</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:57</div></div>
+<div class="ttc" id="classMenuItem_html"><div class="ttname"><a href="classMenuItem.html">MenuItem</a></div><div class="ttdef"><b>Definition:</b> MenuTree.h:34</div></div>
+<div class="ttc" id="classMenuItem_html_a1de438f343c62d7e3fb7f048cceaf532"><div class="ttname"><a href="classMenuItem.html#a1de438f343c62d7e3fb7f048cceaf532">MenuItem::SetVisibleRecursiveUp</a></div><div class="ttdeci">void SetVisibleRecursiveUp()</div><div class="ttdef"><b>Definition:</b> MenuTree.cpp:157</div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f">MenuItem::FindItmById()</a>, <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a> и <a class="el" href="classMenuItem.html#a1de438f343c62d7e3fb7f048cceaf532">MenuItem::SetVisibleRecursiveUp()</a>.</p>
+<div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTree_a9dff94c905f8a047d48cee771a5297d5_cgraph.png" border="0" usemap="#classMenuTree_a9dff94c905f8a047d48cee771a5297d5_cgraph" alt=""/></div>
 <map name="classMenuTree_a9dff94c905f8a047d48cee771a5297d5_cgraph" id="classMenuTree_a9dff94c905f8a047d48cee771a5297d5_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,74,179,115"/>
 <area shape="rect"  href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="259,44,417,71"/>
 <area shape="rect"  href="classMenuItem.html#a1de438f343c62d7e3fb7f048cceaf532" title=" " alt="" coords="227,119,449,145"/>
-<area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="519,5,642,32"/>
-<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="497,56,664,83"/>
-<area shape="rect"  href="classMenuItem.html#a4407b0ea94b1d78554b8b1358827f920" title=" " alt="" coords="507,112,654,139"/>
-<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="507,163,654,189"/>
+<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="497,5,664,32"/>
+<area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="519,56,642,83"/>
+<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="507,112,654,139"/>
+<area shape="rect"  href="classMenuItem.html#a4407b0ea94b1d78554b8b1358827f920" title=" " alt="" coords="507,163,654,189"/>
 </map>
 </div>
 
@@ -1018,7 +1535,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Шаблон класса nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</title>
+<title>FisGo: Шаблон класса nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -78,9 +81,11 @@ $(function() {
  <a href="classnlohmann_1_1detail_1_1iteration__proxy.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::iteration_proxy&lt; IteratorType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::iteration_proxy&lt; IteratorType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1iteration__proxy__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1iteration__proxy_3_01IteratorType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1iteration__proxy_3_01IteratorType_01_4_coll__map" id="nlohmann_1_1detail_1_1iteration__proxy_3_01IteratorType_01_4_coll__map">
 <area shape="rect"  title="proxy class for the items() function" alt="" coords="5,5,176,127"/>
@@ -132,7 +137,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><div class="memdoc">
 
 <p>construct iteration proxy from a container </p>
-
+<div class="fragment"><div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        : container(cont) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -162,7 +167,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><div class="memdoc">
 
 <p>return iterator begin (needed for range-based for) </p>
-
+<div class="fragment"><div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    {</div><div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(container.begin());</div><div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a41303419d073f32fcf1956978410d816"></a>
@@ -191,7 +196,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><div class="memdoc">
 
 <p>return iterator end (needed for range-based for) </p>
-
+<div class="fragment"><div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    {</div><div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(container.end());</div><div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -200,7 +205,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:32. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

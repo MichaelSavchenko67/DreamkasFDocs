@@ -1,7 +1,7 @@
 <map id="Menu::get_weight_scale" name="Menu::get_weight_scale">
 <area shape="rect" id="node1" title=" " alt="" coords="5,46,168,73"/>
-<area shape="rect" id="node2" href="$classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="420,46,623,73"/>
-<area shape="rect" id="node5" href="$classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="216,71,372,98"/>
-<area shape="rect" id="node3" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="671,5,821,47"/>
-<area shape="rect" id="node4" href="$classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="671,71,821,112"/>
+<area shape="rect" id="node2" href="$classScaleShtrih.html#af9e796ac3ccd4e2b6946732a1f25c0c6" title=" " alt="" coords="216,21,372,47"/>
+<area shape="rect" id="node3" href="$classScaleShtrih.html#ad12ce140bcdf8f9c7475dae0de629e70" title=" " alt="" coords="420,46,623,73"/>
+<area shape="rect" id="node4" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="671,5,821,47"/>
+<area shape="rect" id="node5" href="$classNodeConflictResolver.html#aa1973b944ec61c9d8a96d3d4f337d734" title=" " alt="" coords="671,71,821,112"/>
 </map>

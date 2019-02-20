@@ -1,37 +1,37 @@
 <map id="HttpsExchange::sendReceiptRequest" name="HttpsExchange::sendReceiptRequest">
-<area shape="rect" id="node1" title=" " alt="" coords="5,242,199,283"/>
-<area shape="rect" id="node2" href="$classHttpsExchange.html#a9d5efcab0cdc079a28c233d61ee1c0fa" title=" " alt="" coords="271,5,437,32"/>
-<area shape="rect" id="node3" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="289,57,419,98"/>
-<area shape="rect" id="node4" href="$classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="247,123,461,149"/>
-<area shape="rect" id="node5" href="$classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="262,173,446,200"/>
-<area shape="rect" id="node6" href="$classConvert.html#a70c844c1a0324833c02ab6e118172127" title=" " alt="" coords="267,224,441,251"/>
-<area shape="rect" id="node7" href="$classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e" title=" " alt="" coords="259,275,449,301"/>
-<area shape="rect" id="node11" href="$classHttpsExchange.html#a31d177cdd23b181c8ba1522fa489a04f" title=" " alt="" coords="255,326,453,367"/>
-<area shape="rect" id="node12" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="280,391,428,433"/>
-<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="280,515,428,557"/>
-<area shape="rect" id="node20" href="$classHttpsExchange.html#a9882b27aabfe90a66d86036932057a3d" title=" " alt="" coords="266,712,442,739"/>
-<area shape="rect" id="node8" href="$classCMd5Sum.html#af631069a78f033cb1516eb8dddf54122" title=" " alt="" coords="542,173,673,200"/>
-<area shape="rect" id="node9" href="$classCMd5Sum.html#ae6217a2ca5e9e10a27ee5aefb4308334" title=" " alt="" coords="535,224,680,251"/>
-<area shape="rect" id="node10" href="$classCMd5Sum.html#a993a542e50847ab9786a326cbfa78da9" title=" " alt="" coords="537,275,678,301"/>
-<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="533,326,681,367"/>
-<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="533,391,681,433"/>
-<area shape="rect" id="node15" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="1025,449,1176,490"/>
-<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="533,509,681,550"/>
-<area shape="rect" id="node16" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="1476,581,1657,622"/>
-<area shape="rect" id="node19" href="$classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="519,574,696,615"/>
-<area shape="rect" id="node21" href="$classHttpsExchange.html#ab6a1e8c25dae28bc06bb27836c5e0dae" title=" " alt="" coords="530,653,685,680"/>
-<area shape="rect" id="node22" href="$classHttpsExchange.html#ad572931fd8ae1fb5f121d2efa6bbe3b5" title=" " alt="" coords="509,705,705,746"/>
-<area shape="rect" id="node33" href="$classHttpsExchange.html#a705037a6cc369b75bf0d78684d76d5c4" title=" " alt="" coords="530,771,685,797"/>
-<area shape="rect" id="node34" href="$classHttpsExchange.html#aa7e085534e25195872d39745078d012d" title=" " alt="" coords="512,822,703,863"/>
-<area shape="rect" id="node23" href="$classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="789,705,937,746"/>
-<area shape="rect" id="node32" href="$classHttpsExchange.html#a08fc8929852596ceb85b71fa1d85dcd7" title=" " alt="" coords="753,771,972,797"/>
-<area shape="rect" id="node24" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1020,711,1181,753"/>
-<area shape="rect" id="node25" href="$classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="1239,504,1419,560"/>
-<area shape="rect" id="node26" href="$classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="1252,585,1405,626"/>
-<area shape="rect" id="node27" href="$classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="1252,650,1405,691"/>
-<area shape="rect" id="node28" href="$classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="1250,715,1407,757"/>
-<area shape="rect" id="node29" href="$classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="1239,781,1419,837"/>
-<area shape="rect" id="node30" href="$classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="1229,862,1428,903"/>
-<area shape="rect" id="node31" href="$classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="1233,927,1424,969"/>
-<area shape="rect" id="node35" href="$classHttpsExchange.html#aa826ae1ecf29335d34dbf064594beadf" title=" " alt="" coords="763,829,962,856"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,246,199,287"/>
+<area shape="rect" id="node2" href="$classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="247,5,461,32"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="280,57,428,98"/>
+<area shape="rect" id="node5" href="$classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="262,123,446,149"/>
+<area shape="rect" id="node6" href="$classConvert.html#a70c844c1a0324833c02ab6e118172127" title=" " alt="" coords="267,173,441,200"/>
+<area shape="rect" id="node7" href="$classHttpsExchange.html#ab54cd52c975189bc9987a625375d296e" title=" " alt="" coords="259,224,449,251"/>
+<area shape="rect" id="node11" href="$classHttpsExchange.html#a31d177cdd23b181c8ba1522fa489a04f" title=" " alt="" coords="255,275,453,317"/>
+<area shape="rect" id="node12" href="$classHttpsExchange.html#a9d5efcab0cdc079a28c233d61ee1c0fa" title=" " alt="" coords="271,341,437,368"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="280,393,428,434"/>
+<area shape="rect" id="node19" href="$classHttpsExchange.html#a9882b27aabfe90a66d86036932057a3d" title=" " alt="" coords="266,553,442,580"/>
+<area shape="rect" id="node35" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="289,605,419,646"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="519,57,696,98"/>
+<area shape="rect" id="node8" href="$classCMd5Sum.html#ae6217a2ca5e9e10a27ee5aefb4308334" title=" " alt="" coords="535,123,680,149"/>
+<area shape="rect" id="node9" href="$classCMd5Sum.html#a993a542e50847ab9786a326cbfa78da9" title=" " alt="" coords="537,173,678,200"/>
+<area shape="rect" id="node10" href="$classCMd5Sum.html#af631069a78f033cb1516eb8dddf54122" title=" " alt="" coords="542,224,673,251"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="533,275,681,317"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="533,341,681,382"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="1025,385,1176,426"/>
+<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="533,458,681,499"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="1476,511,1657,553"/>
+<area shape="rect" id="node20" href="$classHttpsExchange.html#ab6a1e8c25dae28bc06bb27836c5e0dae" title=" " alt="" coords="530,524,685,551"/>
+<area shape="rect" id="node21" href="$classHttpsExchange.html#ad572931fd8ae1fb5f121d2efa6bbe3b5" title=" " alt="" coords="509,575,705,617"/>
+<area shape="rect" id="node32" href="$classHttpsExchange.html#aa7e085534e25195872d39745078d012d" title=" " alt="" coords="512,641,703,682"/>
+<area shape="rect" id="node34" href="$classHttpsExchange.html#a705037a6cc369b75bf0d78684d76d5c4" title=" " alt="" coords="530,707,685,733"/>
+<area shape="rect" id="node22" href="$classHttpsExchange.html#a08fc8929852596ceb85b71fa1d85dcd7" title=" " alt="" coords="753,556,972,583"/>
+<area shape="rect" id="node23" href="$classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="789,607,937,649"/>
+<area shape="rect" id="node24" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1020,614,1181,655"/>
+<area shape="rect" id="node25" href="$classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="1239,435,1419,491"/>
+<area shape="rect" id="node26" href="$classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="1252,515,1405,557"/>
+<area shape="rect" id="node27" href="$classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="1252,581,1405,622"/>
+<area shape="rect" id="node28" href="$classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="1250,646,1407,687"/>
+<area shape="rect" id="node29" href="$classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="1239,712,1419,768"/>
+<area shape="rect" id="node30" href="$classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="1229,793,1428,834"/>
+<area shape="rect" id="node31" href="$classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="1233,858,1424,899"/>
+<area shape="rect" id="node33" href="$classHttpsExchange.html#aa826ae1ecf29335d34dbf064594beadf" title=" " alt="" coords="763,673,962,700"/>
 </map>

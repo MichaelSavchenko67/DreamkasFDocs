@@ -1,0 +1,9 @@
+<map id="TimeSync::TimeSync" name="TimeSync::TimeSync">
+<area shape="rect" id="node1" title=" " alt="" coords="513,81,661,108"/>
+<area shape="rect" id="node2" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="327,81,465,108"/>
+<area shape="rect" id="node3" href="$classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="149,5,240,32"/>
+<area shape="rect" id="node5" href="$classMenu.html#a80a44be96d50c5629926007c443bad25" title=" " alt="" coords="111,56,279,83"/>
+<area shape="rect" id="node6" href="$classMenu.html#af4cae4a710a80144910904d16806ba16" title="verifyDateTime проверка времени и часового пояса" alt="" coords="119,107,270,133"/>
+<area shape="rect" id="node7" href="$classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title="timeSyncForce &#45; принудительная синхронизация времени" alt="" coords="119,157,270,184"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="5,5,63,32"/>
+</map>

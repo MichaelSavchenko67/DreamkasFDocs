@@ -1,0 +1,12 @@
+<map id="BIOS::getBatteryVoltage" name="BIOS::getBatteryVoltage">
+<area shape="rect" id="node1" title=" " alt="" coords="969,56,1136,83"/>
+<area shape="rect" id="node2" href="$classMenu.html#a7fde71d6e01eae195621d6bf2f06bb52" title=" " alt="" coords="735,56,921,83"/>
+<area shape="rect" id="node3" href="$classMenu.html#a0e5d793aa01339384112a2aefb4620ce" title="sendStatistics &#45; обновить данные и отправить статистику" alt="" coords="541,56,687,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="346,5,482,32"/>
+<area shape="rect" id="node7" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="342,56,486,83"/>
+<area shape="rect" id="node9" href="$classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c" title=" " alt="" coords="335,107,493,133"/>
+<area shape="rect" id="node5" href="$threads_8h.html#a23a117c3242a071a6a18f61f41072c38" title=" " alt="" coords="145,5,285,32"/>
+<area shape="rect" id="node6" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,56,95,83"/>
+<area shape="rect" id="node8" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="143,56,287,83"/>
+<area shape="rect" id="node10" href="$threads_8h.html#a7412686a6381a5b34ddcd5f459dd81a5" title=" " alt="" coords="155,107,274,133"/>
+</map>

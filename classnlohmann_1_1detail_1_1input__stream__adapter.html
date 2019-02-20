@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс nlohmann::detail::input_stream_adapter</title>
+<title>FisGo: Класс nlohmann::detail::input_stream_adapter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -74,18 +77,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:nlohmann::detail::input_stream_adapter:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:nlohmann::detail::input_stream_adapter:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__stream__adapter__inherit__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__stream__adapter_inherit__map" alt="Inheritance graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__stream__adapter_inherit__map" id="nlohmann_1_1detail_1_1input__stream__adapter_inherit__map">
 <area shape="rect"  title=" " alt="" coords="9,160,183,311"/>
 <area shape="rect"  href="structnlohmann_1_1detail_1_1input__adapter__protocol.html" title="abstract input adapter interface" alt="" coords="5,5,187,112"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::input_stream_adapter:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::input_stream_adapter:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__stream__adapter__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__stream__adapter_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__stream__adapter_coll__map" id="nlohmann_1_1detail_1_1input__stream__adapter_coll__map">
 <area shape="rect"  title=" " alt="" coords="9,160,183,311"/>
@@ -135,7 +142,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;    {</div><div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;        <span class="comment">// clear stream flags; we use underlying streambuf I/O, do not</span></div><div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;        <span class="comment">// maintain ifstream flags</span></div><div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;        is.clear();</div><div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af487152e4606d013eb4ec6a90eaf82ea"></a>
@@ -161,7 +168,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;        : is(i), sb(*i.rdbuf())</div><div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a5190fe4d0c5ff2e3b348b28ee3bb2218"></a>
@@ -217,7 +224,7 @@ $(function() {
 <p>get a character [0,255] or std::char_traits&lt;char&gt;::eof(). </p>
 
 <p>Замещает <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#aac10a6a4048a8ce8e2ed50277692a3ca">nlohmann::detail::input_adapter_protocol</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;    {</div><div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;        <span class="keywordflow">return</span> sb.sbumpc();</div><div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aeac5048221929b8f7558d1698dd0fb3a"></a>
@@ -252,7 +259,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

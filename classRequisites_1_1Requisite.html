@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс Requisites::Requisite</title>
+<title>FisGo: Класс Requisites::Requisite</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -75,9 +78,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="requisites_8h_source.html">requisites.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса Requisites::Requisite:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Requisites::Requisite:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classRequisites_1_1Requisite__coll__graph.png" border="0" usemap="#Requisites_1_1Requisite_coll__map" alt="Collaboration graph"/></div>
 <map name="Requisites_1_1Requisite_coll__map" id="Requisites_1_1Requisite_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,156,303"/>
@@ -139,7 +144,21 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a59763cf07fe095dc0b1417b038782e3e">name</a>.               clear();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">print_tempale</a>.      clear();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">is_print_tempale</a>    = <span class="keyword">false</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">electron_tempale</a>.   clear();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">is_electron_tempale</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">tag</a>                 =     0;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">is_len_fix</a>          = <span class="keyword">false</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">cur_len</a>             =     0;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">max_len</a>             =     0;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">type_doc_mask</a>       =  0x00;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">type</a>                =  0x00;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">value_int</a>           =     0;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a59e43d4b8e864f0cf3a07d154892a35e">value_str</a>           =  NULL;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a91a09b8c43f662414812894ec7d568bf">value_byte</a>          =  NULL;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="classRequisites_1_1Requisite_html_a91a09b8c43f662414812894ec7d568bf"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a91a09b8c43f662414812894ec7d568bf">Requisites::Requisite::value_byte</a></div><div class="ttdeci">unsigned char * value_byte</div><div class="ttdef"><b>Definition:</b> requisites.h:52</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a6569f1cce7be5a4109c3ce00894be322"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">Requisites::Requisite::is_len_fix</a></div><div class="ttdeci">bool is_len_fix</div><div class="ttdef"><b>Definition:</b> requisites.h:46</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5a89985fa698c602780b1497ac752628"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">Requisites::Requisite::print_tempale</a></div><div class="ttdeci">string print_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:40</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_aa0c95f884c193c085d989f0475d3825c"><div class="ttname"><a href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">Requisites::Requisite::max_len</a></div><div class="ttdeci">unsigned short max_len</div><div class="ttdef"><b>Definition:</b> requisites.h:47</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5faf6a3289db8386d4bc13e9be19dc7b"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">Requisites::Requisite::is_electron_tempale</a></div><div class="ttdeci">bool is_electron_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:44</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a59e43d4b8e864f0cf3a07d154892a35e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a59e43d4b8e864f0cf3a07d154892a35e">Requisites::Requisite::value_str</a></div><div class="ttdeci">unsigned char * value_str</div><div class="ttdef"><b>Definition:</b> requisites.h:52</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a6f64c9eff6f57eac0d41300f7a80726e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">Requisites::Requisite::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition:</b> requisites.h:49</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a4ff8b5c71dcfcb6a600133cd41cd2553"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">Requisites::Requisite::value_int</a></div><div class="ttdeci">int64_t value_int</div><div class="ttdef"><b>Definition:</b> requisites.h:51</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a49036939e1f0919c6762c17d80a8312c"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">Requisites::Requisite::electron_tempale</a></div><div class="ttdeci">string electron_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:43</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a11efc7348bb796c44accde00790d9dd3"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">Requisites::Requisite::tag</a></div><div class="ttdeci">unsigned short tag</div><div class="ttdef"><b>Definition:</b> requisites.h:45</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5f23d7c5d84ed9838697a5e409e2a0c6"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">Requisites::Requisite::is_print_tempale</a></div><div class="ttdeci">bool is_print_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:42</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a32c006fd04bdc57a4859526c5a75d8a9"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">Requisites::Requisite::cur_len</a></div><div class="ttdeci">unsigned short cur_len</div><div class="ttdef"><b>Definition:</b> requisites.h:47</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a59763cf07fe095dc0b1417b038782e3e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a59763cf07fe095dc0b1417b038782e3e">Requisites::Requisite::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> requisites.h:40</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5a20770d890bdf5579d6c26c753abfe4"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">Requisites::Requisite::type_doc_mask</a></div><div class="ttdeci">unsigned char type_doc_mask</div><div class="ttdef"><b>Definition:</b> requisites.h:49</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae6e7d5c0cedac84c78779062a9f58a03"></a>
@@ -156,7 +175,19 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a59763cf07fe095dc0b1417b038782e3e">name</a>.               clear();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">print_tempale</a>.      clear();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">is_print_tempale</a>    = <span class="keyword">false</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">electron_tempale</a>.   clear();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">is_electron_tempale</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">tag</a>                 =     0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">is_len_fix</a>          = <span class="keyword">false</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">cur_len</a>             =     0;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">max_len</a>             =     0;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">type_doc_mask</a>       =  0x00;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">type</a>                =  0x00;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">value_int</a>           =     0;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="ttc" id="classRequisites_1_1Requisite_html_a6569f1cce7be5a4109c3ce00894be322"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">Requisites::Requisite::is_len_fix</a></div><div class="ttdeci">bool is_len_fix</div><div class="ttdef"><b>Definition:</b> requisites.h:46</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5a89985fa698c602780b1497ac752628"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">Requisites::Requisite::print_tempale</a></div><div class="ttdeci">string print_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:40</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_aa0c95f884c193c085d989f0475d3825c"><div class="ttname"><a href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">Requisites::Requisite::max_len</a></div><div class="ttdeci">unsigned short max_len</div><div class="ttdef"><b>Definition:</b> requisites.h:47</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5faf6a3289db8386d4bc13e9be19dc7b"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">Requisites::Requisite::is_electron_tempale</a></div><div class="ttdeci">bool is_electron_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:44</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a6f64c9eff6f57eac0d41300f7a80726e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">Requisites::Requisite::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition:</b> requisites.h:49</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a4ff8b5c71dcfcb6a600133cd41cd2553"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">Requisites::Requisite::value_int</a></div><div class="ttdeci">int64_t value_int</div><div class="ttdef"><b>Definition:</b> requisites.h:51</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a49036939e1f0919c6762c17d80a8312c"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">Requisites::Requisite::electron_tempale</a></div><div class="ttdeci">string electron_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:43</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a11efc7348bb796c44accde00790d9dd3"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">Requisites::Requisite::tag</a></div><div class="ttdeci">unsigned short tag</div><div class="ttdef"><b>Definition:</b> requisites.h:45</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5f23d7c5d84ed9838697a5e409e2a0c6"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">Requisites::Requisite::is_print_tempale</a></div><div class="ttdeci">bool is_print_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:42</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a32c006fd04bdc57a4859526c5a75d8a9"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">Requisites::Requisite::cur_len</a></div><div class="ttdeci">unsigned short cur_len</div><div class="ttdef"><b>Definition:</b> requisites.h:47</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a59763cf07fe095dc0b1417b038782e3e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a59763cf07fe095dc0b1417b038782e3e">Requisites::Requisite::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> requisites.h:40</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5a20770d890bdf5579d6c26c753abfe4"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">Requisites::Requisite::type_doc_mask</a></div><div class="ttdeci">unsigned char type_doc_mask</div><div class="ttdef"><b>Definition:</b> requisites.h:49</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -175,6 +206,21 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">tag</a>                 =                 requisite.tag;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">type</a>                =                requisite.type;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">is_len_fix</a>          =          requisite.is_len_fix;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">cur_len</a>             =             requisite.cur_len;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">max_len</a>             =             requisite.max_len;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">value_int</a>           =           requisite.value_int;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a59e43d4b8e864f0cf3a07d154892a35e">value_str</a>           =           requisite.value_str;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a91a09b8c43f662414812894ec7d568bf">value_byte</a>          =          requisite.value_byte;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">type_doc_mask</a>       =       requisite.type_doc_mask;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">is_electron_tempale</a> = requisite.is_electron_tempale;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">is_print_tempale</a>    =    requisite.is_print_tempale;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">electron_tempale</a>    =    requisite.electron_tempale;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    this-&gt;<a class="code" href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">print_tempale</a>       =       requisite.print_tempale;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div><div class="ttc" id="classRequisites_1_1Requisite_html_a91a09b8c43f662414812894ec7d568bf"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a91a09b8c43f662414812894ec7d568bf">Requisites::Requisite::value_byte</a></div><div class="ttdeci">unsigned char * value_byte</div><div class="ttdef"><b>Definition:</b> requisites.h:52</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a6569f1cce7be5a4109c3ce00894be322"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">Requisites::Requisite::is_len_fix</a></div><div class="ttdeci">bool is_len_fix</div><div class="ttdef"><b>Definition:</b> requisites.h:46</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5a89985fa698c602780b1497ac752628"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">Requisites::Requisite::print_tempale</a></div><div class="ttdeci">string print_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:40</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_aa0c95f884c193c085d989f0475d3825c"><div class="ttname"><a href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">Requisites::Requisite::max_len</a></div><div class="ttdeci">unsigned short max_len</div><div class="ttdef"><b>Definition:</b> requisites.h:47</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5faf6a3289db8386d4bc13e9be19dc7b"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">Requisites::Requisite::is_electron_tempale</a></div><div class="ttdeci">bool is_electron_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:44</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a59e43d4b8e864f0cf3a07d154892a35e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a59e43d4b8e864f0cf3a07d154892a35e">Requisites::Requisite::value_str</a></div><div class="ttdeci">unsigned char * value_str</div><div class="ttdef"><b>Definition:</b> requisites.h:52</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a6f64c9eff6f57eac0d41300f7a80726e"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">Requisites::Requisite::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition:</b> requisites.h:49</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a4ff8b5c71dcfcb6a600133cd41cd2553"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">Requisites::Requisite::value_int</a></div><div class="ttdeci">int64_t value_int</div><div class="ttdef"><b>Definition:</b> requisites.h:51</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a49036939e1f0919c6762c17d80a8312c"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">Requisites::Requisite::electron_tempale</a></div><div class="ttdeci">string electron_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:43</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a11efc7348bb796c44accde00790d9dd3"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">Requisites::Requisite::tag</a></div><div class="ttdeci">unsigned short tag</div><div class="ttdef"><b>Definition:</b> requisites.h:45</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5f23d7c5d84ed9838697a5e409e2a0c6"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">Requisites::Requisite::is_print_tempale</a></div><div class="ttdeci">bool is_print_tempale</div><div class="ttdef"><b>Definition:</b> requisites.h:42</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a32c006fd04bdc57a4859526c5a75d8a9"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">Requisites::Requisite::cur_len</a></div><div class="ttdeci">unsigned short cur_len</div><div class="ttdef"><b>Definition:</b> requisites.h:47</div></div>
+<div class="ttc" id="classRequisites_1_1Requisite_html_a5a20770d890bdf5579d6c26c753abfe4"><div class="ttname"><a href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">Requisites::Requisite::type_doc_mask</a></div><div class="ttdeci">unsigned char type_doc_mask</div><div class="ttdef"><b>Definition:</b> requisites.h:49</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">cur_len</a>, <a class="el" href="classRequisites_1_1Requisite.html#a49036939e1f0919c6762c17d80a8312c">electron_tempale</a>, <a class="el" href="classRequisites_1_1Requisite.html#a5faf6a3289db8386d4bc13e9be19dc7b">is_electron_tempale</a>, <a class="el" href="classRequisites_1_1Requisite.html#a6569f1cce7be5a4109c3ce00894be322">is_len_fix</a>, <a class="el" href="classRequisites_1_1Requisite.html#a5f23d7c5d84ed9838697a5e409e2a0c6">is_print_tempale</a>, <a class="el" href="classRequisites_1_1Requisite.html#aa0c95f884c193c085d989f0475d3825c">max_len</a>, <a class="el" href="classRequisites_1_1Requisite.html#a5a89985fa698c602780b1497ac752628">print_tempale</a>, <a class="el" href="classRequisites_1_1Requisite.html#a11efc7348bb796c44accde00790d9dd3">tag</a>, <a class="el" href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">type</a>, <a class="el" href="classRequisites_1_1Requisite.html#a5a20770d890bdf5579d6c26c753abfe4">type_doc_mask</a>, <a class="el" href="classRequisites_1_1Requisite.html#a91a09b8c43f662414812894ec7d568bf">value_byte</a>, <a class="el" href="classRequisites_1_1Requisite.html#a4ff8b5c71dcfcb6a600133cd41cd2553">value_int</a> и <a class="el" href="classRequisites_1_1Requisite.html#a59e43d4b8e864f0cf3a07d154892a35e">value_str</a>.</p>
 
 </div>
 </div>
@@ -191,6 +237,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classFiscal__store.html#a835d88b55537efd2bccef54bd5f109e4">Fiscal_store::fiscal_tlv_unload()</a>, <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a>, <a class="el" href="classFiscal__store.html#a254774b201f7552cf85e1044dc89ff41">Fiscal_store::tlv_parse()</a>, <a class="el" href="classRequisites.html#a51528cafbdf1be79081a9ddfb453a754">Requisites::tlv_to_list_add_int32()</a>, <a class="el" href="classRequisites.html#a93c8f85f3473f759b4928fa043a9bc1f">Requisites::tlv_to_list_add_str()</a>, <a class="el" href="classRequisites.html#a3fb2d24f49daced48a01e8875f802568">Requisites::tlv_to_list_add_uch()</a> и <a class="el" href="classRequisites.html#a1c337a9cb9298b57398b44748928e13b">Requisites::vln_to_list_add()</a>.</p>
+
 </div>
 </div>
 <a id="a49036939e1f0919c6762c17d80a8312c"></a>
@@ -204,6 +252,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a> и <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>.</p>
 
 </div>
 </div>
@@ -219,6 +269,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a> и <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>.</p>
+
 </div>
 </div>
 <a id="a6569f1cce7be5a4109c3ce00894be322"></a>
@@ -232,6 +284,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a>, <a class="el" href="classRequisites.html#a51528cafbdf1be79081a9ddfb453a754">Requisites::tlv_to_list_add_int32()</a>, <a class="el" href="classRequisites.html#a93c8f85f3473f759b4928fa043a9bc1f">Requisites::tlv_to_list_add_str()</a> и <a class="el" href="classRequisites.html#a3fb2d24f49daced48a01e8875f802568">Requisites::tlv_to_list_add_uch()</a>.</p>
 
 </div>
 </div>
@@ -247,6 +301,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a> и <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>.</p>
+
 </div>
 </div>
 <a id="aa0c95f884c193c085d989f0475d3825c"></a>
@@ -260,6 +316,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a>, <a class="el" href="classRequisites.html#a51528cafbdf1be79081a9ddfb453a754">Requisites::tlv_to_list_add_int32()</a>, <a class="el" href="classRequisites.html#a93c8f85f3473f759b4928fa043a9bc1f">Requisites::tlv_to_list_add_str()</a> и <a class="el" href="classRequisites.html#a3fb2d24f49daced48a01e8875f802568">Requisites::tlv_to_list_add_uch()</a>.</p>
 
 </div>
 </div>
@@ -275,6 +333,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites_1_1REQ__NAME.html#a91cdde50c25e40d48b6f586872e6eaee">Requisites::REQ_NAME::REQ_NAME()</a> и <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a>.</p>
+
 </div>
 </div>
 <a id="a5a89985fa698c602780b1497ac752628"></a>
@@ -288,6 +348,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a> и <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>.</p>
 
 </div>
 </div>
@@ -303,6 +365,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites_1_1REQ__NAME.html#a91cdde50c25e40d48b6f586872e6eaee">Requisites::REQ_NAME::REQ_NAME()</a>, <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a> и <a class="el" href="testMenu_8h.html#a71c8ab8371dc19e36ba6c0a65a2c063c">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a6f64c9eff6f57eac0d41300f7a80726e"></a>
@@ -316,6 +380,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a>, <a class="el" href="classFiscal__store.html#a6f4af69b0b256a7c8dcff11ef4eecb22">Fiscal_store::stlv_parse()</a>, <a class="el" href="testMenu_8h.html#a71c8ab8371dc19e36ba6c0a65a2c063c">TEST_F()</a>, <a class="el" href="classFiscal__store.html#a254774b201f7552cf85e1044dc89ff41">Fiscal_store::tlv_parse()</a>, <a class="el" href="classRequisites.html#a51528cafbdf1be79081a9ddfb453a754">Requisites::tlv_to_list_add_int32()</a>, <a class="el" href="classRequisites.html#a93c8f85f3473f759b4928fa043a9bc1f">Requisites::tlv_to_list_add_str()</a>, <a class="el" href="classRequisites.html#a3fb2d24f49daced48a01e8875f802568">Requisites::tlv_to_list_add_uch()</a> и <a class="el" href="classRequisites.html#a1c337a9cb9298b57398b44748928e13b">Requisites::vln_to_list_add()</a>.</p>
 
 </div>
 </div>
@@ -331,6 +397,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a> и <a class="el" href="classRequisites.html#ac185c7351abec6dfbb193d4a42c289f8">Requisites::req_table_init()</a>.</p>
+
 </div>
 </div>
 <a id="a91a09b8c43f662414812894ec7d568bf"></a>
@@ -344,6 +412,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites.html#a30b80f0159a68dc65566d22dcffaa609">Requisites::req_list_erase()</a>, <a class="el" href="classFiscal__store.html#a254774b201f7552cf85e1044dc89ff41">Fiscal_store::tlv_parse()</a>, <a class="el" href="classRequisites.html#a3fb2d24f49daced48a01e8875f802568">Requisites::tlv_to_list_add_uch()</a> и <a class="el" href="classRequisites.html#a1c337a9cb9298b57398b44748928e13b">Requisites::vln_to_list_add()</a>.</p>
 
 </div>
 </div>
@@ -359,6 +429,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="testMenu_8h.html#a71c8ab8371dc19e36ba6c0a65a2c063c">TEST_F()</a>, <a class="el" href="classFiscal__store.html#a254774b201f7552cf85e1044dc89ff41">Fiscal_store::tlv_parse()</a> и <a class="el" href="classRequisites.html#a51528cafbdf1be79081a9ddfb453a754">Requisites::tlv_to_list_add_int32()</a>.</p>
+
 </div>
 </div>
 <a id="a59e43d4b8e864f0cf3a07d154892a35e"></a>
@@ -373,6 +445,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classFiscal__store.html#a835d88b55537efd2bccef54bd5f109e4">Fiscal_store::fiscal_tlv_unload()</a>, <a class="el" href="classRequisites_1_1Requisite.html#a51d669a380cda1735e4fa206f1b4d583">operator=()</a>, <a class="el" href="classRequisites.html#acfb283e2638b2fe012e0fa06b2491240">Requisites::req_clear()</a>, <a class="el" href="classRequisites.html#a30b80f0159a68dc65566d22dcffaa609">Requisites::req_list_erase()</a>, <a class="el" href="classFiscal__store.html#a254774b201f7552cf85e1044dc89ff41">Fiscal_store::tlv_parse()</a> и <a class="el" href="classRequisites.html#a93c8f85f3473f759b4928fa043a9bc1f">Requisites::tlv_to_list_add_str()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
@@ -382,7 +456,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

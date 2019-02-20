@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Исходный файл src/appl/include/jsonParser.h</title>
+<title>FisGo: Исходный файл src/appl/include/jsonParser.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -244,7 +247,7 @@ $(function() {
 <div class="ttc" id="classnlohmann_1_1basic__json_html_a5afa21d477e13fa7a3dcd7ea66c48b52"><div class="ttname"><a href="classnlohmann_1_1basic__json.html#a5afa21d477e13fa7a3dcd7ea66c48b52">nlohmann::basic_json::get</a></div><div class="ttdeci">ValueType get() const noexcept(noexcept(JSONSerializer&lt; ValueTypeCV &gt;::from_json(std::declval&lt; const basic_json_t &amp; &gt;())))</div><div class="ttdoc">get a value (explicit); special case</div><div class="ttdef"><b>Definition:</b> jsonParser.h:13724</div></div>
 <div class="ttc" id="classnlohmann_1_1basic__json_html_aef302e3ae215e46e5035d0e4fdf47235"><div class="ttname"><a href="classnlohmann_1_1basic__json.html#aef302e3ae215e46e5035d0e4fdf47235">nlohmann::basic_json::operator==</a></div><div class="ttdeci">friend bool operator==(const ScalarType lhs, const_reference rhs) noexcept</div><div class="ttdoc">comparison: equal</div><div class="ttdef"><b>Definition:</b> jsonParser.h:16664</div></div>
 <div class="ttc" id="namespacenlohmann_1_1detail_html_a85955b9c6dd31846e4b8e891f78614b6"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a85955b9c6dd31846e4b8e891f78614b6">nlohmann::detail::get_arithmetic_value</a></div><div class="ttdeci">void get_arithmetic_value(const BasicJsonType &amp;j, ArithmeticType &amp;val)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:993</div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1iter__impl_html_ad9e091f5c70b34b5b1abc1ab15fd9106"><div class="ttname"><a href="classnlohmann_1_1detail_1_1iter__impl.html#ad9e091f5c70b34b5b1abc1ab15fd9106">nlohmann::detail::iter_impl::iterator_category</a></div><div class="ttdeci">std::bidirectional_iterator_tag iterator_category</div><div class="ttdef"><b>Definition:</b> jsonParser.h:5179</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1iter__impl_html_ad9e091f5c70b34b5b1abc1ab15fd9106"><div class="ttname"><a href="classnlohmann_1_1detail_1_1iter__impl.html#ad9e091f5c70b34b5b1abc1ab15fd9106">nlohmann::detail::iter_impl::iterator_category</a></div><div class="ttdeci">std::bidirectional_iterator_tag iterator_category</div><div class="ttdoc">The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17....</div><div class="ttdef"><b>Definition:</b> jsonParser.h:5179</div></div>
 <div class="ttc" id="classnlohmann_1_1basic__json_html_af8f511af124e82e4579f444b4175787c"><div class="ttname"><a href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c">nlohmann::basic_json::is_object</a></div><div class="ttdeci">constexpr bool is_object() const noexcept</div><div class="ttdoc">return whether value is an object</div><div class="ttdef"><b>Definition:</b> jsonParser.h:13349</div></div>
 <div class="ttc" id="classnlohmann_1_1detail_1_1output__adapter_html_a43b3ba852e6a2c3f4d312543bb04c00d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__adapter.html#a43b3ba852e6a2c3f4d312543bb04c00d">nlohmann::detail::output_adapter::output_adapter</a></div><div class="ttdeci">output_adapter(std::basic_ostream&lt; CharType &gt; &amp;s)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:5954</div></div>
 <div class="ttc" id="classnlohmann_1_1detail_1_1output__string__adapter_html_a2d76cc6c88ddbc196a63fcfcac9ee7d1"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__string__adapter.html#a2d76cc6c88ddbc196a63fcfcac9ee7d1">nlohmann::detail::output_string_adapter::write_character</a></div><div class="ttdeci">void write_character(CharType c) override</div><div class="ttdef"><b>Definition:</b> jsonParser.h:5933</div></div>
@@ -629,7 +632,7 @@ $(function() {
 <div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a3f313cdbe187cababfc5e06f0b69b098a456e19aeafa334241c7ff3f589547f9d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098a456e19aeafa334241c7ff3f589547f9d">nlohmann::detail::lexer::token_type::parse_error</a></div><div class="ttdoc">indicating a parse error</div></div>
 <div class="ttc" id="namespacenlohmann_1_1detail_html_aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40a4537f20910e85437f6d07701864084e8">nlohmann::detail::input_format_t::ubjson</a></div></div>
 <div class="ttc" id="classnlohmann_1_1detail_1_1json__reverse__iterator_html_a2488d6a902103610943920ac49d12a04"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a2488d6a902103610943920ac49d12a04">nlohmann::detail::json_reverse_iterator::operator--</a></div><div class="ttdeci">json_reverse_iterator &amp; operator--()</div><div class="ttdoc">pre-decrement (–it)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:5804</div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a4aef7e72e539be04e139c34872421f2a"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer::get_token_string</a></div><div class="ttdeci">std::string get_token_string() const</div><div class="ttdef"><b>Definition:</b> jsonParser.h:3385</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a4aef7e72e539be04e139c34872421f2a"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer::get_token_string</a></div><div class="ttdeci">std::string get_token_string() const</div><div class="ttdoc">return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ...</div><div class="ttdef"><b>Definition:</b> jsonParser.h:3385</div></div>
 <div class="ttc" id="threads_8h_html_ac87c885bee4de3e94541fa221f99b021"><div class="ttname"><a href="threads_8h.html#ac87c885bee4de3e94541fa221f99b021">reset</a></div><div class="ttdeci">int reset(Menu &amp;menu, bool isSetDefaultParameters)</div><div class="ttdef"><b>Definition:</b> threads.h:421</div></div>
 <div class="ttc" id="classnlohmann_1_1detail_1_1output__stream__adapter_html_a4e78a9bd19cbf3a4191adc62d14f0055"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__stream__adapter.html#a4e78a9bd19cbf3a4191adc62d14f0055">nlohmann::detail::output_stream_adapter::output_stream_adapter</a></div><div class="ttdeci">output_stream_adapter(std::basic_ostream&lt; CharType &gt; &amp;s)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:5910</div></div>
 <div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a2b4ff5146ed46993527e4a67d99c1355"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a2b4ff5146ed46993527e4a67d99c1355">nlohmann::detail::json_sax_dom_parser::number_unsigned</a></div><div class="ttdeci">bool number_unsigned(number_unsigned_t val)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:3958</div></div>
@@ -696,7 +699,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

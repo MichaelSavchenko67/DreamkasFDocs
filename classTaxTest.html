@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс TaxTest</title>
+<title>FisGo: Класс TaxTest</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -72,18 +75,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="testTax_8h_source.html">testTax.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:TaxTest:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TaxTest:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTaxTest__inherit__graph.png" border="0" usemap="#TaxTest_inherit__map" alt="Inheritance graph"/></div>
 <map name="TaxTest_inherit__map" id="TaxTest_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,131,185,281"/>
 <area shape="rect"  title=" " alt="" coords="71,5,119,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса TaxTest:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TaxTest:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTaxTest__coll__graph.png" border="0" usemap="#TaxTest_coll__map" alt="Collaboration graph"/></div>
 <map name="TaxTest_coll__map" id="TaxTest_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,131,185,281"/>
@@ -141,6 +148,10 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classTaxTest.html#a28124cb39864bea73b8c1462cc3adbb1">taxes</a>.reset(<span class="keyword">new</span> MockTaxes);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classTaxTest.html#a7962b7d707a4f3d524221abbd10b4abe">mockLicense</a> = make_shared&lt;MockLicense&gt;();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classTaxTest.html#a28124cb39864bea73b8c1462cc3adbb1">taxes</a>-&gt;setLicense(<a class="code" href="classTaxTest.html#a7962b7d707a4f3d524221abbd10b4abe">mockLicense</a>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div><div class="ttc" id="classTaxTest_html_a7962b7d707a4f3d524221abbd10b4abe"><div class="ttname"><a href="classTaxTest.html#a7962b7d707a4f3d524221abbd10b4abe">TaxTest::mockLicense</a></div><div class="ttdeci">shared_ptr&lt; MockLicense &gt; mockLicense</div><div class="ttdef"><b>Definition:</b> testTax.h:48</div></div>
+<div class="ttc" id="classTaxTest_html_a28124cb39864bea73b8c1462cc3adbb1"><div class="ttname"><a href="classTaxTest.html#a28124cb39864bea73b8c1462cc3adbb1">TaxTest::taxes</a></div><div class="ttdeci">unique_ptr&lt; MockTaxes &gt; taxes</div><div class="ttdef"><b>Definition:</b> testTax.h:47</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classTaxTest.html#a7962b7d707a4f3d524221abbd10b4abe">mockLicense</a> и <a class="el" href="classTaxTest.html#a28124cb39864bea73b8c1462cc3adbb1">taxes</a>.</p>
 
 </div>
 </div>
@@ -185,6 +196,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classTaxTest.html#acfcf68874fc9de5322a30444457a4d32">TaxTest()</a>.</p>
+
 </div>
 </div>
 <a id="ac50326f63a04dbc4ad102f9660ac556c"></a>
@@ -213,6 +226,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="reference">Используется в <a class="el" href="classTaxTest.html#acfcf68874fc9de5322a30444457a4d32">TaxTest()</a>.</p>
+
 </div>
 </div>
 <a id="acd9e3041f7325e3abf93a373b0f492c0"></a>
@@ -235,7 +250,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

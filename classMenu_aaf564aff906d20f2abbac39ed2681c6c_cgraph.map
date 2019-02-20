@@ -1,52 +1,52 @@
 <map id="Menu::item_action_by_id" name="Menu::item_action_by_id">
-<area shape="rect" id="node1" title=" " alt="" coords="5,1076,172,1103"/>
-<area shape="rect" id="node2" href="$classMenu.html#a7fe03679bce26a262c25bdae23be1c63" title=" " alt="" coords="220,56,419,83"/>
-<area shape="rect" id="node5" href="$classConvert.html#a78813c1afce96d9a4ffb4bb77995d0e6" title=" " alt="" coords="220,119,419,145"/>
-<area shape="rect" id="node6" href="$classMenu.html#a23bbacb86d4fd33389e9f86149114b35" title="drawLicWarnScreen &#45; Окно с предупреждением об отсутствии важных лицензионных тегов" alt="" coords="230,169,409,196"/>
-<area shape="rect" id="node9" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="783,680,870,707"/>
-<area shape="rect" id="node10" href="$classMenu.html#a51ffa6179b97f8b5f04d84da6d2e6b12" title=" " alt="" coords="251,245,387,272"/>
-<area shape="rect" id="node13" href="$classMenu.html#a250c60d441440bea8a7eca0b6a420e0d" title=" " alt="" coords="239,309,400,336"/>
-<area shape="rect" id="node18" href="$classMenu.html#a32ea3fbe1094a2037dc2046a687c048b" title=" " alt="" coords="237,1101,401,1128"/>
-<area shape="rect" id="node22" href="$classConvert.html#ab6b5266f5331010e90d38a943139aaa1" title=" " alt="" coords="245,1304,393,1331"/>
-<area shape="rect" id="node23" href="$dynamic__mask_8h.html#a30707930b7b41aa954b89aeebe35fd97" title=" " alt="" coords="505,731,655,757"/>
-<area shape="rect" id="node24" href="$dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2" title=" " alt="" coords="525,949,635,976"/>
-<area shape="rect" id="node25" href="$classReceipt__new.html#a47885abc3f3f096a53e8f1f91e86b051" title=" " alt="" coords="241,1355,397,1381"/>
-<area shape="rect" id="node26" href="$classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="276,528,363,555"/>
-<area shape="rect" id="node35" href="$classMenuTree.html#a9ad9f70417b039df5ac4f61d66ce6abf" title=" " alt="" coords="253,1405,386,1432"/>
-<area shape="rect" id="node36" href="$classMenu.html#a222a504a4696bb4e7f29fd5603c809cf" title=" " alt="" coords="237,1457,401,1498"/>
-<area shape="rect" id="node37" href="$classMenu.html#a230eddb46b1b8ee7d0ffb3590d28186a" title=" " alt="" coords="237,1523,402,1549"/>
-<area shape="rect" id="node38" href="$classMenu.html#a0a335efeb995db89995ccc3c8dafb172" title=" " alt="" coords="252,891,387,933"/>
-<area shape="rect" id="node41" href="$classMenu.html#aef7ebc14f9cb1e3ea71dc28404adca7b" title=" " alt="" coords="240,1573,399,1600"/>
-<area shape="rect" id="node42" href="$classMenu.html#a388408e334a3d996894a88518e74751e" title=" " alt="" coords="260,1203,379,1229"/>
-<area shape="rect" id="node43" href="$dynamic__mask_8h.html#a1027b0d977ad14d7f6c8968cdcefcdb8" title=" " alt="" coords="532,1355,628,1381"/>
-<area shape="rect" id="node44" href="$dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="537,1456,623,1483"/>
-<area shape="rect" id="node45" href="$classMenu.html#a678eedf1c2f02a8254c9c6749f2bd8b6" title=" " alt="" coords="222,1051,417,1077"/>
-<area shape="rect" id="node50" href="$classMenu.html#ac273c6e21d719f2c19c7bde2a9262d95" title=" " alt="" coords="268,1624,371,1651"/>
-<area shape="rect" id="node3" href="$classLicense.html#a2c40c2748cc1c4bbbae915cbb026a141" title=" " alt="" coords="489,5,671,32"/>
-<area shape="rect" id="node4" href="$classLicense.html#a256cdc19062818167eb290fd49317d77" title="showLicense &#45; вывод всех услуг в лог и консоль" alt="" coords="505,56,655,83"/>
-<area shape="rect" id="node7" href="$classLicense.html#a760804fd30c6ef3e114e222bb6f700d8" title="isTagExistAndValid &#45; проверка наличия тэга в векторе" alt="" coords="485,107,675,133"/>
-<area shape="rect" id="node8" href="$classMenu.html#a4ab0e26037e1a80dc947186ee3e8e92b" title=" " alt="" coords="513,157,647,184"/>
-<area shape="rect" id="node11" href="$classMenu.html#a8926b3af65cc20cfb2f8e24e65448f1b" title=" " alt="" coords="512,208,648,235"/>
-<area shape="rect" id="node12" href="$classMenu.html#a740d2d60a604deb5d102a559a36a18a3" title=" " alt="" coords="741,193,912,234"/>
-<area shape="rect" id="node14" href="$classMenu.html#acacf3588c6aa4dddf7f1ebb0bce5da88" title=" " alt="" coords="509,259,651,285"/>
-<area shape="rect" id="node16" href="$classMenu.html#a5833794c50c4518f96ecc5f6da4a6bcf" title=" " alt="" coords="509,309,651,336"/>
-<area shape="rect" id="node15" href="$bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317" title=" " alt="" coords="749,259,905,285"/>
-<area shape="rect" id="node17" href="$classMenu.html#a7c0b92475277341a655b992cac4db6af" title=" " alt="" coords="762,309,891,336"/>
-<area shape="rect" id="node19" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title="showExpireLicenseServices &#45; вывод истекающих фич на экран" alt="" coords="467,1304,693,1331"/>
-<area shape="rect" id="node21" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="531,1203,629,1229"/>
-<area shape="rect" id="node20" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="750,1304,903,1331"/>
-<area shape="rect" id="node27" href="$classMenu.html#a0ad4930e8377d212f1f44849d7f25350" title=" " alt="" coords="511,528,649,555"/>
-<area shape="rect" id="node30" href="$classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="513,411,647,453"/>
-<area shape="rect" id="node31" href="$classMenu.html#a123cf95fd65ce670ec64a3b8afd4237c" title=" " alt="" coords="521,579,639,605"/>
-<area shape="rect" id="node32" href="$classMenu.html#a8f79310e06a8e87402eaf26d444f67c0" title=" " alt="" coords="513,477,647,504"/>
-<area shape="rect" id="node33" href="$classMenu.html#a44a4d270e53f3463cc219d7e685f292d" title=" " alt="" coords="503,360,657,387"/>
-<area shape="rect" id="node34" href="$classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="507,629,653,656"/>
-<area shape="rect" id="node28" href="$classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="759,499,894,525"/>
-<area shape="rect" id="node29" href="$classReceipt__new.html#a0655b5939fb0178fdd415820522f99b4" title=" " alt="" coords="745,550,908,591"/>
-<area shape="rect" id="node39" href="$classMenu.html#acbe28e262a4d9ebba4fce48da249a0fa" title=" " alt="" coords="507,833,653,874"/>
-<area shape="rect" id="node40" href="$classMenu.html#a774274ef8c15603ce7eb72e0d67eea45" title=" " alt="" coords="517,899,643,925"/>
-<area shape="rect" id="node46" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="503,1101,657,1128"/>
-<area shape="rect" id="node47" href="$classFiscalDocDb.html#ac4598f1738cb0af3c7a90a4cccf91cda" title="min_fd получить минимальный номер ФД в БД" alt="" coords="507,1253,653,1280"/>
-<area shape="rect" id="node48" href="$classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a" title="max_fd получить максимальный номер ФД в БД" alt="" coords="505,1000,655,1027"/>
-<area shape="rect" id="node49" href="$classFiscalDocDb.html#a15a2c78cfdb94a4cff4ae39cea77f2c9" title="loadFiscalDoc загрузить из базы данные фискального документа" alt="" coords="485,1051,675,1077"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,959,172,985"/>
+<area shape="rect" id="node2" href="$classMenu.html#a0a335efeb995db89995ccc3c8dafb172" title=" " alt="" coords="252,817,387,858"/>
+<area shape="rect" id="node5" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="776,613,863,640"/>
+<area shape="rect" id="node7" href="$dynamic__mask_8h.html#a30707930b7b41aa954b89aeebe35fd97" title=" " alt="" coords="505,883,655,909"/>
+<area shape="rect" id="node10" href="$dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2" title=" " alt="" coords="525,933,635,960"/>
+<area shape="rect" id="node11" href="$classMenu.html#a32ea3fbe1094a2037dc2046a687c048b" title=" " alt="" coords="237,284,401,311"/>
+<area shape="rect" id="node14" href="$classMenu.html#a23bbacb86d4fd33389e9f86149114b35" title="drawLicWarnScreen &#45; Окно с предупреждением об отсутствии важных лицензионных тегов" alt="" coords="230,1035,409,1061"/>
+<area shape="rect" id="node17" href="$classMenu.html#a230eddb46b1b8ee7d0ffb3590d28186a" title=" " alt="" coords="237,1085,402,1112"/>
+<area shape="rect" id="node18" href="$classMenu.html#ac273c6e21d719f2c19c7bde2a9262d95" title=" " alt="" coords="268,1136,371,1163"/>
+<area shape="rect" id="node19" href="$classConvert.html#a78813c1afce96d9a4ffb4bb77995d0e6" title=" " alt="" coords="220,1187,419,1213"/>
+<area shape="rect" id="node20" href="$classMenuTree.html#a9ad9f70417b039df5ac4f61d66ce6abf" title=" " alt="" coords="253,1237,386,1264"/>
+<area shape="rect" id="node21" href="$dynamic__mask_8h.html#a1027b0d977ad14d7f6c8968cdcefcdb8" title=" " alt="" coords="532,563,628,589"/>
+<area shape="rect" id="node22" href="$classMenu.html#a250c60d441440bea8a7eca0b6a420e0d" title=" " alt="" coords="239,56,400,83"/>
+<area shape="rect" id="node27" href="$classMenu.html#a7fe03679bce26a262c25bdae23be1c63" title=" " alt="" coords="220,1288,419,1315"/>
+<area shape="rect" id="node30" href="$classMenu.html#a222a504a4696bb4e7f29fd5603c809cf" title=" " alt="" coords="237,1339,401,1381"/>
+<area shape="rect" id="node31" href="$classMenu.html#a678eedf1c2f02a8254c9c6749f2bd8b6" title=" " alt="" coords="222,335,417,361"/>
+<area shape="rect" id="node36" href="$classMenu.html#a388408e334a3d996894a88518e74751e" title=" " alt="" coords="260,652,379,679"/>
+<area shape="rect" id="node37" href="$dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="537,664,623,691"/>
+<area shape="rect" id="node38" href="$classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="276,984,363,1011"/>
+<area shape="rect" id="node46" href="$classMenu.html#aef7ebc14f9cb1e3ea71dc28404adca7b" title=" " alt="" coords="240,1405,399,1432"/>
+<area shape="rect" id="node47" href="$classConvert.html#ab6b5266f5331010e90d38a943139aaa1" title=" " alt="" coords="245,1456,393,1483"/>
+<area shape="rect" id="node48" href="$classReceipt__new.html#a47885abc3f3f096a53e8f1f91e86b051" title=" " alt="" coords="241,1507,397,1533"/>
+<area shape="rect" id="node49" href="$classMenu.html#a51ffa6179b97f8b5f04d84da6d2e6b12" title=" " alt="" coords="251,512,387,539"/>
+<area shape="rect" id="node3" href="$classMenu.html#acbe28e262a4d9ebba4fce48da249a0fa" title=" " alt="" coords="507,766,653,807"/>
+<area shape="rect" id="node6" href="$classMenu.html#a160740e99c23956dbbabbbe82be80e89" title=" " alt="" coords="531,360,629,387"/>
+<area shape="rect" id="node8" href="$classMenu.html#a774274ef8c15603ce7eb72e0d67eea45" title=" " alt="" coords="517,832,643,859"/>
+<area shape="rect" id="node4" href="$dynamic__mask_8h.html#a8c577d3e91e5687e214179d4f8eb22fb" title=" " alt="" coords="750,773,889,800"/>
+<area shape="rect" id="node9" href="$classMenu.html#ac0601dacad4b6fedc4505d5c01cfea0f" title=" " alt="" coords="762,832,877,859"/>
+<area shape="rect" id="node12" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title="showExpireLicenseServices &#45; вывод истекающих фич на экран" alt="" coords="467,107,693,133"/>
+<area shape="rect" id="node13" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="743,107,896,133"/>
+<area shape="rect" id="node15" href="$classLicense.html#a760804fd30c6ef3e114e222bb6f700d8" title="isTagExistAndValid &#45; проверка наличия тэга в векторе" alt="" coords="485,1355,675,1381"/>
+<area shape="rect" id="node16" href="$classMenu.html#a4ab0e26037e1a80dc947186ee3e8e92b" title=" " alt="" coords="513,1304,647,1331"/>
+<area shape="rect" id="node23" href="$classMenu.html#acacf3588c6aa4dddf7f1ebb0bce5da88" title=" " alt="" coords="509,5,651,32"/>
+<area shape="rect" id="node25" href="$classMenu.html#a5833794c50c4518f96ecc5f6da4a6bcf" title=" " alt="" coords="509,56,651,83"/>
+<area shape="rect" id="node24" href="$bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317" title=" " alt="" coords="741,5,897,32"/>
+<area shape="rect" id="node26" href="$classMenu.html#a7c0b92475277341a655b992cac4db6af" title=" " alt="" coords="755,56,884,83"/>
+<area shape="rect" id="node28" href="$classLicense.html#a2c40c2748cc1c4bbbae915cbb026a141" title=" " alt="" coords="489,1456,671,1483"/>
+<area shape="rect" id="node29" href="$classLicense.html#a256cdc19062818167eb290fd49317d77" title="showLicense &#45; вывод всех услуг в лог и консоль" alt="" coords="505,1405,655,1432"/>
+<area shape="rect" id="node32" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="503,309,657,336"/>
+<area shape="rect" id="node33" href="$classFiscalDocDb.html#ac4598f1738cb0af3c7a90a4cccf91cda" title="min_fd получить минимальный номер ФД в БД" alt="" coords="507,157,653,184"/>
+<area shape="rect" id="node34" href="$classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a" title="max_fd получить максимальный номер ФД в БД" alt="" coords="505,208,655,235"/>
+<area shape="rect" id="node35" href="$classFiscalDocDb.html#a15a2c78cfdb94a4cff4ae39cea77f2c9" title="loadFiscalDoc загрузить из базы данные фискального документа" alt="" coords="485,259,675,285"/>
+<area shape="rect" id="node39" href="$classMenu.html#a0ad4930e8377d212f1f44849d7f25350" title=" " alt="" coords="511,1253,649,1280"/>
+<area shape="rect" id="node41" href="$classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="513,1137,647,1178"/>
+<area shape="rect" id="node42" href="$classMenu.html#a123cf95fd65ce670ec64a3b8afd4237c" title=" " alt="" coords="521,1035,639,1061"/>
+<area shape="rect" id="node43" href="$classMenu.html#a8f79310e06a8e87402eaf26d444f67c0" title=" " alt="" coords="513,1203,647,1229"/>
+<area shape="rect" id="node44" href="$classMenu.html#a44a4d270e53f3463cc219d7e685f292d" title=" " alt="" coords="503,1085,657,1112"/>
+<area shape="rect" id="node45" href="$classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="507,984,653,1011"/>
+<area shape="rect" id="node40" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="751,1144,887,1171"/>
+<area shape="rect" id="node50" href="$classMenu.html#a8926b3af65cc20cfb2f8e24e65448f1b" title=" " alt="" coords="512,512,648,539"/>
 </map>

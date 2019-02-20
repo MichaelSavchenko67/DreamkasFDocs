@@ -1,7 +1,7 @@
 <map id="Menu::exRegComplite" name="Menu::exRegComplite">
 <area shape="rect" id="node1" title="exRegComplite" alt="" coords="5,81,157,108"/>
 <area shape="rect" id="node2" href="$dynamic__mask_8h.html#a148263cdb4aa96a3ff8e871b4aaba1cf" title=" " alt="" coords="249,5,348,32"/>
-<area shape="rect" id="node3" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="248,56,349,83"/>
-<area shape="rect" id="node4" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="221,107,376,133"/>
-<area shape="rect" id="node5" href="$classFiscalDocDb.html#ae80f41a7cecbce0ecef83b6142afffc6" title="clearFiscalDb очистка таблицы фискальных документов" alt="" coords="205,157,392,184"/>
+<area shape="rect" id="node3" href="$classFiscalDocDb.html#ae80f41a7cecbce0ecef83b6142afffc6" title="clearFiscalDb очистка таблицы фискальных документов" alt="" coords="205,56,392,83"/>
+<area shape="rect" id="node4" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="248,107,349,133"/>
+<area shape="rect" id="node5" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="221,157,376,184"/>
 </map>

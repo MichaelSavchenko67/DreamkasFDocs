@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fiscat: Класс TestJSON</title>
+<title>FisGo: Класс TestJSON</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="1.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Fiscat
+   <div id="projectname">FisGo
+   &#160;<span id="projectnumber">v1.18.7</span>
    </div>
+   <div id="projectbrief">Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -72,18 +75,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="testJSON_8h_source.html">testJSON.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:TestJSON:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TestJSON:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestJSON__inherit__graph.png" border="0" usemap="#TestJSON_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestJSON_inherit__map" id="TestJSON_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,131,117,325"/>
 <area shape="rect"  title=" " alt="" coords="37,5,85,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса TestJSON:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TestJSON:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestJSON__coll__graph.png" border="0" usemap="#TestJSON_coll__map" alt="Collaboration graph"/></div>
 <map name="TestJSON_coll__map" id="TestJSON_coll__map">
 <area shape="rect"  title=" " alt="" coords="510,4791,622,4897"/>
@@ -170,7 +177,12 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>.reset(<span class="keyword">new</span> MockJson);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;setExRegResult(make_shared&lt;JSON::EX_REG_RESULT&gt;());</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;convert.reset(&amp;<a class="code" href="classTestJSON.html#a61ff8d40d25c2b57ead7161890c1907f">mockConvert</a>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;fg.reset(&amp;<a class="code" href="classTestJSON.html#a870a0ad1708d2ad09b130a403df574de">mockFg</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;net.reset(&amp;<a class="code" href="classTestJSON.html#a5fd3951cd31cccc5f924b50a13e1f5b6">mockNet</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classTestJSON.html#a2260e0902930d99bd0e380963e436eb3">errP</a> = 0;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="ttc" id="classTestJSON_html_a870a0ad1708d2ad09b130a403df574de"><div class="ttname"><a href="classTestJSON.html#a870a0ad1708d2ad09b130a403df574de">TestJSON::mockFg</a></div><div class="ttdeci">TestJSON::MockFg mockFg</div></div>
+<div class="ttc" id="classTestJSON_html_ab4cb93ed2cb9594e3d1994b968fe6a45"><div class="ttname"><a href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">TestJSON::jsonTest</a></div><div class="ttdeci">unique_ptr&lt; MockJson &gt; jsonTest</div><div class="ttdef"><b>Definition:</b> testJSON.h:86</div></div>
+<div class="ttc" id="classTestJSON_html_a61ff8d40d25c2b57ead7161890c1907f"><div class="ttname"><a href="classTestJSON.html#a61ff8d40d25c2b57ead7161890c1907f">TestJSON::mockConvert</a></div><div class="ttdeci">TestJSON::MockConvert mockConvert</div></div>
+<div class="ttc" id="classTestJSON_html_a2260e0902930d99bd0e380963e436eb3"><div class="ttname"><a href="classTestJSON.html#a2260e0902930d99bd0e380963e436eb3">TestJSON::errP</a></div><div class="ttdeci">int errP</div><div class="ttdef"><b>Definition:</b> testJSON.h:90</div></div>
+<div class="ttc" id="classTestJSON_html_a5fd3951cd31cccc5f924b50a13e1f5b6"><div class="ttname"><a href="classTestJSON.html#a5fd3951cd31cccc5f924b50a13e1f5b6">TestJSON::mockNet</a></div><div class="ttdeci">TestJSON::MockNet mockNet</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1d8efd7651ca7fa8b777f46903508562"></a>
@@ -195,7 +207,8 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;convert.release();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;fg.release();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;net.release();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div><div class="ttc" id="classTestJSON_html_ab4cb93ed2cb9594e3d1994b968fe6a45"><div class="ttname"><a href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">TestJSON::jsonTest</a></div><div class="ttdeci">unique_ptr&lt; MockJson &gt; jsonTest</div><div class="ttdef"><b>Definition:</b> testJSON.h:86</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -317,7 +330,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по FisGo. Последние изменения: Ср 20 Фев 2019 11:44:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,0 +1,5 @@
+<map id="TimeSync::getZoneinfo" name="TimeSync::getZoneinfo">
+<area shape="rect" id="node1" title="getZoneinfo вернуть список часовых поясов" alt="" coords="221,31,379,57"/>
+<area shape="rect" id="node2" href="$classMenu.html#a80a44be96d50c5629926007c443bad25" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#af4cae4a710a80144910904d16806ba16" title="verifyDateTime проверка времени и часового пояса" alt="" coords="14,56,165,83"/>
+</map>
